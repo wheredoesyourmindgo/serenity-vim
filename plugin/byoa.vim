@@ -16,10 +16,17 @@ noremap <leader>k *
 noremap <leader>K #
 noremap <leader><tab> K
 noremap <leader>ex Q
-noremap <leader>, <C-f>
-noremap <leader>. <C-b>
-noremap <leader>< <C-d>
-noremap <leader>> <C-u>
+" Coding
+noremap <leader>, (
+noremap <leader>. )
+noremap <leader>< {
+noremap <leader>> }
+" Writing
+" noremap <leader>, <C-f>
+" noremap <leader>. <C-b>
+" noremap <leader>< <C-d>
+" noremap <leader>> <C-u>
+
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection 
 noremap <tab> >><esc>
 noremap <S-tab> <<<esc>
@@ -93,10 +100,16 @@ noremap k /
 noremap K ?
 noremap h g
 noremap H G
-noremap , (
-noremap < {
-noremap . )
-noremap > }
+" Coding
+noremap , <C-f>
+noremap . <C-b>
+noremap < <C-d>
+noremap > <C-u
+" Writing
+" noremap , (
+" noremap . )
+" noremap < {
+" noremap > }
 noremap / n
 noremap ? N
 " g mappings

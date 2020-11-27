@@ -104,7 +104,7 @@ noremap H G
 noremap , <C-f>
 noremap . <C-b>
 noremap < <C-d>
-noremap > <C-u
+noremap > <C-u>
 " Writing
 " noremap , (
 " noremap . )

@@ -41,33 +41,33 @@ noremap # !
 noremap ## !!
 " left r1
 noremap q .
-noremap Q :
-noremap w x
-noremap W X
-noremap f u
-noremap F U
+noremap Q Z
+noremap w u
+noremap W <C-r>
+noremap f x
+noremap F X
 " noremap p p
 " noremap P P
 noremap b ~
 noremap B J
 " left r2
-noremap a o
-noremap A O
-noremap r s
-noremap R S
-noremap s i
-noremap S I
-noremap t a
-noremap T A
+noremap a s
+noremap A S
+noremap r i
+noremap R I
+noremap s a
+noremap S A
+noremap t o
+noremap T O
 noremap g v
 noremap G V
 " left r3
 noremap z r
 noremap Z R
-noremap x d
-noremap X D
-" noremap c c
-" noremap C C
+noremap x c
+noremap X C
+noremap c d
+noremap C D
 noremap d y
 noremap D Y
 noremap v m

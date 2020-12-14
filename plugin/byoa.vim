@@ -52,16 +52,16 @@ noremap ! q
 noremap # !
 noremap ## !!
 " left r1
-noremap q .
-noremap Q Z
+noremap q ~
+noremap Q J
 noremap w u
 noremap W <C-r>
 noremap f x
 noremap F X
 " noremap p p
 " noremap P P
-noremap b ~
-noremap B J
+noremap b .
+" noremap B
 " left r2
 noremap a s
 noremap A S

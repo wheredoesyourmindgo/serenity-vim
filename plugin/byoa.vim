@@ -85,8 +85,8 @@ noremap D Y
 noremap v m
 noremap V "
 " right r1
-noremap j t
-noremap J T
+noremap j f
+noremap J F
 noremap l 0
 noremap L _
 noremap u ^
@@ -97,8 +97,8 @@ noremap Y +
 noremap ' ;
 noremap " ,
 " right r2
-noremap m f
-noremap M F
+noremap m t
+noremap M T
 noremap n ge
 noremap N gE
 noremap e b

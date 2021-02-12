@@ -61,7 +61,7 @@ noremap F X
 " noremap p p
 " noremap P P
 noremap b .
-" noremap B
+noremap B U
 " left r2
 noremap a s
 noremap A S

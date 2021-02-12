@@ -99,10 +99,10 @@ noremap " ,
 " right r2
 noremap m t
 noremap M T
-noremap n b
-noremap N B
-noremap e ge
-noremap E gE
+noremap n ge
+noremap N gE
+noremap e b
+noremap E B
 noremap i e
 noremap I E
 noremap o w

@@ -114,10 +114,10 @@ noremap h g
 noremap H G
 if s:isCoding()
   " Coding
-  noremap , <C-f>
-  noremap . <C-b>
-  noremap < <C-d>
-  noremap > <C-u>
+  noremap < <C-f>
+  noremap > <C-b>
+  noremap , <C-d>
+  noremap . <C-u>
 else
   " Writing
   noremap , (

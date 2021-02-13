@@ -34,14 +34,14 @@ noremap <leader>K zb
 noremap <leader>? *
 " Previous instance of current word
 noremap <leader>H #
-" End of file / Goto line
-" noremap <leader>h G
 " Extra commands
 noremap <leader>z z
 " Hard Bol
 noremap <leader>l 0
-" Extra commands
+" Extra commands (alt)
 noremap <leader>g g
+" End of file / Goto line (alt)
+noremap <leader>G G
 noremap <leader><tab> K
 noremap <leader>ex Q
 " if s:isCoding()

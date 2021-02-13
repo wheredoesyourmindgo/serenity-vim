@@ -3,9 +3,9 @@ if exists('g:loaded_byoa') || &cp || v:version < 700
 endif
 let g:loaded_byoa = 1
 
-function! s:isCoding()
-  return !exists("g:byoa_writing") || ! g:byoa_writing
-endfunction
+" function! s:isCoding()
+"   return !exists("g:byoa_writing") || ! g:byoa_writing
+" endfunction
 
 " Don't use Surround default mappings
 let g:surround_no_mappings = 1
@@ -31,19 +31,21 @@ noremap <leader>z z " Extra commands
 noremap <leader>l 0 " Hard Bol
 noremap <leader><tab> K
 noremap <leader>ex Q
-if s:isCoding()
-  " Coding
-  noremap <leader>, (
-  noremap <leader>. )
-  noremap <leader>< {
-  noremap <leader>> }
-else
-  " Writing
-  noremap <leader>, <C-f>
-  noremap <leader>. <C-b>
-  noremap <leader>< <C-d>
-  noremap <leader>> <C-u>
-endif
+" if s:isCoding()
+"   " Coding
+"   noremap <leader>, (
+"   noremap <leader>. )
+"   noremap <leader>< {
+"   noremap <leader>> }
+" else
+"   " Writing
+"   noremap <leader>, <C-f>
+"   noremap <leader>. <C-b>
+"   noremap <leader>< <C-d>
+"   noremap <leader>> <C-u>
+" endif
+noremap <leader>, <C-f>
+noremap <leader>. <C-b>
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection 
 noremap <tab> >><esc>
@@ -96,9 +98,9 @@ noremap J F
 noremap l ^
 noremap L ,
 noremap u -
-noremap U _ 
+noremap U <C-d>
 noremap y +
-noremap Y +^
+noremap Y <C-u>
 " noremap ; ;
 noremap ' $
 noremap " ;
@@ -118,19 +120,23 @@ noremap k /
 noremap K ?
 noremap h g
 noremap H N
-if s:isCoding()
-  " Coding
-  noremap < <C-f>
-  noremap > <C-b>
-  noremap , <C-d>
-  noremap . <C-u>
-else
-  " Writing
-  noremap , (
-  noremap . )
-  noremap < {
-  noremap > }
-endif
+" if s:isCoding()
+"   " Coding
+"   noremap < <C-f>
+"   noremap > <C-b>
+"   noremap , <C-d>
+"   noremap . <C-u>
+" else
+"   " Writing
+"   noremap , (
+"   noremap . )
+"   noremap < {
+"   noremap > }
+" endif
+noremap , (
+noremap . )
+noremap < {
+noremap > }
 noremap / |
 noremap ? n
 " g mappings

@@ -3,9 +3,9 @@ if exists('g:loaded_byoa') || &cp || v:version < 700
 endif
 let g:loaded_byoa = 1
 
-" function! s:isCoding()
-"   return !exists("g:byoa_writing") || ! g:byoa_writing
-" endfunction
+function! s:isCoding()
+  return !exists("g:byoa_writing") || ! g:byoa_writing
+endfunction
 
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings
@@ -47,18 +47,25 @@ noremap <leader>G G
 noremap <leader><tab> K
 " Expert mode
 noremap <leader>x Q
-" if s:isCoding()
-"   " Coding
-"   noremap ...
-" else
-"   " Writing
-"   noremap ...
-" endif
 
-" Page Down
-noremap <leader>, <C-f>
-" Page Up
-noremap <leader>. <C-b>
+if s:isCoding()
+  " Coding
+  noremap <leader>, )
+  noremap <leader>. (
+  noremap <leader>< }
+  noremap <leader>> {
+else
+  " Writing
+  " Page Down halfscreen
+  noremap <leader>, <C-d>
+  " Page Up halfscreen
+  noremap <leader>. <C-u>
+  " Page Down fullscreen
+  noremap <leader>< <C-f>
+  " Page Up fullscreen
+  noremap <leader>> <C-b>
+endif
+
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
@@ -118,9 +125,9 @@ noremap J F
 noremap l ^
 noremap L ,
 noremap u +
-noremap U <C-d>
+noremap U <C-e>
 noremap y -
-noremap Y <C-u>
+noremap Y <C-y>
 " noremap ; ;
 noremap ' $
 noremap " ;
@@ -140,17 +147,19 @@ noremap k /
 noremap K ?
 noremap h g
 noremap H N
-" if s:isCoding()
-"   " Coding
-"   noremap ...
-" else
-"   " Writing
-"   noremap ...
-" endif
-noremap , )
-noremap . (
-noremap < }
-noremap > {
+if s:isCoding()
+  " Coding
+  noremap , <C-d>
+  noremap . <C-u>
+  noremap < <C-f>
+  noremap > <C-b>
+else
+  " Writing
+  noremap , )
+  noremap . (
+  noremap < }
+  noremap > {
+endif
 noremap / G
 noremap ? n
 " g mappings
@@ -229,5 +238,3 @@ noremap h<MiddleMouse> g<MiddleMouse>
 noremap h<RightMouse> g<RightMouse>
 noremap h<Tab> g<Tab>
 noremap h<Up> g<Up>
-
-

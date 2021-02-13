@@ -68,9 +68,9 @@ noremap <S-tab> <<<esc>
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@
 " Goto mark
-noremap <bs> `
+noremap <del> `
 " Goto mark bol
-noremap <del> '
+noremap <S-del> '
 " Visual Block Mode
 noremap <C-g> <C-v>
 noremap <C-v> <nop>

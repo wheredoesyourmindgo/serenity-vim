@@ -46,7 +46,7 @@ noremap <leader>G G
 " Help
 noremap <leader><tab> K
 " Expert mode
-noremap <leader>ex Q
+noremap <leader>x Q
 " if s:isCoding()
 "   " Coding
 "   noremap ...

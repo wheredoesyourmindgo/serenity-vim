@@ -7,16 +7,17 @@ let g:loaded_byoa = 1
 "   return !exists("g:byoa_writing") || ! g:byoa_writing
 " endfunction
 
+" Plugin order in .vimrc matters
 " Don't use Surround default mappings
 let g:surround_no_mappings = 1
-
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1
 
 " Set the mapping for this plugin so <leader>hlt mapping doesn't conflict with Vim Split <leader>h mapping.
 map <s-F10> <Plug>HiLinkTrace
-
+" Quit w/ save
 noremap <leader>qq ZZ
+" Quit w/o save
 noremap <leader>QQ ZQ
 " Screen Top
 noremap <leader>j H
@@ -42,34 +43,40 @@ noremap <leader>l 0
 noremap <leader>g g
 " End of file / Goto line (alt)
 noremap <leader>G G
+" Help
 noremap <leader><tab> K
+" Expert mode
 noremap <leader>ex Q
 " if s:isCoding()
 "   " Coding
-"   noremap <leader>, (
-"   noremap <leader>. )
-"   noremap <leader>< {
-"   noremap <leader>> }
+"   noremap ...
 " else
 "   " Writing
-"   noremap <leader>, <C-f>
-"   noremap <leader>. <C-b>
-"   noremap <leader>< <C-d>
-"   noremap <leader>> <C-u>
+"   noremap ...
 " endif
+
+" Page Down
 noremap <leader>, <C-f>
+" Page Up
 noremap <leader>. <C-b>
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
+" Indent
 noremap <tab> >><esc>
+" Un-indent
 noremap <S-tab> <<<esc>
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@
+" Goto mark
 noremap <bs> `
+" Goto mark bol
 noremap <del> '
+" Visual Block Mode
 noremap <C-g> <C-v>
 noremap <C-v> <nop>
+" Record macro
 noremap ! q
+" External filter
 noremap # !
 noremap ## !!
 " left r1
@@ -135,16 +142,10 @@ noremap h g
 noremap H N
 " if s:isCoding()
 "   " Coding
-"   noremap < <C-f>
-"   noremap > <C-b>
-"   noremap , <C-d>
-"   noremap . <C-u>
+"   noremap ...
 " else
 "   " Writing
-"   noremap , (
-"   noremap . )
-"   noremap < {
-"   noremap > }
+"   noremap ...
 " endif
 noremap , (
 noremap . )

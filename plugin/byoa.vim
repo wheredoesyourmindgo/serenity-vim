@@ -18,17 +18,28 @@ map <s-F10> <Plug>HiLinkTrace
 
 noremap <leader>qq ZZ
 noremap <leader>QQ ZQ
-noremap <leader>j H " Screen Top
-noremap <leader>m M " Screen Mid
-noremap <leader>k L " Screen Bottom
-noremap <leader>J zt " Scroll Top
-noremap <leader>M zz " Scroll Mid
-noremap <leader>K zb " Scroll Bottom
-noremap <leader>? * " Next instance of current word
-noremap <leader>H # " Previous instance of current word
-noremap <leader>h G " End of file / Goto line
-noremap <leader>z z " Extra commands
-noremap <leader>l 0 " Hard Bol
+" Screen Top
+noremap <leader>j H
+" Screen Mid
+noremap <leader>m M
+" Screen Bottom
+noremap <leader>k L
+" Scroll Top
+noremap <leader>J zt
+" Scroll Mid
+noremap <leader>M zz
+" Scroll Bottom
+noremap <leader>K zb
+" Next instance of current word
+noremap <leader>? *
+" Previous instance of current word
+noremap <leader>H #
+" End of file / Goto line
+noremap <leader>h G
+" Extra commands
+noremap <leader>z z
+" Hard Bol
+noremap <leader>l 0
 noremap <leader><tab> K
 noremap <leader>ex Q
 " if s:isCoding()

@@ -147,10 +147,10 @@ noremap H N
 "   " Writing
 "   noremap ...
 " endif
-noremap , (
-noremap . )
-noremap < {
-noremap > }
+noremap , )
+noremap . (
+noremap < }
+noremap > {
 noremap / G
 noremap ? n
 " g mappings

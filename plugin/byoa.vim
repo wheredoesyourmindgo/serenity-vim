@@ -40,6 +40,8 @@ noremap <leader>h G
 noremap <leader>z z
 " Hard Bol
 noremap <leader>l 0
+" Extra commands
+noremap <leader>g g
 noremap <leader><tab> K
 noremap <leader>ex Q
 " if s:isCoding()
@@ -148,7 +150,7 @@ noremap , (
 noremap . )
 noremap < {
 noremap > }
-noremap / |
+" noremap / |
 noremap ? n
 " g mappings
 noremap h# g#

@@ -58,7 +58,7 @@ noremap <leader>ex Q
 noremap <leader>, <C-f>
 noremap <leader>. <C-b>
 
-" <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection 
+" <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 noremap <tab> >><esc>
 noremap <S-tab> <<<esc>
 " re-mapping shift-backspace seems impossible

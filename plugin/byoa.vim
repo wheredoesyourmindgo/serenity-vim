@@ -97,9 +97,9 @@ noremap j f
 noremap J F
 noremap l ^
 noremap L ,
-noremap u -
+noremap u +
 noremap U <C-d>
-noremap y +
+noremap y -
 noremap Y <C-u>
 " noremap ; ;
 noremap ' $

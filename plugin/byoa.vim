@@ -18,11 +18,17 @@ map <s-F10> <Plug>HiLinkTrace
 
 noremap <leader>qq ZZ
 noremap <leader>QQ ZQ
-noremap <leader>l H
-noremap <leader>n M
-noremap <leader>h L
-noremap <leader>k *
-noremap <leader>K #
+noremap <leader>j H " Screen Top
+noremap <leader>m M " Screen Mid
+noremap <leader>k L " Screen Bottom
+noremap <leader>J zt " Scroll Top
+noremap <leader>M zz " Scroll Mid
+noremap <leader>K zb " Scroll Bottom
+noremap <leader>? * " Next instance of current word
+noremap <leader>H # " Previous instance of current word
+noremap <leader>h G " End of file / Goto line
+noremap <leader>z z " Extra commands
+noremap <leader>l 0 " Hard Bol
 noremap <leader><tab> K
 noremap <leader>ex Q
 if s:isCoding()
@@ -87,15 +93,15 @@ noremap V "
 " right r1
 noremap j f
 noremap J F
-noremap l 0
-noremap L _
-noremap u ^
-noremap U +
-noremap y $
-noremap Y -
+noremap l ^
+noremap L ,
+noremap u -
+noremap U _ 
+noremap y +
+noremap Y +^
 " noremap ; ;
-noremap ' ;
-noremap " ,
+noremap ' $
+noremap " ;
 " right r2
 noremap m t
 noremap M T
@@ -111,7 +117,7 @@ noremap O E
 noremap k /
 noremap K ?
 noremap h g
-noremap H G
+noremap H N
 if s:isCoding()
   " Coding
   noremap < <C-f>
@@ -125,8 +131,8 @@ else
   noremap < {
   noremap > }
 endif
-noremap / n
-noremap ? N
+noremap / |
+noremap ? n
 " g mappings
 noremap h# g#
 noremap h$ g$

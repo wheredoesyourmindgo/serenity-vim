@@ -35,7 +35,7 @@ noremap <leader>? *
 " Previous instance of current word
 noremap <leader>H #
 " End of file / Goto line
-noremap <leader>h G
+" noremap <leader>h G
 " Extra commands
 noremap <leader>z z
 " Hard Bol
@@ -150,7 +150,7 @@ noremap , (
 noremap . )
 noremap < {
 noremap > }
-" noremap / |
+noremap / G
 noremap ? n
 " g mappings
 noremap h# g#

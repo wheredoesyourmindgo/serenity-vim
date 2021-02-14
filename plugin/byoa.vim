@@ -7,6 +7,20 @@ function! s:isCoding()
   return !exists("g:byoa_writing") || ! g:byoa_writing
 endfunction
 
+if exists("g:byoa_keymap")
+  let s:byoa_keymap = g:byoa_keymap
+else
+  let s:byoa_keymap = 'colemak-dh_no-semicolon'
+endif
+
+if s:byoa_keymap == 'colemak-dh_no-semicolon'
+  let s:r1c10 = "'"
+  let s:R1C10 = "\""
+elseif s:byoa_keymap == 'qwerty'
+  let s:r1c10 = "p"
+  let s:R1C10 = "P"
+endif
+
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings
 let g:surround_no_mappings = 1
@@ -15,6 +29,9 @@ let g:fugitive_no_maps = 1
 
 " Set the mapping for this plugin so <leader>hlt mapping doesn't conflict with Vim Split <leader>h mapping.
 map <s-F10> <Plug>HiLinkTrace
+
+" Leaders --------------------------
+
 " Quit w/ save
 noremap <leader>q ZZ
 " Quit w/o save
@@ -66,6 +83,7 @@ else
   noremap <leader>> <C-b>
 endif
 
+" Mod Outer/Mod/Symbol Commands --------------------------
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
@@ -86,6 +104,9 @@ noremap ! q
 " External filter
 noremap # !
 noremap ## !!
+
+" Alpha Commands --------------------------
+
 " left r1
 noremap q ~
 noremap Q J
@@ -129,8 +150,8 @@ noremap U <C-e>
 noremap y -
 noremap Y <C-y>
 " noremap ; ;
-noremap ' $
-noremap " ;
+execute 'noremap ' . s:r1c10 . ' $'
+execute 'noremap ' . s:R1C10 . ' ;'
 " right r2
 noremap m t
 noremap M T

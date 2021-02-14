@@ -16,9 +16,9 @@ let g:fugitive_no_maps = 1
 " Set the mapping for this plugin so <leader>hlt mapping doesn't conflict with Vim Split <leader>h mapping.
 map <s-F10> <Plug>HiLinkTrace
 " Quit w/ save
-noremap <leader>qq ZZ
+noremap <leader>q ZZ
 " Quit w/o save
-noremap <leader>QQ ZQ
+noremap <leader>Q ZQ
 " Screen Top
 noremap <leader>j H
 " Screen Mid

@@ -122,7 +122,7 @@ noremap V "
 " right r1
 noremap j f
 noremap J F
-noremap l ^
+noremap l _
 noremap L ,
 noremap u +
 noremap U <C-e>

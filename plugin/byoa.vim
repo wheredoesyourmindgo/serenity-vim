@@ -37,17 +37,17 @@ noremap <leader>q ZZ
 " Quit w/o save
 noremap <leader>Q ZQ
 " Screen Top
-noremap <leader>y H
+noremap <leader>. H
 " Screen Mid
-noremap <leader>j M
+noremap <leader>k M
 " Screen Bottom
-noremap <leader>u L
+noremap <leader>, L
 " Scroll Top
-noremap <leader>. zt
+noremap <leader>y zt
 " Scroll Mid
-noremap <leader>k zz
+noremap <leader>j zz
 " Scroll Bottom
-noremap <leader>, zb
+noremap <leader>u zb
 " Next instance of current word
 noremap <leader>? *
 " Previous instance of current word

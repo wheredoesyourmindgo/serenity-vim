@@ -3,9 +3,9 @@ if exists('g:loaded_byoa') || &cp || v:version < 700
 endif
 let g:loaded_byoa = 1
 
-function! s:isCoding()
-  return !exists("g:byoa_writing") || ! g:byoa_writing
-endfunction
+" function! s:isCoding()
+"   return !exists("g:byoa_writing") || ! g:byoa_writing
+" endfunction
 
 if exists("g:byoa_keymap")
   let s:byoa_keymap = g:byoa_keymap
@@ -37,17 +37,17 @@ noremap <leader>q ZZ
 " Quit w/o save
 noremap <leader>Q ZQ
 " Screen Top
-noremap <leader>j H
+noremap <leader>y H
 " Screen Mid
-noremap <leader>m M
+noremap <leader>j M
 " Screen Bottom
-noremap <leader>k L
+noremap <leader>u L
 " Scroll Top
-noremap <leader>J zt
+noremap <leader>. zt
 " Scroll Mid
-noremap <leader>M zz
+noremap <leader>k zz
 " Scroll Bottom
-noremap <leader>K zb
+noremap <leader>, zb
 " Next instance of current word
 noremap <leader>? *
 " Previous instance of current word
@@ -65,23 +65,11 @@ noremap <leader><tab> K
 " Expert mode
 noremap <leader>x Q
 
-if s:isCoding()
-  " Coding
-  noremap <leader>, )
-  noremap <leader>. (
-  noremap <leader>< }
-  noremap <leader>> {
-else
-  " Writing
-  " Page Down halfscreen
-  noremap <leader>, <C-d>
-  " Page Up halfscreen
-  noremap <leader>. <C-u>
-  " Page Down fullscreen
-  noremap <leader>< <C-f>
-  " Page Up fullscreen
-  noremap <leader>> <C-b>
-endif
+noremap <leader>n gE
+noremap <leader>e B
+noremap <leader>i W
+noremap <leader>o E
+
 
 " Mod Outer/Mod/Symbol Commands --------------------------
 
@@ -156,31 +144,26 @@ execute 'noremap ' . s:R1C10 . ' ;'
 noremap m t
 noremap M T
 noremap n ge
-noremap N gE
+" noremap N gE
+noremap N {
 noremap e b
-noremap E B
+" noremap E B
+noremap E (
 noremap i w
-noremap I W
+" noremap I W
+noremap I )
 noremap o e
-noremap O E
+" noremap O E
+noremap O }
 " right r3
 noremap k /
 noremap K ?
 noremap h g
 noremap H N
-if s:isCoding()
-  " Coding
-  noremap , <C-d>
-  noremap . <C-u>
-  noremap < <C-f>
-  noremap > <C-b>
-else
-  " Writing
-  noremap , )
-  noremap . (
-  noremap < }
-  noremap > {
-endif
+noremap , <C-d>
+noremap . <C-u>
+noremap < <C-f>
+noremap > <C-b>
 noremap / G
 noremap ? n
 " g mappings

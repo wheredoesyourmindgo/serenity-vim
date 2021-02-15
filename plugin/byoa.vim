@@ -64,10 +64,13 @@ noremap <leader>G G
 noremap <leader><tab> K
 " Expert mode
 noremap <leader>x Q
-
+" Prev. end word (non-whitespace)
 noremap <leader>n gE
+" Prev. beginning word (non-whitespace)
 noremap <leader>e B
+" Prev. beginning word (non-whitespace)
 noremap <leader>i W
+" Prev. end word (non-whitespace)
 noremap <leader>o E
 
 

@@ -60,8 +60,6 @@ noremap <leader>l 0
 noremap <leader>g g
 " End of file / Goto line (alt)
 noremap <leader>G G
-" Help
-noremap <leader><tab> K
 " Expert mode
 noremap <leader>x Q
 " Prev. end word (non-whitespace)
@@ -72,6 +70,12 @@ noremap <leader>e B
 noremap <leader>i W
 " Prev. end word (non-whitespace)
 noremap <leader>o E
+" Help
+noremap <leader>b K
+" Goto mark
+noremap <leader>v `
+" Goto mark bol
+noremap <leader>V '
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------
@@ -83,10 +87,6 @@ noremap <tab> >><esc>
 noremap <S-tab> <<<esc>
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@
-" Goto mark
-noremap <del> `
-" Goto mark bol
-noremap <S-del> '
 " Visual Block Mode
 noremap <C-g> <C-v>
 noremap <C-v> <nop>

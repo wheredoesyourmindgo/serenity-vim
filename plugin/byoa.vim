@@ -10,12 +10,12 @@ let g:loaded_byoa = 1
 if exists("g:byoa_keymap")
   let s:byoa_keymap = g:byoa_keymap
 else
-  let s:byoa_keymap = 'colemak-dh_no-semicolon'
+  let s:byoa_keymap = 'colemak-dh'
 endif
 
-if s:byoa_keymap == 'colemak-dh_no-semicolon'
-  let s:r1c10 = "'"
-  let s:R1C10 = "\""
+if s:byoa_keymap == 'colemak-dh'
+  let s:r1c10 = ";"
+  let s:R1C10 = ":"
 elseif s:byoa_keymap == 'qwerty'
   let s:r1c10 = "p"
   let s:R1C10 = "P"

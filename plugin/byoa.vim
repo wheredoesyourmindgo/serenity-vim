@@ -16,6 +16,7 @@ endif
 if s:byoa_keymap == 'colemak-dh'
   let s:r1c10 = ";"
   let s:R1C10 = ":"
+  let s:r2c11 = "'"
 elseif s:byoa_keymap == 'qwerty'
   let s:r1c10 = "p"
   let s:R1C10 = "P"
@@ -158,6 +159,7 @@ noremap I )
 noremap o e
 " noremap O E
 noremap O }
+execute 'noremap ' . s:R2C11 . ' :'
 " right r3
 noremap k /
 noremap K ?

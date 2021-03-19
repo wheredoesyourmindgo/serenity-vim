@@ -81,6 +81,10 @@ noremap <leader>V '
 " noremap <leader><space> .
 " Save
 noremap <leader><cr> :w<cr>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 934e86938d4168003ac2536a71a1fd0cbf42bcc2
 
 " Mod Outer/Mod/Symbol Commands --------------------------
 

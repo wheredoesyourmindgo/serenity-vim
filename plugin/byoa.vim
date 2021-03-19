@@ -114,7 +114,7 @@ noremap F C
 noremap p .
 noremap P ~
 " noremap b X
-noremap <bs>X
+noremap <bs> X
 noremap b J
 " left r2
 noremap a s

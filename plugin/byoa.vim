@@ -165,7 +165,7 @@ noremap I )
 noremap o e
 " noremap O E
 noremap O }
-execute 'noremap ' . s:r2c11 . ' :'
+execute 'noremap ' . s:R2C11 . ' :'
 " right r3
 noremap k /
 noremap K ?

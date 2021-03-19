@@ -77,6 +77,10 @@ noremap <leader>b K
 noremap <leader>v `
 " Goto mark bol
 noremap <leader>V '
+" Repeat command
+noremap <leader><space> .
+" Save
+noremap <leader><cr> :w<cr>
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------
@@ -100,16 +104,17 @@ noremap ## !!
 " Alpha Commands --------------------------
 
 " left r1
-noremap q ~
-noremap Q J
-noremap w u
-noremap W <C-r>
-noremap f x
-noremap F X
-" noremap p p
-" noremap P P
-noremap b .
-noremap B U
+noremap q X 
+noremap Q "
+noremap ! <C-r>
+noremap w r
+noremap W R
+noremap f c
+noremap F C
+noremap p ~
+noremap P ~
+noremap b x
+noremap B J
 " left r2
 noremap a s
 noremap A S
@@ -122,16 +127,16 @@ noremap T O
 noremap g v
 noremap G V
 " left r3
-noremap z r
-noremap Z R
-noremap x c
-noremap X C
-noremap c d
-noremap C D
-noremap d y
-noremap D Y
-noremap v m
-noremap V "
+noremap z u
+noremap Z U
+noremap x d
+noremap X D
+noremap c y
+noremap C Y
+noremap d p
+noremap D P
+noremap v <C-r>
+noremap V m
 " right r1
 noremap j f
 noremap J F

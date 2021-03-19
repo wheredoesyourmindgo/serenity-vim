@@ -107,7 +107,7 @@ noremap <bs> X
 
 " left r1
 noremap q ~
-noremap Q "
+" noremap Q
 noremap w r
 noremap W R
 noremap f c
@@ -115,7 +115,7 @@ noremap F C
 noremap p x
 noremap P J
 noremap b .
-" noremap B
+noremap B m
 " left r2
 noremap a s
 noremap A S

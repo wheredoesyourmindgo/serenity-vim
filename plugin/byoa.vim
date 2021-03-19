@@ -78,13 +78,10 @@ noremap <leader>v `
 " Goto mark bol
 noremap <leader>V '
 " Repeat command
-" noremap <leader><space> .
+" noremap <leader><space>
 " Save
-noremap <leader><cr> :w<cr>
-<<<<<<< HEAD
-=======
+noremap <leader><cr> :w<cr
 
->>>>>>> 934e86938d4168003ac2536a71a1fd0cbf42bcc2
 
 " Mod Outer/Mod/Symbol Commands --------------------------
 
@@ -107,18 +104,16 @@ noremap ## !!
 " Alpha Commands --------------------------
 
 " left r1
-noremap q x
-noremap Q "
-noremap ! <C-r>
-noremap w r
-noremap W R
-noremap f c
-noremap F C
-noremap p .
-noremap P ~
-" noremap b X
-noremap <bs> X
-noremap b J
+noremap q ~
+noremap Q J
+noremap w u
+noremap W <C-r>
+noremap f x
+noremap F X
+" noremap p p
+" noremap P P
+noremap b .
+noremap B U
 " left r2
 noremap a s
 noremap A S
@@ -131,16 +126,16 @@ noremap T O
 noremap g v
 noremap G V
 " left r3
-noremap z u
-noremap Z U
-noremap x d
-noremap X D
-noremap c y
-noremap C Y
-noremap d p
-noremap D P
-noremap v <C-r>
-noremap V m
+noremap z r
+noremap Z R
+noremap x c
+noremap X C
+noremap c d
+noremap C D
+noremap d y
+noremap D Y
+noremap v m
+noremap V "
 " right r1
 noremap j f
 noremap J F
@@ -168,7 +163,7 @@ noremap I )
 noremap o e
 " noremap O E
 noremap O }
-execute 'noremap ' . s:R2C11 . ' :'
+execute 'noremap ' . s:r2c11 . ' :'
 " right r3
 noremap k /
 noremap K ?

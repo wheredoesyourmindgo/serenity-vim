@@ -104,7 +104,7 @@ noremap ## !!
 " Alpha Commands --------------------------
 
 " left r1
-noremap q x 
+noremap q x
 noremap Q "
 noremap ! <C-r>
 noremap w r

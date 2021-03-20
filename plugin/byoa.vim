@@ -107,15 +107,15 @@ noremap <bs> X
 
 " left r1
 noremap q ~
-" noremap Q
+noremap Q m
 noremap w r
 noremap W R
 noremap f c
 noremap F C
 noremap p x
 noremap P J
-noremap b m
-noremap B "
+noremap b <Plug>(wildfire-fuel)
+noremap B <Plug>(wildfire-water)
 " left r2
 noremap a s
 noremap A S
@@ -137,7 +137,7 @@ noremap C Y
 noremap d p
 noremap D P
 noremap v <C-r>
-" noremap V
+noremap V "
 " right r1
 noremap j f
 noremap J F

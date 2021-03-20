@@ -114,8 +114,8 @@ noremap f c
 noremap F C
 noremap p x
 noremap P J
-noremap b <Plug>(wildfire-fuel)
-noremap B <Plug>(wildfire-water)
+map b <Plug>(wildfire-fuel)
+vmap B <Plug>(wildfire-water)
 " left r2
 noremap a s
 noremap A S

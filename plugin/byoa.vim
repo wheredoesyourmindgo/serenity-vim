@@ -78,7 +78,7 @@ noremap <leader>v `
 " Goto mark bol
 noremap <leader>V '
 " Repeat command
-" noremap <leader><space>
+noremap <leader><space> .
 " Save
 noremap <leader><cr> :w<cr>
 
@@ -114,8 +114,8 @@ noremap f c
 noremap F C
 noremap p x
 noremap P J
-noremap b .
-noremap B m
+noremap b m
+noremap B "
 " left r2
 noremap a s
 noremap A S
@@ -137,7 +137,7 @@ noremap C Y
 noremap d p
 noremap D P
 noremap v <C-r>
-noremap V m
+" noremap V
 " right r1
 noremap j f
 noremap J F

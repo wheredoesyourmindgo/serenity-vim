@@ -102,6 +102,8 @@ noremap # !
 noremap ## !!
 " Backspace
 noremap <bs> X
+" Delete (additional)
+noremap <del> x
 
 " Alpha Commands --------------------------
 

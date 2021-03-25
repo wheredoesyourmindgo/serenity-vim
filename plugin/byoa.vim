@@ -78,9 +78,7 @@ noremap <leader>v `
 " Goto mark bol
 noremap <leader>V '
 " Repeat command
-noremap <leader><space> .
-" Save
-noremap <leader><cr> :w<cr>
+noremap <leader><cr> .
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------

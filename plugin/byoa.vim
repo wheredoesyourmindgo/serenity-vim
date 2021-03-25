@@ -74,9 +74,9 @@ noremap <leader>o E
 " Help
 noremap <leader>b K
 " Goto mark
-noremap <leader>v `
+noremap <leader>m `
 " Goto mark bol
-noremap <leader>V '
+noremap <leader>M '
 " Repeat command
 noremap <leader><cr> .
 

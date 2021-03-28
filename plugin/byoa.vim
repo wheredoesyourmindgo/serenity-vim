@@ -27,6 +27,8 @@ endif
 let g:surround_no_mappings = 1
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1
+" Don't use Clever-f mappings
+let g:clever_f_not_overwrites_standard_mappings = 1
 
 " Set the mapping for this plugin so <leader>hlt mapping doesn't conflict with Vim Split <leader>h mapping.
 map <s-F10> <Plug>HiLinkTrace
@@ -139,8 +141,21 @@ noremap D P
 noremap v <C-r>
 noremap V "
 " right r1
-noremap j f
-noremap J F
+" noremap j f
+" noremap J F
+nmap j <Plug>(clever-f-f)
+xmap j <Plug>(clever-f-f)
+omap j <Plug>(clever-f-f)
+nmap J <Plug>(clever-f-F)
+xmap J <Plug>(clever-f-F)
+omap J <Plug>(clever-f-F)
+nmap m <Plug>(clever-f-t)
+xmap m <Plug>(clever-f-t)
+omap m <Plug>(clever-f-t)
+nmap M <Plug>(clever-f-T)
+xmap M <Plug>(clever-f-T)
+omap M <Plug>(clever-f-T)
+
 noremap l _
 noremap L ,
 noremap u +
@@ -151,8 +166,9 @@ noremap Y <C-y>
 execute 'noremap ' . s:r1c10 . ' $'
 execute 'noremap ' . s:R1C10 . ' ;'
 " right r2
-noremap m t
-noremap M T
+" See clever-f usage above
+" noremap m t
+" noremap M T
 noremap n ge
 " noremap N gE
 noremap N {

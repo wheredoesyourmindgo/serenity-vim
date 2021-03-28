@@ -29,6 +29,13 @@ let g:surround_no_mappings = 1
 let g:fugitive_no_maps = 1
 " Don't use Clever-f mappings
 let g:clever_f_not_overwrites_standard_mappings = 1
+" Don't use Sandwhich mappings
+let g:sandwich_no_default_key_mappings = 1
+
+silent! nmap <unique><silent> ad <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> ar <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> adb <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> arb <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 
 " Set the mapping for this plugin so <leader>hlt mapping doesn't conflict with Vim Split <leader>h mapping.
 map <s-F10> <Plug>HiLinkTrace

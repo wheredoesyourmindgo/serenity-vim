@@ -25,14 +25,14 @@ endif
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings
 let g:surround_no_mappings = 1
-nmap dt  <Plug>Dsurround
-nmap ct  <Plug>Csurround
-nmap cT  <Plug>CSurround
-nmap yt  <Plug>Ysurround
-nmap yT  <Plug>YSurround
-nmap ytt <Plug>Yssurround
-nmap yTt <Plug>YSsurround
-nmap yTT <Plug>YSsurround
+nmap xt  <Plug>Dsurround
+nmap ft  <Plug>Csurround
+nmap fT  <Plug>CSurround
+nmap ct  <Plug>Ysurround
+nmap cT  <Plug>YSurround
+nmap ctt <Plug>Yssurround
+nmap cTt <Plug>YSsurround
+nmap cTT <Plug>YSsurround
 xmap A   <Plug>VSurround
 xmap gA  <Plug>VgSurround
 

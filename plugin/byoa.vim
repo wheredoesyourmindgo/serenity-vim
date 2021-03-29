@@ -276,3 +276,47 @@ noremap h<MiddleMouse> g<MiddleMouse>
 noremap h<RightMouse> g<RightMouse>
 noremap h<Tab> g<Tab>
 noremap h<Up> g<Up>
+
+
+" Text Object Selection
+onoremap aw aw
+xnoremap aw aw
+onoremap iw iw
+xnoremap iw iw
+onoremap aW aW
+xnoremap aW aW
+onoremap iW iW
+xnoremap iW iW
+
+onoremap as as
+onoremap is is
+onoremap ai sp
+onoremap ip ip
+onoremap a] a]
+onoremap a[ a[
+onoremap i] i]
+onoremap i[ i[
+onoremap a) a)
+onoremap a( a(
+onoremap ab ab
+onoremap i) i)
+onoremap i( i(
+onoremap ib ib
+onoremap a> a>
+onoremap a< a<
+onoremap i> i>
+onoremap i< i<
+onoremap at at
+onoremap it it
+onoremap a} a}
+onoremap a{ a{
+onoremap aB aB
+onoremap i} i}	
+onoremap i{ i{
+onoremap iB iB
+onoremap a" a"
+onoremap a' a'
+onoremap a` a`
+onoremap i" i"
+onoremap i' i'
+onoremap i` i`

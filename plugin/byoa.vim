@@ -26,16 +26,30 @@ endif
 " Don't use Surround default mappings
 let g:surround_no_mappings = 1
 let g:surround_no_insert_mappings = 1
-nmap xa  <Plug>Dsurround
-nmap fa  <Plug>Csurround
-nmap fA  <Plug>CSurround
-nmap ca  <Plug>Ysurround
-nmap cA  <Plug>YSurround
-nmap caa <Plug>Yssurround
-nmap cAa <Plug>YSsurround
-nmap cAA <Plug>YSsurround
-xmap A   <Plug>VSurround
-xmap gA  <Plug>VgSurround
+" nmap xa  <Plug>Dsurround
+" nmap fa  <Plug>Csurround
+" nmap fA  <Plug>CSurround
+" nmap ca  <Plug>Ysurround
+" nmap cA  <Plug>YSurround
+" nmap caa <Plug>Yssurround
+" nmap cAa <Plug>YSsurround
+" nmap cAA <Plug>YSsurround
+" xmap A   <Plug>VSurround
+" xmap gA  <Plug>VgSurround
+let g:sandwich_no_default_key_mappings = 1
+silent! nmap <unique><silent> xa <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> fa <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> xab <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> fab <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+let g:operator_sandwich_no_default_key_mappings = 1
+" add
+silent! nmap <unique> ca <Plug>(operator-sandwich-add)
+silent! xmap <unique> ca <Plug>(operator-sandwich-add)
+silent! omap <unique> ca <Plug>(operator-sandwich-g@)
+" delete
+silent! xmap <unique> cx <Plug>(operator-sandwich-delete)
+" replace
+silent! xmap <unique> cf <Plug>(operator-sandwich-replace)
 
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1

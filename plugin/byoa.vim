@@ -25,35 +25,22 @@ endif
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings
 let g:surround_no_mappings = 1
+nmap dt  <Plug>Dsurround
+nmap ct  <Plug>Csurround
+nmap cT  <Plug>CSurround
+nmap yt  <Plug>Ysurround
+nmap yT  <Plug>YSurround
+nmap ytt <Plug>Yssurround
+nmap yTt <Plug>YSsurround
+nmap yTT <Plug>YSsurround
+xmap A   <Plug>VSurround
+xmap gA  <Plug>VgSurround
+
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1
 " Don't use Clever-f mappings
 let g:clever_f_not_overwrites_standard_mappings = 1
 
-" Don't use Sandwhich mappings
-let g:sandwich_no_default_key_mappings = 1
-silent! nmap <unique><silent> ad <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> ar <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> adb <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> arb <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-let g:operator_sandwich_no_default_key_mappings = 1
-" add
-silent! nmap <unique> aa <Plug>(operator-sandwich-add)
-silent! xmap <unique> aa <Plug>(operator-sandwich-add)
-silent! omap <unique> aa <Plug>(operator-sandwich-g@)
-" delete
-silent! xmap <unique> ad <Plug>(operator-sandwich-delete)
-" replace
-silent! xmap <unique> ar <Plug>(operator-sandwich-replace)
-let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> ib <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> ib <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> ab <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> ab <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> is <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> is <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> as <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> as <Plug>(textobj-sandwich-query-a)
 
 " Set the mapping for this plugin so <leader>hlt mapping doesn't conflict with Vim Split <leader>h mapping.
 map <s-F10> <Plug>HiLinkTrace

@@ -309,8 +309,8 @@ onoremap as as
 xnoremap as as
 onoremap is is
 xnoremap is is
-onoremap ai sp
-xnoremap ai sp
+onoremap ap ap
+xnoremap ap ap
 onoremap ip ip
 xnoremap ip ip
 onoremap a] a]

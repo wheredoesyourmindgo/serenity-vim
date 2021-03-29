@@ -53,6 +53,8 @@ silent! omap <unique> sa <Plug>(operator-sandwich-g@)
 silent! xmap <unique> sx <Plug>(operator-sandwich-delete)
 " replace
 silent! xmap <unique> sf <Plug>(operator-sandwich-replace)
+" TODO - The default mappings cause a timeout when using change-* ("f"). Either change mappings or omit.
+let g:textobj_sandwich_no_default_key_mappings = 1
 
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1

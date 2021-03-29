@@ -33,8 +33,8 @@ nmap cT  <Plug>YSurround
 nmap ctt <Plug>Yssurround
 nmap cTt <Plug>YSsurround
 nmap cTT <Plug>YSsurround
-xmap A   <Plug>VSurround
-xmap gA  <Plug>VgSurround
+xmap T   <Plug>VSurround
+xmap gT  <Plug>VgSurround
 
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1
@@ -138,7 +138,8 @@ noremap R I
 noremap s a
 noremap S A
 noremap t o
-noremap T O
+" T reserved for Vim Surround in Selection mode
+nnoremap T O
 noremap g v
 noremap G V
 " left r3

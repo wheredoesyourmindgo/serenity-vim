@@ -45,6 +45,15 @@ silent! omap <unique> aa <Plug>(operator-sandwich-g@)
 silent! xmap <unique> ad <Plug>(operator-sandwich-delete)
 " replace
 silent! xmap <unique> ar <Plug>(operator-sandwich-replace)
+let g:textobj_sandwich_no_default_key_mappings = 1
+silent! omap <unique> rb <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> rb <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> sb <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> sb <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> rs <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> rs <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> ss <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> ss <Plug>(textobj-sandwich-query-a)
 
 " Set the mapping for this plugin so <leader>hlt mapping doesn't conflict with Vim Split <leader>h mapping.
 map <s-F10> <Plug>HiLinkTrace

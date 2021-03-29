@@ -31,6 +31,7 @@ let g:fugitive_no_maps = 1
 let g:clever_f_not_overwrites_standard_mappings = 1
 " Don't use Sandwhich mappings
 let g:sandwich_no_default_key_mappings = 1
+let g:operator_sandwich_no_default_key_mappings = 1
 
 silent! nmap <unique><silent> ad <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
 silent! nmap <unique><silent> ar <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)

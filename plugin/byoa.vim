@@ -172,32 +172,32 @@ noremap D P
 noremap v <C-r>
 noremap V "
 " right r1
-" noremap j f
-" noremap J F
-nmap j <Plug>(clever-f-f)
-xmap j <Plug>(clever-f-f)
-omap j <Plug>(clever-f-f)
-nmap J <Plug>(clever-f-F)
-xmap J <Plug>(clever-f-F)
-omap J <Plug>(clever-f-F)
-nmap m <Plug>(clever-f-t)
-xmap m <Plug>(clever-f-t)
-omap m <Plug>(clever-f-t)
-nmap M <Plug>(clever-f-T)
-xmap M <Plug>(clever-f-T)
-omap M <Plug>(clever-f-T)
+noremap j f
+noremap J F
+" nmap j <Plug>(clever-f-f)
+" xmap j <Plug>(clever-f-f)
+" omap j <Plug>(clever-f-f)
+" nmap J <Plug>(clever-f-F)
+" xmap J <Plug>(clever-f-F)
+" omap J <Plug>(clever-f-F)
+" nmap m <Plug>(clever-f-t)
+" xmap m <Plug>(clever-f-t)
+" omap m <Plug>(clever-f-t)
+" nmap M <Plug>(clever-f-T)
+" xmap M <Plug>(clever-f-T)
+" omap M <Plug>(clever-f-T)
 
 noremap l _
-" noremap L ,
-nmap L <Plug>(clever-f-repeat-back)
+noremap L ,
+" nmap L <Plug>(clever-f-repeat-back)
 noremap u +
 noremap U <C-e>
 noremap y -
 noremap Y <C-y>
 " noremap ; ;
 execute 'noremap ' . s:r1c10 . ' $'
-" execute 'noremap ' . s:R1C10 . ' ;'
-execute 'nmap ' . s:R1C10 . ' <Plug>(clever-f-repeat-forward)'
+execute 'noremap ' . s:R1C10 . ' ;'
+" execute 'nmap ' . s:R1C10 . ' <Plug>(clever-f-repeat-forward)'
 " right r2
 " See clever-f usage above
 " noremap m t

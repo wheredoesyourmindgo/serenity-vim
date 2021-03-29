@@ -36,6 +36,9 @@ let g:surround_no_insert_mappings = 1
 " nmap cAA <Plug>YSsurround
 " xmap A   <Plug>VSurround
 " xmap gA  <Plug>VgSurround
+
+" Don't use Sandwhich default mappings
+" The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
 let g:sandwich_no_default_key_mappings = 1
 silent! nmap <unique><silent> xa <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
 silent! nmap <unique><silent> fa <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
@@ -45,7 +48,7 @@ let g:operator_sandwich_no_default_key_mappings = 1
 " add
 silent! nmap <unique> ca <Plug>(operator-sandwich-add)
 silent! xmap <unique> sa <Plug>(operator-sandwich-add)
-silent! omap <unique> gA <Plug>(operator-sandwich-g@)
+silent! omap <unique> hA <Plug>(operator-sandwich-g@)
 " delete
 silent! xmap <unique> sx <Plug>(operator-sandwich-delete)
 " replace

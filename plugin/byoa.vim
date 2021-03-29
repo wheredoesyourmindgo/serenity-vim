@@ -48,7 +48,7 @@ let g:operator_sandwich_no_default_key_mappings = 1
 " add
 silent! nmap <unique> ca <Plug>(operator-sandwich-add)
 silent! xmap <unique> sa <Plug>(operator-sandwich-add)
-silent! omap <unique> hA <Plug>(operator-sandwich-g@)
+silent! omap <unique> sa <Plug>(operator-sandwich-g@)
 " delete
 silent! xmap <unique> sx <Plug>(operator-sandwich-delete)
 " replace

@@ -188,14 +188,16 @@ xmap M <Plug>(clever-f-T)
 omap M <Plug>(clever-f-T)
 
 noremap l _
-noremap L ,
+" noremap L ,
+noremap L <Plug>(clever-f-repeat-back)
 noremap u +
 noremap U <C-e>
 noremap y -
 noremap Y <C-y>
 " noremap ; ;
 execute 'noremap ' . s:r1c10 . ' $'
-execute 'noremap ' . s:R1C10 . ' ;'
+" execute 'noremap ' . s:R1C10 . ' ;'
+execute 'noremap ' . s:R1C10 . ' <Plug>(clever-f-repeat-forward)'
 " right r2
 " See clever-f usage above
 " noremap m t

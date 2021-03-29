@@ -199,9 +199,9 @@ execute 'noremap ' . s:r1c10 . ' $'
 execute 'noremap ' . s:R1C10 . ' ;'
 " execute 'nmap ' . s:R1C10 . ' <Plug>(clever-f-repeat-forward)'
 " right r2
-" See clever-f usage above
-" noremap m t
-" noremap M T
+" comment out these lines when using clever-f
+noremap m t
+noremap M T
 noremap n ge
 " noremap N gE
 noremap N {

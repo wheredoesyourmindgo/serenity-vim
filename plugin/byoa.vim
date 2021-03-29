@@ -44,12 +44,12 @@ silent! nmap <unique><silent> fab <Plug>(operator-sandwich-replace)<Plug>(operat
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
 silent! nmap <unique> ca <Plug>(operator-sandwich-add)
-silent! xmap <unique> A <Plug>(operator-sandwich-add)
+silent! xmap <unique> sa <Plug>(operator-sandwich-add)
 silent! omap <unique> gA <Plug>(operator-sandwich-g@)
 " delete
-silent! xmap <unique> X <Plug>(operator-sandwich-delete)
+silent! xmap <unique> sx <Plug>(operator-sandwich-delete)
 " replace
-silent! xmap <unique> F <Plug>(operator-sandwich-replace)
+silent! xmap <unique> sf <Plug>(operator-sandwich-replace)
 
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1

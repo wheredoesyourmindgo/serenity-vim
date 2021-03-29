@@ -25,6 +25,7 @@ endif
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings
 let g:surround_no_mappings = 1
+let g:surround_no_insert_mappings = 1
 nmap xa  <Plug>Dsurround
 nmap fa  <Plug>Csurround
 nmap fA  <Plug>CSurround

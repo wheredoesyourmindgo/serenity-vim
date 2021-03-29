@@ -45,6 +45,15 @@ silent! omap <unique> aa <Plug>(operator-sandwich-g@)
 silent! xmap <unique> ad <Plug>(operator-sandwich-delete)
 " replace
 silent! xmap <unique> ar <Plug>(operator-sandwich-replace)
+let g:textobj_sandwich_no_default_key_mappings = 1
+silent! omap <unique> ib <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> ib <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> ab <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> ab <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> is <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> is <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> as <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> as <Plug>(textobj-sandwich-query-a)
 
 " Set the mapping for this plugin so <leader>hlt mapping doesn't conflict with Vim Split <leader>h mapping.
 map <s-F10> <Plug>HiLinkTrace
@@ -296,46 +305,67 @@ onoremap aW aW
 xnoremap aW aW
 onoremap iW iW
 xnoremap iW iW
-
 onoremap as as
+xnoremap as as
 onoremap is is
+xnoremap is is
 onoremap ai sp
+xnoremap ai sp
 onoremap ip ip
+xnoremap ip ip
 onoremap a] a]
+xnoremap a] a]
 onoremap a[ a[
+xnoremap a[ a[
 onoremap i] i]
+xnoremap i] i]
 onoremap i[ i[
+xnoremap i[ i[
 onoremap a) a)
+xnoremap a) a)
 onoremap a( a(
+xnoremap a( a(
 onoremap ab ab
+xnoremap ab ab
 onoremap i) i)
+xnoremap i) i)
 onoremap i( i(
+xnoremap i( i(
 onoremap ib ib
+xnoremap ib ib
 onoremap a> a>
+xnoremap a> a>
 onoremap a< a<
+xnoremap a< a<
 onoremap i> i>
+xnoremap i> i>
 onoremap i< i<
+xnoremap i< i<
 onoremap at at
+xnoremap at at
 onoremap it it
+xnoremap it it
 onoremap a} a}
+xnoremap a} a}
 onoremap a{ a{
+xnoremap a{ a{
 onoremap aB aB
+xnoremap aB aB
 onoremap i} i}	
+xnoremap i} i}	
 onoremap i{ i{
+xnoremap i{ i{
 onoremap iB iB
+xnoremap iB iB
 onoremap a" a"
+xnoremap a" a"
 onoremap a' a'
+xnoremap a' a'
 onoremap a` a`
+xnoremap a` a`
 onoremap i" i"
+xnoremap i" i"
 onoremap i' i'
+xnoremap i' i'
 onoremap i` i`
-
-let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> rb <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> rb <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> sb <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> sb <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> rs <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> rs <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> ss <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> ss <Plug>(textobj-sandwich-query-a)
+xnoremap i` i`

@@ -42,8 +42,8 @@ let g:surround_no_insert_mappings = 1
 let g:sandwich_no_default_key_mappings = 1
 silent! nmap <unique><silent> xa <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
 silent! nmap <unique><silent> fa <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> xab <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> fab <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> xaa <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> faa <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
 silent! nmap <unique> ca <Plug>(operator-sandwich-add)
@@ -54,14 +54,14 @@ silent! xmap <unique> sx <Plug>(operator-sandwich-delete)
 " replace
 silent! xmap <unique> sf <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> tb <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> tb <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> gb <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> gb <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> ts <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> ts <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> gs <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> gs <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> taa <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> taa <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> gaa <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> gaa <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> ta <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> ta <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> ga <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> ga <Plug>(textobj-sandwich-query-a)
 
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1
@@ -311,7 +311,6 @@ noremap h<MiddleMouse> g<MiddleMouse>
 noremap h<RightMouse> g<RightMouse>
 noremap h<Tab> g<Tab>
 noremap h<Up> g<Up>
-
 
 " Text Object Selection
 onoremap gw aw

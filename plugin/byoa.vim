@@ -54,14 +54,14 @@ silent! xmap <unique> sx <Plug>(operator-sandwich-delete)
 " replace
 silent! xmap <unique> sf <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-" silent! omap <unique> tb <Plug>(textobj-sandwich-auto-i)
-" silent! xmap <unique> tb <Plug>(textobj-sandwich-auto-i)
-" silent! omap <unique> gb <Plug>(textobj-sandwich-auto-a)
-" silent! xmap <unique> gb <Plug>(textobj-sandwich-auto-a)
-" silent! omap <unique> ts <Plug>(textobj-sandwich-query-i)
-" silent! xmap <unique> ts <Plug>(textobj-sandwich-query-i)
-" silent! omap <unique> gs <Plug>(textobj-sandwich-query-a)
-" silent! xmap <unique> gs <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> tb <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> tb <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> gb <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> gb <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> ts <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> ts <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> gs <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> gs <Plug>(textobj-sandwich-query-a)
 
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1

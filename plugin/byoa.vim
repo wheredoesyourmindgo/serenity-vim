@@ -53,6 +53,15 @@ silent! omap <unique> sa <Plug>(operator-sandwich-g@)
 silent! xmap <unique> sx <Plug>(operator-sandwich-delete)
 " replace
 silent! xmap <unique> sf <Plug>(operator-sandwich-replace)
+let g:textobj_sandwich_no_default_key_mappings = 1
+" silent! omap <unique> tb <Plug>(textobj-sandwich-auto-i)
+" silent! xmap <unique> tb <Plug>(textobj-sandwich-auto-i)
+" silent! omap <unique> gb <Plug>(textobj-sandwich-auto-a)
+" silent! xmap <unique> gb <Plug>(textobj-sandwich-auto-a)
+" silent! omap <unique> ts <Plug>(textobj-sandwich-query-i)
+" silent! xmap <unique> ts <Plug>(textobj-sandwich-query-i)
+" silent! omap <unique> gs <Plug>(textobj-sandwich-query-a)
+" silent! xmap <unique> gs <Plug>(textobj-sandwich-query-a)
 
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1
@@ -305,75 +314,75 @@ noremap h<Up> g<Up>
 
 
 " Text Object Selection
-onoremap aw aw
-xnoremap aw aw
-onoremap iw iw
-xnoremap iw iw
-onoremap aW aW
-xnoremap aW aW
-onoremap iW iW
-xnoremap iW iW
-onoremap as as
-xnoremap as as
-onoremap is is
-xnoremap is is
-onoremap ap ap
-xnoremap ap ap
-onoremap ip ip
-xnoremap ip ip
-onoremap a] a]
-xnoremap a] a]
-onoremap a[ a[
-xnoremap a[ a[
-onoremap i] i]
-xnoremap i] i]
-onoremap i[ i[
-xnoremap i[ i[
-onoremap a) a)
-xnoremap a) a)
-onoremap a( a(
-xnoremap a( a(
-onoremap ab ab
-xnoremap ab ab
-onoremap i) i)
-xnoremap i) i)
-onoremap i( i(
-xnoremap i( i(
-onoremap ib ib
-xnoremap ib ib
-onoremap a> a>
-xnoremap a> a>
-onoremap a< a<
-xnoremap a< a<
-onoremap i> i>
-xnoremap i> i>
-onoremap i< i<
-xnoremap i< i<
-onoremap at at
-xnoremap at at
-onoremap it it
-xnoremap it it
-onoremap a} a}
-xnoremap a} a}
-onoremap a{ a{
-xnoremap a{ a{
-onoremap aB aB
-xnoremap aB aB
-onoremap i} i}	
-xnoremap i} i}	
-onoremap i{ i{
-xnoremap i{ i{
-onoremap iB iB
-xnoremap iB iB
-onoremap a" a"
-xnoremap a" a"
-onoremap a' a'
-xnoremap a' a'
-onoremap a` a`
-xnoremap a` a`
-onoremap i" i"
-xnoremap i" i"
-onoremap i' i'
-xnoremap i' i'
-onoremap i` i`
-xnoremap i` i`
+onoremap gw aw
+xnoremap gw aw
+onoremap tw iw
+xnoremap tw iw
+onoremap gW aW
+xnoremap gW aW
+onoremap tW iW
+xnoremap tW iW
+onoremap gs as
+xnoremap gs as
+onoremap ts is
+xnoremap ts is
+onoremap gp ap
+xnoremap gp ap
+onoremap tp ip
+xnoremap tp ip
+onoremap g] a]
+xnoremap g] a]
+onoremap g[ a[
+xnoremap g[ a[
+onoremap t] i]
+xnoremap t] i]
+onoremap t[ i[
+xnoremap t[ i[
+onoremap g) a)
+xnoremap g) a)
+onoremap g( a(
+xnoremap g( a(
+onoremap gb ab
+xnoremap gb ab
+onoremap t) i)
+xnoremap t) i)
+onoremap t( i(
+xnoremap t( i(
+onoremap tb ib
+xnoremap tb ib
+onoremap g> a>
+xnoremap g> a>
+onoremap g< a<
+xnoremap g< a<
+onoremap t> i>
+xnoremap t> i>
+onoremap t< i<
+xnoremap t< i<
+onoremap gt at
+xnoremap gt at
+onoremap tt it
+xnoremap tt it
+onoremap g} a}
+xnoremap g} a}
+onoremap g{ a{
+xnoremap g{ a{
+onoremap gB aB
+xnoremap gB aB
+onoremap t} i}	
+xnoremap t} i}	
+onoremap t{ i{
+xnoremap t{ i{
+onoremap tB iB
+xnoremap tB iB
+onoremap g" a"
+xnoremap g" a"
+onoremap g' a'
+xnoremap g' a'
+onoremap g` a`
+xnoremap g` a`
+onoremap t" i"
+xnoremap t" i"
+onoremap t' i'
+xnoremap t' i'
+onoremap t` i`
+xnoremap t` i`

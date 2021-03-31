@@ -313,75 +313,79 @@ noremap h<Tab> g<Tab>
 noremap h<Up> g<Up>
 
 " Text Object Selection
-onoremap gw aw
-xnoremap gw aw
-onoremap tw iw
-xnoremap tw iw
-onoremap gW aW
-xnoremap gW aW
-onoremap tW iW
-xnoremap tW iW
-onoremap gs as
-xnoremap gs as
-onoremap ts is
-xnoremap ts is
-onoremap gp ap
-xnoremap gp ap
-onoremap tp ip
-xnoremap tp ip
-onoremap g] a]
-xnoremap g] a]
-onoremap g[ a[
-xnoremap g[ a[
-onoremap t] i]
-xnoremap t] i]
-onoremap t[ i[
-xnoremap t[ i[
-onoremap g) a)
-xnoremap g) a)
-onoremap g( a(
-xnoremap g( a(
-onoremap gb ab
-xnoremap gb ab
-onoremap t) i)
-xnoremap t) i)
-onoremap t( i(
-xnoremap t( i(
-onoremap tb ib
-xnoremap tb ib
-onoremap g> a>
-xnoremap g> a>
-onoremap g< a<
-xnoremap g< a<
-onoremap t> i>
-xnoremap t> i>
-onoremap t< i<
-xnoremap t< i<
-onoremap gt at
-xnoremap gt at
-onoremap tt it
-xnoremap tt it
-onoremap g} a}
-xnoremap g} a}
-onoremap g{ a{
-xnoremap g{ a{
-onoremap gB aB
-xnoremap gB aB
-onoremap t} i}	
-xnoremap t} i}	
-onoremap t{ i{
-xnoremap t{ i{
-onoremap tB iB
-xnoremap tB iB
-onoremap g" a"
-xnoremap g" a"
-onoremap g' a'
-xnoremap g' a'
-onoremap g` a`
-xnoremap g` a`
-onoremap t" i"
-xnoremap t" i"
-onoremap t' i'
-xnoremap t' i'
-onoremap t` i`
-xnoremap t` i`
+onoremap g a
+xnoremap g a
+onoremap t i
+xnoremap t i
+" onoremap gw aw
+" xnoremap gw aw
+" onoremap tw iw
+" xnoremap tw iw
+" onoremap gW aW
+" xnoremap gW aW
+" onoremap tW iW
+" xnoremap tW iW
+" onoremap gs as
+" xnoremap gs as
+" onoremap ts is
+" xnoremap ts is
+" onoremap gp ap
+" xnoremap gp ap
+" onoremap tp ip
+" xnoremap tp ip
+" onoremap g] a]
+" xnoremap g] a]
+" onoremap g[ a[
+" xnoremap g[ a[
+" onoremap t] i]
+" xnoremap t] i]
+" onoremap t[ i[
+" xnoremap t[ i[
+" onoremap g) a)
+" xnoremap g) a)
+" onoremap g( a(
+" xnoremap g( a(
+" onoremap gb ab
+" xnoremap gb ab
+" onoremap t) i)
+" xnoremap t) i)
+" onoremap t( i(
+" xnoremap t( i(
+" onoremap tb ib
+" xnoremap tb ib
+" onoremap g> a>
+" xnoremap g> a>
+" onoremap g< a<
+" xnoremap g< a<
+" onoremap t> i>
+" xnoremap t> i>
+" onoremap t< i<
+" xnoremap t< i<
+" onoremap gt at
+" xnoremap gt at
+" onoremap tt it
+" xnoremap tt it
+" onoremap g} a}
+" xnoremap g} a}
+" onoremap g{ a{
+" xnoremap g{ a{
+" onoremap gB aB
+" xnoremap gB aB
+" onoremap t} i}	
+" xnoremap t} i}	
+" onoremap t{ i{
+" xnoremap t{ i{
+" onoremap tB iB
+" xnoremap tB iB
+" onoremap g" a"
+" xnoremap g" a"
+" onoremap g' a'
+" xnoremap g' a'
+" onoremap g` a`
+" xnoremap g` a`
+" onoremap t" i"
+" xnoremap t" i"
+" onoremap t' i'
+" xnoremap t' i'
+" onoremap t` i`
+" xnoremap t` i`

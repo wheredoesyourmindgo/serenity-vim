@@ -58,10 +58,10 @@ silent! omap <unique> taa <Plug>(textobj-sandwich-auto-i)
 silent! xmap <unique> taa <Plug>(textobj-sandwich-auto-i)
 silent! omap <unique> gaa <Plug>(textobj-sandwich-auto-a)
 silent! xmap <unique> gaa <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> ta <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> ta <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> ga <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> ga <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> <cr>a <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> <cr>a <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> <space>a <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> <space>a <Plug>(textobj-sandwich-query-a)
 
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1
@@ -313,10 +313,14 @@ noremap h<Tab> g<Tab>
 noremap h<Up> g<Up>
 
 " Text Object Selection
-onoremap g a
-xnoremap g a
-onoremap t i
-xnoremap t i
+" onoremap g a
+" xnoremap g a
+" onoremap t i
+" xnoremap t i
+onoremap <space> a
+xnoremap <space> a
+onoremap <cr> i
+xnoremap <cr> i
 " onoremap gw aw
 " xnoremap gw aw
 " onoremap tw iw

@@ -62,15 +62,7 @@ silent! omap <unique> g' <Plug>(textobj-sandwich-query-i)
 silent! xmap <unique> g' <Plug>(textobj-sandwich-query-i)
 silent! omap <unique> G' <Plug>(textobj-sandwich-query-a)
 silent! xmap <unique> G' <Plug>(textobj-sandwich-query-a)
-" https://github.com/machakann/vim-sandwich/issues/44#issuecomment-321522474
-let g:sandwich#recipes += [
-  \   {'buns': ['{ ', ' }'], 'nesting': 1, 'match_syntax': 1, 'kind': ['add', 'replace'], 'action': ['add'], 'input': ['{']},
-  \   {'buns': ['[ ', ' ]'], 'nesting': 1, 'match_syntax': 1, 'kind': ['add', 'replace'], 'action': ['add'], 'input': ['[']},
-  \   {'buns': ['( ', ' )'], 'nesting': 1, 'match_syntax': 1, 'kind': ['add', 'replace'], 'action': ['add'], 'input': ['(']},
-  \   {'buns': ['{\s*', '\s*}'],   'nesting': 1, 'regex': 1, 'match_syntax': 1, 'kind': ['delete', 'replace', 'textobj'], 'action': ['delete'], 'input': ['{']},
-  \   {'buns': ['\[\s*', '\s*\]'], 'nesting': 1, 'regex': 1, 'match_syntax': 1, 'kind': ['delete', 'replace', 'textobj'], 'action': ['delete'], 'input': ['[']},
-  \   {'buns': ['(\s*', '\s*)'],   'nesting': 1, 'regex': 1, 'match_syntax': 1, 'kind': ['delete', 'replace', 'textobj'], 'action': ['delete'], 'input': ['(']},
-  \ ]
+
 
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1

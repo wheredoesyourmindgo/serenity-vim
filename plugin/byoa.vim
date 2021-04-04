@@ -40,28 +40,28 @@ let g:surround_no_insert_mappings = 1
 " Don't use Sandwhich default mappings
 " The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
 let g:sandwich_no_default_key_mappings = 1
-silent! nmap <unique><silent> xa <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> fa <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> xaa <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> faa <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> x' <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> f' <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> x'a <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> f'a <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
-silent! nmap <unique> ca <Plug>(operator-sandwich-add)
-silent! xmap <unique> sa <Plug>(operator-sandwich-add)
-silent! omap <unique> sa <Plug>(operator-sandwich-g@)
+silent! nmap <unique> c' <Plug>(operator-sandwich-add)
+silent! xmap <unique> ' <Plug>(operator-sandwich-add)
+silent! omap <unique> ' <Plug>(operator-sandwich-g@)
 " delete
 silent! xmap <unique> sx <Plug>(operator-sandwich-delete)
 " replace
 silent! xmap <unique> sf <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> taa <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> taa <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> gaa <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> gaa <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> <cr>a <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> <cr>a <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> <space>a <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> <space>a <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> g'a <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> g'a <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> G'a <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> G'a <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> g' <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> g' <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> G' <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> G' <Plug>(textobj-sandwich-query-a)
 
 " Don't use Fugitive mappings
 let g:fugitive_no_maps = 1
@@ -120,6 +120,14 @@ noremap <leader>m `
 noremap <leader>M '
 " Repeat command
 noremap <leader><cr> .
+" Prev sentence
+noremap <leader> (
+" Next sentence
+noremap <leader> )
+" Next paragraph
+noremap <leader> {
+" Prev paragraph
+noremap <leader> }
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------
@@ -143,6 +151,8 @@ noremap ## !!
 noremap <bs> X
 " Delete (additional)
 noremap <del> x
+" Commands
+noremap <cr> :
 
 " Alpha Commands --------------------------
 
@@ -212,18 +222,13 @@ execute 'noremap ' . s:R1C10 . ' ;'
 noremap m t
 noremap M T
 noremap n ge
-" noremap N gE
-noremap N {
+noremap N gE
 noremap e b
-" noremap E B
-noremap E (
+noremap E B
 noremap i w
-" noremap I W
-noremap I )
+noremap I W
 noremap o e
-" noremap O E
-noremap O }
-execute 'noremap ' . s:r2c11 . ' :'
+noremap O E
 " right r3
 noremap k /
 noremap K ?
@@ -317,10 +322,10 @@ noremap h<Up> g<Up>
 " xnoremap g a
 " onoremap t i
 " xnoremap t i
-onoremap <space> a
-xnoremap <space> a
-onoremap <cr> i
-xnoremap <cr> i
+onoremap G a
+xnoremap G a
+onoremap g i
+xnoremap g i
 " onoremap gw aw
 " xnoremap gw aw
 " onoremap tw iw

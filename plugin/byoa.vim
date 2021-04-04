@@ -120,14 +120,14 @@ noremap <leader>m `
 noremap <leader>M '
 " Repeat command
 noremap <leader><cr> .
-" Prev sentence
-noremap <leader> (
-" Next sentence
-noremap <leader> )
-" Next paragraph
-noremap <leader> {
-" Prev paragraph
-noremap <leader> }
+" Begin sentence
+noremap <leader>B (
+" End sentence
+noremap <leader>W )
+" Begin paragraph
+noremap <leader>N {
+" End paragraph
+noremap <leader>E }
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------

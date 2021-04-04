@@ -121,13 +121,13 @@ noremap <leader>M '
 " Repeat command
 noremap <leader><cr> .
 " Begin sentence
-noremap <leader>b (
+noremap <leader>e (
 " End sentence
-noremap <leader>w )
+noremap <leader>i )
 " Begin paragraph
 noremap <leader>n {
 " End paragraph
-noremap <leader>e }
+noremap <leader>o }
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------

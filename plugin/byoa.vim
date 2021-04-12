@@ -399,8 +399,8 @@ noremap U <C-e>
 noremap y -
 noremap Y <C-y>
 " noremap ; ;
-execute 'noremap ' . s:r1c10 . ' $'
-execute 'noremap ' . s:R1C10 . ' ;'
+execute 'nnoremap ' . s:r1c10 . ' $'
+execute 'nnoremap ' . s:R1C10 . ' ;'
 " execute 'nmap ' . s:R1C10 . ' <Plug>(clever-f-repeat-forward)'
 " right r2
 " comment out these lines when using clever-f

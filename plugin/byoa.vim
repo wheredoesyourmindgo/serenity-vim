@@ -278,9 +278,9 @@ noremap <leader>j zz
 " Scroll Bottom
 noremap <leader>u zb
 " Next instance of current word
-noremap <leader>? *
+noremap <leader>/ *
 " Previous instance of current word
-noremap <leader>H #
+noremap <leader>h #
 " Extra commands
 noremap <leader>z z
 " Hard Bol

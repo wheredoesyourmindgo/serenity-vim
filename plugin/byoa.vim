@@ -313,6 +313,11 @@ noremap <leader><cr> .
 noremap <leader>n (
 " End sentence
 noremap <leader>o )
+" Next/Previous whitespace, exclusive and inclusive
+noremap <leader>e <left>T<space><right>T<space>
+noremap <leader>E F<space>
+noremap <leader>i <right>t<space><left>t<space>
+noremap <leader>I f<space>
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------

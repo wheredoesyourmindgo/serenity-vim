@@ -268,13 +268,15 @@ noremap <leader>Q ZQ
 " Screen Top
 noremap <leader>. H
 " Screen Mid
-noremap <leader>k M
+noremap <leader>< M
+noremap <leader>> M
 " Screen Bottom
 noremap <leader>, L
 " Scroll Top
 noremap <leader>y zt
 " Scroll Mid
-noremap <leader>j zz
+noremap <leader>U zz
+noremap <leader>Y zz
 " Scroll Bottom
 noremap <leader>u zb
 " Next instance of current word
@@ -285,10 +287,10 @@ noremap <leader>h #
 noremap <leader>z z
 " Hard Bol
 noremap <leader>l 0
-" Extra commands (alt)
-noremap <leader>g g
-" End of file / Goto line (alt)
-noremap <leader>G G
+" Extra commands
+noremap <leader>k g
+" End of file / Goto line
+noremap <leader>K G
 " Expert mode
 noremap <leader>x Q
 " Prev. end word (non-whitespace)
@@ -311,10 +313,6 @@ noremap <leader><cr> .
 noremap <leader>n (
 " End sentence
 noremap <leader>o )
-" Prev paragraph
-noremap <leader>i {
-" Next paragraph
-noremap <leader>e }
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------
@@ -419,90 +417,90 @@ noremap O E
 " right r3
 noremap k /
 noremap K ?
-noremap h g
+noremap h {
 noremap H N
-noremap , <C-d>
-noremap . <C-u>
-noremap < <C-f>
-noremap > <C-b>
-noremap / G
+noremap < <C-d>
+noremap > <C-u>
+noremap , <C-f>
+noremap . <C-b>
+noremap / }
 noremap ? n
 " g mappings
-noremap h# g#
-noremap h$ g$
-noremap h& g&
-noremap h' g'
-noremap h` g`
-noremap h* g*
-noremap h+ g+
-noremap h, g,
-noremap h- g-
-noremap h0 g0
-noremap h8 g8
-noremap h; g;
-noremap h< g<
-noremap h? g?
-noremap h?? g??
-noremap h?h? g?g?
-noremap hD gD
-noremap hE gE
-noremap hH gH
-" noremap hI gI
-noremap hS gI
-noremap hJ gJ
-noremap hN gN
-noremap hP gP
-noremap hQ gQ
-" noremap hR gR
-noremap hZ gR
-noremap hT gT
-noremap hU gU
-" noremap hV gV
-noremap hG gV
-noremap h] g]
-noremap h^ g^
-noremap h_ g_
-noremap ha ga
-noremap hd gd
-noremap he ge
-noremap hf gf
-noremap hF gF
-" noremap hg gg
-" noremap hh gh
-noremap hh gg
-" noremap hg gh
-noremap hv gh
-" noremap hi gi
-noremap hs gi
-noremap hj gj
-noremap hk gk
-noremap hn gn
-noremap hm gm
-noremap hM gM
-noremap ho go
-noremap hp gp
-noremap hq gq
-" noremap hr gr
-noremap hz gr
+noremap k# g#
+noremap k$ g$
+noremap k& g&
+noremap k' g'
+noremap k` g`
+noremap k* g*
+noremap k+ g+
+noremap k, g,
+noremap k- g-
+noremap k0 g0
+noremap k8 g8
+noremap k; g;
+noremap k< g<
+noremap k? g?
+noremap k?? g??
+noremap k?h? g?g?
+noremap kD gD
+noremap kE gE
+noremap kH gH
+" gI - insert
+noremap kS gI
+noremap kJ gJ
+noremap kN gN
+noremap kP gP
+noremap kQ gQ
+" gR - replace
+noremap kW gR
+noremap kT gT
+noremap kU gU
+" gV - visual
+noremap kG gV
+noremap k] g]
+noremap k^ g^
+noremap k_ g_
+noremap ka ga
+noremap kd gd
+noremap ke ge
+noremap kf gf
+noremap kF gF
+" gg
+noremap kk gg
+noremap kh gh
+noremap kv gh
+" gi - insert
+noremap ks gi
+noremap kj gj
+" gk - is just an alias of g<up>, so it's not needed and would conflict w/ gg->kk mapping above
+" noremap kk gk
+noremap kn gn
+noremap km gm
+noremap kM gM
+noremap ko go
+noremap kp gp
+noremap kq gq
+" gr - replace
+noremap kz gr
 " Sleep is interfering with insert, "l" (think 'lock') is one of the few candidates available
-" noremap hs gs
-noremap hl gs
-noremap ht gt
-noremap hu gu
-" noremap hv gv
-noremap hg gv
-noremap hw gw
-noremap hx gx
-noremap h@ g@
-noremap h~ g~
-noremap h<Down> g<Down>
-noremap h<End> g<End>
-noremap h<Home> g<Home>
-noremap h<LeftMouse> g<LeftMouse>
-noremap h<MiddleMouse> g<MiddleMouse>
-noremap h<RightMouse> g<RightMouse>
-noremap h<Tab> g<Tab>
-noremap h<Up> g<Up>
+" gs - sleep
+noremap kl gs
+noremap kt gt
+noremap ku gu
+" noremap kv gv
+noremap kg gv
+noremap kw gw
+noremap kx gx
+noremap k@ g@
+noremap k~ g~
+noremap k<Down> g<Down>
+noremap k<End> g<End>
+noremap k<Home> g<Home>
+noremap k<LeftMouse> g<LeftMouse>
+noremap k<MiddleMouse> g<MiddleMouse>
+noremap k<RightMouse> g<RightMouse>
+noremap k<Tab> g<Tab>
+noremap k<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a

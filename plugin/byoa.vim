@@ -426,81 +426,81 @@ noremap . <C-b>
 noremap / }
 noremap ? n
 " g mappings
-noremap k# g#
-noremap k$ g$
-noremap k& g&
-noremap k' g'
-noremap k` g`
-noremap k* g*
-noremap k+ g+
-noremap k, g,
-noremap k- g-
-noremap k0 g0
-noremap k8 g8
-noremap k; g;
-noremap k< g<
-noremap k? g?
-noremap k?? g??
-noremap k?h? g?g?
-noremap kD gD
-noremap kE gE
-noremap kH gH
+noremap <leader>k# g#
+noremap <leader>k$ g$
+noremap <leader>k& g&
+noremap <leader>k' g'
+noremap <leader>k` g`
+noremap <leader>k* g*
+noremap <leader>k+ g+
+noremap <leader>k, g,
+noremap <leader>k- g-
+noremap <leader>k0 g0
+noremap <leader>k8 g8
+noremap <leader>k; g;
+noremap <leader>k< g<
+noremap <leader>k? g?
+noremap <leader>k?? g??
+noremap <leader>k?h? g?g?
+noremap <leader>kD gD
+noremap <leader>kE gE
+noremap <leader>kH gH
 " gI - insert
-noremap kS gI
-noremap kJ gJ
-noremap kN gN
-noremap kP gP
-noremap kQ gQ
+noremap <leader>kS gI
+noremap <leader>kJ gJ
+noremap <leader>kN gN
+noremap <leader>kP gP
+noremap <leader>kQ gQ
 " gR - replace
-noremap kW gR
-noremap kT gT
-noremap kU gU
+noremap <leader>kW gR
+noremap <leader>kT gT
+noremap <leader>kU gU
 " gV - visual
-noremap kG gV
-noremap k] g]
-noremap k^ g^
-noremap k_ g_
-noremap ka ga
-noremap kd gd
-noremap ke ge
-noremap kf gf
-noremap kF gF
+noremap <leader>kG gV
+noremap <leader>k] g]
+noremap <leader>k^ g^
+noremap <leader>k_ g_
+noremap <leader>ka ga
+noremap <leader>kd gd
+noremap <leader>ke ge
+noremap <leader>kf gf
+noremap <leader>kF gF
 " gg
-noremap kk gg
-noremap kh gh
-noremap kv gh
+noremap <leader>kk gg
+noremap <leader>kh gh
+noremap <leader>kv gh
 " gi - insert
-noremap ks gi
-noremap kj gj
+noremap <leader>ks gi
+noremap <leader>kj gj
 " gk - is just an alias of g<up>, so it's not needed and would conflict w/ gg->kk mapping above
-" noremap kk gk
-noremap kn gn
-noremap km gm
-noremap kM gM
-noremap ko go
-noremap kp gp
-noremap kq gq
+" noremap <leader>kk gk
+noremap <leader>kn gn
+noremap <leader>km gm
+noremap <leader>kM gM
+noremap <leader>ko go
+noremap <leader>kp gp
+noremap <leader>kq gq
 " gr - replace
-noremap kz gr
+noremap <leader>kz gr
 " Sleep is interfering with insert, "l" (think 'lock') is one of the few candidates available
 " gs - sleep
-noremap kl gs
-noremap kt gt
-noremap ku gu
-" noremap kv gv
-noremap kg gv
-noremap kw gw
-noremap kx gx
-noremap k@ g@
-noremap k~ g~
-noremap k<Down> g<Down>
-noremap k<End> g<End>
-noremap k<Home> g<Home>
-noremap k<LeftMouse> g<LeftMouse>
-noremap k<MiddleMouse> g<MiddleMouse>
-noremap k<RightMouse> g<RightMouse>
-noremap k<Tab> g<Tab>
-noremap k<Up> g<Up>
+noremap <leader>kl gs
+noremap <leader>kt gt
+noremap <leader>ku gu
+" gv - visual
+noremap <leader>kg gv
+noremap <leader>kw gw
+noremap <leader>kx gx
+noremap <leader>k@ g@
+noremap <leader>k~ g~
+noremap <leader>k<Down> g<Down>
+noremap <leader>k<End> g<End>
+noremap <leader>k<Home> g<Home>
+noremap <leader>k<LeftMouse> g<LeftMouse>
+noremap <leader>k<MiddleMouse> g<MiddleMouse>
+noremap <leader>k<RightMouse> g<RightMouse>
+noremap <leader>k<Tab> g<Tab>
+noremap <leader>k<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a

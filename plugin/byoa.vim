@@ -306,8 +306,7 @@ noremap <leader>m `
 " Goto mark bol
 noremap <leader>M '
 " Repeat command
-" noremap <leader><leader> .
-noremap <leader><space> .
+noremap <leader><cr> .
 " Prev sentence
 noremap <leader>n (
 " End sentence

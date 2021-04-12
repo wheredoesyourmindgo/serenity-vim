@@ -336,8 +336,8 @@ noremap ## !!
 noremap <bs> X
 " Delete (additional)
 noremap <del> x
-" Commands
-noremap <cr> :
+" Command mode
+nnoremap <cr> :
 
 " Alpha Commands --------------------------
 

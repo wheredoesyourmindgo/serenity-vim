@@ -354,16 +354,15 @@ map b <Plug>(wildfire-fuel)
 vmap B <Plug>(wildfire-water)
 " left r2
 noremap a s
-" reserve A in selection mode for Vim Surround
-nnoremap A S
+noremap A S
 noremap r i
 noremap R I
 noremap s a
 noremap S A
 noremap t o
 noremap T O
-noremap g v
-noremap G V
+nnoremap g v
+nnoremap G V
 " left r3
 noremap z u
 noremap Z U

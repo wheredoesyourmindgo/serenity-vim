@@ -289,8 +289,6 @@ noremap <leader>z z
 noremap <leader>l 0
 " Extra commands
 noremap <leader>k g
-" End of file / Goto line
-noremap <leader>K G
 " Expert mode
 noremap <leader>x Q
 " Prev. end word (non-whitespace)
@@ -309,7 +307,7 @@ noremap <leader>m `
 noremap <leader>M '
 " Register Special
 noremap <leader>" "
-" G
+" G - End of file / Goto line
 noremap <leader><cr> G
 " Prev sentence
 noremap <leader>n (

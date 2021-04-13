@@ -306,7 +306,7 @@ noremap <leader>m `
 " Goto mark bol
 noremap <leader>M '
 " Register Special
-noremap <leader>" "
+noremap <leader>' "
 " G - End of file / Goto line
 noremap <leader><cr> G
 " Prev sentence

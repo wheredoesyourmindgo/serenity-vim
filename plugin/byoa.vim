@@ -307,8 +307,8 @@ noremap <leader>b K
 noremap <leader>m `
 " Goto mark bol
 noremap <leader>M '
-" Repeat command
-noremap <leader><cr> .
+" Register Special
+noremap <leader><cr> "
 " Prev sentence
 noremap <leader>n (
 " End sentence
@@ -378,7 +378,7 @@ noremap C Y
 noremap d p
 noremap D P
 noremap v <C-r>
-noremap V "
+noremap V .
 " right r1
 noremap j f
 noremap J F

@@ -305,8 +305,6 @@ noremap <leader>b K
 noremap <leader>m `
 " Goto mark bol
 noremap <leader>M '
-" Register Special
-noremap <leader>' "
 " G - End of file / Goto line
 noremap <leader><cr> G
 " Prev sentence
@@ -382,7 +380,7 @@ noremap C Y
 noremap d p
 noremap D P
 noremap v <C-r>
-" noremap V
+noremap V "
 " right r1
 noremap j f
 noremap J F
@@ -474,7 +472,7 @@ noremap <cr>e ge
 noremap <cr>f gf
 noremap <cr>F gF
 " gg
-noremap <cr><cr> gg
+" noremap <cr> gg
 noremap <cr>h gh
 noremap <cr>v gh
 " gi - insert

@@ -478,8 +478,7 @@ noremap <cr>v gh
 " gi - insert
 noremap <cr>s gi
 noremap <cr>j gj
-" gk - is just an alias of g<up>, so it's not needed and would conflict w/ gg->kk mapping above
-" noremap <cr>k gk
+noremap <cr><cr> gk
 noremap <cr>n gn
 noremap <cr>m gm
 noremap <cr>M gM

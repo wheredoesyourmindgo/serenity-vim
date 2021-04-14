@@ -472,13 +472,13 @@ noremap <cr>e ge
 noremap <cr>f gf
 noremap <cr>F gF
 " gg
-" noremap <cr> gg
+noremap <cr><cr> gg
 noremap <cr>h gh
 noremap <cr>v gh
 " gi - insert
 noremap <cr>s gi
 noremap <cr>j gj
-noremap <cr><cr> gk
+noremap <cr>k gk
 noremap <cr>n gn
 noremap <cr>m gm
 noremap <cr>M gM

@@ -288,7 +288,7 @@ noremap <leader>z z
 " Hard Bol
 noremap <leader>l 0
 " Extra commands
-noremap <leader>k g
+noremap <cr> g
 " Expert mode
 noremap <leader>x Q
 " Prev. end word (non-whitespace)
@@ -342,7 +342,11 @@ noremap <bs> X
 " Delete (additional)
 noremap <del> x
 " Command mode
-noremap <cr> :
+noremap ' :
+" Repeat Command
+noremap " .
+" g
+noremap <cr> g
 
 " Alpha Commands --------------------------
 
@@ -378,7 +382,7 @@ noremap C Y
 noremap d p
 noremap D P
 noremap v <C-r>
-noremap V .
+" noremap V
 " right r1
 noremap j f
 noremap J F
@@ -430,81 +434,81 @@ noremap . <C-b>
 noremap / }
 noremap ? n
 " g mappings
-noremap <leader>k# g#
-noremap <leader>k$ g$
-noremap <leader>k& g&
-noremap <leader>k' g'
-noremap <leader>k` g`
-noremap <leader>k* g*
-noremap <leader>k+ g+
-noremap <leader>k, g,
-noremap <leader>k- g-
-noremap <leader>k0 g0
-noremap <leader>k8 g8
-noremap <leader>k; g;
-noremap <leader>k< g<
-noremap <leader>k? g?
-noremap <leader>k?? g??
-noremap <leader>k?h? g?g?
-noremap <leader>kD gD
-noremap <leader>kE gE
-noremap <leader>kH gH
+noremap <cr># g#
+noremap <cr>$ g$
+noremap <cr>& g&
+noremap <cr>' g'
+noremap <cr>` g`
+noremap <cr>* g*
+noremap <cr>+ g+
+noremap <cr>, g,
+noremap <cr>- g-
+noremap <cr>0 g0
+noremap <cr>8 g8
+noremap <cr>; g;
+noremap <cr>< g<
+noremap <cr>? g?
+noremap <cr>?? g??
+noremap <cr>?h? g?g?
+noremap <cr>D gD
+noremap <cr>E gE
+noremap <cr>H gH
 " gI - insert
-noremap <leader>kS gI
-noremap <leader>kJ gJ
-noremap <leader>kN gN
-noremap <leader>kP gP
-noremap <leader>kQ gQ
+noremap <cr>S gI
+noremap <cr>J gJ
+noremap <cr>N gN
+noremap <cr>P gP
+noremap <cr>Q gQ
 " gR - replace
-noremap <leader>kW gR
-noremap <leader>kT gT
-noremap <leader>kU gU
+noremap <cr>W gR
+noremap <cr>T gT
+noremap <cr>U gU
 " gV - visual
-noremap <leader>kG gV
-noremap <leader>k] g]
-noremap <leader>k^ g^
-noremap <leader>k_ g_
-noremap <leader>ka ga
-noremap <leader>kd gd
-noremap <leader>ke ge
-noremap <leader>kf gf
-noremap <leader>kF gF
+noremap <cr>G gV
+noremap <cr>] g]
+noremap <cr>^ g^
+noremap <cr>_ g_
+noremap <cr>a ga
+noremap <cr>d gd
+noremap <cr>e ge
+noremap <cr>f gf
+noremap <cr>F gF
 " gg
-noremap <leader>kk gg
-noremap <leader>kh gh
-noremap <leader>kv gh
+noremap <cr><cr> gg
+noremap <cr>h gh
+noremap <cr>v gh
 " gi - insert
-noremap <leader>ks gi
-noremap <leader>kj gj
+noremap <cr>s gi
+noremap <cr>j gj
 " gk - is just an alias of g<up>, so it's not needed and would conflict w/ gg->kk mapping above
-" noremap <leader>kk gk
-noremap <leader>kn gn
-noremap <leader>km gm
-noremap <leader>kM gM
-noremap <leader>ko go
-noremap <leader>kp gp
-noremap <leader>kq gq
+" noremap <cr>k gk
+noremap <cr>n gn
+noremap <cr>m gm
+noremap <cr>M gM
+noremap <cr>o go
+noremap <cr>p gp
+noremap <cr>q gq
 " gr - replace
-noremap <leader>kz gr
+noremap <cr>z gr
 " Sleep is interfering with insert, "l" (think 'lock') is one of the few candidates available
 " gs - sleep
-noremap <leader>kl gs
-noremap <leader>kt gt
-noremap <leader>ku gu
+noremap <cr>l gs
+noremap <cr>t gt
+noremap <cr>u gu
 " gv - visual
-noremap <leader>kg gv
-noremap <leader>kw gw
-noremap <leader>kx gx
-noremap <leader>k@ g@
-noremap <leader>k~ g~
-noremap <leader>k<Down> g<Down>
-noremap <leader>k<End> g<End>
-noremap <leader>k<Home> g<Home>
-noremap <leader>k<LeftMouse> g<LeftMouse>
-noremap <leader>k<MiddleMouse> g<MiddleMouse>
-noremap <leader>k<RightMouse> g<RightMouse>
-noremap <leader>k<Tab> g<Tab>
-noremap <leader>k<Up> g<Up>
+noremap <cr>g gv
+noremap <cr>w gw
+noremap <cr>x gx
+noremap <cr>@ g@
+noremap <cr>~ g~
+noremap <cr><Down> g<Down>
+noremap <cr><End> g<End>
+noremap <cr><Home> g<Home>
+noremap <cr><LeftMouse> g<LeftMouse>
+noremap <cr><MiddleMouse> g<MiddleMouse>
+noremap <cr><RightMouse> g<RightMouse>
+noremap <cr><Tab> g<Tab>
+noremap <cr><Up> g<Up>
 
 " Text Object Selection
 " onoremap g a

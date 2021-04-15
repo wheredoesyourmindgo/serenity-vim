@@ -302,9 +302,9 @@ noremap <leader>o E
 " Help
 noremap <leader>b K
 " Goto mark
-noremap <leader>m `
+noremap <leader>k `
 " Goto mark bol
-noremap <leader>M '
+noremap <leader>K '
 " G - End of file / Goto line
 noremap <leader><cr> G
 " Prev sentence

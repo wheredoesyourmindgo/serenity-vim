@@ -341,8 +341,6 @@ noremap <bs> X
 noremap <del> x
 " Command mode
 noremap ' :
-" Repeat Command
-noremap " .
 " g
 noremap <cr> g
 
@@ -380,7 +378,7 @@ noremap C Y
 noremap d p
 noremap D P
 noremap v <C-r>
-noremap V "
+noremap V .
 " right r1
 noremap j f
 noremap J F

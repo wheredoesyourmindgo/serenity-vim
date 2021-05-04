@@ -23,7 +23,7 @@ elseif s:byoa_keymap == 'qwerty'
 endif
 
 " Map double quote to line comment toggle
-map \" <plug>NERDCommenterToggle
+map " <plug>NERDCommenterToggle
 
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings

@@ -22,6 +22,9 @@ elseif s:byoa_keymap == 'qwerty'
   let s:R1C10 = "P"
 endif
 
+" Map double quote to line comment toggle
+map \" <plug>NERDCommenterToggle
+
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings
 let g:surround_no_mappings = 1
@@ -337,7 +340,7 @@ noremap # !
 noremap ## !!
 " Backspace
 noremap <bs> X
-" Delete (additional)
+" Delete
 noremap <del> x
 " Command mode
 noremap ' :
@@ -348,13 +351,13 @@ noremap <cr> g
 
 " left r1
 noremap q ~
-noremap Q m
+noremap Q J
 noremap w r
 noremap W R
 noremap f c
 noremap F C
-noremap p x
-noremap P J
+noremap p "
+noremap P m
 map b <Plug>(wildfire-fuel)
 vmap B <Plug>(wildfire-water)
 " left r2

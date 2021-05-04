@@ -304,10 +304,6 @@ noremap <leader>i W
 noremap <leader>o E
 " Help
 noremap <leader>b K
-" Goto mark
-noremap <leader>k `
-" Goto mark bol
-noremap <leader>K '
 " G - End of file / Goto line
 noremap <leader><cr> G
 " Prev sentence
@@ -346,6 +342,8 @@ noremap <del> x
 noremap ' :
 " g
 noremap <cr> g
+" goto mark bol
+noremap ~ '
 
 " Alpha Commands --------------------------
 

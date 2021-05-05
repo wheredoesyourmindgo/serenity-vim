@@ -434,7 +434,7 @@ noremap ? n
 noremap <cr># g#
 noremap <cr>$ g$
 noremap <cr>& g&
-noremap <cr>' g'
+noremap <cr>~ g'
 noremap <cr>` g`
 noremap <cr>* g*
 noremap <cr>+ g+
@@ -447,15 +447,14 @@ noremap <cr>< g<
 noremap <cr>? g?
 noremap <cr>?? g??
 noremap <cr>?h? g?g?
-noremap <cr>D gD
-noremap <cr>E gE
-noremap <cr>H gH
+" noremap <cr>E gE
+noremap <cr>V gH
 " gI - insert
 noremap <cr>S gI
-noremap <cr>J gJ
+noremap <cr><S-tab> gD
 noremap <cr>N gN
-noremap <cr>P gP
-noremap <cr>Q gQ
+noremap <cr>D gP
+noremap <cr>e gQ
 " gR - replace
 noremap <cr>W gR
 noremap <cr>T gT
@@ -466,37 +465,34 @@ noremap <cr>] g]
 noremap <cr>^ g^
 noremap <cr>_ g_
 noremap <cr>a ga
-noremap <cr>d gd
-noremap <cr>e ge
+" noremap <cr>e ge
 noremap <cr>f gf
 noremap <cr>F gF
 " gg
 noremap <cr><cr> gg
-noremap <cr>h gh
 noremap <cr>v gh
 " gi - insert
 noremap <cr>s gi
-noremap <cr>j gj
+noremap <cr><tab> gd
 noremap <cr>k gk
-noremap <cr>n gn
+noremap <cr>/ gn
+noremap <cr>h gN
 noremap <cr>m gm
 noremap <cr>M gM
 noremap <cr>o go
-noremap <cr>p gp
-noremap <cr>q gq
+noremap <cr>d gp
+noremap <cr>; gq
 " gr - replace
-noremap <cr>z gr
-" Sleep is interfering with insert, "l" (think 'lock') is one of the few candidates available
-" gs - sleep
-noremap <cr>l gs
+noremap <cr>w gr
+noremap <cr>s gs
 noremap <cr>t gt
 noremap <cr>u gu
 " gv - visual
 noremap <cr>g gv
-noremap <cr>w gw
+noremap <cr>: gw
 noremap <cr>x gx
 noremap <cr>@ g@
-noremap <cr>~ g~
+noremap <cr>q g~
 noremap <cr><Down> g<Down>
 noremap <cr><End> g<End>
 noremap <cr><Home> g<Home>

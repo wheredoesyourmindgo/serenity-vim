@@ -303,7 +303,7 @@ noremap <leader>i W
 " Prev. end word (non-whitespace)
 noremap <leader>o E
 " Help
-noremap <leader>b K
+noremap <leader>` K
 " G - End of file / Goto line
 noremap <leader><cr> G
 " Prev sentence

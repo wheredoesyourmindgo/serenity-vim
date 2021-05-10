@@ -1,0 +1,1538 @@
+{
+  "vim.leader": "<space>",
+  "vim.operatorPendingModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g"],
+      "after": ["i"]
+    },
+    {
+      "before": ["G"],
+      "after": ["a"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "?"],
+      "commands": ["editor.action.addSelectionToNextFindMatch"],
+      "when": "editorFocus"
+    },
+    {
+      "before": ["<leader>", "H"],
+      "commands": ["editor.action.addSelectionToPreviousFindMatch"],
+      "when": "editorFocus"
+    },
+    {
+      "before": ["g"],
+      "after": ["i"]
+    },
+    {
+      "before": ["G"],
+      "after": ["a"]
+    },
+    {
+      "before": ["'"],
+      "after": ["S"]
+    },
+    {
+      "before": ["<bs>"],
+      "after": ["X"]
+    },
+    {
+      "before": ["<del>"],
+      "after": ["x"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["D"]
+    },
+    {
+      "before": ["'"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<cr>"],
+      "after": ["g"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "after": ["<left>", "T", "<space>", "<right>", "T", "<space>"]
+    },
+    {
+      "before": ["<leader>", "E"],
+      "after": ["F", "<space>"]
+    },
+    {
+      "before": ["<leader>", "i"],
+      "after": ["<right>", "t", "<space>", "<left>", "t", "<space>"]
+    },
+    {
+      "before": ["<leader>", "I"],
+      "after": ["f", "<space>"]
+    },
+    {
+      "before": ["<leader>", "<esc>"],
+      "commands": [":noh"]
+    },
+    {
+      "before": ["<leader>", "<cr>"],
+      "after": ["G"]
+    },
+    {
+      "before": ["b"],
+      "commands": ["editor.action.smartSelect.grow"],
+      "when": "editorTextFocus"
+    },
+    {
+      "before": ["B"],
+      "commands": ["editor.action.smartSelect.shrink"],
+      "when": "editorTextFocus"
+    },
+    {
+      "before": ["<leader>", "q"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.closeActiveEditor",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "Q"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.closeActiveEditor",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["\""],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.commentLine",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "."],
+      "after": ["H"]
+    },
+    {
+      "before": ["<leader>", ">"],
+      "after": ["M"]
+    },
+    {
+      "before": ["<leader>", "<"],
+      "after": ["M"]
+    },
+    {
+      "before": ["<leader>", ","],
+      "after": ["L"]
+    },
+    {
+      "before": ["<leader>", "y"],
+      "after": ["z", "t"]
+    },
+    {
+      "before": ["<leader>", "Y"],
+      "after": ["z", "z"]
+    },
+    {
+      "before": ["<leader>", "U"],
+      "after": ["z", "z"]
+    },
+    {
+      "before": ["<leader>", "u"],
+      "after": ["z", "b"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "after": ["*"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": ["#"]
+    },
+    {
+      "before": ["<leader>", "z"],
+      "after": ["z"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["0"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "after": ["g"]
+    },
+    {
+      "before": ["<leader>", "K"],
+      "after": ["G"]
+    },
+    {
+      "before": ["<leader>", "n"],
+      "after": ["("]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "after": [")"]
+    },
+    {
+      "before": ["Tab"],
+      "after": [">", ">", "<esc>"]
+    },
+    {
+      "before": ["S-Tab"],
+      "after": ["<", "<", "<esc>"]
+    },
+    {
+      "before": ["<C-g>"],
+      "after": ["<C-v>"]
+    },
+    {
+      "before": ["<C-v>"],
+      "after": ["<nop>"]
+    },
+    {
+      "before": ["!"],
+      "after": ["q"]
+    },
+    {
+      "before": ["#"],
+      "after": ["!"]
+    },
+    {
+      "before": ["#", "#"],
+      "after": ["!", "!"]
+    },
+    {
+      "before": ["~"],
+      "after": ["'"]
+    },
+    {
+      "before": ["q"],
+      "after": ["~"]
+    },
+    {
+      "before": ["Q"],
+      "after": ["J"]
+    },
+    {
+      "before": ["w"],
+      "after": ["r"]
+    },
+    {
+      "before": ["W"],
+      "after": ["R"]
+    },
+    {
+      "before": ["f"],
+      "after": ["c"]
+    },
+    {
+      "before": ["F"],
+      "after": ["C"]
+    },
+    {
+      "before": ["p"],
+      "after": ["\""]
+    },
+    {
+      "before": ["P"],
+      "after": ["m"]
+    },
+    {
+      "before": ["a"],
+      "after": ["s"]
+    },
+    {
+      "before": ["A"],
+      "after": ["S"]
+    },
+    {
+      "before": ["r"],
+      "after": ["i"]
+    },
+    {
+      "before": ["R"],
+      "after": ["I"]
+    },
+    {
+      "before": ["s"],
+      "after": ["a"]
+    },
+    {
+      "before": ["S"],
+      "after": ["A"]
+    },
+    {
+      "before": ["t"],
+      "after": ["o"]
+    },
+    {
+      "before": ["T"],
+      "after": ["O"]
+    },
+    {
+      "before": ["z"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["Z"],
+      "after": ["U"]
+    },
+    {
+      "before": ["x"],
+      "after": ["d"]
+    },
+    {
+      "before": ["X"],
+      "after": ["D"]
+    },
+    {
+      "before": ["c"],
+      "after": ["y"]
+    },
+    {
+      "before": ["C"],
+      "after": ["Y"]
+    },
+    {
+      "before": ["d"],
+      "after": ["p", "g", "v", "y"]
+    },
+    {
+      "before": ["D"],
+      "after": ["P"]
+    },
+    {
+      "before": ["v"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["V"],
+      "after": ["."]
+    },
+    {
+      "before": ["j"],
+      "after": ["f"]
+    },
+    {
+      "before": ["J"],
+      "after": ["F"]
+    },
+    {
+      "before": ["l"],
+      "after": ["_"]
+    },
+    {
+      "before": ["L"],
+      "after": [","]
+    },
+    {
+      "before": ["u"],
+      "after": ["+"]
+    },
+    {
+      "before": ["U"],
+      "after": ["C-e"]
+    },
+    {
+      "before": ["y"],
+      "after": ["-"]
+    },
+    {
+      "before": ["Y"],
+      "after": ["C-y"]
+    },
+    {
+      "before": [";"],
+      "after": ["$"]
+    },
+    {
+      "before": [":"],
+      "after": [";"]
+    },
+    {
+      "before": ["m"],
+      "after": ["t"]
+    },
+    {
+      "before": ["M"],
+      "after": ["T"]
+    },
+    {
+      "before": ["n"],
+      "after": ["g", "e"]
+    },
+    {
+      "before": ["N"],
+      "after": ["g", "E"]
+    },
+    {
+      "before": ["e"],
+      "after": ["b"]
+    },
+    {
+      "before": ["E"],
+      "after": ["B"]
+    },
+    {
+      "before": ["i"],
+      "after": ["w"]
+    },
+    {
+      "before": ["I"],
+      "after": ["W"]
+    },
+    {
+      "before": ["o"],
+      "after": ["e"]
+    },
+    {
+      "before": ["O"],
+      "after": ["E"]
+    },
+    {
+      "before": ["k"],
+      "after": ["/"]
+    },
+    {
+      "before": ["K"],
+      "after": ["?"]
+    },
+    {
+      "before": ["h"],
+      "after": ["{"]
+    },
+    {
+      "before": ["H"],
+      "after": ["N"]
+    },
+    {
+      "before": ["<"],
+      "after": ["C-d"]
+    },
+    {
+      "before": [","],
+      "after": ["C-f"]
+    },
+    {
+      "before": [">"],
+      "after": ["C-u"]
+    },
+    {
+      "before": ["."],
+      "after": ["C-b"]
+    },
+    {
+      "before": ["/"],
+      "after": ["}"]
+    },
+    {
+      "before": ["?"],
+      "after": ["n"]
+    },
+    {
+      "before": ["<cr>", "#"],
+      "after": ["g", "#"]
+    },
+    {
+      "before": ["<cr>", "$"],
+      "after": ["g", "$"]
+    },
+    {
+      "before": ["<cr>", "~"],
+      "after": ["g", "'"]
+    },
+    {
+      "before": ["<cr>", "`"],
+      "after": ["g", "`"]
+    },
+    {
+      "before": ["<cr>", "*"],
+      "after": ["g", "*"]
+    },
+    {
+      "before": ["<cr>", "+"],
+      "after": ["g", "+"]
+    },
+    {
+      "before": ["<cr>", ","],
+      "after": ["g", ","]
+    },
+    {
+      "before": ["<cr>", "-"],
+      "after": ["g", "-"]
+    },
+    {
+      "before": ["<cr>", "0"],
+      "after": ["g", "0"]
+    },
+    {
+      "before": ["<cr>", "8"],
+      "after": ["g", "8"]
+    },
+    {
+      "before": ["<cr>", ";"],
+      "after": ["g", ";"]
+    },
+    {
+      "before": ["<cr>", "<"],
+      "after": ["g", "<"]
+    },
+    {
+      "before": ["<cr>", "?"],
+      "after": ["g", "?"]
+    },
+    {
+      "before": ["<cr>", "?", "?"],
+      "after": ["g", "?", "?"]
+    },
+    {
+      "before": ["<cr>", "?", "h", "?"],
+      "after": ["g", "?", "g", "?"]
+    },
+    // {
+    // "before": ["<cr>", "E"],
+    // "after": ["g", "E"]
+    // },
+    {
+      "before": ["<cr>", "V"],
+      "after": ["g", "H"]
+    },
+    {
+      "before": ["<cr>", "S"],
+      "after": ["g", "I"]
+    },
+    {
+      "before": ["<cr>", "J"],
+      "after": ["g", "J"]
+    },
+    {
+      "before": ["<cr>", "h"],
+      "after": ["g", "N"]
+    },
+    {
+      "before": ["<cr>", "D"],
+      "after": ["g", "P"]
+    },
+    {
+      "before": ["<cr>", "e"],
+      "after": ["g", "Q"]
+    },
+    {
+      "before": ["<cr>", "W"],
+      "after": ["g", "R"]
+    },
+    {
+      "before": ["<cr>", "T"],
+      "after": ["g", "T"]
+    },
+    {
+      "before": ["<cr>", "U"],
+      "after": ["g", "U"]
+    },
+    {
+      "before": ["<cr>", "G"],
+      "after": ["g", "V"]
+    },
+    {
+      "before": ["<cr>", "]"],
+      "after": ["g", "]"]
+    },
+    {
+      "before": ["<cr>", "^"],
+      "after": ["g", "^"]
+    },
+    {
+      "before": ["<cr>", "_"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["<cr>", "a"],
+      "after": ["g", "a"]
+    },
+    // {
+    // "before": ["<cr>", "e"],
+    // "after": ["g", "e"]
+    // },
+    {
+      "before": ["<cr>", "f"],
+      "after": ["g", "f"]
+    },
+    {
+      "before": ["<cr>", "F"],
+      "after": ["g", "F"]
+    },
+    {
+      "before": ["<cr>", "<cr>"],
+      "after": ["g", "g"]
+    },
+    {
+      "before": ["<cr>", "v"],
+      "after": ["g", "h"]
+    },
+    {
+      "before": ["<cr>", "s"],
+      "after": ["g", "i"]
+    },
+    {
+      "before": ["<cr>", "j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["<cr>", "k"],
+      "after": ["g", "k"]
+    },
+    {
+      "before": ["<cr>", "/"],
+      "after": ["g", "n"]
+    },
+    {
+      "before": ["<cr>", "m"],
+      "after": ["g", "m"]
+    },
+    {
+      "before": ["<cr>", "M"],
+      "after": ["g", "M"]
+    },
+    {
+      "before": ["<cr>", "o"],
+      "after": ["g", "o"]
+    },
+    {
+      "before": ["<cr>", "d"],
+      "after": ["g", "p"]
+    },
+    // {
+    // "before": ["<cr>", "q"],
+    // "after": ["g", "q"]
+    // },
+    {
+      "before": ["<cr>", "w"],
+      "after": ["g", "r"]
+    },
+    {
+      "before": ["<cr>", "s"],
+      "after": ["g", "s"]
+    },
+    {
+      "before": ["<cr>", "t"],
+      "after": ["g", "t"]
+    },
+    {
+      "before": ["<cr>", "u"],
+      "after": ["g", "u"]
+    },
+    {
+      "before": ["<cr>", "g"],
+      "after": ["g", "v"]
+    },
+    {
+      "before": ["<cr>", ":"],
+      "after": ["g", "w"]
+    },
+    {
+      "before": ["<cr>", "x"],
+      "after": ["g", "x"]
+    },
+    {
+      "before": ["<cr>", "@"],
+      "after": ["g", "@"]
+    },
+    {
+      "before": ["<cr>", "q"],
+      "after": ["g", "~"]
+    },
+    // VSCode Tricks
+    {
+      "before": ["<cr>", "<tab>"],
+      "after": ["g", "d"]
+    },
+    {
+      "before": ["<cr>", "<space>"],
+      "after": ["g", "h"]
+    },
+    {
+      "before": ["<cr>", ";"],
+      "after": ["g", "q"]
+    },
+    {
+      "before": ["<cr>", "/"],
+      "after": ["g", "b"]
+    },
+    // {
+    // "before": ["<cr>", "b"],
+    // "after": ["a", "f"]
+    // },
+    {
+      "before": ["<C-r>"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "?"],
+      "commands": ["editor.action.addSelectionToNextFindMatch"],
+      "when": "editorFocus"
+    },
+    {
+      "before": ["<leader>", "H"],
+      "commands": ["editor.action.addSelectionToPreviousFindMatch"],
+      "when": "editorFocus"
+    },
+    {
+      "before": ["c", "'"],
+      "after": ["y", "s"]
+    },
+    {
+      "before": ["x", "'"],
+      "after": ["d", "s"]
+    },
+    {
+      "before": ["f", "'"],
+      "after": ["c", "s"]
+    },
+    {
+      "before": ["<bs>"],
+      "after": ["X"]
+    },
+    {
+      "before": ["<del>"],
+      "after": ["x"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["D"]
+    },
+    {
+      "before": ["'"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<cr>"],
+      "after": ["g"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "after": ["<left>", "T", "<space>", "<right>", "T", "<space>"]
+    },
+    {
+      "before": ["<leader>", "E"],
+      "after": ["F", "<space>"]
+    },
+    {
+      "before": ["<leader>", "i"],
+      "after": ["<right>", "t", "<space>", "<left>", "t", "<space>"]
+    },
+    {
+      "before": ["<leader>", "I"],
+      "after": ["f", "<space>"]
+    },
+    {
+      "before": ["<leader>", "<esc>"],
+      "commands": [":noh"]
+    },
+    {
+      "before": ["<leader>", "<cr>"],
+      "after": ["G"]
+    },
+    {
+      "before": ["b"],
+      "commands": ["editor.action.smartSelect.grow"],
+      "when": "editorTextFocus"
+    },
+    {
+      "before": ["<leader>", "r"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.closeActiveEditor",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "Q"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.closeActiveEditor",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["\""],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.commentLine",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "."],
+      "after": ["H"]
+    },
+    {
+      "before": ["<leader>", ">"],
+      "after": ["M"]
+    },
+    {
+      "before": ["<leader>", "<"],
+      "after": ["M"]
+    },
+    {
+      "before": ["<leader>", ","],
+      "after": ["L"]
+    },
+    {
+      "before": ["<leader>", "y"],
+      "after": ["z", "t"]
+    },
+    {
+      "before": ["<leader>", "Y"],
+      "after": ["z", "z"]
+    },
+    {
+      "before": ["<leader>", "U"],
+      "after": ["z", "z"]
+    },
+    {
+      "before": ["<leader>", "u"],
+      "after": ["z", "b"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "after": ["*"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": ["#"]
+    },
+    {
+      "before": ["<leader>", "z"],
+      "after": ["z"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["0"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "after": ["g"]
+    },
+    {
+      "before": ["<leader>", "K"],
+      "after": ["G"]
+    },
+    {
+      "before": ["<leader>", "n"],
+      "after": ["("]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "after": [")"]
+    },
+    {
+      "before": ["Tab"],
+      "after": [">", ">", "<esc>"]
+    },
+    {
+      "before": ["S-Tab"],
+      "after": ["<", "<", "<esc>"]
+    },
+    {
+      "before": ["<C-g>"],
+      "after": ["<C-v>"]
+    },
+    {
+      "before": ["<C-v>"],
+      "after": ["<nop>"]
+    },
+    {
+      "before": ["!"],
+      "after": ["q"]
+    },
+    {
+      "before": ["#"],
+      "after": ["!"]
+    },
+    {
+      "before": ["#", "#"],
+      "after": ["!", "!"]
+    },
+    {
+      "before": ["~"],
+      "after": ["'"]
+    },
+    {
+      "before": ["q"],
+      "after": ["~"]
+    },
+    {
+      "before": ["Q"],
+      "after": ["J"]
+    },
+    {
+      "before": ["w"],
+      "after": ["r"]
+    },
+    {
+      "before": ["W"],
+      "after": ["R"]
+    },
+    {
+      "before": ["f"],
+      "after": ["c"]
+    },
+    {
+      "before": ["f", "f"],
+      "after": ["c", "c"]
+    },
+    {
+      "before": ["f", "i"],
+      "after": ["c", "w"]
+    },
+    {
+      "before": ["f", "o"],
+      "after": ["c", "e"]
+    },
+    {
+      "before": ["f", "e"],
+      "after": ["c", "b"]
+    },
+    {
+      "before": ["f", "u"],
+      "after": ["c", "^"]
+    },
+    {
+      "before": ["f", "l"],
+      "after": ["c", "0"]
+    },
+    {
+      "before": ["f", "y"],
+      "after": ["c", "$"]
+    },
+    {
+      "before": ["f", "<cr>", "<cr>"],
+      "after": ["c", "g", "g"]
+    },
+    {
+      "before": ["f", "<leader>", "K"],
+      "after": ["c", "G"]
+    },
+    {
+      "before": ["f", "j"],
+      "after": ["c", "f"]
+    },
+    {
+      "before": ["f", "J"],
+      "after": ["c", "F"]
+    },
+    {
+      "before": ["f", "m"],
+      "after": ["c", "t"]
+    },
+    {
+      "before": ["f", "M"],
+      "after": ["c", "T"]
+    },
+    {
+      "before": ["F"],
+      "after": ["C"]
+    },
+    {
+      "before": ["p"],
+      "after": ["\""]
+    },
+    {
+      "before": ["P"],
+      "after": ["m"]
+    },
+    {
+      "before": ["a"],
+      "after": ["s"]
+    },
+    {
+      "before": ["A"],
+      "after": ["S"]
+    },
+    {
+      "before": ["r"],
+      "after": ["i"]
+    },
+    {
+      "before": ["R"],
+      "after": ["I"]
+    },
+    {
+      "before": ["s"],
+      "after": ["a"]
+    },
+    {
+      "before": ["S"],
+      "after": ["A"]
+    },
+    {
+      "before": ["t"],
+      "after": ["o"]
+    },
+    {
+      "before": ["T"],
+      "after": ["O"]
+    },
+    {
+      "before": ["g"],
+      "after": ["v"]
+    },
+    {
+      "before": ["G"],
+      "after": ["V"]
+    },
+    {
+      "before": ["z"],
+      "after": [],
+      "commands": [
+        {
+          "command": "undo",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["Z"],
+      "after": ["U"]
+    },
+    {
+      "before": ["x"],
+      "after": ["d"]
+    },
+    {
+      "before": ["x", "x"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["x", "i"],
+      "after": ["d", "w"]
+    },
+    {
+      "before": ["x", "o"],
+      "after": ["d", "e"]
+    },
+    {
+      "before": ["x", "e"],
+      "after": ["d", "b"]
+    },
+    {
+      "before": ["x", "u"],
+      "after": ["d", "^"]
+    },
+    {
+      "before": ["x", "l"],
+      "after": ["d", "0"]
+    },
+    {
+      "before": ["x", "y"],
+      "after": ["d", "$"]
+    },
+    {
+      "before": ["x", "<cr>", "<cr>"],
+      "after": ["d", "g", "g"]
+    },
+    {
+      "before": ["x", "<leader>", "K"],
+      "after": ["d", "G"]
+    },
+    {
+      "before": ["x", "j"],
+      "after": ["d", "f"]
+    },
+    {
+      "before": ["x", "J"],
+      "after": ["d", "F"]
+    },
+    {
+      "before": ["x", "m"],
+      "after": ["d", "t"]
+    },
+    {
+      "before": ["x", "M"],
+      "after": ["d", "T"]
+    },
+    {
+      "before": ["X"],
+      "after": ["D"]
+    },
+    {
+      "before": ["c"],
+      "after": ["y"]
+    },
+    {
+      "before": ["c", "c"],
+      "after": ["y", "y"]
+    },
+    {
+      "before": ["c", "i"],
+      "after": ["y", "w"]
+    },
+    {
+      "before": ["c", "o"],
+      "after": ["y", "e"]
+    },
+    {
+      "before": ["c", "e"],
+      "after": ["y", "b"]
+    },
+    {
+      "before": ["c", "u"],
+      "after": ["y", "^"]
+    },
+    {
+      "before": ["c", "l"],
+      "after": ["y", "0"]
+    },
+    {
+      "before": ["c", "y"],
+      "after": ["y", "$"]
+    },
+    {
+      "before": ["c", "<cr>", "<cr>"],
+      "after": ["y", "g", "g"]
+    },
+    {
+      "before": ["c", "<leader>", "K"],
+      "after": ["y", "G"]
+    },
+    {
+      "before": ["c", "j"],
+      "after": ["y", "f"]
+    },
+    {
+      "before": ["c", "J"],
+      "after": ["y", "F"]
+    },
+    {
+      "before": ["c", "m"],
+      "after": ["y", "t"]
+    },
+    {
+      "before": ["c", "M"],
+      "after": ["y", "T"]
+    },
+    {
+      "before": ["C"],
+      "after": ["Y"]
+    },
+    {
+      "before": ["d"],
+      "after": ["p"]
+    },
+    {
+      "before": ["D"],
+      "after": ["P"]
+    },
+    {
+      "before": ["v"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["V"],
+      "after": ["."]
+    },
+    {
+      "before": ["j"],
+      "after": ["f"]
+    },
+    {
+      "before": ["J"],
+      "after": ["F"]
+    },
+    {
+      "before": ["l"],
+      "after": ["_"]
+    },
+    {
+      "before": ["L"],
+      "after": [","]
+    },
+    {
+      "before": ["u"],
+      "after": ["+"]
+    },
+    {
+      "before": ["U"],
+      "after": ["C-e"]
+    },
+    {
+      "before": ["y"],
+      "after": ["-"]
+    },
+    {
+      "before": ["Y"],
+      "after": ["C-y"]
+    },
+    {
+      "before": [";"],
+      "after": ["$"]
+    },
+    {
+      "before": [":"],
+      "after": [";"]
+    },
+    {
+      "before": ["m"],
+      "after": ["t"]
+    },
+    {
+      "before": ["M"],
+      "after": ["T"]
+    },
+    {
+      "before": ["n"],
+      "after": ["g", "e"]
+    },
+    {
+      "before": ["N"],
+      "after": ["g", "E"]
+    },
+    {
+      "before": ["e"],
+      "after": ["b"]
+    },
+    {
+      "before": ["E"],
+      "after": ["B"]
+    },
+    {
+      "before": ["i"],
+      "after": ["w"]
+    },
+    {
+      "before": ["I"],
+      "after": ["W"]
+    },
+    {
+      "before": ["o"],
+      "after": ["e"]
+    },
+    {
+      "before": ["O"],
+      "after": ["E"]
+    },
+    {
+      "before": ["k"],
+      "after": ["/"]
+    },
+    {
+      "before": ["K"],
+      "after": ["?"]
+    },
+    {
+      "before": ["h"],
+      "after": ["{"]
+    },
+    {
+      "before": ["H"],
+      "after": ["N"]
+    },
+    {
+      "before": ["<"],
+      "after": ["C-d"]
+    },
+    {
+      "before": [","],
+      "after": ["C-f"]
+    },
+    {
+      "before": [">"],
+      "after": ["C-u"]
+    },
+    {
+      "before": ["."],
+      "after": ["C-b"]
+    },
+    {
+      "before": ["/"],
+      "after": ["}"]
+    },
+    {
+      "before": ["?"],
+      "after": ["n"]
+    },
+    {
+      "before": ["<cr>", "#"],
+      "after": ["g", "#"]
+    },
+    {
+      "before": ["<cr>", "$"],
+      "after": ["g", "$"]
+    },
+    {
+      "before": ["<cr>", "~"],
+      "after": ["g", "'"]
+    },
+    {
+      "before": ["<cr>", "`"],
+      "after": ["g", "`"]
+    },
+    {
+      "before": ["<cr>", "*"],
+      "after": ["g", "*"]
+    },
+    {
+      "before": ["<cr>", "+"],
+      "after": ["g", "+"]
+    },
+    {
+      "before": ["<cr>", ","],
+      "after": ["g", ","]
+    },
+    {
+      "before": ["<cr>", "-"],
+      "after": ["g", "-"]
+    },
+    {
+      "before": ["<cr>", "0"],
+      "after": ["g", "0"]
+    },
+    {
+      "before": ["<cr>", "8"],
+      "after": ["g", "8"]
+    },
+    {
+      "before": ["<cr>", ";"],
+      "after": ["g", ";"]
+    },
+    {
+      "before": ["<cr>", "<"],
+      "after": ["g", "<"]
+    },
+    {
+      "before": ["<cr>", "?"],
+      "after": ["g", "?"]
+    },
+    {
+      "before": ["<cr>", "?", "?"],
+      "after": ["g", "?", "?"]
+    },
+    {
+      "before": ["<cr>", "?", "h", "?"],
+      "after": ["g", "?", "g", "?"]
+    },
+    // {
+    // "before": ["<cr>", "E"],
+    // "after": ["g", "E"]
+    // },
+    {
+      "before": ["<cr>", "V"],
+      "after": ["g", "H"]
+    },
+    {
+      "before": ["<cr>", "S"],
+      "after": ["g", "I"]
+    },
+    {
+      "before": ["<cr>", "J"],
+      "after": ["g", "J"]
+    },
+    {
+      "before": ["<cr>", "h"],
+      "after": ["g", "N"]
+    },
+    {
+      "before": ["<cr>", "D"],
+      "after": ["g", "P"]
+    },
+    {
+      "before": ["<cr>", "e"],
+      "after": ["g", "Q"]
+    },
+    {
+      "before": ["<cr>", "W"],
+      "after": ["g", "R"]
+    },
+    {
+      "before": ["<cr>", "T"],
+      "after": ["g", "T"]
+    },
+    {
+      "before": ["<cr>", "U"],
+      "after": ["g", "U"]
+    },
+    {
+      "before": ["<cr>", "G"],
+      "after": ["g", "V"]
+    },
+    {
+      "before": ["<cr>", "]"],
+      "after": ["g", "]"]
+    },
+    {
+      "before": ["<cr>", "^"],
+      "after": ["g", "^"]
+    },
+    {
+      "before": ["<cr>", "_"],
+      "after": ["g", "_"]
+    },
+    {
+      "before": ["<cr>", "a"],
+      "after": ["g", "a"]
+    },
+    // {
+    // "before": ["<cr>", "e"],
+    // "after": ["g", "e"]
+    // },
+    {
+      "before": ["<cr>", "f"],
+      "after": ["g", "f"]
+    },
+    {
+      "before": ["<cr>", "F"],
+      "after": ["g", "F"]
+    },
+    {
+      "before": ["<cr>", "<cr>"],
+      "after": ["g", "g"]
+    },
+    {
+      "before": ["<cr>", "v"],
+      "after": ["g", "h"]
+    },
+    {
+      "before": ["<cr>", "s"],
+      "after": ["g", "i"]
+    },
+    {
+      "before": ["<cr>", "j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["<cr>", "k"],
+      "after": ["g", "k"]
+    },
+    {
+      "before": ["<cr>", "/"],
+      "after": ["g", "n"]
+    },
+    {
+      "before": ["<cr>", "m"],
+      "after": ["g", "m"]
+    },
+    {
+      "before": ["<cr>", "M"],
+      "after": ["g", "M"]
+    },
+    {
+      "before": ["<cr>", "o"],
+      "after": ["g", "o"]
+    },
+    {
+      "before": ["<cr>", "d"],
+      "after": ["g", "p"]
+    },
+    // {
+    // "before": ["<cr>", "q"],
+    // "after": ["g", "q"]
+    // },
+    {
+      "before": ["<cr>", "w"],
+      "after": ["g", "r"]
+    },
+    {
+      "before": ["<cr>", "s"],
+      "after": ["g", "s"]
+    },
+    {
+      "before": ["<cr>", "t"],
+      "after": ["g", "t"]
+    },
+    {
+      "before": ["<cr>", "u"],
+      "after": ["g", "u"]
+    },
+    {
+      "before": ["<cr>", "g"],
+      "after": ["g", "v"]
+    },
+    {
+      "before": ["<cr>", ":"],
+      "after": ["g", "w"]
+    },
+    {
+      "before": ["<cr>", "x"],
+      "after": ["g", "x"]
+    },
+    {
+      "before": ["<cr>", "@"],
+      "after": ["g", "@"]
+    },
+    {
+      "before": ["<cr>", "q"],
+      "after": ["g", "~"]
+    },
+    // VSCode Tricks
+    {
+      "before": ["<cr>", "<tab>"],
+      "after": ["g", "d"]
+    },
+    {
+      "before": ["<cr>", "<space>"],
+      "after": ["g", "h"]
+    },
+    {
+      "before": ["<cr>", ";"],
+      "after": ["g", "q"]
+    },
+    {
+      "before": ["<cr>", "/"],
+      "after": ["g", "b"]
+    },
+    // {
+    // "before": ["<cr>", "b"],
+    // "after": ["a", "f"]
+    // },
+    {
+      "before": ["<C-r>"],
+      "after": [],
+      "commands": [
+        {
+          "command": "redo",
+          "args": []
+        }
+      ]
+    }
+  ]
+}

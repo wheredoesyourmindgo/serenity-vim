@@ -294,13 +294,13 @@ noremap <cr> g
 " Expert mode
 noremap <leader>x Q
 " Prev. end word (non-whitespace)
-noremap <leader>n gE
+noremap <leader>l gE
 " Prev. beginning word (non-whitespace)
-noremap <leader>e B
+noremap <leader>u B
 " Prev. beginning word (non-whitespace)
-noremap <leader>i W
+noremap <leader>y W
 " Prev. end word (non-whitespace)
-noremap <leader>o E
+noremap <leader>; E
 " Help
 noremap <leader>` K
 " G - End of file / Goto line

@@ -54,19 +54,19 @@
       "after": ["g"]
     },
     {
-      "before": ["<leader>", "e"],
+      "before": ["<leader>", "u"],
       "after": ["<left>", "T", "<space>", "<right>", "T", "<space>"]
     },
     {
-      "before": ["<leader>", "E"],
+      "before": ["<leader>", "U"],
       "after": ["F", "<space>"]
     },
     {
-      "before": ["<leader>", "i"],
+      "before": ["<leader>", "y"],
       "after": ["<right>", "t", "<space>", "<left>", "t", "<space>"]
     },
     {
-      "before": ["<leader>", "I"],
+      "before": ["<leader>", "Y"],
       "after": ["f", "<space>"]
     },
     {
@@ -134,19 +134,19 @@
       "after": ["L"]
     },
     {
-      "before": ["<leader>", "y"],
+      "before": ["<leader>", "i"],
       "after": ["z", "t"]
     },
     {
-      "before": ["<leader>", "Y"],
+      "before": ["<leader>", "I"],
       "after": ["z", "z"]
     },
     {
-      "before": ["<leader>", "U"],
+      "before": ["<leader>", "E"],
       "after": ["z", "z"]
     },
     {
-      "before": ["<leader>", "u"],
+      "before": ["<leader>", "e"],
       "after": ["z", "b"]
     },
     {
@@ -162,7 +162,7 @@
       "after": ["z"]
     },
     {
-      "before": ["<leader>", "l"],
+      "before": ["<leader>", "n"],
       "after": ["0"]
     },
     {
@@ -174,11 +174,11 @@
       "after": ["G"]
     },
     {
-      "before": ["<leader>", "n"],
+      "before": ["<leader>", "l"],
       "after": ["("]
     },
     {
-      "before": ["<leader>", "o"],
+      "before": ["<leader>", ";"],
       "after": [")"]
     },
     {
@@ -338,35 +338,35 @@
       "after": ["F"]
     },
     {
-      "before": ["l"],
+      "before": ["n"],
       "after": ["_"]
     },
     {
-      "before": ["L"],
+      "before": ["N"],
       "after": [","]
     },
     {
-      "before": ["u"],
+      "before": ["e"],
       "after": ["+"]
     },
     {
-      "before": ["U"],
+      "before": ["E"],
       "after": ["C-e"]
     },
     {
-      "before": ["y"],
+      "before": ["i"],
       "after": ["-"]
     },
     {
-      "before": ["Y"],
+      "before": ["I"],
       "after": ["C-y"]
     },
     {
-      "before": [";"],
+      "before": ["o"],
       "after": ["$"]
     },
     {
-      "before": [":"],
+      "before": ["O"],
       "after": [";"]
     },
     {
@@ -378,35 +378,35 @@
       "after": ["T"]
     },
     {
-      "before": ["n"],
+      "before": ["l"],
       "after": ["g", "e"]
     },
     {
-      "before": ["N"],
+      "before": ["L"],
       "after": ["g", "E"]
     },
     {
-      "before": ["e"],
+      "before": ["u"],
       "after": ["b"]
     },
     {
-      "before": ["E"],
+      "before": ["U"],
       "after": ["B"]
     },
     {
-      "before": ["i"],
+      "before": ["y"],
       "after": ["w"]
     },
     {
-      "before": ["I"],
+      "before": ["Y"],
       "after": ["W"]
     },
     {
-      "before": ["o"],
+      "before": [";"],
       "after": ["e"]
     },
     {
-      "before": ["O"],
+      "before": [":"],
       "after": ["E"]
     },
     {
@@ -454,7 +454,7 @@
       "after": ["g", "#"]
     },
     {
-      "before": ["<cr>", "$"],
+      "before": ["<cr>", "o"],
       "after": ["g", "$"]
     },
     {
@@ -509,10 +509,6 @@
       "before": ["<cr>", "?", "h", "?"],
       "after": ["g", "?", "g", "?"]
     },
-    // {
-    // "before": ["<cr>", "E"],
-    // "after": ["g", "E"]
-    // },
     {
       "before": ["<cr>", "V"],
       "after": ["g", "H"]
@@ -557,22 +553,23 @@
       "before": ["<cr>", "]"],
       "after": ["g", "]"]
     },
+    // A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
+    // {
+    //   "before": ["<cr>", "o"],
+    //   "after": ["g", "$"]
+    // },
     {
-      "before": ["<cr>", "^"],
-      "after": ["g", "^"]
+      "before": ["<cr>", "o"],
+      "after": ["g", "_"]
     },
     {
-      "before": ["<cr>", "_"],
-      "after": ["g", "_"]
+      "before": ["<cr>", "n"],
+      "after": ["g", "^"]
     },
     {
       "before": ["<cr>", "a"],
       "after": ["g", "a"]
     },
-    // {
-    // "before": ["<cr>", "e"],
-    // "after": ["g", "e"]
-    // },
     {
       "before": ["<cr>", "f"],
       "after": ["g", "f"]
@@ -614,17 +611,13 @@
       "after": ["g", "M"]
     },
     {
-      "before": ["<cr>", "o"],
+      "before": ["<cr>", "O"],
       "after": ["g", "o"]
     },
     {
       "before": ["<cr>", "d"],
       "after": ["g", "p"]
     },
-    // {
-    // "before": ["<cr>", "q"],
-    // "after": ["g", "q"]
-    // },
     {
       "before": ["<cr>", "w"],
       "after": ["g", "r"]
@@ -661,7 +654,6 @@
       "before": ["<cr>", "q"],
       "after": ["g", "~"]
     },
-    // VSCode Tricks
     {
       "before": ["<cr>", "<tab>"],
       "after": ["g", "d"]
@@ -678,10 +670,6 @@
       "before": ["<cr>", "/"],
       "after": ["g", "b"]
     },
-    // {
-    // "before": ["<cr>", "b"],
-    // "after": ["a", "f"]
-    // },
     {
       "before": ["<C-r>"],
       "after": [],
@@ -737,19 +725,19 @@
       "after": ["g"]
     },
     {
-      "before": ["<leader>", "e"],
+      "before": ["<leader>", "u"],
       "after": ["<left>", "T", "<space>", "<right>", "T", "<space>"]
     },
     {
-      "before": ["<leader>", "E"],
+      "before": ["<leader>", "U"],
       "after": ["F", "<space>"]
     },
     {
-      "before": ["<leader>", "i"],
+      "before": ["<leader>", "y"],
       "after": ["<right>", "t", "<space>", "<left>", "t", "<space>"]
     },
     {
-      "before": ["<leader>", "I"],
+      "before": ["<leader>", "Y"],
       "after": ["f", "<space>"]
     },
     {
@@ -812,19 +800,19 @@
       "after": ["L"]
     },
     {
-      "before": ["<leader>", "y"],
+      "before": ["<leader>", "i"],
       "after": ["z", "t"]
     },
     {
-      "before": ["<leader>", "Y"],
+      "before": ["<leader>", "I"],
       "after": ["z", "z"]
     },
     {
-      "before": ["<leader>", "U"],
+      "before": ["<leader>", "E"],
       "after": ["z", "z"]
     },
     {
-      "before": ["<leader>", "u"],
+      "before": ["<leader>", "e"],
       "after": ["z", "b"]
     },
     {
@@ -840,7 +828,7 @@
       "after": ["z"]
     },
     {
-      "before": ["<leader>", "l"],
+      "before": ["<leader>", "n"],
       "after": ["0"]
     },
     {
@@ -852,11 +840,11 @@
       "after": ["G"]
     },
     {
-      "before": ["<leader>", "n"],
+      "before": ["<leader>", "l"],
       "after": ["("]
     },
     {
-      "before": ["<leader>", "o"],
+      "before": ["<leader>", ";"],
       "after": [")"]
     },
     {
@@ -927,16 +915,20 @@
       "before": ["f", "e"],
       "after": ["c", "b"]
     },
+    // {
+    //   "before": ["f", "n"],
+    //   "after": ["c", "^"]
+    // },
+    // {
+    //   "before": ["f", "n"],
+    //   "after": ["c", "0"]
+    // },
     {
-      "before": ["f", "u"],
-      "after": ["c", "^"]
+      "before": ["f", "n"],
+      "after": ["c", "_"]
     },
     {
-      "before": ["f", "l"],
-      "after": ["c", "0"]
-    },
-    {
-      "before": ["f", "y"],
+      "before": ["f", "o"],
       "after": ["c", "$"]
     },
     {
@@ -1049,16 +1041,20 @@
       "before": ["x", "e"],
       "after": ["d", "b"]
     },
+    // {
+    //   "before": ["x", "n"],
+    //   "after": ["d", "^"]
+    // },
+    // {
+    //   "before": ["x", "n"],
+    //   "after": ["d", "0"]
+    // },
     {
-      "before": ["x", "u"],
-      "after": ["d", "^"]
+      "before": ["x", "n"],
+      "after": ["d", "_"]
     },
     {
-      "before": ["x", "l"],
-      "after": ["d", "0"]
-    },
-    {
-      "before": ["x", "y"],
+      "before": ["x", "o"],
       "after": ["d", "$"]
     },
     {
@@ -1109,16 +1105,20 @@
       "before": ["c", "e"],
       "after": ["y", "b"]
     },
+    // {
+    //   "before": ["c", "n"],
+    //   "after": ["y", "^"]
+    // },
+    // {
+    //   "before": ["c", "n"],
+    //   "after": ["y", "0"]
+    // },
     {
-      "before": ["c", "u"],
-      "after": ["y", "^"]
+      "before": ["c", "n"],
+      "after": ["y", "_"]
     },
     {
-      "before": ["c", "l"],
-      "after": ["y", "0"]
-    },
-    {
-      "before": ["c", "y"],
+      "before": ["c", "o"],
       "after": ["y", "$"]
     },
     {
@@ -1180,35 +1180,35 @@
       "after": ["F"]
     },
     {
-      "before": ["l"],
+      "before": ["n"],
       "after": ["_"]
     },
     {
-      "before": ["L"],
+      "before": ["N"],
       "after": [","]
     },
     {
-      "before": ["u"],
+      "before": ["e"],
       "after": ["+"]
     },
     {
-      "before": ["U"],
+      "before": ["E"],
       "after": ["C-e"]
     },
     {
-      "before": ["y"],
+      "before": ["i"],
       "after": ["-"]
     },
     {
-      "before": ["Y"],
+      "before": ["I"],
       "after": ["C-y"]
     },
     {
-      "before": [";"],
+      "before": ["o"],
       "after": ["$"]
     },
     {
-      "before": [":"],
+      "before": ["O"],
       "after": [";"]
     },
     {
@@ -1220,35 +1220,35 @@
       "after": ["T"]
     },
     {
-      "before": ["n"],
+      "before": ["l"],
       "after": ["g", "e"]
     },
     {
-      "before": ["N"],
+      "before": ["L"],
       "after": ["g", "E"]
     },
     {
-      "before": ["e"],
+      "before": ["u"],
       "after": ["b"]
     },
     {
-      "before": ["E"],
+      "before": ["U"],
       "after": ["B"]
     },
     {
-      "before": ["i"],
+      "before": ["y"],
       "after": ["w"]
     },
     {
-      "before": ["I"],
+      "before": ["Y"],
       "after": ["W"]
     },
     {
-      "before": ["o"],
+      "before": [";"],
       "after": ["e"]
     },
     {
-      "before": ["O"],
+      "before": [":"],
       "after": ["E"]
     },
     {
@@ -1294,10 +1294,6 @@
     {
       "before": ["<cr>", "#"],
       "after": ["g", "#"]
-    },
-    {
-      "before": ["<cr>", "$"],
-      "after": ["g", "$"]
     },
     {
       "before": ["<cr>", "~"],
@@ -1351,10 +1347,6 @@
       "before": ["<cr>", "?", "h", "?"],
       "after": ["g", "?", "g", "?"]
     },
-    // {
-    // "before": ["<cr>", "E"],
-    // "after": ["g", "E"]
-    // },
     {
       "before": ["<cr>", "V"],
       "after": ["g", "H"]
@@ -1399,22 +1391,23 @@
       "before": ["<cr>", "]"],
       "after": ["g", "]"]
     },
+    // A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
+    // {
+    //   "before": ["<cr>", "o"],
+    //   "after": ["g", "$"]
+    // },
     {
-      "before": ["<cr>", "^"],
-      "after": ["g", "^"]
+      "before": ["<cr>", "o"],
+      "after": ["g", "_"]
     },
     {
-      "before": ["<cr>", "_"],
-      "after": ["g", "_"]
+      "before": ["<cr>", "n"],
+      "after": ["g", "^"]
     },
     {
       "before": ["<cr>", "a"],
       "after": ["g", "a"]
     },
-    // {
-    // "before": ["<cr>", "e"],
-    // "after": ["g", "e"]
-    // },
     {
       "before": ["<cr>", "f"],
       "after": ["g", "f"]
@@ -1456,17 +1449,13 @@
       "after": ["g", "M"]
     },
     {
-      "before": ["<cr>", "o"],
+      "before": ["<cr>", "O"],
       "after": ["g", "o"]
     },
     {
       "before": ["<cr>", "d"],
       "after": ["g", "p"]
     },
-    // {
-    // "before": ["<cr>", "q"],
-    // "after": ["g", "q"]
-    // },
     {
       "before": ["<cr>", "w"],
       "after": ["g", "r"]
@@ -1503,7 +1492,6 @@
       "before": ["<cr>", "q"],
       "after": ["g", "~"]
     },
-    // VSCode Tricks
     {
       "before": ["<cr>", "<tab>"],
       "after": ["g", "d"]
@@ -1520,10 +1508,6 @@
       "before": ["<cr>", "/"],
       "after": ["g", "b"]
     },
-    // {
-    // "before": ["<cr>", "b"],
-    // "after": ["a", "f"]
-    // },
     {
       "before": ["<C-r>"],
       "after": [],

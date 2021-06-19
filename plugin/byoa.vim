@@ -14,12 +14,11 @@ else
 endif
 
 if s:byoa_keymap == 'colemak-dh'
-  let s:r1c10 = ";"
-  let s:R1C10 = ":"
-  let s:r2c11 = "'"
+  let s:r2c10 = "o"
+  let s:R2C10 = "O"
 elseif s:byoa_keymap == 'qwerty'
-  let s:r1c10 = "p"
-  let s:R1C10 = "P"
+  let s:r2c10 = ";"
+  let s:R2C10 = ":"
 endif
 
 " Map double quote to line comment toggle
@@ -276,12 +275,12 @@ noremap <leader>> M
 " Screen Bottom
 noremap <leader>, L
 " Scroll Top
-noremap <leader>y zt
+noremap <leader>i zt
 " Scroll Mid
-noremap <leader>U zz
-noremap <leader>Y zz
+noremap <leader>E zz
+noremap <leader>I zz
 " Scroll Bottom
-noremap <leader>u zb
+noremap <leader>e zb
 " Next instance of current word
 noremap <leader>/ *
 " Previous instance of current word
@@ -289,7 +288,7 @@ noremap <leader>h #
 " Extra commands
 noremap <leader>z z
 " Hard Bol
-noremap <leader>l 0
+noremap <leader>n 0
 " Extra commands
 noremap <cr> g
 " Expert mode
@@ -307,14 +306,14 @@ noremap <leader>` K
 " G - End of file / Goto line
 noremap <leader><cr> G
 " Prev sentence
-noremap <leader>n (
+noremap <leader>l (
 " End sentence
-noremap <leader>o )
+noremap <leader>; )
 " Next/Previous whitespace, exclusive and inclusive
-noremap <leader>e <left>T<space><right>T<space>
-noremap <leader>E F<space>
-noremap <leader>i <right>t<space><left>t<space>
-noremap <leader>I f<space>
+noremap <leader>u <left>T<space><right>T<space>
+noremap <leader>U F<space>
+noremap <leader>y <right>t<space><left>t<space>
+noremap <leader>Y f<space>
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------
@@ -395,30 +394,28 @@ noremap J F
 " nmap M <Plug>(clever-f-T)
 " xmap M <Plug>(clever-f-T)
 " omap M <Plug>(clever-f-T)
-
-noremap l _
-noremap L ,
-" nmap L <Plug>(clever-f-repeat-back)
-noremap u +
-noremap U <C-e>
-noremap y -
-noremap Y <C-y>
-" noremap ; ;
-execute 'noremap ' . s:r1c10 . ' $'
-execute 'noremap ' . s:R1C10 . ' ;'
-" execute 'nmap ' . s:R1C10 . ' <Plug>(clever-f-repeat-forward)'
+noremap l ge
+noremap L gE
+noremap u b
+noremap U B
+noremap y w
+noremap Y W
+noremap ; e
+noremap : E
 " right r2
-" comment out these lines when using clever-f
 noremap m t
 noremap M T
-noremap n ge
-noremap N gE
-noremap e b
-noremap E B
-noremap i w
-noremap I W
-noremap o e
-noremap O E
+noremap n _
+noremap N ,
+" nmap N <Plug>(clever-f-repeat-back)
+noremap e +
+noremap E <C-e>
+noremap i -
+noremap I <C-y>
+" noremap ; ;
+execute 'noremap ' . s:r2c10 . ' $'
+execute 'noremap ' . s:R2C10 . ' ;'
+" execute 'nmap ' . s:R2C10 . ' <Plug>(clever-f-repeat-forward)'
 " right r3
 noremap k /
 noremap K ?
@@ -432,7 +429,10 @@ noremap / }
 noremap ? n
 " g mappings
 noremap <cr># g#
-noremap <cr>$ g$
+" A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
+" noremap <cr>o g$
+noremap <cr>o g_
+noremap <cr>n g^
 noremap <cr>& g&
 noremap <cr>~ g'
 noremap <cr>` g`
@@ -462,8 +462,6 @@ noremap <cr>U gU
 " gV - visual
 noremap <cr>G gV
 noremap <cr>] g]
-noremap <cr>^ g^
-noremap <cr>_ g_
 noremap <cr>a ga
 " noremap <cr>e ge
 noremap <cr>f gf
@@ -479,7 +477,7 @@ noremap <cr>/ gn
 noremap <cr>h gN
 noremap <cr>m gm
 noremap <cr>M gM
-noremap <cr>o go
+noremap <cr>O go
 noremap <cr>d gp
 noremap <cr>; gq
 " gr - replace

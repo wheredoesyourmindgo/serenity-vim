@@ -265,6 +265,11 @@ xmap Ge <Plug>(textobj-entire-a)
 omap Ge <Plug>(textobj-entire-a)
 xmap ge <Plug>(textobj-entire-i)
 omap ge <Plug>(textobj-entire-i)
+" vim-textobj-indent
+xmap Gi <Plug>(textobj-indent-a)
+omap Gi <Plug>(textobj-indent-a)
+xmap gi <Plug>(textobj-indent-i)
+omap gi <Plug>(textobj-indent-i)
 
 
 " Leaders --------------------------

@@ -284,20 +284,18 @@ omap gI <Plug>(textobj-indent-same-i))
 noremap <leader>q ZZ
 " Quit w/o save
 noremap <leader>Q ZQ
-" Screen Top
-noremap <leader>. H
-" Screen Mid
-noremap <leader>< M
-noremap <leader>> M
-" Screen Bottom
-noremap <leader>, L
-" Scroll Top
-noremap <leader>i zt
-" Scroll Mid
-noremap <leader>E zz
-noremap <leader>I zz
-" Scroll Bottom
-noremap <leader>e zb
+" Find
+noremap <leader>. /
+" Find reverse 
+noremap <leader>, ?
+" Till Char
+noremap <leader>i t
+" Till Char reverse
+noremap <leader>e T
+" Find Char
+noremap <leader>I f
+" Find Char reverse
+noremap <leader>E F
 " Next instance of current word
 noremap <leader>/ *
 " Previous instance of current word
@@ -389,8 +387,8 @@ noremap D P
 noremap v <C-r>
 noremap V .
 " right r1
-noremap j T
-noremap J F
+noremap j H
+noremap J zt
 " nmap j <Plug>(clever-f-f)
 " xmap j <Plug>(clever-f-f)
 " omap j <Plug>(clever-f-f)
@@ -412,8 +410,8 @@ noremap Y W
 noremap ; e
 noremap : E
 " right r2
-noremap m t
-noremap M f
+noremap m M
+noremap M zz
 noremap n _
 noremap N ,
 " nmap N <Plug>(clever-f-repeat-back)
@@ -426,8 +424,8 @@ execute 'noremap ' . s:r2c10 . ' $'
 execute 'noremap ' . s:R2C10 . ' ;'
 " execute 'nmap ' . s:R2C10 . ' <Plug>(clever-f-repeat-forward)'
 " right r3
-noremap k /
-noremap K ?
+noremap k L
+noremap K zb
 noremap h {
 noremap H N
 noremap < <C-d>

@@ -1,4 +1,5 @@
 {
+  "vim.leader": "<space>",
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
       "before": ["g"],
@@ -913,15 +914,15 @@
       "after": ["c", "c"]
     },
     {
-      "before": ["f", "i"],
+      "before": ["f", "y"],
       "after": ["c", "w"]
     },
     {
-      "before": ["f", "o"],
+      "before": ["f", ";"],
       "after": ["c", "e"]
     },
     {
-      "before": ["f", "e"],
+      "before": ["f", "u"],
       "after": ["c", "b"]
     },
     // {
@@ -1039,15 +1040,15 @@
       "after": ["d", "d"]
     },
     {
-      "before": ["x", "i"],
+      "before": ["x", "y"],
       "after": ["d", "w"]
     },
     {
-      "before": ["x", "o"],
+      "before": ["x", ";"],
       "after": ["d", "e"]
     },
     {
-      "before": ["x", "e"],
+      "before": ["x", "u"],
       "after": ["d", "b"]
     },
     // {
@@ -1103,15 +1104,15 @@
       "after": ["y", "y"]
     },
     {
-      "before": ["c", "i"],
+      "before": ["c", "y"],
       "after": ["y", "w"]
     },
     {
-      "before": ["c", "o"],
+      "before": ["c", ";"],
       "after": ["y", "e"]
     },
     {
-      "before": ["c", "e"],
+      "before": ["c", "u"],
       "after": ["y", "b"]
     },
     // {

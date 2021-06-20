@@ -1,5 +1,4 @@
 {
-  "vim.leader": "<space>",
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
       "before": ["g"],
@@ -11,6 +10,11 @@
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
+    // Default behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I"
+    {
+      "before": ["G", "i"],
+      "after": ["a", "I"]
+    },
     {
       "before": ["<leader>", "?"],
       "commands": ["editor.action.addSelectionToNextFindMatch"],
@@ -682,6 +686,11 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
+    // Default behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I"
+    {
+      "before": ["G", "i"],
+      "after": ["a", "I"]
+    },
     {
       "before": ["<leader>", "?"],
       "commands": ["editor.action.addSelectionToNextFindMatch"],

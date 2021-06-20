@@ -261,10 +261,10 @@ let g:clever_f_not_overwrites_standard_mappings = 1
 map <s-F10> <Plug>HiLinkTrace
 
 " vim-textobj-entire
-xmap Gb <Plug>(textobj-entire-a)
-omap Gb <Plug>(textobj-entire-a)
-xmap gb <Plug>(textobj-entire-i)
-omap gb <Plug>(textobj-entire-i)
+xmap Ge <Plug>(textobj-entire-a)
+omap Ge <Plug>(textobj-entire-a)
+xmap ge <Plug>(textobj-entire-i)
+omap ge <Plug>(textobj-entire-i)
 
 
 " Leaders --------------------------

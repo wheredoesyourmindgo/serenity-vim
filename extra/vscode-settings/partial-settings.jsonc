@@ -336,7 +336,7 @@
     },
     {
       "before": ["j"],
-      "after": ["f"]
+      "after": ["T"]
     },
     {
       "before": ["J"],
@@ -380,7 +380,7 @@
     },
     {
       "before": ["M"],
-      "after": ["T"]
+      "after": ["f"]
     },
     {
       "before": ["l"],
@@ -1184,7 +1184,7 @@
     },
     {
       "before": ["j"],
-      "after": ["f"]
+      "after": ["T"]
     },
     {
       "before": ["J"],
@@ -1228,7 +1228,7 @@
     },
     {
       "before": ["M"],
-      "after": ["T"]
+      "after": ["f"]
     },
     {
       "before": ["l"],

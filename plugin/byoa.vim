@@ -261,11 +261,13 @@ let g:clever_f_not_overwrites_standard_mappings = 1
 map <s-F10> <Plug>HiLinkTrace
 
 " vim-textobj-entire
+let g:textobj_entire_no_default_key_mappings = 1
 xmap Ge <Plug>(textobj-entire-a)
 omap Ge <Plug>(textobj-entire-a)
 xmap ge <Plug>(textobj-entire-i)
 omap ge <Plug>(textobj-entire-i)
 " vim-textobj-indent
+let g:textobj_indent_no_default_key_mappings = 1
 Gi <Plug>(textobj-indent-a)
 gi <Plug>(textobj-indent-i)
 GI <Plug>(textobj-indent-same-a)

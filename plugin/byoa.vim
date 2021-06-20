@@ -389,7 +389,7 @@ noremap D P
 noremap v <C-r>
 noremap V .
 " right r1
-noremap j f
+noremap j T
 noremap J F
 " nmap j <Plug>(clever-f-f)
 " xmap j <Plug>(clever-f-f)
@@ -413,7 +413,7 @@ noremap ; e
 noremap : E
 " right r2
 noremap m t
-noremap M T
+noremap M f
 noremap n _
 noremap N ,
 " nmap N <Plug>(clever-f-repeat-back)

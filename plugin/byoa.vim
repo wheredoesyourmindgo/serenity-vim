@@ -257,9 +257,15 @@ let g:fugitive_no_maps = 1
 " Don't use Clever-f mappings
 let g:clever_f_not_overwrites_standard_mappings = 1
 
-
 " Set the mapping for this plugin so <leader>hlt mapping doesn't conflict with Vim Split <leader>h mapping.
 map <s-F10> <Plug>HiLinkTrace
+
+" vim-textobj-entire
+xmap Gb <Plug>(textobj-entire-a)
+omap Gb <Plug>(textobj-entire-a)
+xmap gb <Plug>(textobj-entire-i)
+omap gb <Plug>(textobj-entire-i)
+
 
 " Leaders --------------------------
 

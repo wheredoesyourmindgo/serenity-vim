@@ -268,12 +268,17 @@ xmap ge <Plug>(textobj-entire-i)
 omap ge <Plug>(textobj-entire-i)
 " vim-textobj-indent
 let g:textobj_indent_no_default_key_mappings = 1
-xmap Gi <Plug>(textobj-indent-a)
-omap Gi <Plug>(textobj-indent-a)
+" default behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I"
+" xmap Gi <Plug>(textobj-indent-a)
+" omap Gi <Plug>(textobj-indent-a)
+xmap GI <Plug>(textobj-indent-a)
+omap GI <Plug>(textobj-indent-a)
 xmap gi <Plug>(textobj-indent-i)
 omap gi <Plug>(textobj-indent-i)
-xmap GI <Plug>(textobj-indent-same-a)
-omap GI <Plug>(textobj-indent-same-a)
+" xmap GI <Plug>(textobj-indent-same-a)
+" omap GI <Plug>(textobj-indent-same-a)
+xmap Gi <Plug>(textobj-indent-same-a)
+omap Gi <Plug>(textobj-indent-same-a)
 xmap gI <Plug>(textobj-indent-same-i))
 omap gI <Plug>(textobj-indent-same-i))
 

@@ -659,6 +659,7 @@
       "before": ["<cr>", "q"],
       "after": ["g", "~"]
     },
+    // VSCode Tricks
     {
       "before": ["<cr>", "<tab>"],
       "after": ["g", "d"]
@@ -1502,6 +1503,7 @@
       "before": ["<cr>", "q"],
       "after": ["g", "~"]
     },
+    // VSCode Tricks
     {
       "before": ["<cr>", "<tab>"],
       "after": ["g", "d"]

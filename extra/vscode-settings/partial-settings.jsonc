@@ -8,10 +8,15 @@
     {
       "before": ["G"],
       "after": ["a"]
+    },
+    // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
+    {
+      "before": ["G", "i"],
+      "after": ["a", "I"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
-    // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I"
+    // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
       "before": ["G", "i"],
       "after": ["a", "I"]
@@ -681,11 +686,6 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
-    // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I"
-    {
-      "before": ["G", "i"],
-      "after": ["a", "I"]
-    },
     {
       "before": ["<leader>", "?"],
       "commands": ["editor.action.addSelectionToNextFindMatch"],

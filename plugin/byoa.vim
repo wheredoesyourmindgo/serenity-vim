@@ -366,12 +366,12 @@ map b <Plug>(wildfire-fuel)
 vmap B <Plug>(wildfire-water)
 " left r2
 noremap a s
-noremap A S
+" Using A in visual mode w/ vim-sandwhich
+nnoremap A S
 noremap r i
 noremap R I
 noremap s a
-" Using S in visual mode w/ vim-sandwhich
-nnoremap S A
+noremap S A
 noremap t o
 noremap T O
 nnoremap g v

@@ -42,28 +42,28 @@ let g:surround_no_insert_mappings = 1
 " Don't use Sandwhich default mappings
 " The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
 let g:sandwich_no_default_key_mappings = 1
-silent! nmap <unique><silent> x' <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> f' <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> x'a <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> f'a <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> xa <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> fa <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> xA <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> fA <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
-silent! nmap <unique> c' <Plug>(operator-sandwich-add)
-silent! xmap <unique> ' <Plug>(operator-sandwich-add)
-silent! omap <unique> ' <Plug>(operator-sandwich-g@)
+silent! nmap <unique> ca <Plug>(operator-sandwich-add)
+silent! xmap <unique> A <Plug>(operator-sandwich-add)
+silent! omap <unique> A <Plug>(operator-sandwich-g@)
 " delete
-silent! xmap <unique> sx <Plug>(operator-sandwich-delete)
+" silent! xmap <unique> ax <Plug>(operator-sandwich-delete)
 " replace
-silent! xmap <unique> sf <Plug>(operator-sandwich-replace)
+" silent! xmap <unique> af <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> g'a <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> g'a <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> G'a <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> G'a <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> g' <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> g' <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> G' <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> G' <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> gA <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> gA <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> GA <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> GA <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> ga <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> ga <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> Ga <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> Ga <Plug>(textobj-sandwich-query-a)
 " Default recipes (See https://github.com/machakann/vim-sandwich/blob/9e6340affe9f53c11a6975a5f50b9bf48adb692c/macros/sandwich/keymap/surround.vim#L25)
 let g:sandwich#recipes = [
       \   {

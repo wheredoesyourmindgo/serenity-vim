@@ -11,7 +11,7 @@
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
-    // Default behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I"
+    // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I"
     {
       "before": ["G", "i"],
       "after": ["a", "I"]
@@ -34,10 +34,11 @@
       "before": ["G"],
       "after": ["a"]
     },
-    {
-      "before": ["'"],
-      "after": ["S"]
-    },
+    // vim-surround emulation mappings (mapped below, and is default settings)
+    // {
+    //   "before": ["A"],
+    //   "after": ["S"]
+    // },
     {
       "before": ["<bs>"],
       "after": ["X"]
@@ -680,7 +681,7 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
-    // Default behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I"
+    // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I"
     {
       "before": ["G", "i"],
       "after": ["a", "I"]
@@ -695,16 +696,17 @@
       "commands": ["editor.action.addSelectionToPreviousFindMatch"],
       "when": "editorFocus"
     },
+    // vim-surround emulation mappings
     {
-      "before": ["c", "'"],
+      "before": ["c", "a"],
       "after": ["y", "s"]
     },
     {
-      "before": ["x", "'"],
+      "before": ["x", "a"],
       "after": ["d", "s"]
     },
     {
-      "before": ["f", "'"],
+      "before": ["f", "a"],
       "after": ["c", "s"]
     },
     {

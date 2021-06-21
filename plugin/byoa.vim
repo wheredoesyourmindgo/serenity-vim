@@ -370,7 +370,8 @@ noremap A S
 noremap r i
 noremap R I
 noremap s a
-noremap S A
+" Using S in visual mode w/ vim-sandwhich
+nnoremap S A
 noremap t o
 noremap T O
 nnoremap g v

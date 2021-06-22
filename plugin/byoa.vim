@@ -64,6 +64,11 @@ silent! omap <unique> ga <Plug>(textobj-sandwich-query-i)
 silent! xmap <unique> ga <Plug>(textobj-sandwich-query-i)
 silent! omap <unique> Ga <Plug>(textobj-sandwich-query-a)
 silent! xmap <unique> Ga <Plug>(textobj-sandwich-query-a)
+" vim-surround keymap macro
+onoremap <SID>line :normal! ^vg_<CR>
+nmap <silent> caa <Plug>(operator-sandwich-add)<SID>line
+onoremap <SID>gul g_
+nmap cA ca<SID>gul
 " Default recipes (See https://github.com/machakann/vim-sandwich/blob/9e6340affe9f53c11a6975a5f50b9bf48adb692c/macros/sandwich/keymap/surround.vim#L25)
 let g:sandwich#recipes = [
       \   {

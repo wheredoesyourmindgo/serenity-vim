@@ -696,18 +696,22 @@
       "commands": ["editor.action.addSelectionToPreviousFindMatch"],
       "when": "editorFocus"
     },
-    // vim-surround emulation mappings
+    // vim-surround mappings
     {
       "before": ["c", "a"],
-      "after": ["y", "s"]
+      "after": ["<plugys>"]
+    },
+    {
+      "before": ["c", "a", "a"],
+      "after": ["<plugys>", "<plugys>"]
     },
     {
       "before": ["x", "a"],
-      "after": ["d", "s"]
+      "after": ["<plugds>"]
     },
     {
       "before": ["f", "a"],
-      "after": ["c", "s"]
+      "after": ["<plugcs>"]
     },
     {
       "before": ["<bs>"],

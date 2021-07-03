@@ -359,14 +359,14 @@ noremap ~ '
 " Alpha Commands --------------------------
 
 " left r1
-noremap q ~
-noremap Q J
+noremap q "
+noremap Q m
 noremap w r
 noremap W R
 noremap f c
 noremap F C
-noremap p "
-noremap P m
+noremap p ~
+noremap P J
 map b <Plug>(wildfire-fuel)
 vmap B <Plug>(wildfire-water)
 " left r2
@@ -488,6 +488,7 @@ noremap <cr><tab> gd
 noremap <cr>k gk
 noremap <cr>/ gn
 noremap <cr>h gN
+noremap <cr>P gJ
 noremap <cr>m gm
 noremap <cr>M gM
 noremap <cr>O go

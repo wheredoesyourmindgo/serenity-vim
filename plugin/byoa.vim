@@ -361,7 +361,7 @@ noremap ~ '
 " Alpha Commands --------------------------
 
 " left r1
-noremap q "
+noremap q \"
 noremap Q m
 noremap w r
 noremap W R

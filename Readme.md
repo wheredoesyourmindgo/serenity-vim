@@ -8,6 +8,12 @@
    <img width="800" src="https://raw.githubusercontent.com/wheredoesyourmindgo/vim-byoa/master/images/commands.png" />
 </p>
 
+## Symbols
+
+<p align="center">
+   <img width="800" src="https://raw.githubusercontent.com/wheredoesyourmindgo/vim-byoa/master/images/symbols.png" />
+</p>
+
 ## Leaders
 
 <p align="center">

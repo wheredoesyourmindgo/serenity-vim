@@ -294,7 +294,7 @@ noremap ] /
 " Find reverse 
 noremap [ ?
 " Find next
-" noremap \ n
+noremap \ n
 " Find prev
 noremap _ N
 " Till Char
@@ -438,7 +438,7 @@ noremap < <C-d>
 noremap > <C-u>
 noremap , <C-f>
 noremap . <C-b>
-noremap / }
+noremap \/ }
 " Next instance of current word
 noremap ? *
 " g mappings

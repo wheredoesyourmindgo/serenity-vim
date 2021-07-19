@@ -299,6 +299,13 @@ noremap \ n
 noremap _ N
 " Till Char
 noremap ) t
+" Till Char reverse
+noremap ( T
+" Find Char
+noremap } f
+" Find Char reverse
+noremap { F
+" Find/till next
 " Extra commands
 noremap <leader>z z
 " Extra commands

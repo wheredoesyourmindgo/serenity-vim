@@ -306,9 +306,9 @@ noremap } f
 " Find Char reverse
 noremap { F
 " Find/till next
-noremap | ;
+noremap \| ;
 " Find/till prev
-"noremap - ,
+noremap - ,
 " Extra commands
 noremap <leader>z z
 " Extra commands

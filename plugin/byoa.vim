@@ -326,10 +326,10 @@ noremap <leader>h (
 " End sentence
 noremap <leader>/ )
 " Next/Previous whitespace, exclusive and inclusive
-noremap <leader>l <left>T<space><right>T<space>
-noremap <leader>L F<space>
-noremap <leader>; <right>t<space><left>t<space>
-noremap <leader>: f<space>
+noremap <leader>n <left>T<space><right>T<space>
+noremap <leader>N F<space>
+noremap <leader>o <right>t<space><left>t<space>
+noremap <leader>O f<space>
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------

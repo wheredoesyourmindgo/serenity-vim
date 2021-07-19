@@ -289,26 +289,6 @@ omap gI <Plug>(textobj-indent-same-i))
 noremap <leader>q ZZ
 " Quit w/o save
 noremap <leader>Q ZQ
-" Find
-noremap ] /
-" Find reverse 
-noremap [ ?
-" Find next
-noremap \ n
-" Find prev
-noremap _ N
-" Till Char
-noremap ) t
-" Till Char reverse
-noremap ( T
-" Find Char
-noremap } f
-" Find Char reverse
-noremap { F
-" Find/till next
-noremap | ;
-" Find/till prev
-noremap - ,
 " Extra commands
 noremap <leader>z z
 " Extra commands
@@ -361,7 +341,7 @@ noremap ~ '
 " Alpha Commands --------------------------
 
 " left r1
-noremap q \"
+noremap q "
 noremap Q m
 noremap w r
 noremap W R

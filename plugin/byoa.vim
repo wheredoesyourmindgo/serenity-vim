@@ -322,14 +322,14 @@ noremap <leader>` K
 " G - End of file / Goto line
 noremap <leader><cr> G
 " Prev sentence
-noremap <leader>l (
+noremap <leader>h (
 " End sentence
-noremap <leader>; )
+noremap <leader>/ )
 " Next/Previous whitespace, exclusive and inclusive
-noremap <leader>u <left>T<space><right>T<space>
-noremap <leader>U F<space>
-noremap <leader>y <right>t<space><left>t<space>
-noremap <leader>Y f<space>
+noremap <leader>l <left>T<space><right>T<space>
+noremap <leader>L F<space>
+noremap <leader>; <right>t<space><left>t<space>
+noremap <leader>: f<space>
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------

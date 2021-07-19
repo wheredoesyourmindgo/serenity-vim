@@ -290,11 +290,11 @@ noremap <leader>q ZZ
 " Quit w/o save
 noremap <leader>Q ZQ
 " Find
-noremap ] /
+" noremap ] /
 " Find reverse 
 noremap [ ?
 " Find next
-noremap \ n
+" noremap \ n
 " Find prev
 noremap _ N
 " Till Char

@@ -306,7 +306,7 @@ noremap } f
 " Find Char reverse
 noremap { F
 " Find/till next
-noremap | ;
+noremap \| ;
 " Find/till prev
 noremap - ,
 " Extra commands
@@ -438,7 +438,7 @@ noremap < <C-d>
 noremap > <C-u>
 noremap , <C-f>
 noremap . <C-b>
-noremap / }
+" noremap / }
 " Next instance of current word
 noremap ? *
 " g mappings

@@ -307,8 +307,10 @@ noremap } f
 noremap { F
 " Find/till next
 noremap \| ;
+noremap * ;
 " Find/till prev
 noremap - ,
+noremap & ,
 " Extra commands
 noremap <leader>z z
 " Extra commands

@@ -294,7 +294,7 @@ noremap ] /
 " Find reverse 
 noremap [ ?
 " Find next
-noremap \\ n
+" noremap \ n
 " Find prev
 noremap _ N
 " Till Char

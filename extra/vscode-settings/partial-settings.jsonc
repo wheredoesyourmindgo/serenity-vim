@@ -22,16 +22,6 @@
       "after": ["a", "I"]
     },
     {
-      "before": ["<leader>", "?"],
-      "commands": ["editor.action.addSelectionToNextFindMatch"],
-      "when": "editorFocus"
-    },
-    {
-      "before": ["<leader>", "H"],
-      "commands": ["editor.action.addSelectionToPreviousFindMatch"],
-      "when": "editorFocus"
-    },
-    {
       "before": ["g"],
       "after": ["i"]
     },
@@ -129,44 +119,48 @@
       ]
     },
     {
-      "before": ["<leader>", "."],
+      "before": ["]"],
       "after": ["/"]
     },
     {
-      "before": ["<leader>", ","],
+      "before": ["["],
       "after": ["?"]
     },
     {
-      "before": ["<leader>", "i"],
+      "before": [")"],
       "after": ["t"]
     },
     {
-      "before": ["<leader>", "I"],
+      "before": ["}"],
       "after": ["f"]
     },
     {
-      "before": ["<leader>", "E"],
+      "before": ["{"],
       "after": ["F"]
     },
     {
-      "before": ["<leader>", "e"],
+      "before": ["("],
       "after": ["T"]
     },
     {
-      "before": ["<leader>", "/"],
-      "after": ["*"]
+      "before": ["|"],
+      "after": [";"]
     },
     {
-      "before": ["<leader>", "h"],
-      "after": ["#"]
+      "before": ["-"],
+      "after": [","]
+    },
+    {
+      "before": ["\\"],
+      "after": ["n"]
+    },
+    {
+      "before": ["_"],
+      "after": ["N"]
     },
     {
       "before": ["<leader>", "z"],
       "after": ["z"]
-    },
-    {
-      "before": ["<leader>", "n"],
-      "after": ["0"]
     },
     {
       "before": ["<leader>", "k"],
@@ -346,7 +340,7 @@
     },
     {
       "before": ["N"],
-      "after": [","]
+      "after": ["0"]
     },
     {
       "before": ["e"],
@@ -367,10 +361,6 @@
     {
       "before": ["o"],
       "after": ["$"]
-    },
-    {
-      "before": ["O"],
-      "after": [";"]
     },
     {
       "before": ["m"],
@@ -426,7 +416,7 @@
     },
     {
       "before": ["H"],
-      "after": ["N"]
+      "after": ["#"]
     },
     {
       "before": ["<"],
@@ -450,7 +440,7 @@
     },
     {
       "before": ["?"],
-      "after": ["n"]
+      "after": ["*"]
     },
     {
       "before": ["<cr>", "#"],
@@ -686,16 +676,6 @@
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "?"],
-      "commands": ["editor.action.addSelectionToNextFindMatch"],
-      "when": "editorFocus"
-    },
-    {
-      "before": ["<leader>", "H"],
-      "commands": ["editor.action.addSelectionToPreviousFindMatch"],
-      "when": "editorFocus"
-    },
     // vim-surround mappings
     {
       "before": ["c", "a"],
@@ -793,44 +773,48 @@
       ]
     },
     {
-      "before": ["<leader>", "."],
+      "before": ["]"],
       "after": ["/"]
     },
     {
-      "before": ["<leader>", ","],
+      "before": ["["],
       "after": ["?"]
     },
     {
-      "before": ["<leader>", "i"],
+      "before": [")"],
       "after": ["t"]
     },
     {
-      "before": ["<leader>", "I"],
+      "before": ["}"],
       "after": ["f"]
     },
     {
-      "before": ["<leader>", "E"],
+      "before": ["{"],
       "after": ["F"]
     },
     {
-      "before": ["<leader>", "e"],
+      "before": ["("],
       "after": ["T"]
     },
     {
-      "before": ["<leader>", "/"],
-      "after": ["*"]
+      "before": ["|"],
+      "after": [";"]
     },
     {
-      "before": ["<leader>", "h"],
-      "after": ["#"]
+      "before": ["-"],
+      "after": [","]
+    },
+    {
+      "before": ["\\"],
+      "after": ["n"]
+    },
+    {
+      "before": ["_"],
+      "after": ["N"]
     },
     {
       "before": ["<leader>", "z"],
       "after": ["z"]
-    },
-    {
-      "before": ["<leader>", "n"],
-      "after": ["0"]
     },
     {
       "before": ["<leader>", "k"],
@@ -1186,7 +1170,7 @@
     },
     {
       "before": ["N"],
-      "after": [","]
+      "after": ["0"]
     },
     {
       "before": ["e"],
@@ -1207,10 +1191,6 @@
     {
       "before": ["o"],
       "after": ["$"]
-    },
-    {
-      "before": ["O"],
-      "after": [";"]
     },
     {
       "before": ["m"],
@@ -1266,7 +1246,7 @@
     },
     {
       "before": ["H"],
-      "after": ["N"]
+      "after": ["#"]
     },
     {
       "before": ["<"],
@@ -1290,7 +1270,7 @@
     },
     {
       "before": ["?"],
-      "after": ["n"]
+      "after": ["*"]
     },
     {
       "before": ["<cr>", "#"],

@@ -290,25 +290,27 @@ noremap <leader>q ZZ
 " Quit w/o save
 noremap <leader>Q ZQ
 " Find
-noremap <leader>. /
+noremap ] /
 " Find reverse 
-noremap <leader>, ?
+noremap [ ?
+" Find next
+noremap \ n
+" Find prev
+noremap _ N
 " Till Char
-noremap <leader>i t
+noremap ) t
 " Till Char reverse
-noremap <leader>e T
+noremap ( T
 " Find Char
-noremap <leader>I f
+noremap } f
 " Find Char reverse
-noremap <leader>E F
-" Next instance of current word
-noremap <leader>/ *
-" Previous instance of current word
-noremap <leader>h #
+noremap { F
+" Find/till next
+noremap | ;
+" Find/till prev
+noremap - ,
 " Extra commands
 noremap <leader>z z
-" Hard Bol
-noremap <leader>n 0
 " Extra commands
 noremap <cr> g
 " Expert mode
@@ -419,27 +421,26 @@ noremap : E
 noremap m M
 noremap M zz
 noremap n _
-noremap N ,
-" nmap N <Plug>(clever-f-repeat-back)
+noremap N 0
 noremap e +
 noremap E <C-e>
 noremap i -
 noremap I <C-y>
-" noremap ; ;
 execute 'noremap ' . s:r2c10 . ' $'
-execute 'noremap ' . s:R2C10 . ' ;'
-" execute 'nmap ' . s:R2C10 . ' <Plug>(clever-f-repeat-forward)'
+" execute 'noremap ' . s:R2C10 . ' ;'
 " right r3
 noremap k L
 noremap K zb
 noremap h {
-noremap H N
+" Previous instance of current word
+noremap H #
 noremap < <C-d>
 noremap > <C-u>
 noremap , <C-f>
 noremap . <C-b>
 noremap / }
-noremap ? n
+" Next instance of current word
+noremap ? *
 " g mappings
 noremap <cr># g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down

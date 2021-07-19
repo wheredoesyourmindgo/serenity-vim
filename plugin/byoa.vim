@@ -289,6 +289,16 @@ omap gI <Plug>(textobj-indent-same-i))
 noremap <leader>q ZZ
 " Quit w/o save
 noremap <leader>Q ZQ
+" Find
+noremap ] /
+" Find reverse 
+noremap [ ?
+" Find next
+noremap \ n
+" Find prev
+noremap _ N
+" Till Char
+noremap ) t
 " Extra commands
 noremap <leader>z z
 " Extra commands

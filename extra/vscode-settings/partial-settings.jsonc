@@ -941,19 +941,19 @@
       "after": ["c", "G"]
     },
     {
-      "before": ["f", "<leader>", "I"],
+      "before": ["f", "}"],
       "after": ["c", "f"]
     },
     {
-      "before": ["f", "<leader>", "E"],
+      "before": ["f", "{"],
       "after": ["c", "F"]
     },
     {
-      "before": ["f", "<leader>", "i"],
+      "before": ["f", ")"],
       "after": ["c", "t"]
     },
     {
-      "before": ["f", "<leader>", "e"],
+      "before": ["f", "("],
       "after": ["c", "T"]
     },
     {
@@ -1067,19 +1067,19 @@
       "after": ["d", "G"]
     },
     {
-      "before": ["x", "<leader>", "I"],
+      "before": ["x", "}"],
       "after": ["d", "f"]
     },
     {
-      "before": ["x", "<leader>", "E"],
+      "before": ["x", "{"],
       "after": ["d", "F"]
     },
     {
-      "before": ["x", "<leader>", "i"],
+      "before": ["x", ")"],
       "after": ["d", "t"]
     },
     {
-      "before": ["x", "<leader>", "e"],
+      "before": ["x", "("],
       "after": ["d", "T"]
     },
     {
@@ -1131,19 +1131,19 @@
       "after": ["y", "G"]
     },
     {
-      "before": ["c", "<leader>", "I"],
+      "before": ["c", "}"],
       "after": ["y", "f"]
     },
     {
-      "before": ["c", "<leader>", "E"],
+      "before": ["c", "{"],
       "after": ["y", "F"]
     },
     {
-      "before": ["c", "<leader>", "i"],
+      "before": ["c", ")"],
       "after": ["y", "t"]
     },
     {
-      "before": ["c", "<leader>", "e"],
+      "before": ["c", "("],
       "after": ["y", "T"]
     },
     {
@@ -1516,5 +1516,5 @@
         }
       ]
     }
-  ],
+  ]
 }

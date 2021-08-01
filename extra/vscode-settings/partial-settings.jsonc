@@ -63,11 +63,11 @@
       "after": ["F", "<space>"]
     },
     {
-      "before": ["<leader>", "o"],
+      "before": ["<leader>", "a"],
       "after": ["<right>", "t", "<space>", "<left>", "t", "<space>"]
     },
     {
-      "before": ["<leader>", "O"],
+      "before": ["<leader>", "A"],
       "after": ["f", "<space>"]
     },
     {
@@ -251,11 +251,11 @@
       "after": ["J"]
     },
     {
-      "before": ["a"],
+      "before": ["o"],
       "after": ["s"]
     },
     {
-      "before": ["A"],
+      "before": ["O"],
       "after": ["S"]
     },
     {
@@ -367,7 +367,7 @@
       "after": ["C-y"]
     },
     {
-      "before": ["o"],
+      "before": ["a"],
       "after": ["$"]
     },
     {
@@ -453,10 +453,6 @@
     {
       "before": ["<cr>", "#"],
       "after": ["g", "#"]
-    },
-    {
-      "before": ["<cr>", "o"],
-      "after": ["g", "$"]
     },
     {
       "before": ["<cr>", "~"],
@@ -560,7 +556,7 @@
     //   "after": ["g", "$"]
     // },
     {
-      "before": ["<cr>", "o"],
+      "before": ["<cr>", "a"],
       "after": ["g", "_"]
     },
     {
@@ -568,7 +564,7 @@
       "after": ["g", "^"]
     },
     {
-      "before": ["<cr>", "a"],
+      "before": ["<cr>", "o"],
       "after": ["g", "a"]
     },
     {
@@ -612,7 +608,7 @@
       "after": ["g", "M"]
     },
     {
-      "before": ["<cr>", "O"],
+      "before": ["<cr>", "A"],
       "after": ["g", "o"]
     },
     {
@@ -686,19 +682,19 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     // vim-surround mappings
     {
-      "before": ["c", "a"],
+      "before": ["c", "o"],
       "after": ["<plugys>"]
     },
     {
-      "before": ["c", "a", "a"],
+      "before": ["c", "o", "o"],
       "after": ["<plugys>", "<plugys>"]
     },
     {
-      "before": ["x", "a"],
+      "before": ["x", "o"],
       "after": ["<plugds>"]
     },
     {
-      "before": ["f", "a"],
+      "before": ["f", "o"],
       "after": ["<plugcs>"]
     },
     {
@@ -730,11 +726,11 @@
       "after": ["F", "<space>"]
     },
     {
-      "before": ["<leader>", "o"],
+      "before": ["<leader>", "a"],
       "after": ["<right>", "t", "<space>", "<left>", "t", "<space>"]
     },
     {
-      "before": ["<leader>", "O"],
+      "before": ["<leader>", "A"],
       "after": ["f", "<space>"]
     },
     {
@@ -929,7 +925,7 @@
       "after": ["c", "_"]
     },
     {
-      "before": ["f", "o"],
+      "before": ["f", "a"],
       "after": ["c", "$"]
     },
     {
@@ -969,11 +965,11 @@
       "after": ["J"]
     },
     {
-      "before": ["a"],
+      "before": ["o"],
       "after": ["s"]
     },
     {
-      "before": ["A"],
+      "before": ["O"],
       "after": ["S"]
     },
     {
@@ -1055,7 +1051,7 @@
       "after": ["d", "_"]
     },
     {
-      "before": ["x", "o"],
+      "before": ["x", "a"],
       "after": ["d", "$"]
     },
     {
@@ -1119,7 +1115,7 @@
       "after": ["y", "_"]
     },
     {
-      "before": ["c", "o"],
+      "before": ["c", "a"],
       "after": ["y", "$"]
     },
     {
@@ -1205,7 +1201,7 @@
       "after": ["C-y"]
     },
     {
-      "before": ["o"],
+      "before": ["a"],
       "after": ["$"]
     },
     {
@@ -1394,7 +1390,7 @@
     //   "after": ["g", "$"]
     // },
     {
-      "before": ["<cr>", "o"],
+      "before": ["<cr>", "a"],
       "after": ["g", "_"]
     },
     {
@@ -1402,7 +1398,7 @@
       "after": ["g", "^"]
     },
     {
-      "before": ["<cr>", "a"],
+      "before": ["<cr>", "o"],
       "after": ["g", "a"]
     },
     {
@@ -1446,7 +1442,7 @@
       "after": ["g", "M"]
     },
     {
-      "before": ["<cr>", "O"],
+      "before": ["<cr>", "A"],
       "after": ["g", "o"]
     },
     {

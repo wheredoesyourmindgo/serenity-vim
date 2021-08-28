@@ -339,7 +339,7 @@
       "after": ["H"]
     },
     {
-      "before": ["J"],
+      "before": ["K"],
       "after": ["z", "t"]
     },
     {
@@ -415,7 +415,7 @@
       "after": ["L"]
     },
     {
-      "before": ["K"],
+      "before": ["J"],
       "after": ["z", "b"]
     },
     {
@@ -1173,7 +1173,7 @@
       "after": ["H"]
     },
     {
-      "before": ["J"],
+      "before": ["K"],
       "after": ["z", "t"]
     },
     {
@@ -1249,7 +1249,7 @@
       "after": ["L"]
     },
     {
-      "before": ["K"],
+      "before": ["J"],
       "after": ["z", "b"]
     },
     {

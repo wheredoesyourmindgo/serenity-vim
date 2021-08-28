@@ -398,7 +398,7 @@ noremap v <C-r>
 noremap V .
 " right r1
 noremap j H
-noremap J zt
+noremap K zt
 " nmap j <Plug>(clever-f-f)
 " xmap j <Plug>(clever-f-f)
 " omap j <Plug>(clever-f-f)
@@ -432,7 +432,7 @@ execute 'noremap ' . s:r2c10 . ' $'
 " execute 'noremap ' . s:R2C10 . ' ;'
 " right r3
 noremap k L
-noremap K zb
+noremap J zb
 noremap h {
 " Previous instance of current word
 noremap H #

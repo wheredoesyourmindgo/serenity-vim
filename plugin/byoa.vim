@@ -21,8 +21,8 @@ elseif s:byoa_keymap == 'qwerty'
   let s:R2C10 = ":"
 endif
 
-" Map double quote to line comment toggle
-map " <plug>NERDCommenterToggle
+" Map leader enter to line comment toggle
+map <leader><cr> <plug>NERDCommenterToggle
 
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings
@@ -291,7 +291,7 @@ noremap <leader>q ZZ
 noremap <leader>Q ZQ
 " Find
 noremap ] /
-" Find reverse 
+" Find reverse
 noremap [ ?
 " Find next
 noremap \ n
@@ -312,15 +312,15 @@ noremap * ;
 noremap - ,
 noremap & ,
 " Extra commands
-noremap <leader>z z
-" Extra commands
-noremap <cr> g
+noremap <leader>` z
+" Extra commands (g command)
+noremap ` g
+" G - End of file / Goto line
+noremap ' G
 " Expert mode
 noremap <leader>x Q
 " Help
-noremap <leader>` K
-" G - End of file / Goto line
-noremap <leader><cr> G
+noremap <leader><tab> K
 " Prev sentence
 noremap <leader>h (
 " End sentence
@@ -354,9 +354,9 @@ noremap <bs> X
 " Delete
 noremap <del> x
 " Command mode
-noremap ' :
-" g
-noremap <cr> g
+noremap <cr> :
+" goto mark
+noremap \" `
 " goto mark bol
 noremap ~ '
 
@@ -444,78 +444,78 @@ noremap / }
 " Next instance of current word
 noremap ? *
 " g mappings
-noremap <cr># g#
+noremap `# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
-" noremap <cr>o g$
-noremap <cr>o g_
-noremap <cr>n g^
-noremap <cr>& g&
-noremap <cr>~ g'
-noremap <cr>` g`
-noremap <cr>* g*
-noremap <cr>+ g+
-noremap <cr>, g,
-noremap <cr>- g-
-noremap <cr>0 g0
-noremap <cr>8 g8
-noremap <cr>; g;
-noremap <cr>< g<
-noremap <cr>? g?
-noremap <cr>?? g??
-noremap <cr>?h? g?g?
-" noremap <cr>E gE
-noremap <cr>V gH
+" noremap `o g$
+noremap `o g_
+noremap `n g^
+noremap `& g&
+noremap `~ g'
+noremap `\" g`
+noremap `* g*
+noremap `+ g+
+noremap `, g,
+noremap `- g-
+noremap `0 g0
+noremap `8 g8
+noremap `; g;
+noremap `< g<
+noremap `? g?
+noremap `?? g??
+noremap `?h? g?g?
+" noremap `E gE
+noremap `V gH
 " gI - insert
-noremap <cr>S gI
-noremap <cr><S-tab> gD
-noremap <cr>N gN
-noremap <cr>D gP
-noremap <cr>e gQ
+noremap `S gI
+noremap `<S-tab> gD
+noremap `N gN
+noremap `D gP
+noremap `e gQ
 " gR - replace
-noremap <cr>W gR
-noremap <cr>T gT
-noremap <cr>U gU
+noremap `W gR
+noremap `T gT
+noremap `U gU
 " gV - visual
-noremap <cr>G gV
-noremap <cr>] g]
-noremap <cr>a ga
-" noremap <cr>e ge
-noremap <cr>f gf
-noremap <cr>F gF
+noremap `G gV
+noremap `] g]
+noremap `a ga
+" noremap `e ge
+noremap `f gf
+noremap `F gF
 " gg
-noremap <cr><cr> gg
-noremap <cr>v gh
+noremap `` gg
+noremap `v gh
 " gi - insert
-noremap <cr>s gi
-noremap <cr><tab> gd
-noremap <cr>k gk
-noremap <cr>/ gn
-noremap <cr>h gN
-noremap <cr>P gJ
-noremap <cr>m gm
-noremap <cr>M gM
-noremap <cr>O go
-noremap <cr>d gp
-noremap <cr>; gq
+noremap `s gi
+noremap `<tab> gd
+noremap `k gk
+noremap `/ gn
+noremap `h gN
+noremap `P gJ
+noremap `m gm
+noremap `M gM
+noremap `O go
+noremap `d gp
+noremap `; gq
 " gr - replace
-noremap <cr>w gr
-noremap <cr>s gs
-noremap <cr>t gt
-noremap <cr>u gu
+noremap `w gr
+noremap `s gs
+noremap `t gt
+noremap `u gu
 " gv - visual
-noremap <cr>g gv
-noremap <cr>: gw
-noremap <cr>x gx
-noremap <cr>@ g@
-noremap <cr>q g~
-noremap <cr><Down> g<Down>
-noremap <cr><End> g<End>
-noremap <cr><Home> g<Home>
-noremap <cr><LeftMouse> g<LeftMouse>
-noremap <cr><MiddleMouse> g<MiddleMouse>
-noremap <cr><RightMouse> g<RightMouse>
-noremap <cr><Tab> g<Tab>
-noremap <cr><Up> g<Up>
+noremap `g gv
+noremap `: gw
+noremap `x gx
+noremap `@ g@
+noremap `q g~
+noremap `<Down> g<Down>
+noremap `<End> g<End>
+noremap `<Home> g<Home>
+noremap `<LeftMouse> g<LeftMouse>
+noremap `<MiddleMouse> g<MiddleMouse>
+noremap `<RightMouse> g<RightMouse>
+noremap `<Tab> g<Tab>
+noremap `<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a
@@ -580,8 +580,8 @@ xnoremap g i
 " xnoremap g{ a{
 " onoremap gB aB
 " xnoremap gB aB
-" onoremap t} i}	
-" xnoremap t} i}	
+" onoremap t} i}
+" xnoremap t} i}
 " onoremap t{ i{
 " xnoremap t{ i{
 " onoremap tB iB

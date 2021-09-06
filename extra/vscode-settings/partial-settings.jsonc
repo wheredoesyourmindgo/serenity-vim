@@ -39,8 +39,16 @@
       "after": ["X"]
     },
     {
+      "before": ["<leader>", "<bs>"],
+      "after": ["d", "d"]
+    },
+    {
       "before": ["<del>"],
       "after": ["x"]
+    },
+    {
+      "before": ["<leader>", "<del>"],
+      "after": ["0", "d", "$"]
     },
     {
       "before": ["<C-k>"],
@@ -707,8 +715,16 @@
       "after": ["X"]
     },
     {
+      "before": ["<leader>", "<bs>"],
+      "after": ["d", "d"]
+    },
+    {
       "before": ["<del>"],
       "after": ["x"]
+    },
+    {
+      "before": ["<leader>", "<del>"],
+      "after": ["0", "d", "$"]
     },
     {
       "before": ["<C-k>"],

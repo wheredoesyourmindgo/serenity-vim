@@ -330,6 +330,10 @@ noremap <leader>n <left>T<space><right>T<space>
 noremap <leader>N F<space>
 noremap <leader>o <right>t<space><left>t<space>
 noremap <leader>O f<space>
+" Empty line
+noremap <leader><del> 0d$
+" Delete line
+noremap <leader><bs> dd
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------

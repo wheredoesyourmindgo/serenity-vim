@@ -331,7 +331,8 @@ noremap <leader>N F<space>
 noremap <leader>o <right>t<space><left>t<space>
 noremap <leader>O f<space>
 " Empty line
-noremap <leader><del> 0d$
+" noremap <leader><del> 0d$
+noremap <leader><del> O<esc>
 " Delete line
 noremap <leader><bs> dd
 

@@ -369,12 +369,12 @@ noremap ~ '
 " left r1
 noremap q "
 noremap Q m
-noremap w r
-noremap W R
+noremap w ~
+noremap W J
 noremap f c
 noremap F C
-noremap p ~
-noremap P J
+noremap p r
+noremap P R
 map b <Plug>(wildfire-fuel)
 vmap B <Plug>(wildfire-water)
 " left r2
@@ -476,7 +476,7 @@ noremap `N gN
 noremap `D gP
 noremap `e gQ
 " gR - replace
-noremap `W gR
+noremap `P gR
 noremap `T gT
 noremap `U gU
 " gV - visual
@@ -495,14 +495,14 @@ noremap `<tab> gd
 noremap `k gk
 noremap `/ gn
 noremap `h gN
-noremap `P gJ
+noremap `W gJ
 noremap `m gm
 noremap `M gM
 noremap `O go
 noremap `d gp
 noremap `; gq
 " gr - replace
-noremap `w gr
+noremap `p gr
 noremap `s gs
 noremap `t gt
 noremap `u gu

@@ -360,7 +360,7 @@ noremap <del> x
 " Command mode
 noremap <cr> :
 " goto mark
-noremap \" `
+noremap " `
 " goto mark bol
 noremap ~ '
 

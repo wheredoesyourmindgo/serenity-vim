@@ -358,7 +358,7 @@ noremap <bs> X
 " Delete
 noremap <del> x
 " Command mode
-noremap <cr> :
+nnoremap <cr> :
 " goto mark
 noremap " `
 " goto mark bol

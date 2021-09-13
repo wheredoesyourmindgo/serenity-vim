@@ -117,7 +117,7 @@
       ]
     },
     {
-      "before": ["<leader>", "<cr>"],
+      "before": ["<leader>", "g"],
       "after": [],
       "commands": [
         {
@@ -796,7 +796,7 @@
       ]
     },
     {
-      "before": ["<leader>", "<cr>"],
+      "before": ["<leader>", "g"],
       "after": [],
       "commands": [
         {

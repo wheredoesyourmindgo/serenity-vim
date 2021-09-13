@@ -21,8 +21,8 @@ elseif s:byoa_keymap == 'qwerty'
   let s:R2C10 = ":"
 endif
 
-" Map leader enter to line comment toggle
-map <leader><cr> <plug>NERDCommenterToggle
+" Map leader-g to line comment toggle
+map <leader><g> <plug>NERDCommenterToggle
 
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings
@@ -359,6 +359,8 @@ noremap <bs> X
 noremap <del> x
 " Command mode
 noremap <cr> :
+" This is used w/ help mode in order to access command mode
+noremap <leader><cr> :
 " goto mark
 noremap " `
 " goto mark bol

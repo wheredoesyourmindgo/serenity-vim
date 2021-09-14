@@ -22,7 +22,7 @@ elseif s:byoa_keymap == 'qwerty'
 endif
 
 " Map leader-g to line comment toggle
-map <leader><g> <plug>NERDCommenterToggle
+map <leader>g <plug>NERDCommenterToggle
 
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings

@@ -402,6 +402,9 @@ noremap d p
 noremap D P
 noremap v <C-r>
 noremap V .
+noremap ^ .
+noremap = .
+noremap + .
 " right r1
 noremap j H
 noremap K zt

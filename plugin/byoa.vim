@@ -13,9 +13,24 @@ else
   let s:byoa_keymap = 'colemak-dh'
 endif
 
-if s:byoa_keymap == 'colemak-dh'
+if s:byoa_keymap == 'colemak-dh-oa'
+  let s:r2c1 = "o"
+  let s:R2C1 = "O"
   let s:r2c10 = "a"
   let s:R2C10 = "A"
+elseif s:byoa_keymap == 'colemak-dh-ring'
+  let s:r1c1 = "w"
+  let s:R1C1 = "W"
+  let s:r1c2 = "y"
+  let s:R1C2 = "Y"
+  let s:r1c9 = "q"
+  let s:R1C9 = "Q"
+  let s:r2c1 = "r"
+  let s:R2C1 = "R"
+  let s:r2c2 = "i"
+  let s:R2C2 = "I"
+  let s:r2c2 = "a"
+  let s:R2C2 = "a"
 elseif s:byoa_keymap == 'qwerty'
   let s:r2c10 = ";"
   let s:R2C10 = ":"
@@ -369,10 +384,14 @@ noremap ~ '
 " Alpha Commands --------------------------
 
 " left r1
-noremap q "
-noremap Q m
-noremap w ~
-noremap W J
+" noremap q "
+" noremap Q m
+execute 'noremap ' . s:r1c1 . ' "'
+execute 'noremap ' . s:R1C1 . ' m'
+" noremap w ~
+" noremap W J
+execute 'noremap ' . s:r1c2 . ' ~'
+execute 'noremap ' . s:R1C2 . ' J'
 noremap f c
 noremap F C
 noremap p r
@@ -380,11 +399,15 @@ noremap P R
 map b <Plug>(wildfire-fuel)
 vmap B <Plug>(wildfire-water)
 " left r2
-noremap o s
+" noremap o s
+execute 'noremap ' . s:r2c1 . ' s'
 " Using A in visual mode w/ vim-sandwhich
-nnoremap O S
-noremap r i
-noremap R I
+" nnoremap O S
+execute 'noremap ' . s:R2C1 . ' S'
+" noremap r i
+" noremap R I
+execute 'noremap ' . s:R2C2 . ' i'
+execute 'noremap ' . s:R2C2 . ' I'
 noremap s a
 noremap S A
 noremap t o
@@ -424,8 +447,10 @@ noremap l ge
 noremap L gE
 noremap u b
 noremap U B
-noremap y w
-noremap Y W
+" noremap y w
+" noremap Y W
+execute 'noremap ' . s:r1c9 . ' w'
+execute 'noremap ' . s:R1C9 . ' W'
 noremap ; e
 noremap : E
 " right r2
@@ -435,8 +460,10 @@ noremap n _
 noremap N 0
 noremap e +
 noremap E <C-e>
-noremap i -
-noremap I <C-y>
+" noremap i -
+" noremap I <C-y>
+execute 'noremap ' . s:r2c9 . ' -'
+execute 'noremap ' . s:R2C9 . ' <C-y>'
 execute 'noremap ' . s:r2c10 . ' $'
 " execute 'noremap ' . s:R2C10 . ' ;'
 " right r3

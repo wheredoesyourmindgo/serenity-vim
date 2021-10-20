@@ -29,8 +29,8 @@ elseif s:byoa_keymap == 'colemak-dh-ring'
   let s:R2C1 = "R"
   let s:r2c2 = "i"
   let s:R2C2 = "I"
-  let s:r2c2 = "a"
-  let s:R2C2 = "a"
+  let s:r2c9 = "a"
+  let s:R2C9 = "A"
   let s:r2c10 = "o"
   let s:R2C10 = "O"
 elseif s:byoa_keymap == 'qwerty'

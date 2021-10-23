@@ -382,6 +382,12 @@ noremap <leader><cr> :
 noremap " `
 " goto mark bol
 noremap ~ '
+" auto format
+noremap $ =
+" repeat command
+noremap ^ .
+noremap = .
+noremap + .
 
 " Alpha Commands --------------------------
 
@@ -426,10 +432,7 @@ noremap C Y
 noremap d p
 noremap D P
 noremap v <C-r>
-noremap V .
-noremap ^ .
-noremap = .
-noremap + .
+noremap V &
 " right r1
 noremap j H
 noremap K zt

@@ -352,14 +352,20 @@ noremap <leader>O f<space>
 " Delete line
 noremap <leader><bs> dd
 
-
 " Mod Outer/Mod/Symbol Commands --------------------------
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
-noremap <tab> >><esc>
+" noremap <tab> >><esc>
+noremap <leader>t <tab>
 " Un-indent
-noremap <S-tab> <<<esc>
+" noremap <S-tab> <<<esc>
+noremap <leader>r <S-tab>
+" swap lines
+noremap <leader>s dd<up><up>p
+noremap <leader>i ddp
+
+
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@
 " Visual Block Mode
@@ -385,9 +391,7 @@ noremap ~ '
 " auto format
 noremap $ =
 " repeat command
-noremap ^ .
-noremap = .
-noremap + .
+noremap <tab> .
 
 " Alpha Commands --------------------------
 

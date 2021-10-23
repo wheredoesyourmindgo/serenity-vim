@@ -195,13 +195,32 @@
       "after": [")"]
     },
     {
-      "before": ["Tab"],
-      "after": [">", ">", "<esc>"]
+      "before": ["<leader>", "r"],
+      "after": ["<S-tab>"]
     },
     {
-      "before": ["S-Tab"],
-      "after": ["<", "<", "<esc>"]
+      "before": ["<leader>", "i"],
+      "after": [],
+      "commands": ["editor.action.moveLinesDownAction"]
     },
+    {
+      "before": ["<leader>", "s"],
+      "after": [],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "after": ["<tab>"]
+    },
+    {
+      "before": ["tab"],
+      "after": ["."]
+      // "after": [">", ">", "<esc>"]
+    },
+    // {
+    //   "before": ["S-tab"],
+    //   "after": ["<", "<", "<esc>"]
+    // },
     {
       "before": ["<C-g>"],
       "after": ["<C-v>"]
@@ -353,18 +372,6 @@
     {
       "before": ["V"],
       "after": ["&"]
-    },
-    {
-      "before": ["^"],
-      "after": ["."]
-    },
-    {
-      "before": ["="],
-      "after": ["."]
-    },
-    {
-      "before": ["+"],
-      "after": ["."]
     },
     {
       "before": ["j"],
@@ -894,13 +901,32 @@
       "after": [")"]
     },
     {
-      "before": ["Tab"],
-      "after": [">", ">", "<esc>"]
+      "before": ["<leader>", "r"],
+      "after": ["<S-tab>"]
     },
     {
-      "before": ["S-Tab"],
-      "after": ["<", "<", "<esc>"]
+      "before": ["<leader>", "i"],
+      "after": [],
+      "commands": ["editor.action.moveLinesDownAction"]
     },
+    {
+      "before": ["<leader>", "s"],
+      "after": [],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "after": ["<tab>"]
+    },
+    {
+      "before": ["tab"],
+      "after": ["."]
+      // "after": [">", ">", "<esc>"]
+    },
+    // {
+    //   "before": ["S-tab"],
+    //   "after": ["<", "<", "<esc>"]
+    // },
     {
       "before": ["<C-g>"],
       "after": ["<C-v>"]
@@ -1228,18 +1254,6 @@
     {
       "before": ["V"],
       "after": ["&"]
-    },
-    {
-      "before": ["^"],
-      "after": ["."]
-    },
-    {
-      "before": ["="],
-      "after": ["."]
-    },
-    {
-      "before": ["+"],
-      "after": ["."]
     },
     {
       "before": ["j"],

@@ -215,12 +215,7 @@
     {
       "before": ["tab"],
       "after": ["."]
-      // "after": [">", ">", "<esc>"]
     },
-    // {
-    //   "before": ["S-tab"],
-    //   "after": ["<", "<", "<esc>"]
-    // },
     {
       "before": ["<C-g>"],
       "after": ["<C-v>"]
@@ -902,7 +897,7 @@
     },
     {
       "before": ["<leader>", "r"],
-      "after": ["<S-tab>"]
+      "after": ["<", "<", "<esc>"]
     },
     {
       "before": ["<leader>", "i"],
@@ -916,17 +911,12 @@
     },
     {
       "before": ["<leader>", "t"],
-      "after": ["<tab>"]
+      "after": [">", ">", "<esc>"]
     },
     {
       "before": ["tab"],
       "after": ["."]
-      // "after": [">", ">", "<esc>"]
     },
-    // {
-    //   "before": ["S-tab"],
-    //   "after": ["<", "<", "<esc>"]
-    // },
     {
       "before": ["<C-g>"],
       "after": ["<C-v>"]

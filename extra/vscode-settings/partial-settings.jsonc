@@ -196,7 +196,7 @@
     },
     {
       "before": ["<leader>", "r"],
-      "after": ["<S-tab>"]
+      "after": ["<", "<", "V", "V"]
     },
     {
       "before": ["<leader>", "i"],
@@ -210,7 +210,7 @@
     },
     {
       "before": ["<leader>", "t"],
-      "after": ["<tab>"]
+      "after": [">", ">", "V", "V"]
     },
     {
       "before": ["tab"],
@@ -897,7 +897,7 @@
     },
     {
       "before": ["<leader>", "r"],
-      "after": ["<", "<", "<esc>"]
+      "after": ["<", "<"]
     },
     {
       "before": ["<leader>", "i"],
@@ -911,7 +911,7 @@
     },
     {
       "before": ["<leader>", "t"],
-      "after": [">", ">", "<esc>"]
+      "after": [">", ">"]
     },
     {
       "before": ["tab"],

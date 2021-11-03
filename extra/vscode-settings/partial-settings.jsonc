@@ -194,9 +194,10 @@
       "before": ["<leader>", "/"],
       "after": [")"]
     },
+    // <esc> seems necessary in visual mode
     {
       "before": ["<leader>", "r"],
-      "after": ["<", "<", "V", "V"]
+      "after": ["<", "<esc>"]
     },
     {
       "before": ["<leader>", "i"],
@@ -208,12 +209,13 @@
       "after": [],
       "commands": ["editor.action.moveLinesUpAction"]
     },
+    // <esc> seems necessary in visual mode
     {
       "before": ["<leader>", "t"],
-      "after": [">", ">", "V", "V"]
+      "after": [">", "<esc>"]
     },
     {
-      "before": ["tab"],
+      "before": ["<tab>"],
       "after": ["."]
     },
     {
@@ -914,7 +916,7 @@
       "after": [">", ">"]
     },
     {
-      "before": ["tab"],
+      "before": ["<tab>"],
       "after": ["."]
     },
     {

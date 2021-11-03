@@ -357,10 +357,10 @@ noremap <leader><bs> dd
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
 nnoremap <leader>t >>
-vmap <leader>t >>VV
+vmap <leader>t ><esc>
 " Un-indent
 nnoremap <leader>r <<
-vmap <leader>r <<VV
+vmap <leader>r <<esc>
 " swap lines
 noremap <leader>s dd<up><up>p
 noremap <leader>i ddp

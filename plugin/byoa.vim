@@ -33,10 +33,12 @@ elseif s:byoa_keymap == 'colemak-dh-ring'
   let s:R2C9 = "A"
   let s:r2c10 = "o"
   let s:R2C10 = "O"
-  let s:r3c1 = "k"
-  let s:R3C1 = "K"
-  let s:r3c6 = "z"
-  let s:R3C6 = "Z"
+  let s:r3c1 = "z"
+  let s:R3C1 = "Z"
+  let s:r3c5 = "k"
+  let s:R3C5 = "K"
+  let s:r3c6 = "v"
+  let s:R3C6 = "V"
 elseif s:byoa_keymap == 'qwerty'
   let s:r2c10 = ";"
   let s:R2C10 = ":"
@@ -439,8 +441,8 @@ noremap c y
 noremap C Y
 noremap d p
 noremap D P
-noremap v <C-r>
-noremap V &
+execute 'noremap ' . s:r3c5 . ' <C-r>'
+execute 'noremap ' . s:R3C5 . ' &'
 " right r1
 noremap j H
 noremap J zb

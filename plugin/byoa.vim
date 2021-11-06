@@ -33,6 +33,10 @@ elseif s:byoa_keymap == 'colemak-dh-ring'
   let s:R2C9 = "A"
   let s:r2c10 = "o"
   let s:R2C10 = "O"
+  let s:r3c1 = "k"
+  let s:R3C1 = "K"
+  let s:r3c6 = "z"
+  let s:R3C6 = "Z"
 elseif s:byoa_keymap == 'qwerty'
   let s:r2c10 = ";"
   let s:R2C10 = ":"
@@ -418,7 +422,7 @@ execute 'noremap ' . s:r2c1 . ' s'
 execute 'noremap ' . s:R2C1 . ' S'
 " noremap r i
 " noremap R I
-execute 'noremap ' . s:R2C2 . ' i'
+execute 'noremap ' . s:r2c2 . ' i'
 execute 'noremap ' . s:R2C2 . ' I'
 noremap s a
 noremap S A
@@ -427,8 +431,8 @@ noremap T O
 nnoremap g v
 nnoremap G V
 " left r3
-noremap z u
-noremap Z U
+execute 'noremap ' . s:r3c1 . ' u'
+execute 'noremap ' . s:R3C1 . ' U'
 noremap x d
 noremap X D
 noremap c y
@@ -439,7 +443,8 @@ noremap v <C-r>
 noremap V &
 " right r1
 noremap j H
-noremap K zt
+execute 'noremap ' . s:r3c6 . ' k'
+execute 'noremap ' . s:R3C6 . ' zt'
 " nmap j <Plug>(clever-f-f)
 " xmap j <Plug>(clever-f-f)
 " omap j <Plug>(clever-f-f)

@@ -319,7 +319,7 @@
       "after": ["O"]
     },
     {
-      "before": ["z"],
+      "before": ["k"],
       "after": [],
       "commands": [
         {
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "before": ["Z"],
+      "before": ["K"],
       "after": ["U"]
     },
     {
@@ -375,7 +375,11 @@
       "after": ["H"]
     },
     {
-      "before": ["K"],
+      "before": ["z"],
+      "after": ["k"]
+    },
+    {
+      "before": ["Z"],
       "after": ["z", "t"]
     },
     {
@@ -637,7 +641,7 @@
       "after": ["g", "j"]
     },
     {
-      "before": ["-", "k"],
+      "before": ["-", "z"],
       "after": ["g", "k"]
     },
     {
@@ -1084,7 +1088,7 @@
       "after": ["V"]
     },
     {
-      "before": ["z"],
+      "before": ["k"],
       "after": [],
       "commands": [
         {
@@ -1094,7 +1098,7 @@
       ]
     },
     {
-      "before": ["Z"],
+      "before": ["K"],
       "after": ["U"]
     },
     {
@@ -1252,7 +1256,11 @@
       "after": ["H"]
     },
     {
-      "before": ["K"],
+      "before": ["z"],
+      "after": ["k"]
+    },
+    {
+      "before": ["Z"],
       "after": ["z", "t"]
     },
     {
@@ -1514,7 +1522,7 @@
       "after": ["g", "j"]
     },
     {
-      "before": ["-", "k"],
+      "before": ["-", "z"],
       "after": ["g", "k"]
     },
     {

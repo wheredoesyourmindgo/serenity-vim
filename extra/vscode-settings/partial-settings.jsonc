@@ -319,7 +319,7 @@
       "after": ["O"]
     },
     {
-      "before": ["z"],
+      "before": ["w"],
       "after": [],
       "commands": [
         {
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "before": ["Z"],
+      "before": ["W"],
       "after": ["U"]
     },
     {
@@ -956,11 +956,11 @@
       "after": ["="]
     },
     {
-      "before": ["w"],
+      "before": ["z"],
       "after": ["\""]
     },
     {
-      "before": ["W"],
+      "before": ["Z"],
       "after": ["m"]
     },
     {
@@ -1084,7 +1084,7 @@
       "after": ["V"]
     },
     {
-      "before": ["z"],
+      "before": ["w"],
       "after": [],
       "commands": [
         {
@@ -1094,7 +1094,7 @@
       ]
     },
     {
-      "before": ["Z"],
+      "before": ["W"],
       "after": ["U"]
     },
     {

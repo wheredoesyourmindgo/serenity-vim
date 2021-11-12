@@ -493,9 +493,9 @@ noremap < <C-d>
 noremap > <C-u>
 noremap , <C-f>
 noremap . <C-b>
-execute 'noremap ' . s:r3c6 . ' }'
+execute 'noremap ' . s:r3c10 . ' }'
 " Next instance of current word
-execute 'noremap ' . s:R3C6 . ' *'
+execute 'noremap ' . s:R3C10 . ' *'
 " g mappings
 noremap -# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down

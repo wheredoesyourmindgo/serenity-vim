@@ -19,8 +19,8 @@ if s:byoa_keymap == 'colemak-dh-oa'
   let s:r2c10 = "a"
   let s:R2C10 = "A"
 elseif s:byoa_keymap == 'colemak-dh-ring'
-  let s:r1c1 = "z"
-  let s:R1C1 = "Z"
+  let s:r1c1 = "/"
+  let s:R1C1 = "?"
   let s:r1c2 = "y"
   let s:R1C2 = "Y"
   let s:r1c9 = "q"
@@ -39,6 +39,8 @@ elseif s:byoa_keymap == 'colemak-dh-ring'
   let s:R3C5 = "K"
   let s:r3c6 = "v"
   let s:R3C6 = "V"
+  let s:r3c10 = "z"
+  let s:R3C10 = "Z"
 elseif s:byoa_keymap == 'qwerty'
   let s:r2c10 = ";"
   let s:R2C10 = ":"
@@ -491,9 +493,9 @@ noremap < <C-d>
 noremap > <C-u>
 noremap , <C-f>
 noremap . <C-b>
-noremap / }
+execute 'noremap ' . s:r3c6 . ' }'
 " Next instance of current word
-noremap ? *
+execute 'noremap ' . s:R3C6 . ' *'
 " g mappings
 noremap -# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down

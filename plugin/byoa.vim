@@ -19,10 +19,20 @@ if s:byoa_keymap == 'colemak-dh-oa'
   let s:r2c10 = "a"
   let s:R2C10 = "A"
 elseif s:byoa_keymap == 'colemak-dh-ring'
-  let s:r1c1 = "/"
-  let s:R1C1 = "?"
+  let s:r1c1 = "j"
+  let s:R1C1 = "J"
   let s:r1c2 = "y"
   let s:R1C2 = "Y"
+  let s:r1c3 = "l"
+  let s:R1C3 = "L"
+  let s:r1c4 = "w"
+  let s:R1C4 = "W"
+  let s:r1c5 = "p"
+  let s:R1C5 = "P"
+  let s:r1c6 = "b"
+  let s:R1C6 = "B"
+  let s:r1c7 = "f"
+  let s:R1C7 = "F"
   let s:r1c9 = "q"
   let s:R1C9 = "Q"
   let s:r2c1 = "r"
@@ -33,14 +43,14 @@ elseif s:byoa_keymap == 'colemak-dh-ring'
   let s:R2C9 = "A"
   let s:r2c10 = "o"
   let s:R2C10 = "O"
-  let s:r3c1 = "w"
-  let s:R3C1 = "W"
+  let s:r3c1 = "z"
+  let s:R3C1 = "Z"
   let s:r3c5 = "k"
   let s:R3C5 = "K"
   let s:r3c6 = "v"
   let s:R3C6 = "V"
-  let s:r3c10 = "z"
-  let s:R3C10 = "Z"
+  let s:r3c10 = "/"
+  let s:R3C10 = "?"
 elseif s:byoa_keymap == 'qwerty'
   let s:r2c10 = ";"
   let s:R2C10 = ":"
@@ -412,20 +422,22 @@ execute 'noremap ' . s:R1C1 . ' m'
 " noremap W J
 execute 'noremap ' . s:r1c2 . ' ~'
 execute 'noremap ' . s:R1C2 . ' J'
-noremap f c
-noremap F C
-noremap p r
-noremap P R
-map b <Plug>(wildfire-fuel)
-vmap B <Plug>(wildfire-water)
+" noremap f c
+" noremap F C
+execute 'noremap ' . s:r1c3 . ' c'
+execute 'noremap ' . s:R1C3 . ' C'
+" noremap p r
+" noremap P R
+execute 'noremap ' . s:r1c4 . ' r'
+execute 'noremap ' . s:R1C4 . ' R'
+" map b <Plug>(wildfire-fuel)
+" vmap B <Plug>(wildfire-water)
+execute 'map ' . s:r1c5 . ' <Plug>(wildfire-fuel)'
+execute 'vmap ' . s:R1C5 . ' <Plug>(wildfire-water)'
 " left r2
-" noremap o s
 execute 'noremap ' . s:r2c1 . ' s'
 " Using A in visual mode w/ vim-sandwhich
-" nnoremap O S
 execute 'noremap ' . s:R2C1 . ' S'
-" noremap r i
-" noremap R I
 execute 'noremap ' . s:r2c2 . ' i'
 execute 'noremap ' . s:R2C2 . ' I'
 noremap s a
@@ -446,8 +458,10 @@ noremap D P
 execute 'noremap ' . s:r3c5 . ' <C-r>'
 execute 'noremap ' . s:R3C5 . ' &'
 " right r1
-noremap j H
-noremap J zb
+" noremap j H
+" noremap J zb
+execute 'noremap ' . s:r1c6 . ' H'
+execute 'noremap ' . s:R1C6 . ' zb'
 " nmap j <Plug>(clever-f-f)
 " xmap j <Plug>(clever-f-f)
 " omap j <Plug>(clever-f-f)
@@ -460,12 +474,12 @@ noremap J zb
 " nmap M <Plug>(clever-f-T)
 " xmap M <Plug>(clever-f-T)
 " omap M <Plug>(clever-f-T)
-noremap l ge
-noremap L gE
+" noremap l ge
+" noremap L gE
+execute 'noremap ' . s:r1c7 . ' ge'
+execute 'noremap ' . s:R1C7 . ' gE'
 noremap u b
 noremap U B
-" noremap y w
-" noremap Y W
 execute 'noremap ' . s:r1c9 . ' w'
 execute 'noremap ' . s:R1C9 . ' W'
 noremap ; e

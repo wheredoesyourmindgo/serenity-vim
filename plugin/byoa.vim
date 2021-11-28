@@ -19,12 +19,12 @@ if s:byoa_keymap == 'colemak-dh-oa'
   let s:r2c10 = "a"
   let s:R2C10 = "A"
 elseif s:byoa_keymap == 'colemak-dh-ring'
-  let s:r1c1 = "b"
-  let s:R1C1 = "B"
+  let s:r1c1 = "k"
+  let s:R1C1 = "K"
   let s:r1c2 = "y"
   let s:R1C2 = "Y"
-  let s:r1c3 = "f"
-  let s:R1C3 = "F"
+  let s:r1c3 = "c"
+  let s:R1C3 = "C"
   let s:r1c4 = "w"
   let s:R1C4 = "W"
   let s:r1c5 = "p"
@@ -45,8 +45,10 @@ elseif s:byoa_keymap == 'colemak-dh-ring'
   let s:R2C10 = "O"
   let s:r3c1 = "z"
   let s:R3C1 = "Z"
-  let s:r3c5 = "k"
-  let s:R3C5 = "K"
+  let s:r3c3 = "f"
+  let s:R3C3 = "F"
+  let s:r3c5 = "b"
+  let s:R3C5 = "B"
   let s:r3c6 = "v"
   let s:R3C6 = "V"
   let s:r3c10 = "/"
@@ -451,8 +453,8 @@ execute 'noremap ' . s:r3c1 . ' u'
 execute 'noremap ' . s:R3C1 . ' U'
 noremap x d
 noremap X D
-noremap c y
-noremap C Y
+execute 'noremap ' . s:r3c1 . ' y'
+execute 'noremap ' . s:R3C1 . ' Y'
 noremap d p
 noremap D P
 execute 'noremap ' . s:r3c5 . ' <C-r>'

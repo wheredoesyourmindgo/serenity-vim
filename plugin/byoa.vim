@@ -457,8 +457,8 @@ execute 'noremap ' . s:r3c1 . ' u'
 execute 'noremap ' . s:R3C1 . ' U'
 execute 'noremap ' . s:r3c2 . ' d'
 execute 'noremap ' . s:R3C2 . ' D'
-execute 'noremap ' . s:r3c1 . ' y'
-execute 'noremap ' . s:R3C1 . ' Y'
+execute 'noremap ' . s:r3c3 . ' y'
+execute 'noremap ' . s:R3C3 . ' Y'
 noremap d p
 noremap D P
 execute 'noremap ' . s:r3c5 . ' <C-r>'

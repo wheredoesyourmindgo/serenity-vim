@@ -727,19 +727,19 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     // vim-surround mappings
     {
-      "before": ["c", "o"],
+      "before": ["f", "o"],
       "after": ["<plugys>"]
     },
     {
-      "before": ["c", "o", "o"],
+      "before": ["f", "o", "o"],
       "after": ["<plugys>", "<plugys>"]
     },
     {
-      "before": ["x", "o"],
+      "before": ["q", "o"],
       "after": ["<plugds>"]
     },
     {
-      "before": ["f", "o"],
+      "before": ["c", "o"],
       "after": ["<plugcs>"]
     },
     {

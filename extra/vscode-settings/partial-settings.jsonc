@@ -249,11 +249,11 @@
       "after": ["="]
     },
     {
-      "before": ["k"],
+      "before": ["x"],
       "after": ["\""]
     },
     {
-      "before": ["K"],
+      "before": ["X"],
       "after": ["m"]
     },
     {
@@ -323,7 +323,7 @@
       "after": ["O"]
     },
     {
-      "before": ["x"],
+      "before": ["k"],
       "after": [],
       "commands": [
         {
@@ -333,7 +333,7 @@
       ]
     },
     {
-      "before": ["X"],
+      "before": ["K"],
       "after": ["U"]
     },
     {
@@ -959,11 +959,11 @@
       "after": ["="]
     },
     {
-      "before": ["k"],
+      "before": ["x"],
       "after": ["\""]
     },
     {
-      "before": ["K"],
+      "before": ["X"],
       "after": ["m"]
     },
     {
@@ -1092,7 +1092,7 @@
       "after": ["V"]
     },
     {
-      "before": ["x"],
+      "before": ["k"],
       "after": [],
       "commands": [
         {
@@ -1102,7 +1102,7 @@
       ]
     },
     {
-      "before": ["X"],
+      "before": ["K"],
       "after": ["U"]
     },
     {

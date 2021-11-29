@@ -83,13 +83,13 @@ let g:surround_no_insert_mappings = 1
 " Don't use Sandwhich default mappings
 " The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
 let g:sandwich_no_default_key_mappings = 1
-silent! nmap <unique><silent> xo <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> fo <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> xO <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> fO <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> qo <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> co <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> qO <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> cO <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
-silent! nmap <unique> co <Plug>(operator-sandwich-add)
+silent! nmap <unique> fo <Plug>(operator-sandwich-add)
 silent! xmap <unique> O <Plug>(operator-sandwich-add)
 silent! omap <unique> O <Plug>(operator-sandwich-g@)
 " delete
@@ -107,9 +107,9 @@ silent! omap <unique> Go <Plug>(textobj-sandwich-query-a)
 silent! xmap <unique> Go <Plug>(textobj-sandwich-query-a)
 " vim-surround keymap macro
 onoremap <SID>line :normal! ^vg_<CR>
-nmap <silent> coo <Plug>(operator-sandwich-add)<SID>line
+nmap <silent> foo <Plug>(operator-sandwich-add)<SID>line
 onoremap <SID>gul g_
-nmap cO co<SID>gul
+nmap fO co<SID>gul
 " Default recipes (See https://github.com/machakann/vim-sandwich/blob/9e6340affe9f53c11a6975a5f50b9bf48adb692c/macros/sandwich/keymap/surround.vim#L25)
 let g:sandwich#recipes = [
       \   {

@@ -55,8 +55,12 @@ elseif s:byoa_keymap == 'colemak-dh-ring'
   let s:R3C5 = "B"
   let s:r3c6 = "v"
   let s:R3C6 = "V"
-  let s:r3c10 = "/"
-  let s:R3C10 = "?"
+  let s:r3c8 = "'"
+  let s:R3C8 = "/""
+  let s:r3c9 = ","
+  let s:R3C9 = "<"
+  let s:r3c10 = "."
+  let s:R3C10 = ">"
 elseif s:byoa_keymap == 'qwerty'
   let s:r2c10 = ";"
   let s:R2C10 = ":"
@@ -331,31 +335,31 @@ noremap <leader>q ZZ
 " Quit w/o save
 noremap <leader>Q ZQ
 " Find
-noremap ] /
+noremap [ /
 " Find reverse
-noremap [ ?
+noremap \| ?
 " Find next
-noremap \ n
+noremap ] n
 " Find prev
 noremap + N
 " Till Char
-noremap ) t
+noremap ( t
 " Till Char reverse
-noremap ( T
+noremap * T
 " Find Char
-noremap } f
+noremap { f
 " Find Char reverse
-noremap { F
+noremap \ F
 " Find/till next
-noremap \| ;
-noremap * ;
+noremap } ;
+noremap ) ;
 " Find/till prev
 noremap = ,
 noremap & ,
 " Extra commands
 noremap <leader>- z
 " Extra commands (g command)
-noremap ' g
+noremap / g
 " G - End of file / Goto line
 noremap - G
 " Expert mode
@@ -411,7 +415,7 @@ noremap <leader><cr> :
 " goto mark
 noremap _ `
 " goto mark bol
-noremap " '
+noremap ? '
 " auto format
 noremap $ =
 " repeat command
@@ -509,87 +513,86 @@ execute 'noremap ' . s:R3C6 . ' zt'
 noremap h {
 " Previous instance of current word
 noremap H #
-noremap < <C-d>
-noremap > <C-u>
-noremap , <C-f>
-noremap . <C-b>
+execute 'noremap ' . s:r3c8 . ' <C-f>'
+execute 'noremap ' . s:R3C8 . ' <C-d>'
+execute 'noremap ' . s:r3c9 . ' <C-b>'
+execute 'noremap ' . s:R3C9 . ' <C-u>'
 execute 'noremap ' . s:r3c10 . ' }'
 " Next instance of current word
 execute 'noremap ' . s:R3C10 . ' *'
 " g mappings
-noremap '# g#
+noremap /# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
 " noremap -o g$
-noremap 'o g_
-noremap 'n g^
-noremap '& g&
-noremap '_ g'
-noremap '\" g`
-noremap '* g*
-noremap '+ g+
-noremap ', g,
-noremap '- g-
-noremap 'y g-
-noremap '0 g0
-noremap '8 g8
-noremap '< g<
-noremap '? g?
-noremap '?? g??
-noremap '?h? g?g?
-" noremap 'E gE
-noremap 'V gH
+noremap /o g_
+noremap /n g^
+noremap /& g&
+noremap /_ g'
+noremap /\" g`
+noremap /* g*
+noremap /+ g+
+noremap /, g,
+noremap /- g-
+noremap /y g-
+noremap /0 g0
+noremap /8 g8
+noremap /< g<
+noremap /? g?
+noremap /?? g??
+noremap /?h? g?g?
+" noremap /E gE
+noremap /V gH
 " gI - insert
-noremap 'S gI
-noremap '<S-tab> gD
-noremap 'N gN
-noremap 'D gP
-noremap 'e gQ
+noremap /S gI
+noremap /<S-tab> gD
+noremap /D gP
+noremap /e gQ
 " gR - replace
-noremap 'P gR
-noremap 'T gT
-noremap 'U gU
+noremap /P gR
+noremap /T gT
+noremap /U gU
 " gV - visual
-noremap 'G gV
-noremap '] g]
-noremap 'a ga
+noremap /G gV
+noremap /] g]
+noremap /a ga
 " noremap -e ge
-noremap 'f gf
-noremap 'F gF
+noremap /f gf
+noremap /F gF
 " gg
-noremap '- gg
-noremap 'v gh
+noremap // gg
+noremap /v gh
 " gi - insert
-noremap 's gi
-noremap '<tab> gd
-noremap 'k gk
-noremap '/ gn
-noremap 'h gN
-noremap 'W gJ
-noremap 'm gm
-noremap 'M gM
-noremap 'O go
-noremap 'd gp
+noremap /s gi
+noremap /<tab> gd
+noremap /k gk
+noremap /. gn
+noremap /h gN
+noremap /W gJ
+noremap /m gm
+noremap /M gM
+noremap /O go
+noremap /d gp
 " noremap '; g; what does this one do? there was a conflict below
-noremap '; gq
+noremap /; gq
 " gr - replace
-noremap 'p gr
-noremap 's gs
-noremap 't gt
-noremap 'u gu
+noremap /p gr
+noremap /s gs
+noremap /t gt
+noremap /u gu
 " gv - visual
-noremap 'g gv
-noremap ': gw
-noremap 'x gx
-noremap '@ g@
-noremap 'q g~
-noremap '<Down> g<Down>
-noremap '<End> g<End>
-noremap '<Home> g<Home>
-noremap '<LeftMouse> g<LeftMouse>
-noremap '<MiddleMouse> g<MiddleMouse>
-noremap '<RightMouse> g<RightMouse>
-noremap '<Tab> g<Tab>
-noremap '<Up> g<Up>
+noremap /g gv
+noremap /: gw
+noremap /x gx
+noremap /@ g@
+noremap /q g~
+noremap /<Down> g<Down>
+noremap /<End> g<End>
+noremap /<Home> g<Home>
+noremap /<LeftMouse> g<LeftMouse>
+noremap /<MiddleMouse> g<MiddleMouse>
+noremap /<RightMouse> g<RightMouse>
+noremap /<Tab> g<Tab>
+noremap /<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a

@@ -337,7 +337,7 @@ noremap <leader>Q ZQ
 " Find
 noremap [ /
 " Find reverse
-noremap \| ?
+noremap \ ?
 " Find next
 noremap ] n
 " Find prev
@@ -349,7 +349,7 @@ noremap * T
 " Find Char
 noremap { f
 " Find Char reverse
-noremap \ F
+noremap \| F
 " Find/till next
 noremap } ;
 noremap ) ;

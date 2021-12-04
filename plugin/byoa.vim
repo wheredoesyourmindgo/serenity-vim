@@ -61,6 +61,67 @@ elseif s:byoa_keymap == 'colemak-dh-ring'
   let s:R3C9 = "<"
   let s:r3c10 = "."
   let s:R3C10 = ">"
+elseif s:byoa_keymap == 'sertain'
+  let s:r1c1 = "x"
+  let s:R1C1 = "X"
+  let s:r1c2 = "l"
+  let s:R1C2 = "L"
+  let s:r1c3 = "d"
+  let s:R1C3 = "D"
+  let s:r1c4 = "k"
+  let s:R1C4 = "K"
+  let s:r1c5 = "v"
+  let s:R1C5 = "V"
+  let s:r1c6 = "z"
+  let s:R1C6 = "Z"
+  let s:r1c7 = "w"
+  let s:R1C7 = "W"
+  let s:r1c8 = "o"
+  let s:R1C8 = "O"
+  let s:r1c9 = "u"
+  let s:R1C9 = "U"
+  let s:r1c10 = ";"
+  let s:R1C10 = ":"
+  let s:r2c1 = "s"
+  let s:R2C1 = "S"
+  let s:r2c2 = "r"
+  let s:R2C2 = "R"
+  let s:r2c3 = "t"
+  let s:R2C3 = "T"
+  let s:r2c4 = "n"
+  let s:R2C4 = "N"
+  let s:r2c5 = "f"
+  let s:R2C5 = "F"
+  let s:r2c6 = "g"
+  let s:R2C6 = "G"
+  let s:r2c7 = "y"
+  let s:R2C7 = "Y"
+  let s:r2c8 = "e"
+  let s:R2C8 = "E"
+  let s:r2c9 = "i"
+  let s:R2C9 = "I"
+  let s:r2c10 = "a"
+  let s:R2C10 = "A"
+  let s:r3c1 = "q"
+  let s:R3C1 = "Q"
+  let s:r3c2 = "j"
+  let s:R3C2 = "J"
+  let s:r3c3 = "m"
+  let s:R3C3 = "M"
+  let s:r3c4 = "h"
+  let s:R3C4 = "H"
+  let s:r3c5 = "b"
+  let s:R3C5 = "B"
+  let s:r3c6 = "p"
+  let s:R3C6 = "P"
+  let s:r3c7 = "c"
+  let s:R3C7 = "C"
+  let s:r3c8 = "'"
+  let s:R3C8 = """
+  let s:r3c9 = ","
+  let s:R3C9 = "<"
+  let s:r3c10 = "."
+  let s:R3C10 = ">"
 elseif s:byoa_keymap == 'qwerty'
   let s:r2c10 = ";"
   let s:R2C10 = ":"
@@ -337,11 +398,11 @@ noremap <leader>Q ZQ
 " Find
 noremap [ /
 " Find reverse
-noremap \ ?
+noremap + ?
 " Find next
 noremap ] n
 " Find prev
-noremap + N
+noremap \ N
 " Till Char
 noremap ( t
 " Till Char reverse
@@ -349,17 +410,17 @@ noremap * T
 " Find Char
 noremap { f
 " Find Char reverse
-noremap \| F
+noremap = F
 " Find/till next
 noremap } ;
 noremap ) ;
 " Find/till prev
-noremap = ,
+noremap / ,
 noremap & ,
 " Extra commands
-noremap <leader>- z
+noremap <leader>` z
 " Extra commands (g command)
-noremap ' g
+noremap ` g
 " G - End of file / Goto line
 noremap - G
 " Expert mode
@@ -413,9 +474,9 @@ noremap <cr> :
 " This is used w/ help mode in order to access command mode
 noremap <leader><cr> :
 " goto mark
-noremap _ `
+noremap ~ `
 " goto mark bol
-noremap " '
+noremap _ '
 " auto format
 noremap $ =
 " repeat command
@@ -450,12 +511,12 @@ execute 'noremap ' . s:r2c1 . ' s'
 execute 'noremap ' . s:R2C1 . ' S'
 execute 'noremap ' . s:r2c2 . ' i'
 execute 'noremap ' . s:R2C2 . ' I'
-noremap s a
-noremap S A
-noremap t o
-noremap T O
-nnoremap g v
-nnoremap G V
+execute 'noremap ' . s:r2c3 . ' a'
+execute 'noremap ' . s:R2C3 . ' A'
+execute 'noremap ' . s:r2c4 . ' o'
+execute 'noremap ' . s:R2C4 . ' O'
+execute 'noremap ' . s:r2c5 . ' v'
+execute 'noremap ' . s:R2C5 . ' V'
 " left r3
 execute 'noremap ' . s:r3c1 . ' u'
 execute 'noremap ' . s:R3C1 . ' U'
@@ -463,8 +524,8 @@ execute 'noremap ' . s:r3c2 . ' d'
 execute 'noremap ' . s:R3C2 . ' D'
 execute 'noremap ' . s:r3c3 . ' y'
 execute 'noremap ' . s:R3C3 . ' Y'
-noremap d p
-noremap D P
+execute 'noremap ' . s:r3c4 . ' p'
+execute 'noremap ' . s:R3C4 . ' P'
 execute 'noremap ' . s:r3c5 . ' <C-r>'
 execute 'noremap ' . s:R3C5 . ' &'
 " right r1
@@ -488,19 +549,19 @@ execute 'noremap ' . s:R1C6 . ' zb'
 " noremap L gE
 execute 'noremap ' . s:r1c7 . ' ge'
 execute 'noremap ' . s:R1C7 . ' gE'
-noremap u b
-noremap U B
+execute 'noremap ' . s:r1c8 . ' b'
+execute 'noremap ' . s:R1C8 . ' B'
 execute 'noremap ' . s:r1c9 . ' w'
 execute 'noremap ' . s:R1C9 . ' W'
 execute 'noremap ' . s:r1c10 . ' e'
 execute 'noremap ' . s:R1C10 . ' E'
 " right r2
-noremap m M
-noremap M zz
-noremap n _
-noremap N 0
-noremap e +
-noremap E <C-e>
+execute 'noremap ' . s:r2c6 . ' M'
+execute 'noremap ' . s:R2C6 . ' zz'
+execute 'noremap ' . s:r2c7 . ' _'
+execute 'noremap ' . s:R2C7 . ' 0'
+execute 'noremap ' . s:r2c8 . ' +'
+execute 'noremap ' . s:R2C8 . ' <C-e>'
 " noremap i -
 " noremap I <C-y>
 execute 'noremap ' . s:r2c9 . ' -'
@@ -510,9 +571,9 @@ execute 'noremap ' . s:r2c10 . ' $'
 " right r3
 execute 'noremap ' . s:r3c6 . ' L'
 execute 'noremap ' . s:R3C6 . ' zt'
-noremap h {
+execute 'noremap ' . s:r3c7 . ' {'
 " Previous instance of current word
-noremap H #
+execute 'noremap ' . s:R3C7 . ' #'
 execute 'noremap ' . s:r3c8 . ' <C-f>'
 execute 'noremap ' . s:R3C8 . ' <C-d>'
 execute 'noremap ' . s:r3c9 . ' <C-b>'
@@ -521,88 +582,88 @@ execute 'noremap ' . s:r3c10 . ' }'
 " Next instance of current word
 execute 'noremap ' . s:R3C10 . ' *'
 " g mappings
-noremap /# g#
+noremap `# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
 " noremap -o g$
-noremap 'o g_
-noremap 'n g^
-noremap '& g&
-noremap '_ g'
-noremap '\" g`
-noremap '* g*
-noremap '+ g+
-noremap ', g,
-noremap '- g-
-noremap 'y g-
-noremap '0 g0
-noremap '8 g8
-noremap '< g<
-noremap '? g?
-noremap '?? g??
-noremap '?h? g?g?
-" noremap 'E gE
-noremap 'V gH
+noremap `o g_
+noremap `n g^
+noremap `& g&
+noremap `_ g'
+noremap `\" g`
+noremap `* g*
+noremap `+ g+
+noremap `, g,
+noremap `- g-
+noremap `y g-
+noremap `0 g0
+noremap `8 g8
+noremap `< g<
+noremap `? g?
+noremap `?? g??
+noremap `?h? g?g?
+" noremap `E gE
+noremap `V gH
 " gI - insert
-noremap 'S gI
-noremap '<S-tab> gD
-noremap 'D gP
-noremap 'e gQ
+noremap `S gI
+noremap `<S-tab> gD
+noremap `D gP
+noremap `e gQ
 " gR - replace
-noremap 'P gR
-noremap 'T gT
-noremap 'U gU
+noremap `P gR
+noremap `T gT
+noremap `U gU
 " gV - visual
-noremap 'G gV
-noremap '] g]
-noremap 'a ga
+noremap `G gV
+noremap `] g]
+noremap `a ga
 " noremap -e ge
-noremap 'f gf
-noremap 'F gF
+noremap `f gf
+noremap `F gF
 " gg
-noremap '' gg
-noremap 'v gh
+noremap `` gg
+noremap `v gh
 " gi - insert
-noremap 's gi
-noremap '<tab> gd
-noremap 'k gk
-noremap '. gn
-noremap 'h gN
-noremap 'W gJ
-noremap 'm gm
-noremap 'M gM
-noremap 'O go
-noremap 'd gp
-" noremap '; g; what does this one do? there was a conflict below
-noremap '; gq
+noremap `s gi
+noremap `<tab> gd
+noremap `k gk
+noremap `. gn
+noremap `h gN
+noremap `W gJ
+noremap `m gm
+noremap `M gM
+noremap `O go
+noremap `d gp
+" noremap `; g; what does this one do? there was a conflict below
+noremap `; gq
 " gr - replace
-noremap 'p gr
-noremap 's gs
-noremap 't gt
-noremap 'u gu
+noremap `p gr
+noremap `s gs
+noremap `t gt
+noremap `u gu
 " gv - visual
-noremap 'g gv
-noremap ': gw
-noremap 'x gx
-noremap '@ g@
-noremap 'q g~
-noremap '<Down> g<Down>
-noremap '<End> g<End>
-noremap '<Home> g<Home>
-noremap '<LeftMouse> g<LeftMouse>
-noremap '<MiddleMouse> g<MiddleMouse>
-noremap '<RightMouse> g<RightMouse>
-noremap '<Tab> g<Tab>
-noremap '<Up> g<Up>
+noremap `g gv
+noremap `: gw
+noremap `x gx
+noremap `@ g@
+noremap `q g~
+noremap `<Down> g<Down>
+noremap `<End> g<End>
+noremap `<Home> g<Home>
+noremap `<LeftMouse> g<LeftMouse>
+noremap `<MiddleMouse> g<MiddleMouse>
+noremap `<RightMouse> g<RightMouse>
+noremap `<Tab> g<Tab>
+noremap `<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a
 " xnoremap g a
 " onoremap t i
 " xnoremap t i
-onoremap G a
-xnoremap G a
-onoremap g i
-xnoremap g i
+execute 'onoremap ' . s:R2C5 . ' a'
+execute 'xnoremap ' . s:R2C5 . ' a'
+execute 'onoremap ' . s:r2c5 . ' i'
+execute 'xnoremap ' . s:r2c5 . ' i'
 " onoremap gw aw
 " xnoremap gw aw
 " onoremap tw iw

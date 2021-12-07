@@ -117,7 +117,7 @@ elseif s:byoa_keymap == 'unsertain'
   let s:r3c7 = "y"
   let s:R3C7 = "Y"
   let s:r3c8 = "'"
-  let s:R3C8 = """
+  let s:R3C8 = "/""
   let s:r3c9 = ","
   let s:R3C9 = "<"
   let s:r3c10 = "."

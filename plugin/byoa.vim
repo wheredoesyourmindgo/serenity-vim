@@ -61,21 +61,21 @@ elseif s:byoa_keymap == 'colemak-dh-ring'
   let s:R3C9 = "<"
   let s:r3c10 = "."
   let s:R3C10 = ">"
-elseif s:byoa_keymap == 'unsertain'
-  let s:r1c1 = "x"
-  let s:R1C1 = "X"
+elseif s:byoa_keymap == 'crankiesty'
+  let s:r1c1 = "z"
+  let s:R1C1 = "Z"
   let s:r1c2 = "l"
   let s:R1C2 = "L"
-  let s:r1c3 = "d"
-  let s:R1C3 = "D"
+  let s:r1c3 = "h"
+  let s:R1C3 = "H"
   let s:r1c4 = "m"
   let s:R1C4 = "M"
-  let s:r1c5 = "b"
-  let s:R1C5 = "B"
-  let s:r1c6 = "j"
-  let s:R1C6 = "J"
-  let s:r1c7 = "w"
-  let s:R1C7 = "W"
+  let s:r1c5 = "q"
+  let s:R1C5 = "Q"
+  let s:r1c6 = "p"
+  let s:R1C6 = "P"
+  let s:r1c7 = "f"
+  let s:R1C7 = "F"
   let s:r1c8 = "o"
   let s:R1C8 = "O"
   let s:r1c9 = "u"
@@ -86,14 +86,14 @@ elseif s:byoa_keymap == 'unsertain'
   let s:R2C1 = "S"
   let s:r2c2 = "r"
   let s:R2C2 = "R"
-  let s:r2c3 = "t"
-  let s:R2C3 = "T"
-  let s:r2c4 = "n"
-  let s:R2C4 = "N"
-  let s:r2c5 = "f"
-  let s:R2C5 = "F"
-  let s:r2c6 = "p"
-  let s:R2C6 = "P"
+  let s:r2c3 = "n"
+  let s:R2C3 = "N"
+  let s:r2c4 = "t"
+  let s:R2C4 = "T"
+  let s:r2c5 = "k"
+  let s:R2C5 = "K"
+  let s:r2c6 = "y"
+  let s:R2C6 = "Y"
   let s:r2c7 = "c"
   let s:R2C7 = "C"
   let s:r2c8 = "e"
@@ -102,20 +102,20 @@ elseif s:byoa_keymap == 'unsertain'
   let s:R2C9 = "I"
   let s:r2c10 = "a"
   let s:R2C10 = "A"
-  let s:r3c1 = "z"
-  let s:R3C1 = "Z"
-  let s:r3c2 = "q"
-  let s:R3C2 = "Q"
-  let s:r3c3 = "k"
-  let s:R3C3 = "K"
-  let s:r3c4 = "h"
-  let s:R3C4 = "H"
+  let s:r3c1 = "x"
+  let s:R3C1 = "X"
+  let s:r3c2 = "j"
+  let s:R3C2 = "J"
+  let s:r3c3 = "b"
+  let s:R3C3 = "B"
+  let s:r3c4 = "d"
+  let s:R3C4 = "D"
   let s:r3c5 = "v"
   let s:R3C5 = "V"
   let s:r3c6 = "g"
   let s:R3C6 = "G"
-  let s:r3c7 = "y"
-  let s:R3C7 = "Y"
+  let s:r3c7 = "w"
+  let s:R3C7 = "W"
   let s:r3c8 = "'"
   let s:R3C8 = "/""
   let s:r3c9 = ","
@@ -148,13 +148,13 @@ let g:surround_no_insert_mappings = 1
 " Don't use Sandwhich default mappings
 " The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
 let g:sandwich_no_default_key_mappings = 1
-silent! nmap <unique><silent> qs <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> ds <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> qS <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> dS <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> js <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> hs <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> jS <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> hS <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
-silent! nmap <unique> ks <Plug>(operator-sandwich-add)
+silent! nmap <unique> bs <Plug>(operator-sandwich-add)
 silent! xmap <unique> S <Plug>(operator-sandwich-add)
 silent! omap <unique> S <Plug>(operator-sandwich-g@)
 " delete
@@ -162,30 +162,30 @@ silent! omap <unique> S <Plug>(operator-sandwich-g@)
 " replace
 " silent! xmap <unique> af <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> fS <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> fS <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> FS <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> FS <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> fs <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> fs <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> Fs <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> Fs <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> kS <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> kS <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> KS <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> KS <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> ks <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> ks <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> Ks <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> Ks <Plug>(textobj-sandwich-query-a)
 " vim-surround keymap macro (https://github.com/machakann/vim-sandwich/blob/master/macros/sandwich/keymap/surround.vim)
 
 "let g:sandwich_no_default_key_mappings = 1
 "let g:operator_sandwich_no_default_key_mappings = 1
 "let g:textobj_sandwich_no_default_key_mappings = 1
 
-nmap ks <Plug>(sandwich-add)
+nmap bs <Plug>(sandwich-add)
 onoremap <SID>line :normal! ^vg_<CR>
-nmap <silent> kss <Plug>(sandwich-add)<SID>line
+nmap <silent> bss <Plug>(sandwich-add)<SID>line
 onoremap <SID>gul g_
-nmap <silent> kS <Plug>(sandwich-add)<SID>gul
+nmap <silent> bS <Plug>(sandwich-add)<SID>gul
 
-nmap qs <Plug>(sandwich-delete)
-nmap qss <Plug>(sandwich-delete-auto)
-nmap ds <Plug>(sandwich-replace)
-nmap dss <Plug>(sandwich-replace-auto)
+nmap js <Plug>(sandwich-delete)
+nmap jss <Plug>(sandwich-delete-auto)
+nmap hs <Plug>(sandwich-replace)
+nmap hss <Plug>(sandwich-replace-auto)
 
 xmap S <Plug>(sandwich-add)
 
@@ -396,20 +396,20 @@ map <s-F10> <Plug>HiLinkTrace
 
 " vim-textobj-entire
 let g:textobj_entire_no_default_key_mappings = 1
-xmap Ge <Plug>(textobj-entire-a)
-omap Ge <Plug>(textobj-entire-a)
-xmap ge <Plug>(textobj-entire-i)
-omap ge <Plug>(textobj-entire-i)
+xmap Ke <Plug>(textobj-entire-a)
+omap Ke <Plug>(textobj-entire-a)
+xmap ke <Plug>(textobj-entire-i)
+omap ke <Plug>(textobj-entire-i)
 " vim-textobj-indent
 let g:textobj_indent_no_default_key_mappings = 1
-xmap Gi <Plug>(textobj-indent-a)
-omap Gi <Plug>(textobj-indent-a)
-xmap gi <Plug>(textobj-indent-i)
-omap gi <Plug>(textobj-indent-i)
-xmap GI <Plug>(textobj-indent-same-a)
-omap GI <Plug>(textobj-indent-same-a)
-xmap gI <Plug>(textobj-indent-same-i))
-omap gI <Plug>(textobj-indent-same-i))
+xmap Ki <Plug>(textobj-indent-a)
+omap Ki <Plug>(textobj-indent-a)
+xmap ki <Plug>(textobj-indent-i)
+omap ki <Plug>(textobj-indent-i)
+xmap KI <Plug>(textobj-indent-same-a)
+omap KI <Plug>(textobj-indent-same-a)
+xmap kI <Plug>(textobj-indent-same-i))
+omap kI <Plug>(textobj-indent-same-i))
 
 
 " Leaders --------------------------

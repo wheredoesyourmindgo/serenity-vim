@@ -148,34 +148,55 @@ let g:surround_no_insert_mappings = 1
 " Don't use Sandwhich default mappings
 " The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
 let g:sandwich_no_default_key_mappings = 1
-silent! nmap <unique><silent> qo <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> co <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> qO <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> cO <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> qs <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> ds <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> qS <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> dS <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
-silent! nmap <unique> fo <Plug>(operator-sandwich-add)
-silent! xmap <unique> O <Plug>(operator-sandwich-add)
-silent! omap <unique> O <Plug>(operator-sandwich-g@)
+silent! nmap <unique> ks <Plug>(operator-sandwich-add)
+silent! xmap <unique> S <Plug>(operator-sandwich-add)
+silent! omap <unique> S <Plug>(operator-sandwich-g@)
 " delete
 " silent! xmap <unique> ax <Plug>(operator-sandwich-delete)
 " replace
 " silent! xmap <unique> af <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> gO <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> gO <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> GO <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> GO <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> go <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> go <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> Go <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> Go <Plug>(textobj-sandwich-query-a)
-" vim-surround keymap macro
+silent! omap <unique> fS <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> fS <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> FS <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> FS <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> fs <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> fs <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> Fs <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> Fs <Plug>(textobj-sandwich-query-a)
+" vim-surround keymap macro (https://github.com/machakann/vim-sandwich/blob/master/macros/sandwich/keymap/surround.vim)
+
+"let g:sandwich_no_default_key_mappings = 1
+"let g:operator_sandwich_no_default_key_mappings = 1
+"let g:textobj_sandwich_no_default_key_mappings = 1
+
+nmap ks <Plug>(sandwich-add)
 onoremap <SID>line :normal! ^vg_<CR>
-nmap <silent> foo <Plug>(operator-sandwich-add)<SID>line
+nmap <silent> kss <Plug>(sandwich-add)<SID>line
 onoremap <SID>gul g_
-nmap fO co<SID>gul
-" Default recipes (See https://github.com/machakann/vim-sandwich/blob/9e6340affe9f53c11a6975a5f50b9bf48adb692c/macros/sandwich/keymap/surround.vim#L25)
+nmap <silent> kS <Plug>(sandwich-add)<SID>gul
+
+nmap qs <Plug>(sandwich-delete)
+nmap qss <Plug>(sandwich-delete-auto)
+nmap ds <Plug>(sandwich-replace)
+nmap dss <Plug>(sandwich-replace-auto)
+
+xmap S <Plug>(sandwich-add)
+
+runtime autoload/repeat.vim
+if hasmapto('<Plug>(RepeatDot)')
+  nmap . <Plug>(operator-sandwich-predot)<Plug>(RepeatDot)
+else
+  nmap . <Plug>(operator-sandwich-dot)
+endif
+
+" Default recipes
 let g:sandwich#recipes = [
       \   {
       \     'buns': ['\s\+', '\s\+'],
@@ -351,6 +372,8 @@ let g:sandwich#recipes = [
       \     'input': ['I'],
       \   },
       \ ]
+
+
 " Whitespace padded variants
 " https://github.com/machakann/vim-sandwich/issues/44#issuecomment-321522474
 let g:sandwich#recipes += [

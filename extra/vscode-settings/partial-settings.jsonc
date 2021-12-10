@@ -1013,12 +1013,32 @@
       "after": ["c", "w"]
     },
     {
+      "before": ["h", "U"],
+      "after": ["c", "W"]
+    },
+    {
       "before": ["h", ";"],
       "after": ["c", "e"]
     },
     {
+      "before": ["h", ":"],
+      "after": ["c", "E"]
+    },
+    {
       "before": ["h", "o"],
       "after": ["c", "b"]
+    },
+    {
+      "before": ["h", "O"],
+      "after": ["c", "B"]
+    },
+    {
+      "before": ["h", "f"],
+      "after": ["c", "g", "e"]
+    },
+    {
+      "before": ["h", "F"],
+      "after": ["c", "g", "E"]
     },
     // {
     //   "before": ["h", "n"],
@@ -1144,12 +1164,32 @@
       "after": ["d", "w"]
     },
     {
+      "before": ["j", "U"],
+      "after": ["d", "W"]
+    },
+    {
       "before": ["j", ";"],
       "after": ["d", "e"]
     },
     {
+      "before": ["j", ":"],
+      "after": ["d", "E"]
+    },
+    {
       "before": ["j", "o"],
       "after": ["d", "b"]
+    },
+    {
+      "before": ["j", "O"],
+      "after": ["d", "B"]
+    },
+    {
+      "before": ["j", "f"],
+      "after": ["d", "g", "e"]
+    },
+    {
+      "before": ["j", "F"],
+      "after": ["d", "g", "E"]
     },
     // {
     //   "before": ["j", "n"],
@@ -1208,12 +1248,32 @@
       "after": ["y", "w"]
     },
     {
+      "before": ["b", "U"],
+      "after": ["y", "W"]
+    },
+    {
       "before": ["b", ";"],
       "after": ["y", "e"]
     },
     {
+      "before": ["b", ":"],
+      "after": ["y", "E"]
+    },
+    {
       "before": ["b", "o"],
       "after": ["y", "b"]
+    },
+    {
+      "before": ["b", "O"],
+      "after": ["y", "B"]
+    },
+    {
+      "before": ["b", "f"],
+      "after": ["y", "g", "e"]
+    },
+    {
+      "before": ["b", "F"],
+      "after": ["y", "g", "E"]
     },
     // {
     //   "before": ["b", "n"],

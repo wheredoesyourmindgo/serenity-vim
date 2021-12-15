@@ -62,8 +62,8 @@ elseif s:byoa_keymap == 'colemak-dh-ring'
   let s:r3c10 = "."
   let s:R3C10 = ">"
 elseif s:byoa_keymap == 'miscreant-y'
-  let s:r1c1 = "f"
-  let s:R1C1 = "F"
+  let s:r1c1 = "x"
+  let s:R1C1 = "X"
   let s:r1c2 = "l"
   let s:R1C2 = "L"
   let s:r1c3 = "h"
@@ -102,8 +102,8 @@ elseif s:byoa_keymap == 'miscreant-y'
   let s:R2C9 = "I"
   let s:r2c10 = "a"
   let s:R2C10 = "A"
-  let s:r3c1 = "x"
-  let s:R3C1 = "X"
+  let s:r3c1 = "f"
+  let s:R3C1 = "F"
   let s:r3c2 = "j"
   let s:R3C2 = "J"
   let s:r3c3 = "b"
@@ -441,9 +441,9 @@ noremap ) ;
 noremap / ,
 noremap & ,
 " Extra commands
-noremap <leader>` z
+noremap <leader>/ z
 " Extra commands (g command)
-noremap ` g
+noremap / g
 " G - End of file / Goto line
 noremap - G
 " Expert mode
@@ -477,7 +477,6 @@ xnoremap <leader>r <<esc>
 noremap <leader>s dd<up><up>p
 noremap <leader>i ddp
 
-
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@
 " Visual Block Mode
@@ -497,7 +496,7 @@ noremap <cr> :
 " This is used w/ help mode in order to access command mode
 noremap <leader><cr> :
 " goto mark
-noremap ~ `
+noremap ? `
 " goto mark bol
 noremap _ '
 " auto format
@@ -605,78 +604,78 @@ execute 'noremap ' . s:r3c10 . ' }'
 " Next instance of current word
 execute 'noremap ' . s:R3C10 . ' *'
 " g mappings
-noremap `# g#
+noremap /# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
 " noremap -o g$
-noremap `o g_
-noremap `n g^
-noremap `& g&
-noremap `_ g'
-noremap `\" g`
-noremap `* g*
-noremap `+ g+
-noremap `, g,
-noremap `- g-
-noremap `y g-
-noremap `0 g0
-noremap `8 g8
-noremap `< g<
-noremap `? g?
-noremap `?? g??
-noremap `?h? g?g?
-" noremap `E gE
-noremap `V gH
+noremap /o g_
+noremap /n g^
+noremap /& g&
+noremap /_ g'
+noremap /\" g`
+noremap /* g*
+noremap /+ g+
+noremap /, g,
+noremap /- g-
+noremap /y g-
+noremap /0 g0
+noremap /8 g8
+noremap /< g<
+noremap /? g?
+noremap /?? g??
+noremap /?h? g?g?
+" noremap /E gE
+noremap /V gH
 " gI - insert
-noremap `S gI
-noremap `<S-tab> gD
-noremap `D gP
-noremap `e gQ
+noremap /S gI
+noremap /<S-tab> gD
+noremap /D gP
+noremap /e gQ
 " gR - replace
-noremap `P gR
-noremap `T gT
-noremap `U gU
+noremap /P gR
+noremap /T gT
+noremap /U gU
 " gV - visual
-noremap `G gV
-noremap `] g]
-noremap `a ga
+noremap /G gV
+noremap /] g]
+noremap /a ga
 " noremap -e ge
-noremap `f gf
-noremap `F gF
+noremap /f gf
+noremap /F gF
 " gg
-noremap `` gg
-noremap `v gh
+noremap // gg
+noremap /v gh
 " gi - insert
-noremap `s gi
-noremap `<tab> gd
-noremap `k gk
-noremap `. gn
-noremap `h gN
-noremap `W gJ
-noremap `m gm
-noremap `M gM
-noremap `O go
-noremap `d gp
-" noremap `; g; what does this one do? there was a conflict below
-noremap `; gq
+noremap /s gi
+noremap /<tab> gd
+noremap /k gk
+noremap /. gn
+noremap /h gN
+noremap /W gJ
+noremap /m gm
+noremap /M gM
+noremap /O go
+noremap /d gp
+" noremap /; g; what does this one do? there was a conflict below
+noremap /; gq
 " gr - replace
-noremap `p gr
-noremap `s gs
-noremap `t gt
-noremap `u gu
+noremap /p gr
+noremap /s gs
+noremap /t gt
+noremap /u gu
 " gv - visual
-noremap `g gv
-noremap `: gw
-noremap `x gx
-noremap `@ g@
-noremap `q g~
-noremap `<Down> g<Down>
-noremap `<End> g<End>
-noremap `<Home> g<Home>
-noremap `<LeftMouse> g<LeftMouse>
-noremap `<MiddleMouse> g<MiddleMouse>
-noremap `<RightMouse> g<RightMouse>
-noremap `<Tab> g<Tab>
-noremap `<Up> g<Up>
+noremap /g gv
+noremap /: gw
+noremap /x gx
+noremap /@ g@
+noremap /q g~
+noremap /<Down> g<Down>
+noremap /<End> g<End>
+noremap /<Home> g<Home>
+noremap /<LeftMouse> g<LeftMouse>
+noremap /<MiddleMouse> g<MiddleMouse>
+noremap /<RightMouse> g<RightMouse>
+noremap /<Tab> g<Tab>
+noremap /<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a
@@ -687,75 +686,4 @@ execute 'onoremap ' . s:R2C5 . ' a'
 execute 'xnoremap ' . s:R2C5 . ' a'
 execute 'onoremap ' . s:r2c5 . ' i'
 execute 'xnoremap ' . s:r2c5 . ' i'
-" onoremap gw aw
-" xnoremap gw aw
-" onoremap tw iw
-" xnoremap tw iw
-" onoremap gW aW
-" xnoremap gW aW
-" onoremap tW iW
-" xnoremap tW iW
-" onoremap gs as
-" xnoremap gs as
-" onoremap ts is
-" xnoremap ts is
-" onoremap gp ap
-" xnoremap gp ap
-" onoremap tp ip
-" xnoremap tp ip
-" onoremap g] a]
-" xnoremap g] a]
-" onoremap g[ a[
-" xnoremap g[ a[
-" onoremap t] i]
-" xnoremap t] i]
-" onoremap t[ i[
-" xnoremap t[ i[
-" onoremap g) a)
-" xnoremap g) a)
-" onoremap g( a(
-" xnoremap g( a(
-" onoremap gb ab
-" xnoremap gb ab
-" onoremap t) i)
-" xnoremap t) i)
-" onoremap t( i(
-" xnoremap t( i(
-" onoremap tb ib
-" xnoremap tb ib
-" onoremap g> a>
-" xnoremap g> a>
-" onoremap g< a<
-" xnoremap g< a<
-" onoremap t> i>
-" xnoremap t> i>
-" onoremap t< i<
-" xnoremap t< i<
-" onoremap gt at
-" xnoremap gt at
-" onoremap tt it
-" xnoremap tt it
-" onoremap g} a}
-" xnoremap g} a}
-" onoremap g{ a{
-" xnoremap g{ a{
-" onoremap gB aB
-" xnoremap gB aB
-" onoremap t} i}
-" xnoremap t} i}
-" onoremap t{ i{
-" xnoremap t{ i{
-" onoremap tB iB
-" xnoremap tB iB
-" onoremap g" a"
-" xnoremap g" a"
-" onoremap g' a'
-" xnoremap g' a'
-" onoremap g` a`
-" xnoremap g` a`
-" onoremap t" i"
-" xnoremap t" i"
-" onoremap t' i'
-" xnoremap t' i'
-" onoremap t` i`
-" xnoremap t` i`
+

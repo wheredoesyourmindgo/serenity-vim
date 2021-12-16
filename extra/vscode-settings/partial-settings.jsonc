@@ -172,7 +172,7 @@
       "after": [","]
     },
     {
-      "before": ["\\"],
+      "before": ["/"],
       "after": ["N"]
     },
     {
@@ -418,11 +418,11 @@
       "after": ["W"]
     },
     {
-      "before": [";"],
+      "before": ["-"],
       "after": ["e"]
     },
     {
-      "before": [":"],
+      "before": ["_"],
       "after": ["E"]
     },
     {
@@ -494,7 +494,7 @@
       "after": ["C-b"]
     },
     {
-      "before": ["<"],
+      "before": [";"],
       "after": ["C-u"]
     },
     {
@@ -502,7 +502,7 @@
       "after": ["}"]
     },
     {
-      "before": [">"],
+      "before": [":"],
       "after": ["*"]
     },
     // g commands
@@ -899,7 +899,7 @@
       "after": [","]
     },
     {
-      "before": ["\\"],
+      "before": ["/"],
       "after": ["N"]
     },
     {
@@ -1017,11 +1017,11 @@
       "after": ["c", "W"]
     },
     {
-      "before": ["h", ";"],
+      "before": ["h", "-"],
       "after": ["c", "e"]
     },
     {
-      "before": ["h", ":"],
+      "before": ["h", "_"],
       "after": ["c", "E"]
     },
     {
@@ -1168,11 +1168,11 @@
       "after": ["d", "W"]
     },
     {
-      "before": ["j", ";"],
+      "before": ["j", "-"],
       "after": ["d", "e"]
     },
     {
-      "before": ["j", ":"],
+      "before": ["j", "_"],
       "after": ["d", "E"]
     },
     {
@@ -1252,11 +1252,11 @@
       "after": ["y", "W"]
     },
     {
-      "before": ["b", ";"],
+      "before": ["b", "-"],
       "after": ["y", "e"]
     },
     {
-      "before": ["b", ":"],
+      "before": ["b", "_"],
       "after": ["y", "E"]
     },
     {
@@ -1374,11 +1374,11 @@
       "after": ["W"]
     },
     {
-      "before": [";"],
+      "before": ["-"],
       "after": ["e"]
     },
     {
-      "before": [":"],
+      "before": ["_"],
       "after": ["E"]
     },
     {
@@ -1450,7 +1450,7 @@
       "after": ["C-b"]
     },
     {
-      "before": ["<"],
+      "before": ["-"],
       "after": ["C-u"]
     },
     {
@@ -1458,7 +1458,7 @@
       "after": ["}"]
     },
     {
-      "before": [">"],
+      "before": [":"],
       "after": ["*"]
     },
     // g commands

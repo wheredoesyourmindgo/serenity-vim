@@ -87,7 +87,7 @@
       "after": ["G"]
     },
     {
-      "before": ["<leader>", "x"],
+      "before": ["<leader>", "f"],
       "after": [],
       "commands": [
         {
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "before": ["<leader>", "X"],
+      "before": ["<leader>", "F"],
       "after": [],
       "commands": [
         {
@@ -260,11 +260,11 @@
       "after": ["="]
     },
     {
-      "before": ["x"],
+      "before": ["f"],
       "after": ["\""]
     },
     {
-      "before": ["X"],
+      "before": ["F"],
       "after": ["m"]
     },
     {
@@ -334,7 +334,7 @@
       "after": ["O"]
     },
     {
-      "before": ["f"],
+      "before": ["x"],
       "after": [],
       "commands": [
         {
@@ -344,7 +344,7 @@
       ]
     },
     {
-      "before": ["F"],
+      "before": ["X"],
       "after": ["U"]
     },
     {
@@ -394,11 +394,11 @@
       "after": ["z", "b"]
     },
     {
-      "before": ["p"],
+      "before": ["w"],
       "after": ["g", "e"]
     },
     {
-      "before": ["P"],
+      "before": ["W"],
       "after": ["g", "E"]
     },
     {
@@ -474,11 +474,11 @@
       "after": ["z", "t"]
     },
     {
-      "before": ["w"],
+      "before": ["p"],
       "after": ["{"]
     },
     {
-      "before": ["W"],
+      "before": ["P"],
       "after": ["#"]
     },
     {
@@ -814,7 +814,7 @@
       "after": ["G"]
     },
     {
-      "before": ["<leader>", "x"],
+      "before": ["<leader>", "f"],
       "after": [],
       "commands": [
         {
@@ -824,7 +824,7 @@
       ]
     },
     {
-      "before": ["<leader>", "X"],
+      "before": ["<leader>", "F"],
       "after": [],
       "commands": [
         {
@@ -985,11 +985,11 @@
       "after": ["="]
     },
     {
-      "before": ["x"],
+      "before": ["f"],
       "after": ["\""]
     },
     {
-      "before": ["X"],
+      "before": ["F"],
       "after": ["m"]
     },
     {
@@ -1138,7 +1138,7 @@
       "after": ["V"]
     },
     {
-      "before": ["f"],
+      "before": ["x"],
       "after": [],
       "commands": [
         {
@@ -1148,7 +1148,7 @@
       ]
     },
     {
-      "before": ["F"],
+      "before": ["X"],
       "after": ["U"]
     },
     {
@@ -1350,11 +1350,11 @@
       "after": ["z", "b"]
     },
     {
-      "before": ["p"],
+      "before": ["w"],
       "after": ["g", "e"]
     },
     {
-      "before": ["P"],
+      "before": ["W"],
       "after": ["g", "E"]
     },
     {
@@ -1430,11 +1430,11 @@
       "after": ["z", "t"]
     },
     {
-      "before": ["w"],
+      "before": ["p"],
       "after": ["{"]
     },
     {
-      "before": ["W"],
+      "before": ["P"],
       "after": ["#"]
     },
     {
@@ -1450,7 +1450,7 @@
       "after": ["C-b"]
     },
     {
-      "before": ["-"],
+      "before": [";"],
       "after": ["C-u"]
     },
     {

@@ -107,7 +107,7 @@
       ]
     },
     {
-      "before": ["<leader>", "s"],
+      "before": ["<leader>", "m"],
       "after": [],
       "commands": [
         {
@@ -117,7 +117,7 @@
       ]
     },
     {
-      "before": ["<leader>", "S"],
+      "before": ["<leader>", "M"],
       "after": [],
       "commands": [
         {
@@ -834,7 +834,7 @@
       ]
     },
     {
-      "before": ["<leader>", "s"],
+      "before": ["<leader>", "m"],
       "after": [],
       "commands": [
         {
@@ -844,7 +844,7 @@
       ]
     },
     {
-      "before": ["<leader>", "S"],
+      "before": ["<leader>", "M"],
       "after": [],
       "commands": [
         {

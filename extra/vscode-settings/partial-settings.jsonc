@@ -292,12 +292,12 @@
       "after": ["R"]
     },
     {
-      "before": ["q"],
+      "before": ["z"],
       "commands": ["editor.action.smartSelect.grow"],
       "when": "editorTextFocus"
     },
     {
-      "before": ["Q"],
+      "before": ["Z"],
       "commands": ["editor.action.smartSelect.shrink"],
       "when": "editorTextFocus"
     },
@@ -482,11 +482,11 @@
       "after": ["#"]
     },
     {
-      "before": ["z"],
+      "before": ["q"],
       "after": ["C-f"]
     },
     {
-      "before": ["Z"],
+      "before": ["Q"],
       "after": ["C-d"]
     },
     {
@@ -1093,7 +1093,7 @@
       "after": ["R"]
     },
     {
-      "before": ["q"],
+      "before": ["z"],
       "commands": ["editor.action.smartSelect.grow"],
       "when": "editorTextFocus"
     },
@@ -1438,11 +1438,11 @@
       "after": ["#"]
     },
     {
-      "before": ["z"],
+      "before": ["q"],
       "after": ["C-f"]
     },
     {
-      "before": ["Z"],
+      "before": ["Q"],
       "after": ["C-d"]
     },
     {

@@ -24,16 +24,16 @@ if s:byoa_keymap == 'miscreanty'
   let s:R1C4 = "K"
   let s:r1c5 = "z"
   let s:R1C5 = "Z"
-  let s:r1c6 = "g"
-  let s:R1C6 = "G"
+  let s:r1c6 = "'"
+  let s:R1C6 = "/""
   let s:r1c7 = "p"
   let s:R1C7 = "P"
   let s:r1c8 = "o"
   let s:R1C8 = "O"
   let s:r1c9 = "u"
   let s:R1C9 = "U"
-  let s:r1c10 = "-"
-  let s:R1C10 = "_"
+  let s:r1c10 = "="
+  let s:R1C10 = "+"
   let s:r2c1 = "s"
   let s:R2C1 = "S"
   let s:r2c2 = "r"
@@ -64,8 +64,8 @@ if s:byoa_keymap == 'miscreanty'
   let s:R3C4 = "D"
   let s:r3c5 = "v"
   let s:R3C5 = "V"
-  let s:r3c6 = "'"
-  let s:R3C6 = "/""
+  let s:r3c6 = "g"
+  let s:R3C6 = "G"
   let s:r3c7 = "w"
   let s:R3C7 = "W"
   let s:r3c8 = "q"
@@ -383,21 +383,21 @@ noremap ) t
 " Till Char reverse
 noremap ( T
 " Find Char
-noremap } f
+noremap > f
 " Find Char reverse
-noremap { F
+noremap < F
 " Find/till next
-noremap > ;
+noremap } ;
 noremap * ;
 " Find/till prev
-noremap < ,
+noremap { ,
 noremap & ,
 " Extra commands
 noremap <leader>` z
 " Extra commands (g command)
 noremap ` g
 " G - End of file / Goto line
-noremap = G
+noremap - G
 " Expert mode
 noremap <leader>x Q
 " Help
@@ -448,7 +448,7 @@ noremap <cr> :
 " This is used w/ help mode in order to access command mode
 noremap <leader><cr> :
 " goto mark
-noremap + `
+noremap _ `
 " goto mark bol
 noremap ~ '
 " auto format

@@ -22,8 +22,8 @@ if s:byoa_keymap == 'miscreanty'
   let s:R1C3 = "H"
   let s:r1c4 = "k"
   let s:R1C4 = "K"
-  let s:r1c5 = "z"
-  let s:R1C5 = "Z"
+  let s:r1c5 = "q"
+  let s:R1C5 = "Q"
   let s:r1c6 = "g"
   let s:R1C6 = "G"
   let s:r1c7 = "p"
@@ -68,8 +68,8 @@ if s:byoa_keymap == 'miscreanty'
   let s:R3C6 = "/""
   let s:r3c7 = "w"
   let s:R3C7 = "W"
-  let s:r3c8 = "q"
-  let s:R3C8 = "Q"
+  let s:r3c8 = "`"
+  let s:R3C8 = "~"
   let s:r3c9 = ","
   let s:R3C9 = ";"
   let s:r3c10 = "."
@@ -393,9 +393,9 @@ noremap * ;
 noremap { ,
 noremap & ,
 " Extra commands
-noremap <leader>` z
+noremap <leader>z z
 " Extra commands (g command)
-noremap ` g
+noremap z g
 " G - End of file / Goto line
 noremap - G
 " Expert mode
@@ -450,7 +450,7 @@ noremap <leader><cr> :
 " goto mark
 noremap _ `
 " goto mark bol
-noremap ~ '
+noremap Z '
 " auto format
 noremap $ =
 " repeat command
@@ -556,78 +556,78 @@ execute 'noremap ' . s:r3c10 . ' }'
 " Next instance of current word
 execute 'noremap ' . s:R3C10 . ' *'
 " g mappings
-noremap `# g#
+noremap z# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
 " noremap -o g$
-noremap `o g_
-noremap `n g^
-noremap `& g&
-noremap `_ g'
-noremap `\" g`
-noremap `* g*
-noremap `+ g+
-noremap `, g,
-noremap `- g-
-noremap `y g-
-noremap `0 g0
-noremap `8 g8
-noremap `< g<
-noremap `? g?
-noremap `?? g??
-noremap `?h? g?g?
-" noremap `E gE
-noremap `V gH
+noremap zo g_
+noremap zn g^
+noremap z& g&
+noremap z_ g'
+noremap z\" g`
+noremap z* g*
+noremap z+ g+
+noremap z, g,
+noremap z- g-
+noremap zy g-
+noremap z0 g0
+noremap z8 g8
+noremap z< g<
+noremap z? g?
+noremap z?? g??
+noremap z?h? g?g?
+" noremap zE gE
+noremap zV gH
 " gI - insert
-noremap `S gI
-noremap `<S-tab> gD
-noremap `D gP
-noremap `e gQ
+noremap zS gI
+noremap z<S-tab> gD
+noremap zD gP
+noremap ze gQ
 " gR - replace
-noremap `P gR
-noremap `T gT
-noremap `U gU
+noremap zP gR
+noremap zT gT
+noremap zU gU
 " gV - visual
-noremap `G gV
-noremap `] g]
-noremap `a ga
+noremap zG gV
+noremap z] g]
+noremap za ga
 " noremap -e ge
-noremap `f gf
-noremap `F gF
+noremap zf gf
+noremap zF gF
 " gg
-noremap `` gg
-noremap `v gh
+noremap zz gg
+noremap zv gh
 " gi - insert
-noremap `s gi
-noremap `<tab> gd
-noremap `k gk
-noremap `. gn
-noremap `h gN
-noremap `W gJ
-noremap `m gm
-noremap `M gM
-noremap `O go
-noremap `d gp
-" noremap `; g; what does this one do? there was a conflict below
-noremap `; gq
+noremap zs gi
+noremap z<tab> gd
+noremap zk gk
+noremap z. gn
+noremap zh gN
+noremap zW gJ
+noremap zm gm
+noremap zM gM
+noremap zO go
+noremap zd gp
+" noremap z; g; what does this one do? there was a conflict below
+noremap z; gq
 " gr - replace
-noremap `p gr
-noremap `s gs
-noremap `t gt
-noremap `u gu
+noremap zp gr
+noremap zs gs
+noremap zt gt
+noremap zu gu
 " gv - visual
-noremap `g gv
-noremap `: gw
-noremap `x gx
-noremap `@ g@
-noremap `q g~
-noremap `<Down> g<Down>
-noremap `<End> g<End>
-noremap `<Home> g<Home>
-noremap `<LeftMouse> g<LeftMouse>
-noremap `<MiddleMouse> g<MiddleMouse>
-noremap `<RightMouse> g<RightMouse>
-noremap `<Tab> g<Tab>
-noremap `<Up> g<Up>
+noremap zg gv
+noremap z: gw
+noremap zx gx
+noremap z@ g@
+noremap zq g~
+noremap z<Down> g<Down>
+noremap z<End> g<End>
+noremap z<Home> g<Home>
+noremap z<LeftMouse> g<LeftMouse>
+noremap z<MiddleMouse> g<MiddleMouse>
+noremap z<RightMouse> g<RightMouse>
+noremap z<Tab> g<Tab>
+noremap z<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a

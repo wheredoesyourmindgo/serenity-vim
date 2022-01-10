@@ -14,20 +14,20 @@ else
 endif
 
 if s:byoa_keymap == 'miscreanty'
-  let s:r1c1 = "f"
-  let s:R1C1 = "F"
-  let s:r1c2 = "l"
-  let s:R1C2 = "L"
+  let s:r1c1 = "z"
+  let s:R1C1 = "Z"
+  let s:r1c2 = "j"
+  let s:R1C2 = "J"
   let s:r1c3 = "h"
   let s:R1C3 = "H"
   let s:r1c4 = "k"
   let s:R1C4 = "K"
   let s:r1c5 = "q"
   let s:R1C5 = "Q"
-  let s:r1c6 = "g"
-  let s:R1C6 = "G"
-  let s:r1c7 = "p"
-  let s:R1C7 = "P"
+  let s:r1c6 = "'"
+  let s:R1C6 = "/""
+  let s:r1c7 = "w"
+  let s:R1C7 = "W"
   let s:r1c8 = "o"
   let s:R1C8 = "O"
   let s:r1c9 = "u"
@@ -54,20 +54,20 @@ if s:byoa_keymap == 'miscreanty'
   let s:R2C9 = "I"
   let s:r2c10 = "a"
   let s:R2C10 = "A"
-  let s:r3c1 = "x"
-  let s:R3C1 = "X"
-  let s:r3c2 = "j"
-  let s:R3C2 = "J"
+  let s:r3c1 = "f"
+  let s:R3C1 = "F"
+  let s:r3c2 = "l"
+  let s:R3C2 = "L"
   let s:r3c3 = "b"
   let s:R3C3 = "B"
   let s:r3c4 = "d"
   let s:R3C4 = "D"
   let s:r3c5 = "v"
   let s:R3C5 = "V"
-  let s:r3c6 = "'"
-  let s:R3C6 = "/""
-  let s:r3c7 = "w"
-  let s:R3C7 = "W"
+  let s:r3c6 = "g"
+  let s:R3C6 = "G"
+  let s:r3c7 = "p"
+  let s:R3C7 = "P"
   let s:r3c8 = "`"
   let s:R3C8 = "~"
   let s:r3c9 = ","
@@ -367,9 +367,9 @@ omap kI <Plug>(textobj-indent-same-i))
 " Leaders --------------------------
 
 " Quit w/ save
-noremap <leader>q ZZ
+noremap <leader>z ZZ
 " Quit w/o save
-noremap <leader>Q ZQ
+noremap <leader>Z ZQ
 " Find
 noremap ] /
 " Find reverse
@@ -393,13 +393,13 @@ noremap * ;
 noremap { ,
 noremap & ,
 " Extra commands
-noremap <leader>z z
+noremap <leader>x z
 " Extra commands (g command)
-noremap z g
+noremap x g
 " G - End of file / Goto line
 noremap - G
 " Expert mode
-noremap <leader>x Q
+noremap <leader>f Q
 " Help
 noremap <leader><tab> K
 " Prev sentence
@@ -450,7 +450,7 @@ noremap <leader><cr> :
 " goto mark
 noremap _ `
 " goto mark bol
-noremap Z '
+noremap X '
 " auto format
 noremap $ =
 " repeat command
@@ -556,78 +556,78 @@ execute 'noremap ' . s:r3c10 . ' }'
 " Next instance of current word
 execute 'noremap ' . s:R3C10 . ' *'
 " g mappings
-noremap z# g#
+noremap x# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
 " noremap -o g$
-noremap zo g_
-noremap zn g^
-noremap z& g&
-noremap z_ g'
-noremap z\" g`
-noremap z* g*
-noremap z+ g+
-noremap z, g,
-noremap z- g-
-noremap zy g-
-noremap z0 g0
-noremap z8 g8
-noremap z< g<
-noremap z? g?
-noremap z?? g??
-noremap z?h? g?g?
-" noremap zE gE
-noremap zV gH
+noremap xo g_
+noremap xn g^
+noremap x& g&
+noremap xX g'
+noremap x\" g`
+noremap x* g*
+noremap x+ g+
+noremap x, g,
+noremap x- g-
+noremap xy g-
+noremap x0 g0
+noremap x8 g8
+noremap x< g<
+noremap x? g?
+noremap x?? g??
+noremap x?h? g?g?
+" noremap xE gE
+noremap xV gH
 " gI - insert
-noremap zS gI
-noremap z<S-tab> gD
-noremap zD gP
-noremap ze gQ
+noremap xS gI
+noremap x<S-tab> gD
+noremap xD gP
+noremap xe gQ
 " gR - replace
-noremap zP gR
-noremap zT gT
-noremap zU gU
+noremap xP gR
+noremap xT gT
+noremap xU gU
 " gV - visual
-noremap zG gV
-noremap z] g]
-noremap za ga
+noremap xG gV
+noremap x] g]
+noremap xa ga
 " noremap -e ge
-noremap zf gf
-noremap zF gF
+noremap xf gf
+noremap xF gF
 " gg
-noremap zz gg
-noremap zv gh
+noremap xx gg
+noremap xv gh
 " gi - insert
-noremap zs gi
-noremap z<tab> gd
-noremap zk gk
-noremap z. gn
-noremap zh gN
-noremap zW gJ
-noremap zm gm
-noremap zM gM
-noremap zO go
-noremap zd gp
-" noremap z; g; what does this one do? there was a conflict below
-noremap z; gq
+noremap xs gi
+noremap x<tab> gd
+noremap xk gk
+noremap x. gn
+noremap xh gN
+noremap xW gJ
+noremap xm gm
+noremap xM gM
+noremap xO go
+noremap xd gp
+" noremap x; g; what does this one do? there was a conflict below
+noremap x; gq
 " gr - replace
-noremap zp gr
-noremap zs gs
-noremap zt gt
-noremap zu gu
+noremap xp gr
+noremap xs gs
+noremap xt gt
+noremap xu gu
 " gv - visual
-noremap zg gv
-noremap z: gw
-noremap zx gx
-noremap z@ g@
-noremap zq g~
-noremap z<Down> g<Down>
-noremap z<End> g<End>
-noremap z<Home> g<Home>
-noremap z<LeftMouse> g<LeftMouse>
-noremap z<MiddleMouse> g<MiddleMouse>
-noremap z<RightMouse> g<RightMouse>
-noremap z<Tab> g<Tab>
-noremap z<Up> g<Up>
+noremap xg gv
+noremap x: gw
+"noremap xx gx
+noremap x@ g@
+noremap xq g~
+noremap x<Down> g<Down>
+noremap x<End> g<End>
+noremap x<Home> g<Home>
+noremap x<LeftMouse> g<LeftMouse>
+noremap x<MiddleMouse> g<MiddleMouse>
+noremap x<RightMouse> g<RightMouse>
+noremap x<Tab> g<Tab>
+noremap x<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a

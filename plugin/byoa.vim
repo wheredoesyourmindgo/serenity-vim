@@ -13,7 +13,7 @@ else
   let s:byoa_keymap = 'qwerty'
 endif
 
-if s:byoa_keymap == 'fingers'
+if s:byoa_keymap == 'parsed'
   let s:r1c1 = "x"
   let s:R1C1 = "X"
   let s:r1c2 = "j"

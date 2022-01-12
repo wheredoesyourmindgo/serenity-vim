@@ -2,31 +2,31 @@
   "vim.leader": "<space>",
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
-      "before": ["m"],
+      "before": ["f"],
       "after": ["i"]
     },
     {
-      "before": ["M"],
+      "before": ["F"],
       "after": ["a"]
     },
     // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
-      "before": ["M", "i"],
+      "before": ["F", "i"],
       "after": ["a", "I"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
-      "before": ["M", "i"],
+      "before": ["F", "i"],
       "after": ["a", "I"]
     },
     {
-      "before": ["m"],
+      "before": ["f"],
       "after": ["i"]
     },
     {
-      "before": ["M"],
+      "before": ["F"],
       "after": ["a"]
     },
     // vim-surround emulation mappings (mapped below, and is default settings)
@@ -59,7 +59,7 @@
       "commands": ["workbench.action.showCommands"]
     },
     {
-      "before": ["x"],
+      "before": ["`"],
       "after": ["g"]
     },
     {
@@ -87,7 +87,7 @@
       "after": ["G"]
     },
     {
-      "before": ["<leader>", "z"],
+      "before": ["<leader>", "y"],
       "after": [],
       "commands": [
         {
@@ -97,7 +97,7 @@
       ]
     },
     {
-      "before": ["<leader>", "Z"],
+      "before": ["<leader>", "Y"],
       "after": [],
       "commands": [
         {
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "before": ["<leader>", "m"],
+      "before": ["<leader>", "f"],
       "after": [],
       "commands": [
         {
@@ -117,7 +117,7 @@
       ]
     },
     {
-      "before": ["<leader>", "M"],
+      "before": ["<leader>", "F"],
       "after": [],
       "commands": [
         {
@@ -176,7 +176,7 @@
       "after": ["N"]
     },
     {
-      "before": ["<leader>", "x"],
+      "before": ["<leader>", "`"],
       "after": ["z"]
     },
     // {
@@ -248,11 +248,11 @@
       "after": ["`", "."]
     },
     {
-      "before": ["X"],
+      "before": ["~"],
       "after": ["'"]
     },
     {
-      "before": ["X", "."],
+      "before": ["~", "."],
       "after": ["'", "."]
     },
     {
@@ -260,19 +260,19 @@
       "after": ["="]
     },
     {
-      "before": ["z"],
+      "before": ["y"],
       "after": ["\""]
     },
     {
-      "before": ["Z"],
+      "before": ["Y"],
       "after": ["m"]
     },
     {
-      "before": ["j"],
+      "before": ["l"],
       "after": ["~"]
     },
     {
-      "before": ["J"],
+      "before": ["L"],
       "after": ["J"]
     },
     {
@@ -284,20 +284,20 @@
       "after": ["C"]
     },
     {
-      "before": ["k"],
+      "before": ["v"],
       "after": ["r"]
     },
     {
-      "before": ["K"],
+      "before": ["V"],
       "after": ["R"]
     },
     {
-      "before": ["q"],
+      "before": ["z"],
       "commands": ["editor.action.smartSelect.grow"],
       "when": "editorTextFocus"
     },
     {
-      "before": ["Q"],
+      "before": ["Z"],
       "commands": ["editor.action.smartSelect.shrink"],
       "when": "editorTextFocus"
     },
@@ -334,7 +334,7 @@
       "after": ["O"]
     },
     {
-      "before": ["f"],
+      "before": ["x"],
       "after": [],
       "commands": [
         {
@@ -344,15 +344,15 @@
       ]
     },
     {
-      "before": ["F"],
+      "before": ["X"],
       "after": ["U"]
     },
     {
-      "before": ["l"],
+      "before": ["j"],
       "after": ["d"]
     },
     {
-      "before": ["L"],
+      "before": ["J"],
       "after": ["D"]
     },
     {
@@ -364,15 +364,15 @@
       "after": ["Y"]
     },
     {
-      "before": ["d"],
+      "before": ["m"],
       "after": ["p", "g", "v", "y"]
     },
     {
-      "before": ["D"],
+      "before": ["M"],
       "after": ["P"]
     },
     {
-      "before": ["v"],
+      "before": ["k"],
       "after": [],
       "commands": [
         {
@@ -382,7 +382,7 @@
       ]
     },
     {
-      "before": ["V"],
+      "before": ["K"],
       "after": ["&"]
     },
     {
@@ -426,19 +426,19 @@
       "after": ["E"]
     },
     {
-      "before": ["y"],
+      "before": ["g"],
       "after": ["M"]
     },
     {
-      "before": ["Y"],
+      "before": ["G"],
       "after": ["z", "z"]
     },
     {
-      "before": ["c"],
+      "before": ["d"],
       "after": ["_"]
     },
     {
-      "before": ["C"],
+      "before": ["D"],
       "after": ["0"]
     },
     {
@@ -466,27 +466,27 @@
       "after": ["$"]
     },
     {
-      "before": ["g"],
+      "before": ["p"],
       "after": ["L"]
     },
     {
-      "before": ["G"],
+      "before": ["P"],
       "after": ["z", "t"]
     },
     {
-      "before": ["p"],
+      "before": ["c"],
       "after": ["{"]
     },
     {
-      "before": ["P"],
+      "before": ["C"],
       "after": ["#"]
     },
     {
-      "before": ["`"],
+      "before": ["q"],
       "after": ["C-f"]
     },
     {
-      "before": ["~"],
+      "before": ["Q"],
       "after": ["C-d"]
     },
     {
@@ -507,229 +507,229 @@
     },
     // g commands
     {
-      "before": ["x", "p"],
+      "before": ["`", "p"],
       "after": ["g", "r"]
     },
     {
-      "before": ["x", "P"],
+      "before": ["`", "P"],
       "after": ["g", "R"]
     },
     {
-      "before": ["x", "#"],
+      "before": ["`", "#"],
       "after": ["g", "#"]
     },
     {
-      "before": ["x", "X"],
+      "before": ["`", "~"],
       "after": ["g", "'"]
     },
     {
-      "before": ["x", "+"],
+      "before": ["`", "+"],
       "after": ["g", "`"]
     },
     {
-      "before": ["x", "x"],
+      "before": ["`", "`"],
       "after": ["g", "g"]
     },
     {
-      "before": ["x", "*"],
+      "before": ["`", "*"],
       "after": ["g", "*"]
     },
     {
-      "before": ["x", "+"],
+      "before": ["`", "+"],
       "after": ["g", "+"]
     },
     {
-      "before": ["x", ","],
+      "before": ["`", ","],
       "after": ["g", ","]
     },
     {
-      "before": ["x", "y"],
+      "before": ["`", "y"],
       "after": ["g", "-"]
     },
     {
-      "before": ["x", "0"],
+      "before": ["`", "0"],
       "after": ["g", "0"]
     },
     {
-      "before": ["x", "8"],
+      "before": ["`", "8"],
       "after": ["g", "8"]
     },
     {
-      "before": ["x", ";"],
+      "before": ["`", ";"],
       "after": ["g", ";"]
     },
     {
-      "before": ["x", "<"],
+      "before": ["`", "<"],
       "after": ["g", "<"]
     },
     {
-      "before": ["x", "?"],
+      "before": ["`", "?"],
       "after": ["g", "?"]
     },
     {
-      "before": ["x", "?", "?"],
+      "before": ["`", "?", "?"],
       "after": ["g", "?", "?"]
     },
     {
-      "before": ["x", "?", "h", "?"],
+      "before": ["`", "?", "h", "?"],
       "after": ["g", "?", "g", "?"]
     },
     {
-      "before": ["x", "V"],
+      "before": ["`", "V"],
       "after": ["g", "H"]
     },
     {
-      "before": ["x", "S"],
+      "before": ["`", "S"],
       "after": ["g", "I"]
     },
     {
-      "before": ["x", "W"],
+      "before": ["`", "W"],
       "after": ["g", "J"]
     },
     {
-      "before": ["x", "h"],
+      "before": ["`", "h"],
       "after": ["g", "N"]
     },
     {
-      "before": ["x", "D"],
+      "before": ["`", "D"],
       "after": ["g", "P"]
     },
     {
-      "before": ["x", "e"],
+      "before": ["`", "e"],
       "after": ["g", "Q"]
     },
     {
-      "before": ["x", "W"],
+      "before": ["`", "W"],
       "after": ["g", "R"]
     },
     {
-      "before": ["x", "T"],
+      "before": ["`", "T"],
       "after": ["g", "T"]
     },
     {
-      "before": ["x", "U"],
+      "before": ["`", "U"],
       "after": ["g", "U"]
     },
     {
-      "before": ["x", "G"],
+      "before": ["`", "G"],
       "after": ["g", "V"]
     },
     {
-      "before": ["x", "]"],
+      "before": ["`", "]"],
       "after": ["g", "]"]
     },
     // A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
     // {
-    //   "before": ["x", "o"],
+    //   "before": ["`", "o"],
     //   "after": ["g", "$"]
     // },
     {
-      "before": ["x", "a"],
+      "before": ["`", "a"],
       "after": ["g", "_"]
     },
     {
-      "before": ["x", "n"],
+      "before": ["`", "n"],
       "after": ["g", "^"]
     },
     {
-      "before": ["x", "o"],
+      "before": ["`", "o"],
       "after": ["g", "a"]
     },
     {
-      "before": ["x", "f"],
+      "before": ["`", "f"],
       "after": ["g", "f"]
     },
     {
-      "before": ["x", "F"],
+      "before": ["`", "F"],
       "after": ["g", "F"]
     },
     {
-      "before": ["x", "v"],
+      "before": ["`", "v"],
       "after": ["g", "h"]
     },
     {
-      "before": ["x", "s"],
+      "before": ["`", "s"],
       "after": ["g", "i"]
     },
     {
-      "before": ["x", "j"],
+      "before": ["`", "j"],
       "after": ["g", "j"]
     },
     {
-      "before": ["x", "k"],
+      "before": ["`", "k"],
       "after": ["g", "k"]
     },
     {
-      "before": ["x", "."],
+      "before": ["`", "."],
       "after": ["g", "n"]
     },
     {
-      "before": ["x", "m"],
+      "before": ["`", "m"],
       "after": ["g", "m"]
     },
     {
-      "before": ["x", "M"],
+      "before": ["`", "M"],
       "after": ["g", "M"]
     },
     {
-      "before": ["x", "A"],
+      "before": ["`", "A"],
       "after": ["g", "o"]
     },
     {
-      "before": ["x", "d"],
+      "before": ["`", "d"],
       "after": ["g", "p"]
     },
     {
-      "before": ["x", "w"],
+      "before": ["`", "w"],
       "after": ["g", "r"]
     },
     {
-      "before": ["x", "s"],
+      "before": ["`", "s"],
       "after": ["g", "s"]
     },
     {
-      "before": ["x", "t"],
+      "before": ["`", "t"],
       "after": ["g", "t"]
     },
     {
-      "before": ["x", "u"],
+      "before": ["`", "u"],
       "after": ["g", "u"]
     },
     {
-      "before": ["x", "g"],
+      "before": ["`", "g"],
       "after": ["g", "v"]
     },
     {
-      "before": ["x", ":"],
+      "before": ["`", ":"],
       "after": ["g", "w"]
     },
-    // {
-    //   "before": ["x", "x"],
-    //   "after": ["g", "x"]
-    // },
     {
-      "before": ["x", "@"],
+      "before": ["`", "x"],
+      "after": ["g", "x"]
+    },
+    {
+      "before": ["`", "@"],
       "after": ["g", "@"]
     },
     {
-      "before": ["x", "q"],
+      "before": ["`", "q"],
       "after": ["g", "~"]
     },
     // VSCode Tricks
     {
-      "before": ["x", "<tab>"],
+      "before": ["`", "<tab>"],
       "after": ["g", "d"]
     },
     {
-      "before": ["x", "<space>"],
+      "before": ["`", "<space>"],
       "after": ["g", "h"]
     },
     {
-      "before": ["x", ";"],
+      "before": ["`", ";"],
       "after": ["g", "q"]
     },
     {
-      "before": ["x", "."],
+      "before": ["`", "."],
       "after": ["g", "b"]
     },
     {
@@ -786,7 +786,7 @@
       "commands": ["workbench.action.showCommands"]
     },
     {
-      "before": ["x"],
+      "before": ["`"],
       "after": ["g"]
     },
     {
@@ -814,27 +814,27 @@
       "after": ["G"]
     },
     {
+      "before": ["<leader>", "y"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.closeActiveEditor",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "Y"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.closeActiveEditor",
+          "args": []
+        }
+      ]
+    },
+    {
       "before": ["<leader>", "f"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.closeActiveEditor",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "F"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.closeActiveEditor",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "m"],
       "after": [],
       "commands": [
         {
@@ -844,7 +844,7 @@
       ]
     },
     {
-      "before": ["<leader>", "M"],
+      "before": ["<leader>", "F"],
       "after": [],
       "commands": [
         {
@@ -903,7 +903,7 @@
       "after": ["N"]
     },
     {
-      "before": ["<leader>", "x"],
+      "before": ["<leader>", "`"],
       "after": ["z"]
     },
     // {
@@ -973,11 +973,11 @@
       "after": ["`", "."]
     },
     {
-      "before": ["X"],
+      "before": ["~"],
       "after": ["'"]
     },
     {
-      "before": ["X", "."],
+      "before": ["~", "."],
       "after": ["'", "."]
     },
     {
@@ -985,19 +985,19 @@
       "after": ["="]
     },
     {
-      "before": ["z"],
+      "before": ["y"],
       "after": ["\""]
     },
     {
-      "before": ["Z"],
+      "before": ["Y"],
       "after": ["m"]
     },
     {
-      "before": ["j"],
+      "before": ["l"],
       "after": ["~"]
     },
     {
-      "before": ["J"],
+      "before": ["L"],
       "after": ["J"]
     },
     {
@@ -1049,7 +1049,7 @@
     //   "after": ["c", "0"]
     // },
     {
-      "before": ["h", "c"],
+      "before": ["h", "d"],
       "after": ["c", "_"]
     },
     {
@@ -1057,7 +1057,7 @@
       "after": ["c", "$"]
     },
     {
-      "before": ["h", "x", "x"],
+      "before": ["h", "`", "`"],
       "after": ["c", "g", "g"]
     },
     {
@@ -1085,15 +1085,15 @@
       "after": ["C"]
     },
     {
-      "before": ["k"],
+      "before": ["v"],
       "after": ["r"]
     },
     {
-      "before": ["K"],
+      "before": ["V"],
       "after": ["R"]
     },
     {
-      "before": ["q"],
+      "before": ["z"],
       "commands": ["editor.action.smartSelect.grow"],
       "when": "editorTextFocus"
     },
@@ -1130,15 +1130,15 @@
       "after": ["O"]
     },
     {
-      "before": ["m"],
+      "before": ["f"],
       "after": ["v"]
     },
     {
-      "before": ["M"],
+      "before": ["F"],
       "after": ["V"]
     },
     {
-      "before": ["f"],
+      "before": ["x"],
       "after": [],
       "commands": [
         {
@@ -1148,91 +1148,91 @@
       ]
     },
     {
-      "before": ["F"],
+      "before": ["X"],
       "after": ["U"]
     },
     {
-      "before": ["l"],
+      "before": ["j"],
       "after": ["d"]
     },
     {
-      "before": ["l", "l"],
+      "before": ["j", "j"],
       "after": ["d", "d"]
     },
     {
-      "before": ["l", "u"],
+      "before": ["j", "u"],
       "after": ["d", "w"]
     },
     {
-      "before": ["l", "U"],
+      "before": ["j", "U"],
       "after": ["d", "W"]
     },
     {
-      "before": ["l", "="],
+      "before": ["j", "="],
       "after": ["d", "e"]
     },
     {
-      "before": ["l", "+"],
+      "before": ["j", "+"],
       "after": ["d", "E"]
     },
     {
-      "before": ["l", "o"],
+      "before": ["j", "o"],
       "after": ["d", "b"]
     },
     {
-      "before": ["l", "O"],
+      "before": ["j", "O"],
       "after": ["d", "B"]
     },
     {
-      "before": ["l", "w"],
+      "before": ["j", "w"],
       "after": ["d", "g", "e"]
     },
     {
-      "before": ["l", "W"],
+      "before": ["j", "W"],
       "after": ["d", "g", "E"]
     },
     // {
-    //   "before": ["l", "n"],
+    //   "before": ["j", "n"],
     //   "after": ["d", "^"]
     // },
     // {
-    //   "before": ["l", "n"],
+    //   "before": ["j", "n"],
     //   "after": ["d", "0"]
     // },
     {
-      "before": ["l", "c"],
+      "before": ["j", "d"],
       "after": ["d", "_"]
     },
     {
-      "before": ["l", "a"],
+      "before": ["j", "a"],
       "after": ["d", "$"]
     },
     {
-      "before": ["l", "x", "x"],
+      "before": ["j", "`", "`"],
       "after": ["d", "g", "g"]
     },
     {
-      "before": ["l", "-"],
+      "before": ["j", "-"],
       "after": ["d", "G"]
     },
     {
-      "before": ["l", ">"],
+      "before": ["j", ">"],
       "after": ["d", "f"]
     },
     {
-      "before": ["l", "<"],
+      "before": ["j", "<"],
       "after": ["d", "F"]
     },
     {
-      "before": ["l", ")"],
+      "before": ["j", ")"],
       "after": ["d", "t"]
     },
     {
-      "before": ["l", "("],
+      "before": ["j", "("],
       "after": ["d", "T"]
     },
     {
-      "before": ["L"],
+      "before": ["J"],
       "after": ["D"]
     },
     {
@@ -1284,7 +1284,7 @@
     //   "after": ["y", "0"]
     // },
     {
-      "before": ["b", "c"],
+      "before": ["b", "d"],
       "after": ["y", "_"]
     },
     {
@@ -1292,7 +1292,7 @@
       "after": ["y", "$"]
     },
     {
-      "before": ["b", "x", "x"],
+      "before": ["b", "`", "`"],
       "after": ["y", "g", "g"]
     },
     {
@@ -1320,15 +1320,15 @@
       "after": ["Y"]
     },
     {
-      "before": ["d"],
+      "before": ["m"],
       "after": ["p"]
     },
     {
-      "before": ["D"],
+      "before": ["M"],
       "after": ["P"]
     },
     {
-      "before": ["v"],
+      "before": ["k"],
       "after": [],
       "commands": [
         {
@@ -1338,7 +1338,7 @@
       ]
     },
     {
-      "before": ["V"],
+      "before": ["K"],
       "after": ["&"]
     },
     {
@@ -1382,19 +1382,19 @@
       "after": ["E"]
     },
     {
-      "before": ["y"],
+      "before": ["g"],
       "after": ["M"]
     },
     {
-      "before": ["Y"],
+      "before": ["G"],
       "after": ["z", "z"]
     },
     {
-      "before": ["c"],
+      "before": ["d"],
       "after": ["_"]
     },
     {
-      "before": ["C"],
+      "before": ["D"],
       "after": ["0"]
     },
     {
@@ -1422,27 +1422,27 @@
       "after": ["$"]
     },
     {
-      "before": ["g"],
+      "before": ["p"],
       "after": ["L"]
     },
     {
-      "before": ["G"],
+      "before": ["P"],
       "after": ["z", "t"]
     },
     {
-      "before": ["p"],
+      "before": ["c"],
       "after": ["{"]
     },
     {
-      "before": ["P"],
+      "before": ["C"],
       "after": ["#"]
     },
     {
-      "before": ["`"],
+      "before": ["q"],
       "after": ["C-f"]
     },
     {
-      "before": ["~"],
+      "before": ["Q"],
       "after": ["C-d"]
     },
     {
@@ -1463,229 +1463,229 @@
     },
     // g commands
     {
-      "before": ["x", "p"],
+      "before": ["`", "p"],
       "after": ["g", "r"]
     },
     {
-      "before": ["x", "P"],
+      "before": ["`", "P"],
       "after": ["g", "R"]
     },
     {
-      "before": ["x", "#"],
+      "before": ["`", "#"],
       "after": ["g", "#"]
     },
     {
-      "before": ["x", "X"],
+      "before": ["`", "~"],
       "after": ["g", "'"]
     },
     {
-      "before": ["x", "+"],
+      "before": ["`", "+"],
       "after": ["g", "`"]
     },
     {
-      "before": ["x", "x"],
+      "before": ["`", "`"],
       "after": ["g", "g"]
     },
     {
-      "before": ["x", "*"],
+      "before": ["`", "*"],
       "after": ["g", "*"]
     },
     {
-      "before": ["x", "+"],
+      "before": ["`", "+"],
       "after": ["g", "+"]
     },
     {
-      "before": ["x", ","],
+      "before": ["`", ","],
       "after": ["g", ","]
     },
     {
-      "before": ["x", "y"],
+      "before": ["`", "y"],
       "after": ["g", "-"]
     },
     {
-      "before": ["x", "0"],
+      "before": ["`", "0"],
       "after": ["g", "0"]
     },
     {
-      "before": ["x", "8"],
+      "before": ["`", "8"],
       "after": ["g", "8"]
     },
     {
-      "before": ["x", ";"],
+      "before": ["`", ";"],
       "after": ["g", ";"]
     },
     {
-      "before": ["x", "<"],
+      "before": ["`", "<"],
       "after": ["g", "<"]
     },
     {
-      "before": ["x", "?"],
+      "before": ["`", "?"],
       "after": ["g", "?"]
     },
     {
-      "before": ["x", "?", "?"],
+      "before": ["`", "?", "?"],
       "after": ["g", "?", "?"]
     },
     {
-      "before": ["x", "?", "h", "?"],
+      "before": ["`", "?", "h", "?"],
       "after": ["g", "?", "g", "?"]
     },
     {
-      "before": ["x", "V"],
+      "before": ["`", "V"],
       "after": ["g", "H"]
     },
     {
-      "before": ["x", "S"],
+      "before": ["`", "S"],
       "after": ["g", "I"]
     },
     {
-      "before": ["x", "W"],
+      "before": ["`", "W"],
       "after": ["g", "J"]
     },
     {
-      "before": ["x", "h"],
+      "before": ["`", "h"],
       "after": ["g", "N"]
     },
     {
-      "before": ["x", "D"],
+      "before": ["`", "D"],
       "after": ["g", "P"]
     },
     {
-      "before": ["x", "e"],
+      "before": ["`", "e"],
       "after": ["g", "Q"]
     },
     {
-      "before": ["x", "W"],
+      "before": ["`", "W"],
       "after": ["g", "R"]
     },
     {
-      "before": ["x", "T"],
+      "before": ["`", "T"],
       "after": ["g", "T"]
     },
     {
-      "before": ["x", "U"],
+      "before": ["`", "U"],
       "after": ["g", "U"]
     },
     {
-      "before": ["x", "G"],
+      "before": ["`", "G"],
       "after": ["g", "V"]
     },
     {
-      "before": ["x", "]"],
+      "before": ["`", "]"],
       "after": ["g", "]"]
     },
     // A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
     // {
-    //   "before": ["x", "o"],
+    //   "before": ["`", "o"],
     //   "after": ["g", "$"]
     // },
     {
-      "before": ["x", "a"],
+      "before": ["`", "a"],
       "after": ["g", "_"]
     },
     {
-      "before": ["x", "n"],
+      "before": ["`", "n"],
       "after": ["g", "^"]
     },
     {
-      "before": ["x", "o"],
+      "before": ["`", "o"],
       "after": ["g", "a"]
     },
     {
-      "before": ["x", "f"],
+      "before": ["`", "f"],
       "after": ["g", "f"]
     },
     {
-      "before": ["x", "F"],
+      "before": ["`", "F"],
       "after": ["g", "F"]
     },
     {
-      "before": ["x", "v"],
+      "before": ["`", "v"],
       "after": ["g", "h"]
     },
     {
-      "before": ["x", "s"],
+      "before": ["`", "s"],
       "after": ["g", "i"]
     },
     {
-      "before": ["x", "j"],
+      "before": ["`", "j"],
       "after": ["g", "j"]
     },
     {
-      "before": ["x", "k"],
+      "before": ["`", "k"],
       "after": ["g", "k"]
     },
     {
-      "before": ["x", "."],
+      "before": ["`", "."],
       "after": ["g", "n"]
     },
     {
-      "before": ["x", "m"],
+      "before": ["`", "m"],
       "after": ["g", "m"]
     },
     {
-      "before": ["x", "M"],
+      "before": ["`", "M"],
       "after": ["g", "M"]
     },
     {
-      "before": ["x", "A"],
+      "before": ["`", "A"],
       "after": ["g", "o"]
     },
     {
-      "before": ["x", "d"],
+      "before": ["`", "d"],
       "after": ["g", "p"]
     },
     {
-      "before": ["x", "w"],
+      "before": ["`", "w"],
       "after": ["g", "r"]
     },
     {
-      "before": ["x", "s"],
+      "before": ["`", "s"],
       "after": ["g", "s"]
     },
     {
-      "before": ["x", "t"],
+      "before": ["`", "t"],
       "after": ["g", "t"]
     },
     {
-      "before": ["x", "u"],
+      "before": ["`", "u"],
       "after": ["g", "u"]
     },
     {
-      "before": ["x", "g"],
+      "before": ["`", "g"],
       "after": ["g", "v"]
     },
     {
-      "before": ["x", ":"],
+      "before": ["`", ":"],
       "after": ["g", "w"]
     },
-    // {
-    //   "before": ["x", "x"],
-    //   "after": ["g", "x"]
-    // },
     {
-      "before": ["x", "@"],
+      "before": ["`", "x"],
+      "after": ["g", "x"]
+    },
+    {
+      "before": ["`", "@"],
       "after": ["g", "@"]
     },
     {
-      "before": ["x", "q"],
+      "before": ["`", "q"],
       "after": ["g", "~"]
     },
     // VSCode Tricks
     {
-      "before": ["x", "<tab>"],
+      "before": ["`", "<tab>"],
       "after": ["g", "d"]
     },
     {
-      "before": ["x", "<space>"],
+      "before": ["`", "<space>"],
       "after": ["g", "h"]
     },
     {
-      "before": ["x", ";"],
+      "before": ["`", ";"],
       "after": ["g", "q"]
     },
     {
-      "before": ["x", "."],
+      "before": ["`", "."],
       "after": ["g", "b"]
     },
     {

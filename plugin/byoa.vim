@@ -13,17 +13,17 @@ else
   let s:byoa_keymap = 'qwerty'
 endif
 
-if s:byoa_keymap == 'miscreanty'
-  let s:r1c1 = "z"
-  let s:R1C1 = "Z"
-  let s:r1c2 = "j"
-  let s:R1C2 = "J"
+if s:byoa_keymap == 'e-drafting'
+  let s:r1c1 = "y"
+  let s:R1C1 = "Y"
+  let s:r1c2 = "l"
+  let s:R1C2 = "L"
   let s:r1c3 = "h"
   let s:R1C3 = "H"
-  let s:r1c4 = "k"
-  let s:R1C4 = "K"
-  let s:r1c5 = "q"
-  let s:R1C5 = "Q"
+  let s:r1c4 = "v"
+  let s:R1C4 = "V"
+  let s:r1c5 = "z"
+  let s:R1C5 = "Z"
   let s:r1c6 = "'"
   let s:R1C6 = "/""
   let s:r1c7 = "w"
@@ -42,34 +42,34 @@ if s:byoa_keymap == 'miscreanty'
   let s:R2C3 = "N"
   let s:r2c4 = "t"
   let s:R2C4 = "T"
-  let s:r2c5 = "m"
-  let s:R2C5 = "M"
-  let s:r2c6 = "y"
-  let s:R2C6 = "Y"
-  let s:r2c7 = "c"
-  let s:R2C7 = "C"
+  let s:r2c5 = "f"
+  let s:R2C5 = "F"
+  let s:r2c6 = "g"
+  let s:R2C6 = "G"
+  let s:r2c7 = "d"
+  let s:R2C7 = "D"
   let s:r2c8 = "e"
   let s:R2C8 = "E"
   let s:r2c9 = "i"
   let s:R2C9 = "I"
   let s:r2c10 = "a"
   let s:R2C10 = "A"
-  let s:r3c1 = "f"
-  let s:R3C1 = "F"
-  let s:r3c2 = "l"
-  let s:R3C2 = "L"
+  let s:r3c1 = "x"
+  let s:R3C1 = "X"
+  let s:r3c2 = "j"
+  let s:R3C2 = "J"
   let s:r3c3 = "b"
   let s:R3C3 = "B"
-  let s:r3c4 = "d"
-  let s:R3C4 = "D"
-  let s:r3c5 = "v"
-  let s:R3C5 = "V"
-  let s:r3c6 = "g"
-  let s:R3C6 = "G"
-  let s:r3c7 = "p"
-  let s:R3C7 = "P"
-  let s:r3c8 = "`"
-  let s:R3C8 = "~"
+  let s:r3c4 = "m"
+  let s:R3C4 = "M"
+  let s:r3c5 = "k"
+  let s:R3C5 = "K"
+  let s:r3c6 = "p"
+  let s:R3C6 = "P"
+  let s:r3c7 = "c"
+  let s:R3C7 = "C"
+  let s:r3c8 = "q"
+  let s:R3C8 = "Q"
   let s:r3c9 = ","
   let s:R3C9 = ";"
   let s:r3c10 = "."
@@ -367,9 +367,9 @@ omap kI <Plug>(textobj-indent-same-i))
 " Leaders --------------------------
 
 " Quit w/ save
-noremap <leader>z ZZ
+noremap <leader>y ZZ
 " Quit w/o save
-noremap <leader>Z ZQ
+noremap <leader>Y ZQ
 " Find
 noremap ] /
 " Find reverse
@@ -393,13 +393,13 @@ noremap * ;
 noremap { ,
 noremap & ,
 " Extra commands
-noremap <leader>x z
+noremap <leader>` z
 " Extra commands (g command)
-noremap x g
+noremap ` g
 " G - End of file / Goto line
 noremap - G
 " Expert mode
-noremap <leader>f Q
+noremap <leader>x Q
 " Help
 noremap <leader><tab> K
 " Prev sentence
@@ -450,7 +450,7 @@ noremap <leader><cr> :
 " goto mark
 noremap _ `
 " goto mark bol
-noremap X '
+noremap ~ '
 " auto format
 noremap $ =
 " repeat command
@@ -556,78 +556,78 @@ execute 'noremap ' . s:r3c10 . ' }'
 " Next instance of current word
 execute 'noremap ' . s:R3C10 . ' *'
 " g mappings
-noremap x# g#
+noremap `# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
 " noremap -o g$
-noremap xo g_
-noremap xn g^
-noremap x& g&
-noremap xX g'
-noremap x\" g`
-noremap x* g*
-noremap x+ g+
-noremap x, g,
-noremap x- g-
-noremap xy g-
-noremap x0 g0
-noremap x8 g8
-noremap x< g<
-noremap x? g?
-noremap x?? g??
-noremap x?h? g?g?
-" noremap xE gE
-noremap xV gH
+noremap `o g_
+noremap `n g^
+noremap `& g&
+noremap `~ g'
+noremap `\" g`
+noremap `* g*
+noremap `+ g+
+noremap `, g,
+noremap `- g-
+noremap `y g-
+noremap `0 g0
+noremap `8 g8
+noremap `< g<
+noremap `? g?
+noremap `?? g??
+noremap `?h? g?g?
+" noremap `E gE
+noremap `V gH
 " gI - insert
-noremap xS gI
-noremap x<S-tab> gD
-noremap xD gP
-noremap xe gQ
+noremap `S gI
+noremap `<S-tab> gD
+noremap `D gP
+noremap `e gQ
 " gR - replace
-noremap xP gR
-noremap xT gT
-noremap xU gU
+noremap `P gR
+noremap `T gT
+noremap `U gU
 " gV - visual
-noremap xG gV
-noremap x] g]
-noremap xa ga
+noremap `G gV
+noremap `] g]
+noremap `a ga
 " noremap -e ge
-noremap xf gf
-noremap xF gF
+noremap `f gf
+noremap `F gF
 " gg
-noremap xx gg
-noremap xv gh
+noremap `` gg
+noremap `v gh
 " gi - insert
-noremap xs gi
-noremap x<tab> gd
-noremap xk gk
-noremap x. gn
-noremap xh gN
-noremap xW gJ
-noremap xm gm
-noremap xM gM
-noremap xO go
-noremap xd gp
-" noremap x; g; what does this one do? there was a conflict below
-noremap x; gq
+noremap `s gi
+noremap `<tab> gd
+noremap `k gk
+noremap `. gn
+noremap `h gN
+noremap `W gJ
+noremap `m gm
+noremap `M gM
+noremap `O go
+noremap `d gp
+" noremap `; g; what does this one do? there was a conflict below
+noremap `; gq
 " gr - replace
-noremap xp gr
-noremap xs gs
-noremap xt gt
-noremap xu gu
+noremap `p gr
+noremap `s gs
+noremap `t gt
+noremap `u gu
 " gv - visual
-noremap xg gv
-noremap x: gw
-"noremap xx gx
-noremap x@ g@
-noremap xq g~
-noremap x<Down> g<Down>
-noremap x<End> g<End>
-noremap x<Home> g<Home>
-noremap x<LeftMouse> g<LeftMouse>
-noremap x<MiddleMouse> g<MiddleMouse>
-noremap x<RightMouse> g<RightMouse>
-noremap x<Tab> g<Tab>
-noremap x<Up> g<Up>
+noremap `g gv
+noremap `: gw
+noremap `x gx
+noremap `@ g@
+noremap `q g~
+noremap `<Down> g<Down>
+noremap `<End> g<End>
+noremap `<Home> g<Home>
+noremap `<LeftMouse> g<LeftMouse>
+noremap `<MiddleMouse> g<MiddleMouse>
+noremap `<RightMouse> g<RightMouse>
+noremap `<Tab> g<Tab>
+noremap `<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a

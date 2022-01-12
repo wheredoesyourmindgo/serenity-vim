@@ -13,27 +13,27 @@ else
   let s:byoa_keymap = 'qwerty'
 endif
 
-if s:byoa_keymap == 'e-drafting'
-  let s:r1c1 = "y"
-  let s:R1C1 = "Y"
-  let s:r1c2 = "l"
-  let s:R1C2 = "L"
+if s:byoa_keymap == 'draft'
+  let s:r1c1 = "x"
+  let s:R1C1 = "X"
+  let s:r1c2 = "j"
+  let s:R1C2 = "J"
   let s:r1c3 = "h"
   let s:R1C3 = "H"
   let s:r1c4 = "v"
   let s:R1C4 = "V"
   let s:r1c5 = "z"
   let s:R1C5 = "Z"
-  let s:r1c6 = "'"
-  let s:R1C6 = "/""
+  let s:r1c6 = "q"
+  let s:R1C6 = "Q"
   let s:r1c7 = "w"
   let s:R1C7 = "W"
-  let s:r1c8 = "o"
-  let s:R1C8 = "O"
-  let s:r1c9 = "u"
-  let s:R1C9 = "U"
-  let s:r1c10 = "="
-  let s:R1C10 = "+"
+  let s:r1c8 = "u"
+  let s:R1C8 = "U"
+  let s:r1c9 = "o"
+  let s:R1C9 = "O"
+  let s:r1c10 = "-"
+  let s:R1C10 = "_"
   let s:r2c1 = "s"
   let s:R2C1 = "S"
   let s:r2c2 = "r"
@@ -50,14 +50,14 @@ if s:byoa_keymap == 'e-drafting'
   let s:R2C7 = "D"
   let s:r2c8 = "e"
   let s:R2C8 = "E"
-  let s:r2c9 = "i"
-  let s:R2C9 = "I"
-  let s:r2c10 = "a"
-  let s:R2C10 = "A"
-  let s:r3c1 = "x"
-  let s:R3C1 = "X"
-  let s:r3c2 = "j"
-  let s:R3C2 = "J"
+  let s:r2c9 = "a"
+  let s:R2C9 = "A"
+  let s:r2c10 = "i"
+  let s:R2C10 = "I"
+  let s:r3c1 = "y"
+  let s:R3C1 = "Y"
+  let s:r3c2 = "l"
+  let s:R3C2 = "L"
   let s:r3c3 = "b"
   let s:R3C3 = "B"
   let s:r3c4 = "m"
@@ -68,8 +68,8 @@ if s:byoa_keymap == 'e-drafting'
   let s:R3C6 = "P"
   let s:r3c7 = "c"
   let s:R3C7 = "C"
-  let s:r3c8 = "q"
-  let s:R3C8 = "Q"
+  let s:r3c8 = "'"
+  let s:R3C8 = "/""
   let s:r3c9 = ","
   let s:R3C9 = ";"
   let s:r3c10 = "."
@@ -80,7 +80,7 @@ elseif s:byoa_keymap == 'qwerty'
 endif
 
 " Map leader-g to line comment toggle
-map <leader>m <plug>NERDCommenterToggle
+map <leader>f <plug>NERDCommenterToggle
 
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings
@@ -100,9 +100,9 @@ let g:surround_no_insert_mappings = 1
 " Don't use Sandwhich default mappings
 " The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
 let g:sandwich_no_default_key_mappings = 1
-silent! nmap <unique><silent> js <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> ls <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
 silent! nmap <unique><silent> hs <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> jS <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> lS <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 silent! nmap <unique><silent> hS <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
@@ -114,14 +114,14 @@ silent! omap <unique> S <Plug>(operator-sandwich-g@)
 " replace
 " silent! xmap <unique> af <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> kS <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> kS <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> KS <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> KS <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> ks <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> ks <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> Ks <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> Ks <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> fS <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> fS <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> fS <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> FS <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> fs <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> fs <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> Fs <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> Fs <Plug>(textobj-sandwich-query-a)
 " vim-surround keymap macro (https://github.com/machakann/vim-sandwich/blob/master/macros/sandwich/keymap/surround.vim)
 
 "let g:sandwich_no_default_key_mappings = 1
@@ -134,8 +134,8 @@ nmap <silent> bss <Plug>(sandwich-add)<SID>line
 onoremap <SID>gul g_
 nmap <silent> bS <Plug>(sandwich-add)<SID>gul
 
-nmap js <Plug>(sandwich-delete)
-nmap jss <Plug>(sandwich-delete-auto)
+nmap ls <Plug>(sandwich-delete)
+nmap lss <Plug>(sandwich-delete-auto)
 nmap hs <Plug>(sandwich-replace)
 nmap hss <Plug>(sandwich-replace-auto)
 
@@ -348,28 +348,28 @@ map <s-F10> <Plug>HiLinkTrace
 
 " vim-textobj-entire
 let g:textobj_entire_no_default_key_mappings = 1
-xmap Ke <Plug>(textobj-entire-a)
-omap Ke <Plug>(textobj-entire-a)
-xmap ke <Plug>(textobj-entire-i)
-omap ke <Plug>(textobj-entire-i)
+xmap Fe <Plug>(textobj-entire-a)
+omap Fe <Plug>(textobj-entire-a)
+xmap fe <Plug>(textobj-entire-i)
+omap fe <Plug>(textobj-entire-i)
 " vim-textobj-indent
 let g:textobj_indent_no_default_key_mappings = 1
-xmap Ki <Plug>(textobj-indent-a)
-omap Ki <Plug>(textobj-indent-a)
-xmap ki <Plug>(textobj-indent-i)
-omap ki <Plug>(textobj-indent-i)
-xmap KI <Plug>(textobj-indent-same-a)
-omap KI <Plug>(textobj-indent-same-a)
-xmap kI <Plug>(textobj-indent-same-i))
-omap kI <Plug>(textobj-indent-same-i))
+xmap Fi <Plug>(textobj-indent-a)
+omap Fi <Plug>(textobj-indent-a)
+xmap fi <Plug>(textobj-indent-i)
+omap fi <Plug>(textobj-indent-i)
+xmap FI <Plug>(textobj-indent-same-a)
+omap FI <Plug>(textobj-indent-same-a)
+xmap fI <Plug>(textobj-indent-same-i))
+omap fI <Plug>(textobj-indent-same-i))
 
 
 " Leaders --------------------------
 
 " Quit w/ save
-noremap <leader>y ZZ
+noremap <leader>x ZZ
 " Quit w/o save
-noremap <leader>Y ZQ
+noremap <leader>X ZQ
 " Find
 noremap ] /
 " Find reverse
@@ -397,20 +397,20 @@ noremap <leader>` z
 " Extra commands (g command)
 noremap ` g
 " G - End of file / Goto line
-noremap - G
+noremap = G
 " Expert mode
-noremap <leader>x Q
+noremap <leader>y Q
 " Help
 noremap <leader><tab> K
 " Prev sentence
-noremap <leader>h (
+noremap <leader>c (
 " End sentence
 noremap <leader>. )
 " Next/Previous whitespace, exclusive and inclusive
-noremap <leader>n <left>T<space><right>T<space>
-noremap <leader>N F<space>
-noremap <leader>o <right>t<space><left>t<space>
-noremap <leader>O f<space>
+noremap <leader>o <left>T<space><right>T<space>
+noremap <leader>O F<space>
+noremap <leader>u <right>t<space><left>t<space>
+noremap <leader>U f<space>
 " Empty line (remapping leader-del doesn't seem to work in vim)
 " noremap <leader><del> 0d$
 " Delete line
@@ -426,8 +426,8 @@ xnoremap <leader>t ><esc>
 nnoremap <leader>r <<
 xnoremap <leader>r <<esc>
 " swap lines
-noremap <leader>s dd<up><up>p
-noremap <leader>i ddp
+noremap <leader>h dd<up><up>p
+noremap <leader>n ddp
 
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@
@@ -448,7 +448,7 @@ noremap <cr> :
 " This is used w/ help mode in order to access command mode
 noremap <leader><cr> :
 " goto mark
-noremap _ `
+noremap + `
 " goto mark bol
 noremap ~ '
 " auto format

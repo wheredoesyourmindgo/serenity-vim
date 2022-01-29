@@ -10,7 +10,7 @@ let g:loaded_byoa = 1
 if exists("g:byoa_keymap")
   let s:byoa_keymap = g:byoa_keymap
 else
-  let s:byoa_keymap = 'qwerty'
+  let s:byoa_keymap = 'serenity'
 endif
 
 if s:byoa_keymap == 'serenity'

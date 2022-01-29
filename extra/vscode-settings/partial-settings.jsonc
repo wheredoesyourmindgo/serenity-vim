@@ -292,12 +292,12 @@
       "after": ["R"]
     },
     {
-      "before": ["z"],
+      "before": ["q"],
       "commands": ["editor.action.smartSelect.grow"],
       "when": "editorTextFocus"
     },
     {
-      "before": ["Z"],
+      "before": ["Q"],
       "commands": ["editor.action.smartSelect.shrink"],
       "when": "editorTextFocus"
     },
@@ -386,11 +386,11 @@
       "after": ["&"]
     },
     {
-      "before": ["q"],
+      "before": ["z"],
       "after": ["H"]
     },
     {
-      "before": ["Q"],
+      "before": ["Z"],
       "after": ["z", "b"]
     },
     {
@@ -1093,7 +1093,7 @@
       "after": ["R"]
     },
     {
-      "before": ["z"],
+      "before": ["q"],
       "commands": ["editor.action.smartSelect.grow"],
       "when": "editorTextFocus"
     },
@@ -1342,11 +1342,11 @@
       "after": ["&"]
     },
     {
-      "before": ["q"],
+      "before": ["z"],
       "after": ["H"]
     },
     {
-      "before": ["Q"],
+      "before": ["Z"],
       "after": ["z", "b"]
     },
     {

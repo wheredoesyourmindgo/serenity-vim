@@ -10,7 +10,7 @@ let g:loaded_byoa = 1
 if exists("g:byoa_keymap")
   let s:byoa_keymap = g:byoa_keymap
 else
-  let s:byoa_keymap = 'qwerty'
+  let s:byoa_keymap = 'serenity'
 endif
 
 if s:byoa_keymap == 'serenity'
@@ -22,10 +22,10 @@ if s:byoa_keymap == 'serenity'
   let s:R1C3 = "D"
   let s:r1c4 = "w"
   let s:R1C4 = "W"
-  let s:r1c5 = "z"
-  let s:R1C5 = "Z"
-  let s:r1c6 = "q"
-  let s:R1C6 = "Q"
+  let s:r1c5 = "q"
+  let s:R1C5 = "Q"
+  let s:r1c6 = "z"
+  let s:R1C6 = "Z"
   let s:r1c7 = "f"
   let s:R1C7 = "F"
   let s:r1c8 = "o"

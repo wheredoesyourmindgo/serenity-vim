@@ -1,33 +1,35 @@
 {
   "vim.leader": "<space>",
+  "vim.smartRelativeLine": true,
+  "vim.surround": true,
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
-      "before": ["y"],
+      "before": ["<space>"],
       "after": ["i"]
     },
     {
-      "before": ["Y"],
+      "before": ["<tab>"],
       "after": ["a"]
     },
     // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
-      "before": ["Y", "i"],
+      "before": ["<tab>", "i"],
       "after": ["a", "I"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
-    // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
-      "before": ["Y", "i"],
-      "after": ["a", "I"]
-    },
-    {
-      "before": ["y"],
+      "before": ["<space>"],
       "after": ["i"]
     },
     {
-      "before": ["Y"],
+      "before": ["<tab>"],
       "after": ["a"]
+    },
+    // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
+    {
+      "before": ["<tab>", "i"],
+      "after": ["a", "I"]
     },
     // vim-surround emulation mappings (mapped below, and is default settings)
     // {
@@ -215,10 +217,11 @@
       "before": ["<leader>", "n"],
       "after": [">", "<esc>"]
     },
-    {
-      "before": ["<tab>"],
-      "after": ["."]
-    },
+    // tab used with operator select
+    // {
+    //   "before": ["<tab>"],
+    //   "after": ["."]
+    // },
     {
       "before": ["<C-g>"],
       "after": ["<C-v>"]

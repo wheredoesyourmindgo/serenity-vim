@@ -634,8 +634,12 @@ noremap `<Up> g<Up>
 " xnoremap g a
 " onoremap t i
 " xnoremap t i
-execute 'onoremap ' . s:R2C5 . ' a'
-execute 'xnoremap ' . s:R2C5 . ' a'
-execute 'onoremap ' . s:r2c5 . ' i'
-execute 'xnoremap ' . s:r2c5 . ' i'
+onoremap <tab> a
+xnoremap <tab> a
+onoremap <space> i
+xnoremap <space> i
+" execute 'onoremap ' . s:R2C5 . ' a'
+" execute 'xnoremap ' . s:R2C5 . ' a'
+" execute 'onoremap ' . s:r2c5 . ' i'
+" execute 'xnoremap ' . s:r2c5 . ' i'
 

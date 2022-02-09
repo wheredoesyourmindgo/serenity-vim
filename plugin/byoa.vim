@@ -348,20 +348,20 @@ map <s-F10> <Plug>HiLinkTrace
 
 " vim-textobj-entire
 let g:textobj_entire_no_default_key_mappings = 1
-xmap Ye <Plug>(textobj-entire-a)
-omap Ye <Plug>(textobj-entire-a)
-xmap ye <Plug>(textobj-entire-i)
-omap ye <Plug>(textobj-entire-i)
+xmap <tab>e <Plug>(textobj-entire-a)
+omap <tab>e <Plug>(textobj-entire-a)
+xmap <space>e <Plug>(textobj-entire-i)
+omap <space>e <Plug>(textobj-entire-i)
 " vim-textobj-indent
 let g:textobj_indent_no_default_key_mappings = 1
-xmap Yi <Plug>(textobj-indent-a)
-omap Yi <Plug>(textobj-indent-a)
-xmap yi <Plug>(textobj-indent-i)
-omap yi <Plug>(textobj-indent-i)
-xmap YI <Plug>(textobj-indent-same-a)
-omap YI <Plug>(textobj-indent-same-a)
-xmap yI <Plug>(textobj-indent-same-i))
-omap yI <Plug>(textobj-indent-same-i))
+xmap <tab>i <Plug>(textobj-indent-a)
+omap <tab>i <Plug>(textobj-indent-a)
+xmap <space>i <Plug>(textobj-indent-i)
+omap <space>i <Plug>(textobj-indent-i)
+xmap <tab>I <Plug>(textobj-indent-same-a)
+omap <tab>I <Plug>(textobj-indent-same-a)
+xmap <space>I <Plug>(textobj-indent-same-i))
+omap <space>I <Plug>(textobj-indent-same-i))
 
 
 " Leaders --------------------------
@@ -420,14 +420,14 @@ noremap <leader><bs> dd
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
-nnoremap <leader>n >>
-xnoremap <leader>n ><esc>
+nnoremap <leader>h >>
+xnoremap <leader>h ><esc>
 " Un-indent
 nnoremap <leader>r <<
 xnoremap <leader>r <<esc>
 " swap lines
-noremap <leader>d dd<up><up>p
-noremap <leader>h ddp
+noremap <leader>n dd<up><up>p
+noremap <leader>c ddp
 
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@

@@ -128,14 +128,6 @@
         }
       ]
     },
-    {
-      "before": ["<leader>", "."],
-      "after": [","]
-    },
-    {
-      "before": ["<leader>", "p"],
-      "after": [";"]
-    },
     // Symbol commands
     {
       "before": ["]"],
@@ -222,6 +214,10 @@
     //   "before": ["<tab>"],
     //   "after": ["."]
     // },
+    {
+      "before": ["<leader>", "t"],
+      "after": ["0"]
+    },
     {
       "before": ["<C-g>"],
       "after": ["<C-v>"]
@@ -442,7 +438,7 @@
     },
     {
       "before": ["T"],
-      "after": ["0"]
+      "after": [","]
     },
     {
       "before": ["e"],
@@ -466,7 +462,7 @@
     },
     {
       "before": ["A"],
-      "after": ["$"]
+      "after": [";"]
     },
     {
       "before": ["k"],
@@ -478,11 +474,11 @@
     },
     {
       "before": ["p"],
-      "after": ["N"]
+      "after": ["#"]
     },
     {
       "before": ["P"],
-      "after": ["#"]
+      "after": ["N"]
     },
     {
       "before": ["'"],
@@ -502,11 +498,11 @@
     },
     {
       "before": ["."],
-      "after": ["n"]
+      "after": ["*"]
     },
     {
       "before": [":"],
-      "after": ["*"]
+      "after": ["n"]
     },
     // g commands
     {
@@ -856,14 +852,6 @@
         }
       ]
     },
-    {
-      "before": ["<leader>", "."],
-      "after": [","]
-    },
-    {
-      "before": ["<leader>", "p"],
-      "after": [";"]
-    },
     // Symbol commands
     {
       "before": ["]"],
@@ -946,6 +934,10 @@
     {
       "before": ["<tab>"],
       "after": ["."]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "after": ["0"]
     },
     {
       "before": ["<C-g>"],
@@ -1398,7 +1390,7 @@
     },
     {
       "before": ["T"],
-      "after": ["0"]
+      "after": [","]
     },
     {
       "before": ["e"],
@@ -1422,7 +1414,7 @@
     },
     {
       "before": ["A"],
-      "after": ["$"]
+      "after": [";"]
     },
     {
       "before": ["k"],
@@ -1434,11 +1426,11 @@
     },
     {
       "before": ["p"],
-      "after": ["N"]
+      "after": ["#"]
     },
     {
       "before": ["P"],
-      "after": ["#"]
+      "after": ["N"]
     },
     {
       "before": ["'"],
@@ -1458,11 +1450,11 @@
     },
     {
       "before": ["."],
-      "after": ["n"]
+      "after": ["*"]
     },
     {
       "before": [":"],
-      "after": ["*"]
+      "after": ["n"]
     },
     // g commands
     {

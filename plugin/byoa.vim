@@ -515,10 +515,10 @@ execute 'noremap ' . s:R1C6 . ' T'
 " omap M <Plug>(clever-f-T)
 " noremap l ge
 " noremap L gE
-execute 'noremap ' . s:r1c7 . ' b'
-execute 'noremap ' . s:R1C7 . ' B'
-execute 'noremap ' . s:r1c8 . ' ge'
-execute 'noremap ' . s:R1C8 . ' gE'
+execute 'noremap ' . s:r1c7 . ' ge'
+execute 'noremap ' . s:R1C7 . ' gE'
+execute 'noremap ' . s:r1c8 . ' b'
+execute 'noremap ' . s:R1C8 . ' B'
 execute 'noremap ' . s:r1c9 . ' e'
 execute 'noremap ' . s:R1C9 . ' E'
 execute 'noremap ' . s:r1c10 . ' w'

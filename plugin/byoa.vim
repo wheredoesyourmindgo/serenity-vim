@@ -391,13 +391,13 @@ noremap \ zt
 " Hard bol.
 noremap <leader>t 0
 " Extra commands
-noremap <leader>` z
+noremap ( z
 " Extra commands (g command)
-noremap ` g
+noremap ] g
 " G - End of file / Goto line
-noremap ~ G
+noremap [ G
 " Expert mode
-noremap <leader>x Q
+noremap ) Q
 " Help
 noremap <leader><tab> K
 " Next/Previous whitespace, exclusive and inclusive
@@ -409,8 +409,6 @@ noremap <leader>U f<space>
 " noremap <leader><del> 0d$
 " Delete line
 noremap <leader><bs> dd
-" Goto mark bol.
-noremap <leader>v '
 " Join lines
 noremap <leader>d J
 " Swap case
@@ -456,13 +454,18 @@ noremap $ =
 " repeat command
 noremap <tab> .
 
+" Goto Mark
+noremap ` `
+" Goto Mark bol.
+noremap ` '
+
 " Alpha Commands --------------------------
 
 " left r1
 " noremap q "
 " noremap Q m
 execute 'noremap ' . s:r1c1 . ' m'
-execute 'noremap ' . s:R1C1 . ' `'
+" execute 'noremap ' . s:R1C1 . ' `'
 " noremap w ~
 " noremap W J
 execute 'noremap ' . s:r1c2 . ' "'
@@ -555,78 +558,78 @@ execute 'noremap ' . s:r3c10 . ' *'
 execute 'noremap ' . s:R3C10 . ' n'
 
 " g mappings
-noremap `# g#
+noremap ]# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
 " noremap -o g$
-noremap `o g_
-noremap `n g^
-noremap `& g&
-noremap `~ g'
-noremap `\" g`
-noremap `* g*
-noremap `+ g+
-noremap `, g,
-noremap `- g-
-noremap `y g-
-noremap `0 g0
-noremap `8 g8
-noremap `< g<
-noremap `? g?
-noremap `?? g??
-noremap `?h? g?g?
-" noremap `E gE
-noremap `V gH
+noremap ]o g_
+noremap ]n g^
+noremap ]& g&
+noremap ]~ g'
+noremap ]\" g`
+noremap ]* g*
+noremap ]+ g+
+noremap ], g,
+noremap ]- g-
+noremap ]y g-
+noremap ]0 g0
+noremap ]8 g8
+noremap ]< g<
+noremap ]? g?
+noremap ]?? g??
+noremap ]?h? g?g?
+" noremap ]E gE
+noremap ]V gH
 " gI - insert
-noremap `S gI
-noremap `<S-tab> gD
-noremap `D gP
-noremap `e gQ
+noremap ]S gI
+noremap ]<S-tab> gD
+noremap ]D gP
+noremap ]e gQ
 " gR - replace
-noremap `P gR
-noremap `T gT
-noremap `U gU
+noremap ]P gR
+noremap ]T gT
+noremap ]U gU
 " gV - visual
-noremap `G gV
-noremap `] g]
-noremap `a ga
+noremap ]G gV
+noremap ]] g]
+noremap ]a ga
 " noremap -e ge
-noremap `f gf
-noremap `F gF
+noremap ]f gf
+noremap ]F gF
 " gg
-noremap `` gg
-noremap `v gh
+noremap ]] gg
+noremap ]v gh
 " gi - insert
-noremap `s gi
-noremap `<tab> gd
-noremap `k gk
-noremap `. gn
-noremap `h gN
-noremap `W gJ
-noremap `m gm
-noremap `M gM
-noremap `O go
-noremap `d gp
-" noremap `; g; what does this one do? there was a conflict below
-noremap `; gq
+noremap ]s gi
+noremap ]<tab> gd
+noremap ]k gk
+noremap ]. gn
+noremap ]h gN
+noremap ]W gJ
+noremap ]m gm
+noremap ]M gM
+noremap ]O go
+noremap ]d gp
+" noremap ]; g; what does this one do? there was a conflict below
+noremap ]; gq
 " gr - replace
-noremap `p gr
-noremap `s gs
-noremap `t gt
-noremap `u gu
+noremap ]p gr
+noremap ]s gs
+noremap ]t gt
+noremap ]u gu
 " gv - visual
-noremap `g gv
-noremap `: gw
-noremap `x gx
-noremap `@ g@
-noremap `q g~
-noremap `<Down> g<Down>
-noremap `<End> g<End>
-noremap `<Home> g<Home>
-noremap `<LeftMouse> g<LeftMouse>
-noremap `<MiddleMouse> g<MiddleMouse>
-noremap `<RightMouse> g<RightMouse>
-noremap `<Tab> g<Tab>
-noremap `<Up> g<Up>
+noremap ]g gv
+noremap ]: gw
+noremap ]x gx
+noremap ]@ g@
+noremap ]q g~
+noremap ]<Down> g<Down>
+noremap ]<End> g<End>
+noremap ]<Home> g<Home>
+noremap ]<LeftMouse> g<LeftMouse>
+noremap ]<MiddleMouse> g<MiddleMouse>
+noremap ]<RightMouse> g<RightMouse>
+noremap ]<Tab> g<Tab>
+noremap ]<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a

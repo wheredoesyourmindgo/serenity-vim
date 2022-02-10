@@ -107,7 +107,7 @@
     },
     // jump to mark bol.
     {
-      "before": ["`"],
+      "before": ["~"],
       "after": ["'"]
     },
     // jump to prev sentence
@@ -840,7 +840,7 @@
     },
     // jump to mark bol.
     {
-      "before": ["`"],
+      "before": ["~"],
       "after": ["'"]
     },
     // jump to prev sentence

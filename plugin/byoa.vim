@@ -457,7 +457,7 @@ noremap <tab> .
 " Goto Mark
 noremap ` `
 " Goto Mark bol.
-noremap ` '
+noremap ~ '
 
 " Alpha Commands --------------------------
 

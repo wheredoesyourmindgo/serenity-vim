@@ -400,10 +400,6 @@ noremap = G
 noremap <leader>x Q
 " Help
 noremap <leader><tab> K
-" Prev sentence
-noremap <leader>p (
-" End sentence
-noremap <leader>. )
 " Next/Previous whitespace, exclusive and inclusive
 noremap <leader>o <left>T<space><right>T<space>
 noremap <leader>O F<space>

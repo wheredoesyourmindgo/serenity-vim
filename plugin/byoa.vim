@@ -114,14 +114,14 @@ silent! omap <unique> S <Plug>(operator-sandwich-g@)
 " replace
 " silent! xmap <unique> af <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> =S <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> =S <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> +S <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> +S <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> =s <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> =s <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> +s <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> +s <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> `S <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> `S <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> ~S <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> ~S <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> `s <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> `s <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> ~s <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> ~s <Plug>(textobj-sandwich-query-a)
 " vim-surround keymap macro (https://github.com/machakann/vim-sandwich/blob/master/macros/sandwich/keymap/surround.vim)
 
 "let g:sandwich_no_default_key_mappings = 1
@@ -348,20 +348,20 @@ map <s-F10> <Plug>HiLinkTrace
 
 " vim-textobj-entire
 let g:textobj_entire_no_default_key_mappings = 1
-xmap +e <Plug>(textobj-entire-a)
-omap +e <Plug>(textobj-entire-a)
-xmap =e <Plug>(textobj-entire-i)
-omap =e <Plug>(textobj-entire-i)
+xmap ~e <Plug>(textobj-entire-a)
+omap ~e <Plug>(textobj-entire-a)
+xmap `e <Plug>(textobj-entire-i)
+omap `e <Plug>(textobj-entire-i)
 " vim-textobj-indent
 let g:textobj_indent_no_default_key_mappings = 1
-xmap +i <Plug>(textobj-indent-a)
-omap +i <Plug>(textobj-indent-a)
-xmap =i <Plug>(textobj-indent-i)
-omap =i <Plug>(textobj-indent-i)
-xmap +I <Plug>(textobj-indent-same-a)
-omap +I <Plug>(textobj-indent-same-a)
-xmap =I <Plug>(textobj-indent-same-i))
-omap =I <Plug>(textobj-indent-same-i))
+xmap ~i <Plug>(textobj-indent-a)
+omap ~i <Plug>(textobj-indent-a)
+xmap `i <Plug>(textobj-indent-i)
+omap `i <Plug>(textobj-indent-i)
+xmap ~I <Plug>(textobj-indent-same-a)
+omap ~I <Plug>(textobj-indent-same-a)
+xmap `I <Plug>(textobj-indent-same-i))
+omap `I <Plug>(textobj-indent-same-i))
 
 
 " Leaders --------------------------
@@ -455,9 +455,13 @@ noremap $ =
 noremap <tab> .
 
 " Goto Mark
-noremap ` `
+noremap = `
 " Goto Mark bol.
-noremap ~ '
+noremap + '
+" Goto Last edit (= --> . is an awkward sfb)
+noremap =` `.
+" Goto Last edit bol. (+ --> . is an awkward sfb)
+noremap +` '.
 
 " Alpha Commands --------------------------
 
@@ -636,10 +640,10 @@ noremap ]<Up> g<Up>
 " xnoremap g a
 " onoremap t i
 " xnoremap t i
-onoremap + a
-xnoremap + a
-onoremap = i
-xnoremap = i
+onoremap ~ a
+xnoremap ~ a
+onoremap ` i
+xnoremap ` i
 " execute 'onoremap ' . s:R2C5 . ' a'
 " execute 'xnoremap ' . s:R2C5 . ' a'
 " execute 'onoremap ' . s:r2c5 . ' i'

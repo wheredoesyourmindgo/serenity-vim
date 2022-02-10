@@ -4,31 +4,31 @@
   "vim.surround": true,
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
-      "before": ["="],
+      "before": ["`"],
       "after": ["i"]
     },
     {
-      "before": ["+"],
+      "before": ["~"],
       "after": ["a"]
     },
     // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
-      "before": ["+", "i"],
+      "before": ["~", "i"],
       "after": ["a", "I"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["="],
+      "before": ["`"],
       "after": ["i"]
     },
     {
-      "before": ["+"],
+      "before": ["~"],
       "after": ["a"]
     },
     // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
-      "before": ["+", "i"],
+      "before": ["~", "i"],
       "after": ["a", "I"]
     },
     // vim-surround emulation mappings (mapped below, and is default settings)
@@ -102,13 +102,23 @@
     // },
     // jump to mark
     {
-      "before": ["`"],
+      "before": ["="],
       "after": ["`"]
     },
     // jump to mark bol.
     {
-      "before": ["~"],
+      "before": ["+"],
       "after": ["'"]
+    },
+    // jump to last edit
+    {
+      "before": ["=", "`"],
+      "after": ["`", "."]
+    },
+    // jump to last edit bol.
+    {
+      "before": ["+", "`"],
+      "after": ["'", "."]
     },
     // jump to prev sentence
     {
@@ -835,13 +845,23 @@
     // },
     // jump to mark
     {
-      "before": ["`"],
+      "before": ["="],
       "after": ["`"]
     },
     // jump to mark bol.
     {
-      "before": ["~"],
+      "before": ["+"],
       "after": ["'"]
+    },
+    // jump to last edit
+    {
+      "before": ["=", "`"],
+      "after": ["`", "."]
+    },
+    // jump to last edit bol.
+    {
+      "before": ["+", "`"],
+      "after": ["'", "."]
     },
     // jump to prev sentence
     {

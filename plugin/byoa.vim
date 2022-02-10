@@ -466,7 +466,7 @@ noremap +` '.
 " Goto prev jump
 noremap == ``
 " Goto prev jump bol.
-noremap ++ ''
+" noremap ++ ''
 
 " Alpha Commands --------------------------
 

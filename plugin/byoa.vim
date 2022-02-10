@@ -391,8 +391,8 @@ noremap \ zt
 noremap ^ Q
 " g
 noremap ? g
-" Extra commands
-execute 'noremap | z'
+" Extra commands (| pipe symbol must be escaped, or use <bar>)
+noremap <Bar> z
 " gg
 noremap ] gg
 " G - End of file / Goto line

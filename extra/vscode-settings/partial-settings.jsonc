@@ -191,22 +191,22 @@
     // },
     // <esc> seems necessary in visual mode
     {
-      "before": ["<leader>", "r"],
+      "before": ["<leader>", "s"],
       "after": ["<", "<esc>"]
     },
     {
-      "before": ["<leader>", "c"],
+      "before": ["<leader>", "r"],
       "after": [],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": ["<leader>", "n"],
+      "before": ["<leader>", "h"],
       "after": [],
       "commands": ["editor.action.moveLinesUpAction"]
     },
     // <esc> seems necessary in visual mode
     {
-      "before": ["<leader>", "h"],
+      "before": ["<leader>", "n"],
       "after": [">", "<esc>"]
     },
     // tab used with operator select
@@ -914,21 +914,21 @@
     //   "after": ["G"]
     // },
     {
-      "before": ["<leader>", "r"],
+      "before": ["<leader>", "s"],
       "after": ["<", "<"]
     },
     {
-      "before": ["<leader>", "c"],
+      "before": ["<leader>", "r"],
       "after": [],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": ["<leader>", "n"],
+      "before": ["<leader>", "h"],
       "after": [],
       "commands": ["editor.action.moveLinesUpAction"]
     },
     {
-      "before": ["<leader>", "h"],
+      "before": ["<leader>", "n"],
       "after": [">", ">"]
     },
     {

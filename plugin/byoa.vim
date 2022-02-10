@@ -412,14 +412,14 @@ noremap <leader><bs> dd
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
-nnoremap <leader>h >>
-xnoremap <leader>h ><esc>
+nnoremap <leader>n >>
+xnoremap <leader>n ><esc>
 " Un-indent
-nnoremap <leader>r <<
-xnoremap <leader>r <<esc>
+nnoremap <leader>s <<
+xnoremap <leader>s <<esc>
 " swap lines
-noremap <leader>n dd<up><up>p
-noremap <leader>c ddp
+noremap <leader>r dd<up><up>p
+noremap <leader>h ddp
 
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@

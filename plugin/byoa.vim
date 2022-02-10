@@ -463,6 +463,10 @@ noremap + '
 noremap =` `.
 " Goto Last edit bol. (+ --> . is an awkward sfb)
 noremap +` '.
+" Goto prev jump
+noremap == ``
+" Goto prev jump bol.
+noremap ++ ''
 
 " Alpha Commands --------------------------
 

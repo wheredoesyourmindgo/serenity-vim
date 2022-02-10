@@ -114,14 +114,14 @@ silent! omap <unique> S <Plug>(operator-sandwich-g@)
 " replace
 " silent! xmap <unique> af <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> yS <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> yS <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> yS <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> YS <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> ys <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> ys <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> Ys <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> Ys <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> =S <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> =S <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> +S <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> +S <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> =s <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> =s <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> +s <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> +s <Plug>(textobj-sandwich-query-a)
 " vim-surround keymap macro (https://github.com/machakann/vim-sandwich/blob/master/macros/sandwich/keymap/surround.vim)
 
 "let g:sandwich_no_default_key_mappings = 1
@@ -348,44 +348,46 @@ map <s-F10> <Plug>HiLinkTrace
 
 " vim-textobj-entire
 let g:textobj_entire_no_default_key_mappings = 1
-xmap <tab>e <Plug>(textobj-entire-a)
-omap <tab>e <Plug>(textobj-entire-a)
-xmap <space>e <Plug>(textobj-entire-i)
-omap <space>e <Plug>(textobj-entire-i)
+xmap +e <Plug>(textobj-entire-a)
+omap +e <Plug>(textobj-entire-a)
+xmap =e <Plug>(textobj-entire-i)
+omap =e <Plug>(textobj-entire-i)
 " vim-textobj-indent
 let g:textobj_indent_no_default_key_mappings = 1
-xmap <tab>i <Plug>(textobj-indent-a)
-omap <tab>i <Plug>(textobj-indent-a)
-xmap <space>i <Plug>(textobj-indent-i)
-omap <space>i <Plug>(textobj-indent-i)
-xmap <tab>I <Plug>(textobj-indent-same-a)
-omap <tab>I <Plug>(textobj-indent-same-a)
-xmap <space>I <Plug>(textobj-indent-same-i))
-omap <space>I <Plug>(textobj-indent-same-i))
+xmap +i <Plug>(textobj-indent-a)
+omap +i <Plug>(textobj-indent-a)
+xmap =i <Plug>(textobj-indent-i)
+omap =i <Plug>(textobj-indent-i)
+xmap +I <Plug>(textobj-indent-same-a)
+omap +I <Plug>(textobj-indent-same-a)
+xmap =I <Plug>(textobj-indent-same-i))
+omap =I <Plug>(textobj-indent-same-i))
 
 
 " Leaders --------------------------
 
 " Quit w/ save
-noremap <leader>v ZZ
+" noremap <leader>v ZZ
 " Quit w/o save
-noremap <leader>V ZQ
+" noremap <leader>V ZQ
+
 " jump to position
 noremap & H
 noremap { M
 noremap / L
 " find prev.
-" noremap ( (
-noremap < (
-noremap [ }
+noremap ( <esc>
+noremap < <C-e>
+noremap [ <esc>
 " find next
-" noremap ) )
-noremap > )
-noremap ] {
+noremap ) <esc>
+noremap > <C-y>
+noremap ] <esc>
 " scroll to position
 noremap * zb
 noremap } zz
 noremap \ zt
+
 " Hard bol.
 noremap <leader>t 0
 " Extra commands
@@ -393,7 +395,7 @@ noremap <leader>` z
 " Extra commands (g command)
 noremap ` g
 " G - End of file / Goto line
-noremap = G
+noremap ~ G
 " Expert mode
 noremap <leader>x Q
 " Help
@@ -407,6 +409,16 @@ noremap <leader>U f<space>
 " noremap <leader><del> 0d$
 " Delete line
 noremap <leader><bs> dd
+" Goto mark bol.
+noremap <leader>v '
+" Join lines
+noremap <leader>d J
+" Swap case
+noremap <leader>w ~
+" Jump to prev. sentence
+noremap <leader>f (
+" Jump to next sentence
+noremap <leader>- )
 
 " Mod Outer/Mod/Symbol Commands --------------------------
 
@@ -439,10 +451,6 @@ noremap <del> x
 noremap <cr> :
 " This is used w/ help mode in order to access command mode
 noremap <leader><cr> :
-" goto mark
-noremap + `
-" goto mark bol
-noremap ~ '
 " auto format
 noremap $ =
 " repeat command
@@ -453,12 +461,12 @@ noremap <tab> .
 " left r1
 " noremap q "
 " noremap Q m
-execute 'noremap ' . s:r1c1 . ' "'
-execute 'noremap ' . s:R1C1 . ' m'
+execute 'noremap ' . s:r1c1 . ' m'
+execute 'noremap ' . s:R1C1 . ' `'
 " noremap w ~
 " noremap W J
-execute 'noremap ' . s:r1c2 . ' ~'
-execute 'noremap ' . s:R1C2 . ' J'
+execute 'noremap ' . s:r1c2 . ' "'
+" execute 'noremap ' . s:R1C2 . ' '
 " noremap f c
 " noremap F C
 execute 'noremap ' . s:r1c3 . ' c'
@@ -529,9 +537,9 @@ execute 'noremap ' . s:R2C6 . ' F'
 execute 'noremap ' . s:r2c7 . ' _'
 execute 'noremap ' . s:R2C7 . ' ,'
 execute 'noremap ' . s:r2c8 . ' +'
-execute 'noremap ' . s:R2C8 . ' <C-e>'
+execute 'noremap ' . s:R2C8 . ' }'
 execute 'noremap ' . s:r2c9 . ' -'
-execute 'noremap ' . s:R2C9 . ' <C-y>'
+execute 'noremap ' . s:R2C9 . ' {'
 execute 'noremap ' . s:r2c10 . ' $'
 execute 'noremap ' . s:R2C10 . ' ;'
 " right r3
@@ -625,10 +633,10 @@ noremap `<Up> g<Up>
 " xnoremap g a
 " onoremap t i
 " xnoremap t i
-onoremap <tab> a
-xnoremap <tab> a
-onoremap <space> i
-xnoremap <space> i
+onoremap + a
+xnoremap + a
+onoremap = i
+xnoremap = i
 " execute 'onoremap ' . s:R2C5 . ' a'
 " execute 'xnoremap ' . s:R2C5 . ' a'
 " execute 'onoremap ' . s:r2c5 . ' i'

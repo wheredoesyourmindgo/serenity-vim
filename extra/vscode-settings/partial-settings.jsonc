@@ -4,31 +4,31 @@
   "vim.surround": true,
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
-      "before": ["<space>"],
+      "before": ["="],
       "after": ["i"]
     },
     {
-      "before": ["<tab>"],
+      "before": ["+"],
       "after": ["a"]
     },
     // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
-      "before": ["<tab>", "i"],
+      "before": ["+", "i"],
       "after": ["a", "I"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["<space>"],
+      "before": ["="],
       "after": ["i"]
     },
     {
-      "before": ["<tab>"],
+      "before": ["+"],
       "after": ["a"]
     },
     // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
-      "before": ["<tab>", "i"],
+      "before": ["+", "i"],
       "after": ["a", "I"]
     },
     // vim-surround emulation mappings (mapped below, and is default settings)
@@ -65,6 +65,10 @@
       "after": ["g"]
     },
     {
+      "before": ["~"],
+      "after": ["G"]
+    },
+    {
       "before": ["<leader>", "u"],
       "after": ["<left>", "T", "<space>", "<right>", "T", "<space>"]
     },
@@ -84,29 +88,40 @@
       "before": ["<leader>", "<esc>"],
       "commands": [":noh"]
     },
-    {
-      "before": ["="],
-      "after": ["G"]
-    },
+    // {
+    //   "before": ["<leader>", "v"],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "workbench.action.closeActiveEditor",
+    //       "args": []
+    //     }
+    //   ]
+    // },
+    // {
+    //   "before": ["<leader>", "V"],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "workbench.action.closeActiveEditor",
+    //       "args": []
+    //     }
+    //   ]
+    // },
+    // jump to mark bol.
     {
       "before": ["<leader>", "v"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.closeActiveEditor",
-          "args": []
-        }
-      ]
+      "after": ["'"]
     },
+    // jump to prev sentence
     {
-      "before": ["<leader>", "V"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.closeActiveEditor",
-          "args": []
-        }
-      ]
+      "before": ["<leader>", "f"],
+      "after": ["("]
+    },
+    // jump to next sentence
+    {
+      "before": ["<leader>", "-"],
+      "after": [")"]
     },
     {
       "before": ["<leader>", "y"],
@@ -131,32 +146,32 @@
     // Symbol commands
     {
       "before": ["]"],
-      "after": ["{"]
+      "after": [""]
     },
     {
       "before": ["["],
-      "after": ["}"]
+      "after": [""]
     },
     {
       "before": ["\\"],
       "after": ["z", "t"]
     },
-    // {
-    //   "before": [")"],
-    //   "after": [")"]
-    // },
+    {
+      "before": [")"],
+      "after": [""]
+    },
+    {
+      "before": ["("],
+      "after": [""]
+    },
     {
       "before": [">"],
-      "after": [")"]
+      "after": ["C-y"]
     },
     {
       "before": ["<"],
-      "after": ["("]
+      "after": ["C-e"]
     },
-    // {
-    //   "before": ["("],
-    //   "after": ["("]
-    // },
     {
       "before": ["*"],
       "after": ["z", "b"]
@@ -181,14 +196,6 @@
       "before": ["<leader>", "`"],
       "after": ["z"]
     },
-    // {
-    //   "before": ["<leader>", "k"],
-    //   "after": ["g"]
-    // },
-    // {
-    //   "before": ["<leader>", "K"],
-    //   "after": ["G"]
-    // },
     // <esc> seems necessary in visual mode
     {
       "before": ["<leader>", "s"],
@@ -209,14 +216,23 @@
       "before": ["<leader>", "n"],
       "after": [">", "<esc>"]
     },
-    // tab used with operator select
-    // {
-    //   "before": ["<tab>"],
-    //   "after": ["."]
-    // },
+    {
+      "before": ["<tab>"],
+      "after": ["."]
+    },
     {
       "before": ["<leader>", "t"],
       "after": ["0"]
+    },
+    // Join lines
+    {
+      "before": ["<leader>", "d"],
+      "after": ["J"]
+    },
+    // Change Case
+    {
+      "before": ["<leader>", "w"],
+      "after": ["~"]
     },
     {
       "before": ["<C-g>"],
@@ -238,42 +254,42 @@
       "before": ["#", "#"],
       "after": ["!", "!"]
     },
-    {
-      "before": ["+"],
-      "after": ["`"]
-    },
-    {
-      "before": ["+", "."],
-      "after": ["`", "."]
-    },
-    {
-      "before": ["~"],
-      "after": ["'"]
-    },
-    {
-      "before": ["~", "."],
-      "after": ["'", "."]
-    },
+    // {
+    //   "before": ["+"],
+    //   "after": ["`"]
+    // },
+    // {
+    //   "before": ["+", "."],
+    //   "after": ["`", "."]
+    // },
+    // {
+    //   "before": ["~"],
+    //   "after": ["'"]
+    // },
+    // {
+    //   "before": ["~", "."],
+    //   "after": ["'", "."]
+    // },
     {
       "before": ["$"],
       "after": ["="]
     },
     {
       "before": ["v"],
-      "after": ["\""]
-    },
-    {
-      "before": ["V"],
       "after": ["m"]
     },
     {
-      "before": ["l"],
-      "after": ["~"]
+      "before": ["V"],
+      "after": ["`"]
     },
     {
-      "before": ["L"],
-      "after": ["J"]
+      "before": ["l"],
+      "after": ["\""]
     },
+    // {
+    //   "before": ["L"],
+    //   "after": ["J"]
+    // },
     {
       "before": ["d"],
       "after": ["c"]
@@ -446,7 +462,7 @@
     },
     {
       "before": ["E"],
-      "after": ["C-e"]
+      "after": ["}"]
     },
     {
       "before": ["i"],
@@ -454,7 +470,7 @@
     },
     {
       "before": ["I"],
-      "after": ["C-y"]
+      "after": ["{"]
     },
     {
       "before": ["a"],
@@ -789,6 +805,10 @@
       "after": ["g"]
     },
     {
+      "before": ["~"],
+      "after": ["G"]
+    },
+    {
       "before": ["<leader>", "u"],
       "after": ["<left>", "T", "<space>", "<right>", "T", "<space>"]
     },
@@ -808,29 +828,40 @@
       "before": ["<leader>", "<esc>"],
       "commands": [":noh"]
     },
-    {
-      "before": ["="],
-      "after": ["G"]
-    },
+    // {
+    //   "before": ["<leader>", "v"],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "workbench.action.closeActiveEditor",
+    //       "args": []
+    //     }
+    //   ]
+    // },
+    // {
+    //   "before": ["<leader>", "V"],
+    //   "after": [],
+    //   "commands": [
+    //     {
+    //       "command": "workbench.action.closeActiveEditor",
+    //       "args": []
+    //     }
+    //   ]
+    // },
+    // jump to mark bol.
     {
       "before": ["<leader>", "v"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.closeActiveEditor",
-          "args": []
-        }
-      ]
+      "after": ["'"]
     },
+    // jump to prev sentence
     {
-      "before": ["<leader>", "V"],
-      "after": [],
-      "commands": [
-        {
-          "command": "workbench.action.closeActiveEditor",
-          "args": []
-        }
-      ]
+      "before": ["<leader>", "f"],
+      "after": ["("]
+    },
+    // jump to next sentence
+    {
+      "before": ["<leader>", "-"],
+      "after": [")"]
     },
     {
       "before": ["<leader>", "y"],
@@ -855,32 +886,32 @@
     // Symbol commands
     {
       "before": ["]"],
-      "after": ["{"]
+      "after": [""]
     },
     {
       "before": ["["],
-      "after": ["}"]
+      "after": [""]
     },
     {
       "before": ["\\"],
       "after": ["z", "t"]
     },
-    // {
-    //   "before": [")"],
-    //   "after": [")"]
-    // },
+    {
+      "before": [")"],
+      "after": [""]
+    },
+    {
+      "before": ["("],
+      "after": [""]
+    },
     {
       "before": [">"],
-      "after": [")"]
+      "after": ["C-y"]
     },
     {
       "before": ["<"],
-      "after": ["("]
+      "after": ["C-e"]
     },
-    // {
-    //   "before": ["("],
-    //   "after": ["("]
-    // },
     {
       "before": ["*"],
       "after": ["z", "b"]
@@ -905,14 +936,6 @@
       "before": ["<leader>", "`"],
       "after": ["z"]
     },
-    // {
-    //   "before": ["<leader>", "k"],
-    //   "after": ["g"]
-    // },
-    // {
-    //   "before": ["<leader>", "K"],
-    //   "after": ["G"]
-    // },
     {
       "before": ["<leader>", "s"],
       "after": ["<", "<"]
@@ -939,6 +962,16 @@
       "before": ["<leader>", "t"],
       "after": ["0"]
     },
+    // Join lines
+    {
+      "before": ["<leader>", "d"],
+      "after": ["J"]
+    },
+    // Change Case
+    {
+      "before": ["<leader>", "w"],
+      "after": ["~"]
+    },
     {
       "before": ["<C-g>"],
       "after": ["<C-v>"]
@@ -959,42 +992,42 @@
       "before": ["#", "#"],
       "after": ["!", "!"]
     },
-    {
-      "before": ["+"],
-      "after": ["`"]
-    },
-    {
-      "before": ["+", "."],
-      "after": ["`", "."]
-    },
-    {
-      "before": ["~"],
-      "after": ["'"]
-    },
-    {
-      "before": ["~", "."],
-      "after": ["'", "."]
-    },
+    // {
+    //   "before": ["+"],
+    //   "after": ["`"]
+    // },
+    // {
+    //   "before": ["+", "."],
+    //   "after": ["`", "."]
+    // },
+    // {
+    //   "before": ["~"],
+    //   "after": ["'"]
+    // },
+    // {
+    //   "before": ["~", "."],
+    //   "after": ["'", "."]
+    // },
     {
       "before": ["$"],
       "after": ["="]
     },
     {
       "before": ["v"],
-      "after": ["\""]
-    },
-    {
-      "before": ["V"],
       "after": ["m"]
     },
     {
-      "before": ["l"],
-      "after": ["~"]
+      "before": ["V"],
+      "after": ["`"]
     },
     {
-      "before": ["L"],
-      "after": ["J"]
+      "before": ["l"],
+      "after": ["\""]
     },
+    // {
+    //   "before": ["L"],
+    //   "after": ["J"]
+    // },
     {
       "before": ["d"],
       "after": ["c"]
@@ -1056,7 +1089,7 @@
       "after": ["c", "g", "g"]
     },
     {
-      "before": ["d", "="],
+      "before": ["d", "~"],
       "after": ["c", "G"]
     },
     {
@@ -1207,7 +1240,7 @@
       "after": ["d", "g", "g"]
     },
     {
-      "before": ["j", "="],
+      "before": ["j", "~"],
       "after": ["d", "G"]
     },
     {
@@ -1291,7 +1324,7 @@
       "after": ["y", "g", "g"]
     },
     {
-      "before": ["m", "="],
+      "before": ["m", "~"],
       "after": ["y", "G"]
     },
     {
@@ -1398,7 +1431,7 @@
     },
     {
       "before": ["E"],
-      "after": ["C-e"]
+      "after": ["}"]
     },
     {
       "before": ["i"],
@@ -1406,7 +1439,7 @@
     },
     {
       "before": ["I"],
-      "after": ["C-y"]
+      "after": ["{"]
     },
     {
       "before": ["a"],

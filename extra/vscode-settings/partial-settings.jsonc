@@ -128,35 +128,43 @@
         }
       ]
     },
+    {
+      "before": ["<leader>", "."],
+      "after": [","]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "after": [";"]
+    },
     // Symbol commands
     {
       "before": ["]"],
-      "after": ["n"]
+      "after": ["{"]
     },
     {
       "before": ["["],
-      "after": ["N"]
+      "after": ["}"]
     },
     {
       "before": ["\\"],
       "after": ["z", "t"]
     },
-    {
-      "before": [")"],
-      "after": ["*"]
-    },
+    // {
+    //   "before": [")"],
+    //   "after": [")"]
+    // },
     {
       "before": [">"],
-      "after": [";"]
+      "after": [")"]
     },
     {
       "before": ["<"],
-      "after": [","]
+      "after": ["("]
     },
-    {
-      "before": ["("],
-      "after": ["#"]
-    },
+    // {
+    //   "before": ["("],
+    //   "after": ["("]
+    // },
     {
       "before": ["*"],
       "after": ["z", "b"]
@@ -478,11 +486,11 @@
     },
     {
       "before": ["p"],
-      "after": ["{"]
+      "after": ["N"]
     },
     {
       "before": ["P"],
-      "after": ["("]
+      "after": ["#"]
     },
     {
       "before": ["'"],
@@ -502,11 +510,11 @@
     },
     {
       "before": ["."],
-      "after": ["}"]
+      "after": ["n"]
     },
     {
       "before": [":"],
-      "after": [")"]
+      "after": ["*"]
     },
     // g commands
     {
@@ -856,35 +864,43 @@
         }
       ]
     },
+    {
+      "before": ["<leader>", "."],
+      "after": [","]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "after": [";"]
+    },
     // Symbol commands
     {
       "before": ["]"],
-      "after": ["n"]
+      "after": ["{"]
     },
     {
       "before": ["["],
-      "after": ["N"]
+      "after": ["}"]
     },
     {
       "before": ["\\"],
       "after": ["z", "t"]
     },
-    {
-      "before": [")"],
-      "after": ["*"]
-    },
+    // {
+    //   "before": [")"],
+    //   "after": [")"]
+    // },
     {
       "before": [">"],
-      "after": [";"]
+      "after": [")"]
     },
     {
       "before": ["<"],
-      "after": [","]
+      "after": ["("]
     },
-    {
-      "before": ["("],
-      "after": ["#"]
-    },
+    // {
+    //   "before": ["("],
+    //   "after": ["("]
+    // },
     {
       "before": ["*"],
       "after": ["z", "b"]
@@ -1434,11 +1450,11 @@
     },
     {
       "before": ["p"],
-      "after": ["{"]
+      "after": ["N"]
     },
     {
       "before": ["P"],
-      "after": ["("]
+      "after": ["#"]
     },
     {
       "before": ["'"],
@@ -1458,11 +1474,11 @@
     },
     {
       "before": ["."],
-      "after": ["}"]
+      "after": ["n"]
     },
     {
       "before": [":"],
-      "after": [")"]
+      "after": ["*"]
     },
     // g commands
     {

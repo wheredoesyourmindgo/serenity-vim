@@ -375,17 +375,21 @@ noremap & H
 noremap { M
 noremap / L
 " find prev.
-noremap ( #
-noremap < ,
-noremap [ N
+" noremap ( (
+noremap < (
+noremap [ }
 " find next
-noremap ) *
-noremap > ;
-noremap ] n
+" noremap ) )
+noremap > )
+noremap ] {
 " scroll to position
 noremap * zb
 noremap } zz
 noremap \ zt
+" Find/Till next
+nnoremap <leader>. ,
+" Find/Till previous
+nnoremap <leader>p ;
 " Extra commands
 noremap <leader>` z
 " Extra commands (g command)
@@ -539,14 +543,14 @@ execute 'noremap ' . s:r2c10 . ' $'
 " right r3
 execute 'noremap ' . s:r3c6 . ' /'
 execute 'noremap ' . s:R3C6 . ' ?'
-execute 'noremap ' . s:r3c7 . ' {'
-execute 'noremap ' . s:R3C7 . ' ('
+execute 'noremap ' . s:r3c7 . ' N'
+execute 'noremap ' . s:R3C7 . ' #'
 execute 'noremap ' . s:r3c8 . ' <C-f>'
 execute 'noremap ' . s:R3C8 . ' <C-d>'
 execute 'noremap ' . s:r3c9 . ' <C-b>'
 execute 'noremap ' . s:R3C9 . ' <C-u>'
-execute 'noremap ' . s:r3c10 . ' }'
-execute 'noremap ' . s:R3C10 . ' )'
+execute 'noremap ' . s:r3c10 . ' n'
+execute 'noremap ' . s:R3C10 . ' *'
 
 " g mappings
 noremap `# g#

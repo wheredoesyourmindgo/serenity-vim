@@ -110,15 +110,25 @@
       "before": ["+"],
       "after": ["'"]
     },
-    // jump to last edit
+    // goto Last edit (= --> . is an awkward sfb)
     {
       "before": ["=", "`"],
       "after": ["`", "."]
     },
-    // jump to last edit bol.
+    // Goto Last edit bol. (+ --> . is an awkward sfb)
     {
       "before": ["+", "`"],
       "after": ["'", "."]
+    },
+    // goto prev. jump
+    {
+      "before": ["=", "="],
+      "after": ["`", "`"]
+    },
+    // goto prev. jump bol.
+    {
+      "before": ["+", "+"],
+      "after": ["'", "'"]
     },
     // jump to prev sentence
     {
@@ -866,15 +876,25 @@
       "before": ["+"],
       "after": ["'"]
     },
-    // jump to last edit
+    // goto Last edit (= --> . is an awkward sfb)
     {
       "before": ["=", "`"],
       "after": ["`", "."]
     },
-    // jump to last edit bol.
+    // Goto Last edit bol. (+ --> . is an awkward sfb)
     {
       "before": ["+", "`"],
       "after": ["'", "."]
+    },
+    // goto prev. jump
+    {
+      "before": ["=", "="],
+      "after": ["`", "`"]
+    },
+    // goto prev. jump bol.
+    {
+      "before": ["+", "+"],
+      "after": ["'", "'"]
     },
     // jump to prev sentence
     {

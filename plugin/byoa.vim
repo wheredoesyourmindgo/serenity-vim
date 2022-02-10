@@ -370,28 +370,22 @@ omap <space>I <Plug>(textobj-indent-same-i))
 noremap <leader>v ZZ
 " Quit w/o save
 noremap <leader>V ZQ
-" Find
-noremap ] /
-" Find reverse
-noremap [ ?
-" Find next
-noremap \ n
-" Find prev
-noremap / N
-" Till Char
-noremap ) t
-" Till Char reverse
-noremap ( T
-" Find Char
-noremap > f
-" Find Char reverse
-noremap < F
-" Find/till next
-noremap } ;
-noremap * ;
-" Find/till prev
-noremap { ,
-noremap & ,
+" jump to position
+noremap & H
+noremap { M
+noremap / L
+" find prev.
+noremap ( #
+noremap < ,
+noremap [ N
+" find next
+noremap ) *
+noremap > ;
+noremap ] n
+" scroll to position
+noremap * zb
+noremap } zz
+noremap \ zt
 " Extra commands
 noremap <leader>` z
 " Extra commands (g command)
@@ -505,8 +499,8 @@ execute 'noremap ' . s:R3C5 . ' &'
 " right r1
 " noremap j H
 " noremap J zb
-execute 'noremap ' . s:r1c6 . ' H'
-execute 'noremap ' . s:R1C6 . ' zb'
+execute 'noremap ' . s:r1c6 . ' t'
+execute 'noremap ' . s:R1C6 . ' T'
 " nmap j <Plug>(clever-f-f)
 " xmap j <Plug>(clever-f-f)
 " omap j <Plug>(clever-f-f)
@@ -521,40 +515,41 @@ execute 'noremap ' . s:R1C6 . ' zb'
 " omap M <Plug>(clever-f-T)
 " noremap l ge
 " noremap L gE
-execute 'noremap ' . s:r1c7 . ' ge'
-execute 'noremap ' . s:R1C7 . ' gE'
-execute 'noremap ' . s:r1c8 . ' b'
-execute 'noremap ' . s:R1C8 . ' B'
-execute 'noremap ' . s:r1c9 . ' w'
-execute 'noremap ' . s:R1C9 . ' W'
-execute 'noremap ' . s:r1c10 . ' e'
-execute 'noremap ' . s:R1C10 . ' E'
+execute 'noremap ' . s:r1c7 . ' b'
+execute 'noremap ' . s:R1C7 . ' B'
+execute 'noremap ' . s:r1c8 . ' ge'
+execute 'noremap ' . s:R1C8 . ' gE'
+execute 'noremap ' . s:r1c9 . ' e'
+execute 'noremap ' . s:R1C9 . ' E'
+execute 'noremap ' . s:r1c10 . ' w'
+execute 'noremap ' . s:R1C10 . ' W'
 " right r2
-execute 'noremap ' . s:r2c6 . ' M'
-execute 'noremap ' . s:R2C6 . ' zz'
-execute 'noremap ' . s:r2c7 . ' _'
-execute 'noremap ' . s:R2C7 . ' 0'
-execute 'noremap ' . s:r2c8 . ' +'
-execute 'noremap ' . s:R2C8 . ' <C-e>'
+execute 'noremap ' . s:r2c6 . ' f'
+execute 'noremap ' . s:R2C6 . ' F'
 " noremap i -
 " noremap I <C-y>
-execute 'noremap ' . s:r2c9 . ' -'
-execute 'noremap ' . s:R2C9 . ' <C-y>'
-execute 'noremap ' . s:r2c10 . ' $'
-" execute 'noremap ' . s:R2C10 . ' ;'
+execute 'noremap ' . s:r2c7 . ' -'
+execute 'noremap ' . s:R2C7 . ' <C-y>'
+execute 'noremap ' . s:r2c8 . ' _'
+execute 'noremap ' . s:R2C8 . ' 0'
+execute 'noremap ' . s:r2c9 . ' $'
+" execute 'noremap ' . s:R2C9 . ' ;'
+execute 'noremap ' . s:r2c10 . ' <C-b>'
+execute 'noremap ' . s:R2C10 . ' <C-u>'
 " right r3
-execute 'noremap ' . s:r3c6 . ' L'
-execute 'noremap ' . s:R3C6 . ' zt'
-execute 'noremap ' . s:r3c7 . ' {'
+execute 'noremap ' . s:r3c6 . ' /'
+execute 'noremap ' . s:R3C6 . ' ?'
+execute 'noremap ' . s:r3c7 . ' +'
+execute 'noremap ' . s:R3C7 . ' <C-e>'
+execute 'noremap ' . s:r3c8 . ' {'
 " Previous instance of current word
-execute 'noremap ' . s:R3C7 . ' #'
-execute 'noremap ' . s:r3c8 . ' <C-f>'
-execute 'noremap ' . s:R3C8 . ' <C-d>'
-execute 'noremap ' . s:r3c9 . ' <C-b>'
-execute 'noremap ' . s:R3C9 . ' <C-u>'
-execute 'noremap ' . s:r3c10 . ' }'
+execute 'noremap ' . s:R3C8 . ' ('
+execute 'noremap ' . s:r3c9 . ' }'
 " Next instance of current word
-execute 'noremap ' . s:R3C10 . ' *'
+execute 'noremap ' . s:R3C9 . ' )'
+execute 'noremap ' . s:r3c10 . ' <C-f>'
+execute 'noremap ' . s:R3C10 . ' <C-d>'
+
 " g mappings
 noremap `# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down

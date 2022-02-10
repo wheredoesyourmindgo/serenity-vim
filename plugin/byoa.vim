@@ -392,7 +392,7 @@ noremap ^ Q
 " g
 noremap ? g
 " Extra commands
-noremap /| z
+execute 'noremap | z'
 " gg
 noremap ] gg
 " G - End of file / Goto line

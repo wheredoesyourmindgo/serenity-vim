@@ -132,12 +132,12 @@
     },
     // jump to prev sentence
     {
-      "before": ["<leader>", "f"],
+      "before": ["7"],
       "after": ["("]
     },
     // jump to next sentence
     {
-      "before": ["<leader>", "-"],
+      "before": ["0"],
       "after": [")"]
     },
     {
@@ -898,12 +898,12 @@
     },
     // jump to prev sentence
     {
-      "before": ["<leader>", "f"],
+      "before": ["7"],
       "after": ["("]
     },
     // jump to next sentence
     {
-      "before": ["<leader>", "-"],
+      "before": ["0"],
       "after": [")"]
     },
     {

@@ -415,9 +415,9 @@ noremap <leader>d J
 " Swap case
 noremap <leader>w ~
 " Jump to prev. sentence
-noremap <leader>f (
+noremap 7 (
 " Jump to next sentence
-noremap <leader>- )
+noremap 0 )
 
 " Mod Outer/Mod/Symbol Commands --------------------------
 

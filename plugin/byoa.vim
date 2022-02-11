@@ -393,10 +393,8 @@ noremap ^ Q
 noremap ? g
 " Extra commands (| pipe symbol must be escaped, or use <bar>)
 noremap <bar> z
-" gg
-noremap ] gg
-" G - End of file / Goto line
-noremap [ G
+noremap ] <esc>
+noremap [ <esc>
 " Hard bol.
 noremap <leader>t 0
 " Help
@@ -418,6 +416,12 @@ noremap <leader>w ~
 noremap 7 (
 " Jump to next sentence
 noremap 0 )
+" Jump to prev. paragraph
+noremap 9 {
+" Jump to next paragraph
+noremap 8 }
+
+
 
 " Mod Outer/Mod/Symbol Commands --------------------------
 
@@ -549,9 +553,9 @@ execute 'noremap ' . s:R2C6 . ' F'
 execute 'noremap ' . s:r2c7 . ' _'
 execute 'noremap ' . s:R2C7 . ' ,'
 execute 'noremap ' . s:r2c8 . ' +'
-execute 'noremap ' . s:R2C8 . ' }'
+execute 'noremap ' . s:R2C8 . ' G'
 execute 'noremap ' . s:r2c9 . ' -'
-execute 'noremap ' . s:R2C9 . ' {'
+execute 'noremap ' . s:R2C9 . ' gg'
 execute 'noremap ' . s:r2c10 . ' $'
 execute 'noremap ' . s:R2C10 . ' ;'
 " right r3

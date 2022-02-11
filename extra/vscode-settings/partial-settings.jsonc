@@ -140,6 +140,16 @@
       "before": ["0"],
       "after": [")"]
     },
+    // jump to prev paragraph
+    {
+      "before": ["9"],
+      "after": ["{"]
+    },
+    // jump to next paragraph
+    {
+      "before": ["8"],
+      "after": ["}"]
+    },
     {
       "before": ["<leader>", "y"],
       "after": [],
@@ -175,11 +185,11 @@
     },
     {
       "before": ["]"],
-      "after": ["g", "g"]
+      "after": [""]
     },
     {
       "before": ["["],
-      "after": ["G"]
+      "after": [""]
     },
     {
       "before": ["\\"],
@@ -487,7 +497,7 @@
     },
     {
       "before": ["E"],
-      "after": ["}"]
+      "after": ["G"]
     },
     {
       "before": ["i"],
@@ -495,7 +505,7 @@
     },
     {
       "before": ["I"],
-      "after": ["{"]
+      "after": ["g", "g"]
     },
     {
       "before": ["a"],
@@ -906,6 +916,16 @@
       "before": ["0"],
       "after": [")"]
     },
+    // jump to prev paragraph
+    {
+      "before": ["9"],
+      "after": ["{"]
+    },
+    // jump to next paragraph
+    {
+      "before": ["8"],
+      "after": ["}"]
+    },
     {
       "before": ["<leader>", "y"],
       "after": [],
@@ -941,11 +961,11 @@
     },
     {
       "before": ["]"],
-      "after": ["g", "g"]
+      "after": [""]
     },
     {
       "before": ["["],
-      "after": ["G"]
+      "after": [""]
     },
     {
       "before": ["\\"],
@@ -1482,7 +1502,7 @@
     },
     {
       "before": ["E"],
-      "after": ["}"]
+      "after": ["G"]
     },
     {
       "before": ["i"],
@@ -1490,7 +1510,7 @@
     },
     {
       "before": ["I"],
-      "after": ["{"]
+      "after": ["g", "g"]
     },
     {
       "before": ["a"],

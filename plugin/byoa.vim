@@ -393,7 +393,6 @@ noremap ^ Q
 noremap ? g
 " Extra commands (| pipe symbol must be escaped, or use <bar>)
 noremap <Bar> z
-noremap <Bar><Bar> zz
 " gg
 noremap ] gg
 " G - End of file / Goto line

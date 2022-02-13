@@ -393,6 +393,7 @@ noremap <bar> z
 noremap ( (
 " Jump to next sentence
 noremap ) )
+" todo - scroll up and down remapping not working in vim
 " Scroll down
 noremap [ <C-e>
 " Scroll up

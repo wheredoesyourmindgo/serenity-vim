@@ -82,9 +82,11 @@ endif
 " Map leader-g to line comment toggle
 map <leader>f <plug>NERDCommenterToggle
 
+" bkad/CamelCaseMotion
 map <leader>- <Plug>CamelCaseMotion_w
 map <leader>o <Plug>CamelCaseMotion_b
 map <leader>u <Plug>CamelCaseMotion_e
+" emulate vscode plugin behavior. <leader> doesn't appear to work, use <space>
 omap <silent> y<space>w <Plug>CamelCaseMotion_ie
 xmap <silent> y<space>w <Plug>CamelCaseMotion_ie
 " noremap <leader>ge <Plug>CamelCaseMotion_ge

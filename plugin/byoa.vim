@@ -373,18 +373,26 @@ omap YI <Plug>(textobj-indent-same-a)
 
 " jump to position
 noremap { M
-noremap < L
-noremap > H
+noremap / L
+noremap & H
 " scroll to position
-noremap / zz
-noremap [ zb
-noremap ] zt
+noremap } zz
+noremap * zb
+noremap \ zt
 " Expert mode
 noremap ^ Q
 " g
 noremap ? g
 " Extra commands (| pipe symbol must be escaped, or use <bar>)
 noremap <bar> z
+" Jump to prev. sentence
+noremap ( (
+" Jump to next sentence
+noremap ) )
+" Scroll down
+noremap [ <C-e>
+" Scroll up
+noremap ] <C-y>
 " Hard bol.
 noremap <leader>t 0
 " Help
@@ -398,15 +406,6 @@ noremap <leader>U f<space>
 " noremap <leader><del> 0d$
 " Delete line
 noremap <leader><bs> dd
-" Jump to prev. sentence
-noremap & (
-" Jump to next sentence
-noremap * )
-" Jump to prev. paragraph
-noremap ) {
-" Jump to next paragraph
-noremap ( }
-
 
 
 " Mod Outer/Mod/Symbol Commands --------------------------
@@ -542,9 +541,9 @@ execute 'noremap ' . s:R2C6 . ' F'
 execute 'noremap ' . s:r2c7 . ' _'
 execute 'noremap ' . s:R2C7 . ' ,'
 execute 'noremap ' . s:r2c8 . ' +'
-execute 'noremap ' . s:R2C8 . ' G'
+execute 'noremap ' . s:R2C8 . ' }'
 execute 'noremap ' . s:r2c9 . ' -'
-execute 'noremap ' . s:R2C9 . ' gg'
+execute 'noremap ' . s:R2C9 . ' {'
 execute 'noremap ' . s:r2c10 . ' $'
 execute 'noremap ' . s:R2C10 . ' ;'
 " right r3

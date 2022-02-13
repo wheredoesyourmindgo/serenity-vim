@@ -394,9 +394,9 @@ noremap ( (
 " Jump to next sentence
 noremap ) )
 " Scroll down
-map [ <C-e>
+noremap [ <C-e>
 " Scroll up
-map ] <C-y>
+noremap ] <C-y>
 " Hard bol.
 noremap <leader>t 0
 " Help

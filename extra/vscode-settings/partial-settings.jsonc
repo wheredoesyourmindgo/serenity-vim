@@ -4,31 +4,31 @@
   "vim.surround": true,
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
-      "before": ["`"],
+      "before": ["y"],
       "after": ["i"]
     },
     {
-      "before": ["~"],
+      "before": ["Y"],
       "after": ["a"]
     },
     // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
-      "before": ["~", "i"],
+      "before": ["Y", "i"],
       "after": ["a", "I"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["`"],
+      "before": ["y"],
       "after": ["i"]
     },
     {
-      "before": ["~"],
+      "before": ["Y"],
       "after": ["a"]
     },
     // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
-      "before": ["~", "i"],
+      "before": ["Y", "i"],
       "after": ["a", "I"]
     },
     // vim-surround emulation mappings (mapped below, and is default settings)
@@ -100,11 +100,11 @@
     //     }
     //   ]
     // },
-    // set mark (not in visual mode so operators don't conflict)
-    // {
-    //   "before": ["`"],
-    //   "after": ["m"]
-    // },
+    // set mark
+    {
+      "before": ["`"],
+      "after": ["m"]
+    },
     // jump to mark
     {
       "before": ["="],
@@ -362,6 +362,15 @@
       "before": ["N"],
       "after": ["O"]
     },
+    // Don't use these in Visual mode so that text object selection can be used with this key
+    // {
+    //   "before": ["y"],
+    //   "after": ["v"]
+    // },
+    // {
+    //   "before": ["Y"],
+    //   "after": ["V"]
+    // },
     {
       "before": ["z"],
       "after": [],

@@ -114,14 +114,14 @@ silent! omap <unique> S <Plug>(operator-sandwich-g@)
 " replace
 " silent! xmap <unique> af <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> `S <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> `S <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> ~S <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> ~S <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> `s <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> `s <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> ~s <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> ~s <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> yS <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> yS <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> YS <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> YS <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> ys <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> ys <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> Ys <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> Ys <Plug>(textobj-sandwich-query-a)
 " vim-surround keymap macro (https://github.com/machakann/vim-sandwich/blob/master/macros/sandwich/keymap/surround.vim)
 
 "let g:sandwich_no_default_key_mappings = 1
@@ -348,20 +348,20 @@ map <s-F10> <Plug>HiLinkTrace
 
 " vim-textobj-entire
 let g:textobj_entire_no_default_key_mappings = 1
-xmap ~e <Plug>(textobj-entire-a)
-omap ~e <Plug>(textobj-entire-a)
-xmap `e <Plug>(textobj-entire-i)
-omap `e <Plug>(textobj-entire-i)
+xmap ye <Plug>(textobj-entire-i)
+omap ye <Plug>(textobj-entire-i)
+xmap Ye <Plug>(textobj-entire-a)
+omap Ye <Plug>(textobj-entire-a)
 " vim-textobj-indent
 let g:textobj_indent_no_default_key_mappings = 1
-xmap ~i <Plug>(textobj-indent-a)
-omap ~i <Plug>(textobj-indent-a)
-xmap `i <Plug>(textobj-indent-i)
-omap `i <Plug>(textobj-indent-i)
-xmap ~I <Plug>(textobj-indent-same-a)
-omap ~I <Plug>(textobj-indent-same-a)
-xmap `I <Plug>(textobj-indent-same-i))
-omap `I <Plug>(textobj-indent-same-i))
+xmap yi <Plug>(textobj-indent-i)
+omap yi <Plug>(textobj-indent-i)
+xmap Yi <Plug>(textobj-indent-a)
+omap Yi <Plug>(textobj-indent-a)
+xmap yI <Plug>(textobj-indent-same-i))
+omap yI <Plug>(textobj-indent-same-i))
+xmap YI <Plug>(textobj-indent-same-a)
+omap YI <Plug>(textobj-indent-same-a)
 
 
 " Leaders --------------------------
@@ -457,8 +457,8 @@ noremap +` '.
 noremap == ``
 " Goto prev jump bol.
 noremap ++ ''
-" Set mark (not in visual mode so operators don't conflict)
-nnoremap ` m
+" Set mark
+noremap ` m
 
 " Alpha Commands --------------------------
 
@@ -493,8 +493,9 @@ execute 'noremap ' . s:r2c3 . ' a'
 execute 'noremap ' . s:R2C3 . ' A'
 execute 'noremap ' . s:r2c4 . ' o'
 execute 'noremap ' . s:R2C4 . ' O'
-execute 'noremap ' . s:r2c5 . ' v'
-execute 'noremap ' . s:R2C5 . ' V'
+" just use visual mode when not in visual mode so that text object selection can be used
+execute 'nnoremap ' . s:r2c5 . ' v'
+execute 'nnoremap ' . s:R2C5 . ' V'
 " left r3
 execute 'noremap ' . s:r3c1 . ' u'
 execute 'noremap ' . s:R3C1 . ' U'
@@ -637,10 +638,10 @@ noremap ?<Up> g<Up>
 " xnoremap g a
 " onoremap t i
 " xnoremap t i
-onoremap ~ a
-xnoremap ~ a
-onoremap ` i
-xnoremap ` i
+onoremap Y a
+xnoremap Y a
+onoremap y i
+xnoremap y i
 " execute 'onoremap ' . s:R2C5 . ' a'
 " execute 'xnoremap ' . s:R2C5 . ' a'
 " execute 'onoremap ' . s:r2c5 . ' i'

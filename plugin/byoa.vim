@@ -397,8 +397,10 @@ noremap ( (
 " Jump to next sentence
 noremap ) )
 " Scroll down
+xunmap [[
 noremap [ <C-e>
 " Scroll up
+xunmap ]]
 noremap ] <C-y>
 " Hard bol.
 noremap <leader>t 0

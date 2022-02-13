@@ -397,6 +397,10 @@ noremap ( (
 " Jump to next sentence
 noremap ) )
 " Scroll down
+unmap <buffer> [[
+unmap <buffer> ]]
+unmap <buffer> []
+unmap <buffer> ["
 noremap [ <C-e>
 " Scroll up
 noremap ] <C-y>

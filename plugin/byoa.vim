@@ -396,6 +396,7 @@ noremap <bar> z
 noremap ( (
 " Jump to next sentence
 noremap ) )
+" todo - need to figure out how to 'unmap <buffer> [[' from vimrc
 " Scroll down
 noremap [ <C-e>
 " Scroll up

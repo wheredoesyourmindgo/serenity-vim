@@ -85,8 +85,8 @@ map <leader>f <plug>NERDCommenterToggle
 map <leader>- <Plug>CamelCaseMotion_w
 map <leader>o <Plug>CamelCaseMotion_b
 map <leader>u <Plug>CamelCaseMotion_e
-omap <silent> y<leader>w <Plug>CamelCaseMotion_ib
-xmap <silent> y<leader>w <Plug>CamelCaseMotion_ib
+omap <silent> yw <Plug>CamelCaseMotion_ib
+xmap <silent> yw <Plug>CamelCaseMotion_ib
 " noremap <leader>ge <Plug>CamelCaseMotion_ge
 
 " Don't use nvim-markdown default mappings

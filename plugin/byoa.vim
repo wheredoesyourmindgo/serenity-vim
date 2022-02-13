@@ -82,10 +82,9 @@ endif
 " Map leader-g to line comment toggle
 map <leader>f <plug>NERDCommenterToggle
 
-if exists("g:loaded_camelcasemotion")
-  map <leader>- <Plug>CamelCaseMotion_w
-  map <leader>o <Plug>CamelCaseMotion_b
-  map <leader>u <Plug>CamelCaseMotion_e
+map <leader>- <Plug>CamelCaseMotion_w
+map <leader>o <Plug>CamelCaseMotion_b
+map <leader>u <Plug>CamelCaseMotion_e
 " noremap <leader>ge <Plug>CamelCaseMotion_ge
 endif
 

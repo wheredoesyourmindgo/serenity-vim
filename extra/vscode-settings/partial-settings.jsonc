@@ -2,6 +2,7 @@
   "vim.leader": "<space>",
   "vim.smartRelativeLine": true,
   "vim.surround": true,
+  "vim.camelCaseMotion.enable": true,
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
       "before": ["y"],
@@ -54,19 +55,15 @@
     },
     {
       "before": ["<leader>", "o"],
-      "after": ["<left>", "T", "<space>", "<right>", "T", "<space>"]
-    },
-    {
-      "before": ["<leader>", "O"],
-      "after": ["F", "<space>"]
+      "after": ["<leader>", "b"]
     },
     {
       "before": ["<leader>", "u"],
-      "after": ["<right>", "t", "<space>", "<left>", "t", "<space>"]
+      "after": ["<leader>", "e"]
     },
     {
-      "before": ["<leader>", "U"],
-      "after": ["f", "<space>"]
+      "before": ["<leader>", "-"],
+      "after": ["<leader>", "w"]
     },
     {
       "before": ["<leader>", "<esc>"],
@@ -808,19 +805,15 @@
     },
     {
       "before": ["<leader>", "o"],
-      "after": ["<left>", "T", "<space>", "<right>", "T", "<space>"]
-    },
-    {
-      "before": ["<leader>", "O"],
-      "after": ["F", "<space>"]
+      "after": ["<leader>", "b"]
     },
     {
       "before": ["<leader>", "u"],
-      "after": ["<right>", "t", "<space>", "<left>", "t", "<space>"]
+      "after": ["<leader>", "e"]
     },
     {
-      "before": ["<leader>", "U"],
-      "after": ["f", "<space>"]
+      "before": ["<leader>", "-"],
+      "after": ["<leader>", "w"]
     },
     {
       "before": ["<leader>", "<esc>"],

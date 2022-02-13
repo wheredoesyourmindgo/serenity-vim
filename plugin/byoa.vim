@@ -82,6 +82,13 @@ endif
 " Map leader-g to line comment toggle
 map <leader>f <plug>NERDCommenterToggle
 
+if exists("g:loaded_camelcasemotion")
+  noremap <leader>- <Plug>CamelCaseMotion_w
+  noremap <leader>o <Plug>CamelCaseMotion_b
+  noremap <leader>u <Plug>CamelCaseMotion_e
+  " noremap <leader>ge <Plug>CamelCaseMotion_ge
+endif
+
 " Don't use nvim-markdown default mappings
 let g:vim_markdown_no_default_key_mappings = 1
 
@@ -405,11 +412,6 @@ noremap ] <C-y>
 noremap <leader>t 0
 " Help
 noremap <leader><tab> K
-" Next/Previous whitespace, exclusive and inclusive
-noremap <leader>o <left>T<space><right>T<space>
-noremap <leader>O F<space>
-noremap <leader>u <right>t<space><left>t<space>
-noremap <leader>U f<space>
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent

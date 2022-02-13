@@ -372,29 +372,19 @@ omap `I <Plug>(textobj-indent-same-i))
 " noremap <leader>V ZQ
 
 " jump to position
-noremap & H
 noremap { M
-noremap / L
-" find prev.
-noremap ( <esc>
-noremap < <C-e>
-noremap [ <esc>
-" find next
-noremap ) <esc>
-noremap > <C-y>
-noremap ] <esc>
+noremap < L
+noremap > H
 " scroll to position
-noremap * zb
-noremap } zz
-noremap \ zt
+noremap / zz
+noremap [ zb
+noremap ] zt
 " Expert mode
 noremap ^ Q
 " g
 noremap ? g
 " Extra commands (| pipe symbol must be escaped, or use <bar>)
 noremap <bar> z
-noremap ] <esc>
-noremap [ <esc>
 " Hard bol.
 noremap <leader>t 0
 " Help
@@ -413,13 +403,13 @@ noremap <leader>d J
 " Swap case
 noremap <leader>w ~
 " Jump to prev. sentence
-noremap 7 (
+noremap & (
 " Jump to next sentence
-noremap 0 )
+noremap * )
 " Jump to prev. paragraph
-noremap 9 {
+noremap ) {
 " Jump to next paragraph
-noremap 8 }
+noremap ( }
 
 
 

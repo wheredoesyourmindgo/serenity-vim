@@ -410,13 +410,6 @@ noremap <leader>o <left>T<space><right>T<space>
 noremap <leader>O F<space>
 noremap <leader>u <right>t<space><left>t<space>
 noremap <leader>U f<space>
-" Empty line (remapping leader-del doesn't seem to work in vim)
-" noremap <leader><del> 0d$
-" Delete line
-noremap <leader><bs> dd
-
-
-" Mod Outer/Mod/Symbol Commands --------------------------
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent

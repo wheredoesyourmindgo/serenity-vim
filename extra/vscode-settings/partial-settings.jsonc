@@ -41,16 +41,8 @@
       "after": ["X"]
     },
     {
-      "before": ["<leader>", "<bs>"],
-      "after": ["d", "d"]
-    },
-    {
       "before": ["<del>"],
       "after": ["x"]
-    },
-    {
-      "before": ["<leader>", "<del>"],
-      "after": ["0", "d", "$"]
     },
     {
       "before": ["<C-k>"],
@@ -61,19 +53,19 @@
       "commands": ["workbench.action.showCommands"]
     },
     {
-      "before": ["<leader>", "u"],
+      "before": ["<leader>", "o"],
       "after": ["<left>", "T", "<space>", "<right>", "T", "<space>"]
     },
     {
-      "before": ["<leader>", "U"],
+      "before": ["<leader>", "O"],
       "after": ["F", "<space>"]
     },
     {
-      "before": ["<leader>", "o"],
+      "before": ["<leader>", "u"],
       "after": ["<right>", "t", "<space>", "<left>", "t", "<space>"]
     },
     {
-      "before": ["<leader>", "O"],
+      "before": ["<leader>", "U"],
       "after": ["f", "<space>"]
     },
     {
@@ -803,16 +795,8 @@
       "after": ["X"]
     },
     {
-      "before": ["<leader>", "<bs>"],
-      "after": ["d", "d"]
-    },
-    {
       "before": ["<del>"],
       "after": ["x"]
-    },
-    {
-      "before": ["<leader>", "<del>"],
-      "after": ["0", "d", "$"]
     },
     {
       "before": ["<C-k>"],
@@ -823,19 +807,19 @@
       "commands": ["workbench.action.showCommands"]
     },
     {
-      "before": ["<leader>", "u"],
+      "before": ["<leader>", "o"],
       "after": ["<left>", "T", "<space>", "<right>", "T", "<space>"]
     },
     {
-      "before": ["<leader>", "U"],
+      "before": ["<leader>", "O"],
       "after": ["F", "<space>"]
     },
     {
-      "before": ["<leader>", "o"],
+      "before": ["<leader>", "u"],
       "after": ["<right>", "t", "<space>", "<left>", "t", "<space>"]
     },
     {
-      "before": ["<leader>", "O"],
+      "before": ["<leader>", "U"],
       "after": ["f", "<space>"]
     },
     {

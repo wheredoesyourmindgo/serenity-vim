@@ -398,10 +398,6 @@ noremap <leader>U f<space>
 " noremap <leader><del> 0d$
 " Delete line
 noremap <leader><bs> dd
-" Join lines
-noremap <leader>d J
-" Swap case
-noremap <leader>w ~
 " Jump to prev. sentence
 noremap & (
 " Jump to next sentence
@@ -461,18 +457,20 @@ noremap +` '.
 noremap == ``
 " Goto prev jump bol.
 noremap ++ ''
+" Set mark (not in visual mode so operators don't conflict)
+nnoremap ` m
 
 " Alpha Commands --------------------------
 
 " left r1
 " noremap q "
 " noremap Q m
-execute 'noremap ' . s:r1c1 . ' m'
+execute 'noremap ' . s:r1c1 . ' "'
 " execute 'noremap ' . s:R1C1 . ' `'
 " noremap w ~
 " noremap W J
-execute 'noremap ' . s:r1c2 . ' "'
-" execute 'noremap ' . s:R1C2 . ' '
+execute 'noremap ' . s:r1c2 . ' ~'
+execute 'noremap ' . s:R1C2 . ' J'
 " noremap f c
 " noremap F C
 execute 'noremap ' . s:r1c3 . ' c'

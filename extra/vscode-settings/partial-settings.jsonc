@@ -100,6 +100,11 @@
     //     }
     //   ]
     // },
+    // set mark (not in visual mode so operators don't conflict)
+    // {
+    //   "before": ["`"],
+    //   "after": ["m"]
+    // },
     // jump to mark
     {
       "before": ["="],
@@ -243,16 +248,6 @@
       "before": ["<leader>", "t"],
       "after": ["0"]
     },
-    // Join lines
-    {
-      "before": ["<leader>", "d"],
-      "after": ["J"]
-    },
-    // Change Case
-    {
-      "before": ["<leader>", "w"],
-      "after": ["~"]
-    },
     {
       "before": ["<C-g>"],
       "after": ["<C-v>"]
@@ -295,7 +290,7 @@
     },
     {
       "before": ["v"],
-      "after": ["m"]
+      "after": ["\""]
     },
     // {
     //   "before": ["V"],
@@ -303,12 +298,12 @@
     // },
     {
       "before": ["l"],
-      "after": ["\""]
+      "after": ["~"]
     },
-    // {
-    //   "before": ["L"],
-    //   "after": ["J"]
-    // },
+    {
+      "before": ["L"],
+      "after": ["J"]
+    },
     {
       "before": ["d"],
       "after": ["c"]
@@ -860,6 +855,11 @@
     //     }
     //   ]
     // },
+    // set mark
+    {
+      "before": ["`"],
+      "after": ["m"]
+    },
     // jump to mark
     {
       "before": ["="],
@@ -1001,16 +1001,6 @@
       "before": ["<leader>", "t"],
       "after": ["0"]
     },
-    // Join lines
-    {
-      "before": ["<leader>", "d"],
-      "after": ["J"]
-    },
-    // Change Case
-    {
-      "before": ["<leader>", "w"],
-      "after": ["~"]
-    },
     {
       "before": ["<C-g>"],
       "after": ["<C-v>"]
@@ -1053,7 +1043,7 @@
     },
     {
       "before": ["v"],
-      "after": ["m"]
+      "after": ["\""]
     },
     // {
     //   "before": ["V"],
@@ -1061,12 +1051,12 @@
     // },
     {
       "before": ["l"],
-      "after": ["\""]
+      "after": ["~"]
     },
-    // {
-    //   "before": ["L"],
-    //   "after": ["J"]
-    // },
+    {
+      "before": ["L"],
+      "after": ["J"]
+    },
     {
       "before": ["d"],
       "after": ["c"]

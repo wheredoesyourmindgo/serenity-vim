@@ -86,7 +86,6 @@ map <leader>- <Plug>CamelCaseMotion_w
 map <leader>o <Plug>CamelCaseMotion_b
 map <leader>u <Plug>CamelCaseMotion_e
 " noremap <leader>ge <Plug>CamelCaseMotion_ge
-endif
 
 " Don't use nvim-markdown default mappings
 let g:vim_markdown_no_default_key_mappings = 1

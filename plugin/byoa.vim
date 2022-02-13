@@ -82,12 +82,10 @@ endif
 " Map leader-g to line comment toggle
 map <leader>f <plug>NERDCommenterToggle
 
-if exists("g:loaded_camelcasemotion")
-  noremap <leader>- <Plug>CamelCaseMotion_w
-  noremap <leader>o <Plug>CamelCaseMotion_b
-  noremap <leader>u <Plug>CamelCaseMotion_e
-  " noremap <leader>ge <Plug>CamelCaseMotion_ge
-endif
+noremap <leader>- <Plug>CamelCaseMotion_w
+noremap <leader>o <Plug>CamelCaseMotion_b
+noremap <leader>u <Plug>CamelCaseMotion_e
+" noremap <leader>ge <Plug>CamelCaseMotion_ge
 
 " Don't use nvim-markdown default mappings
 let g:vim_markdown_no_default_key_mappings = 1

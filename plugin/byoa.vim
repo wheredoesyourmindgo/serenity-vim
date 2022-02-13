@@ -383,6 +383,10 @@ noremap \ zt
 noremap ^ Q
 " g
 noremap ? g
+" Scroll down
+noremap < G
+" Scroll up
+noremap > gg
 " Extra commands (| pipe symbol must be escaped, or use <bar>)
 noremap <bar> z
 " Jump to prev. sentence

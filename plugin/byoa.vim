@@ -82,6 +82,9 @@ endif
 " Map leader-g to line comment toggle
 map <leader>f <plug>NERDCommenterToggle
 
+" Don't use nvim-markdown default mappings
+let g:vim_markdown_no_default_key_mappings = 1
+
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings
 let g:surround_no_mappings = 1
@@ -393,7 +396,6 @@ noremap <bar> z
 noremap ( (
 " Jump to next sentence
 noremap ) )
-" todo - scroll up and down remapping not working in vim
 " Scroll down
 noremap [ <C-e>
 " Scroll up

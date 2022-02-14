@@ -625,8 +625,16 @@
       "after": ["g", "P"]
     },
     {
-      "before": ["?", "e"],
+      "before": ["?", "Q"],
       "after": ["g", "Q"]
+    },
+    {
+      "before": ["?", "e"],
+      "after": ["g", "e"]
+    },
+    {
+      "before": ["?", "E"],
+      "after": ["g", "E"]
     },
     {
       "before": ["?", "W"],
@@ -1599,8 +1607,16 @@
       "after": ["g", "P"]
     },
     {
-      "before": ["?", "e"],
+      "before": ["?", "Q"],
       "after": ["g", "Q"]
+    },
+    {
+      "before": ["?", "e"],
+      "after": ["g", "e"]
+    },
+    {
+      "before": ["?", "E"],
+      "after": ["g", "E"]
     },
     {
       "before": ["?", "W"],

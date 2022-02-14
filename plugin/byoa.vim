@@ -584,13 +584,14 @@ noremap ?< g<
 noremap ?? g?
 noremap ??? g??
 noremap ??h? g?g?
-" noremap ?E gE
+noremap ?Q gQ
+noremap ?e ge
+noremap ?E gE
 noremap ?V gH
 " gI - insert
 noremap ?S gI
 noremap ?<S-tab> gD
 noremap ?D gP
-noremap ?e gQ
 " gR - replace
 noremap ?P gR
 noremap ?T gT
@@ -599,7 +600,6 @@ noremap ?U gU
 noremap ?G gV
 noremap ?] g]
 noremap ?a ga
-" noremap -e ge
 noremap ?f gf
 noremap ?F gF
 " gg mapped at ]

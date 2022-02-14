@@ -86,6 +86,7 @@ map <leader>f <plug>NERDCommenterToggle
 map <leader>- <Plug>CamelCaseMotion_w
 map <leader>o <Plug>CamelCaseMotion_b
 map <leader>u <Plug>CamelCaseMotion_e
+map <leader>f <Plug>CamelCaseMotion_ge
 " emulate vscode plugin behavior. <leader> doesn't appear to work, use <space>
 omap <silent> y<space>w <Plug>CamelCaseMotion_ie
 xmap <silent> y<space>w <Plug>CamelCaseMotion_ie

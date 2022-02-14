@@ -54,6 +54,10 @@
       "commands": ["workbench.action.showCommands"]
     },
     {
+      "before": ["<leader>", "f"],
+      "after": ["<leader>", "b", "<left>"]
+    },
+    {
       "before": ["<leader>", "o"],
       "after": ["<leader>", "b"]
     },
@@ -802,6 +806,10 @@
     {
       "before": ["<cr>"],
       "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "after": ["<leader>", "b", "<left>"]
     },
     {
       "before": ["<leader>", "o"],

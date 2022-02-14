@@ -385,15 +385,13 @@ omap YI <Plug>(textobj-indent-same-a)
 " noremap <leader>V ZQ
 
 " jump to position
-noremap { M
-noremap / L
-noremap & H
+noremap <leader>{ M
+noremap <leader>/ L
+noremap <leader>& H
 " scroll to position
-noremap } zz
-noremap * zb
-noremap \ zt
-" Expert mode
-noremap ^ Q
+noremap <leader>} zz
+noremap <leader>* zb
+noremap <leader>\ zt
 " Scroll down
 noremap < G
 " Scroll up
@@ -403,14 +401,19 @@ noremap > gg
 " Goto match
 noremap ? %
 " Jump to prev. sentence
-noremap ( (
+noremap & (
 " Jump to next sentence
-noremap ) )
+noremap * )
+" Jump to prev. paragraph
+noremap ( }
+" Jump to next paragraph
+noremap ) {
+" Bracket commands
+noremap { [
+noremap } ]
 " todo - need to figure out how to 'unmap <buffer> [[' from vimrc
-" Scroll down
-noremap [ <C-e>
-" Scroll up
-noremap ] <C-y>
+noremap [ <esc>
+noremap ] <esc>
 " Hard bol.
 noremap <leader>t 0
 " Help
@@ -418,6 +421,9 @@ noremap <leader><tab> K
 " Bracket cmds
 noremap <leader>< ]
 noremap <leader>> [
+
+" Expert mode
+noremap <leader>l Q
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
@@ -554,9 +560,9 @@ execute 'noremap ' . s:R2C6 . ' F'
 execute 'noremap ' . s:r2c7 . ' _'
 execute 'noremap ' . s:R2C7 . ' ,'
 execute 'noremap ' . s:r2c8 . ' +'
-execute 'noremap ' . s:R2C8 . ' }'
+execute 'noremap ' . s:R2C8 . ' <C-e>'
 execute 'noremap ' . s:r2c9 . ' -'
-execute 'noremap ' . s:R2C9 . ' {'
+execute 'noremap ' . s:R2C9 . ' <C-y>'
 execute 'noremap ' . s:r2c10 . ' $'
 execute 'noremap ' . s:R2C10 . ' ;'
 " right r3

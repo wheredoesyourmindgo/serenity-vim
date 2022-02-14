@@ -151,17 +151,23 @@
     // Symbol commands
     // jump to prev sentence
     {
-      "before": ["("],
+      "before": ["&"],
       "after": ["("]
     },
     // jump to next sentence
     {
-      "before": [")"],
+      "before": ["*"],
       "after": [")"]
     },
+    // jump to prev paragraph
     {
-      "before": ["^"],
-      "after": ["Q"]
+      "before": ["("],
+      "after": ["}"]
+    },
+    // jump to next paragraph
+    {
+      "before": [")"],
+      "after": ["{"]
     },
     // VSCode does same thing but better
     // {
@@ -184,27 +190,27 @@
       "after": ["G"]
     },
     {
-      "before": ["<leader>", "<"],
-      "after": ["]"]
+      "before": ["{"],
+      "after": ["["]
     },
     {
       "before": [">"],
       "after": ["g", "g"]
     },
     {
-      "before": ["<leader>", ">"],
-      "after": ["["]
+      "before": ["}"],
+      "after": ["]"]
     },
     {
-      "before": ["{"],
+      "before": ["<leader>", "{"],
       "after": ["M"]
     },
     {
-      "before": ["&"],
+      "before": ["<leader>", "&"],
       "after": ["H"]
     },
     {
-      "before": ["/"],
+      "before": ["<leader>", "/"],
       "after": ["L"]
     },
     // {
@@ -212,24 +218,24 @@
     //   "after": ["z"]
     // },
     {
-      "before": ["}"],
+      "before": ["<leader>", "}"],
       "after": ["z", "z"]
     },
     {
-      "before": ["\\"],
+      "before": ["<leader>", "\\"],
       "after": ["z", "t"]
     },
     {
-      "before": ["*"],
+      "before": ["<leader>", "*"],
       "after": ["z", "b"]
     },
     {
       "before": ["["],
-      "after": ["C-e"]
+      "after": [""]
     },
     {
       "before": ["]"],
-      "after": ["C-y"]
+      "after": [""]
     },
     // <esc> seems necessary in visual mode
     {
@@ -314,6 +320,10 @@
     {
       "before": ["L"],
       "after": ["z"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["Q"]
     },
     {
       "before": ["d"],
@@ -504,7 +514,7 @@
     },
     {
       "before": ["E"],
-      "after": ["}"]
+      "after": ["C-e"]
     },
     {
       "before": ["i"],
@@ -512,7 +522,7 @@
     },
     {
       "before": ["I"],
-      "after": ["{"]
+      "after": ["C-y"]
     },
     {
       "before": ["a"],
@@ -937,17 +947,23 @@
     // Symbol commands
     // jump to prev sentence
     {
-      "before": ["("],
+      "before": ["&"],
       "after": ["("]
     },
     // jump to next sentence
     {
-      "before": [")"],
+      "before": ["*"],
       "after": [")"]
     },
+    // jump to prev paragraph
     {
-      "before": ["^"],
-      "after": ["Q"]
+      "before": ["("],
+      "after": ["}"]
+    },
+    // jump to next paragraph
+    {
+      "before": [")"],
+      "after": ["{"]
     },
     // VSCode does same thing but better
     // {
@@ -970,27 +986,27 @@
       "after": ["G"]
     },
     {
-      "before": ["<leader>", "<"],
-      "after": ["]"]
+      "before": ["{"],
+      "after": ["["]
     },
     {
       "before": [">"],
       "after": ["g", "g"]
     },
     {
-      "before": ["<leader>", ">"],
-      "after": ["["]
+      "before": ["}"],
+      "after": ["]"]
     },
     {
-      "before": ["{"],
+      "before": ["<leader>", "{"],
       "after": ["M"]
     },
     {
-      "before": ["&"],
+      "before": ["<leader>", "&"],
       "after": ["H"]
     },
     {
-      "before": ["/"],
+      "before": ["<leader>", "/"],
       "after": ["L"]
     },
     // {
@@ -998,24 +1014,24 @@
     //   "after": ["z"]
     // },
     {
-      "before": ["}"],
+      "before": ["<leader>", "}"],
       "after": ["z", "z"]
     },
     {
-      "before": ["\\"],
+      "before": ["<leader>", "\\"],
       "after": ["z", "t"]
     },
     {
-      "before": ["*"],
+      "before": ["<leader>", "*"],
       "after": ["z", "b"]
     },
     {
       "before": ["["],
-      "after": ["C-e"]
+      "after": [""]
     },
     {
       "before": ["]"],
-      "after": ["C-y"]
+      "after": [""]
     },
     {
       "before": ["<leader>", "s"],
@@ -1098,6 +1114,10 @@
     {
       "before": ["L"],
       "after": ["z"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["Q"]
     },
     {
       "before": ["d"],
@@ -1510,7 +1530,7 @@
     },
     {
       "before": ["E"],
-      "after": ["}"]
+      "after": ["C-e"]
     },
     {
       "before": ["i"],
@@ -1518,7 +1538,7 @@
     },
     {
       "before": ["I"],
-      "after": ["{"]
+      "after": ["C-y"]
     },
     {
       "before": ["a"],

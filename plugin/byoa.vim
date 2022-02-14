@@ -394,14 +394,14 @@ noremap * zb
 noremap \ zt
 " Expert mode
 noremap ^ Q
-" g
-noremap ? g
 " Scroll down
 noremap < G
 " Scroll up
 noremap > gg
 " Extra commands (| pipe symbol must be escaped, or use <bar>)
-noremap <bar> z
+" noremap <bar> z
+" Goto match
+noremap ? %
 " Jump to prev. sentence
 noremap ( (
 " Jump to next sentence
@@ -415,6 +415,9 @@ noremap ] <C-y>
 noremap <leader>t 0
 " Help
 noremap <leader><tab> K
+" Bracket cmds
+noremap <leader>< ]
+noremap <leader>> [
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
@@ -426,6 +429,10 @@ xnoremap <leader>s <<esc>
 " swap lines
 noremap <leader>r dd<up><up>p
 noremap <leader>h ddp
+" Join lines
+noremap <leader>d J
+" Swap case
+noremap <leader>w ~
 
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@
@@ -474,8 +481,8 @@ execute 'noremap ' . s:r1c1 . ' "'
 " execute 'noremap ' . s:R1C1 . ' `'
 " noremap w ~
 " noremap W J
-execute 'noremap ' . s:r1c2 . ' ~'
-execute 'noremap ' . s:R1C2 . ' J'
+execute 'noremap ' . s:r1c2 . ' g'
+execute 'noremap ' . s:R1C2 . ' z'
 " noremap f c
 " noremap F C
 execute 'noremap ' . s:r1c3 . ' c'
@@ -565,78 +572,78 @@ execute 'noremap ' . s:r3c10 . ' *'
 execute 'noremap ' . s:R3C10 . ' n'
 
 " g mappings
-noremap ?# g#
+noremap l# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
 " noremap -o g$
-noremap ?o g_
-noremap ?n g^
-noremap ?& g&
-noremap ?~ g'
-noremap ?\" g`
-noremap ?* g*
-noremap ?+ g+
-noremap ?, g,
-noremap ?- g-
-noremap ?y g-
-noremap ?0 g0
-noremap ?8 g8
-noremap ?< g<
-noremap ?? g?
+noremap lo g_
+noremap ln g^
+noremap l& g&
+noremap l~ g'
+noremap l\" g`
+noremap l* g*
+noremap l+ g+
+noremap l, g,
+noremap l- g-
+noremap ly g-
+noremap l0 g0
+noremap l8 g8
+noremap l< g<
+noremap l? g?
 noremap ??? g??
 noremap ??h? g?g?
-noremap ?Q gQ
-noremap ?e ge
-noremap ?E gE
-noremap ?V gH
+noremap lQ gQ
+noremap le ge
+noremap lE gE
+noremap lV gH
 " gI - insert
-noremap ?S gI
-noremap ?<S-tab> gD
-noremap ?D gP
+noremap lS gI
+noremap l<S-tab> gD
+noremap lD gP
 " gR - replace
-noremap ?P gR
-noremap ?T gT
-noremap ?U gU
+noremap lP gR
+noremap lT gT
+noremap lU gU
 " gV - visual
-noremap ?G gV
-noremap ?] g]
-noremap ?a ga
-noremap ?f gf
-noremap ?F gF
-" gg mapped at ]
-" noremap ?? gg
-noremap ?v gh
+noremap lG gV
+noremap l] g]
+noremap la ga
+noremap lf gf
+noremap lF gF
+" gg mapped >
+" noremap ll gg
+noremap lv gh
 " gi - insert
-noremap ?s gi
-noremap ?<tab> gd
-noremap ?k gk
-noremap ?. gn
-noremap ?h gN
-noremap ?W gJ
-noremap ?m gm
-noremap ?M gM
-noremap ?O go
-noremap ?d gp
-" noremap ?; g; what does this one do? there was a conflict below
-noremap ?; gq
+noremap ls gi
+noremap l<tab> gd
+noremap lk gk
+noremap l. gn
+noremap lh gN
+noremap lW gJ
+noremap lm gm
+noremap lM gM
+noremap lO go
+noremap ld gp
+" noremap l; g; what does this one do? there was a conflict below
+noremap l; gq
 " gr - replace
-noremap ?p gr
-noremap ?s gs
-noremap ?t gt
-noremap ?u gu
+noremap lp gr
+noremap ls gs
+noremap lt gt
+noremap lu gu
 " gv - visual
-noremap ?g gv
-noremap ?: gw
-noremap ?x gx
-noremap ?@ g@
-noremap ?~ g~
-noremap ?<Down> g<Down>
-noremap ?<End> g<End>
-noremap ?<Home> g<Home>
-noremap ?<LeftMouse> g<LeftMouse>
-noremap ?<MiddleMouse> g<MiddleMouse>
-noremap ?<RightMouse> g<RightMouse>
-noremap ?<Tab> g<Tab>
-noremap ?<Up> g<Up>
+noremap lg gv
+noremap l: gw
+noremap lx gx
+noremap l@ g@
+noremap l~ g~
+noremap l<Down> g<Down>
+noremap l<End> g<End>
+noremap l<Home> g<Home>
+noremap l<LeftMouse> g<LeftMouse>
+noremap l<MiddleMouse> g<MiddleMouse>
+noremap l<RightMouse> g<RightMouse>
+noremap l<Tab> g<Tab>
+noremap l<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a

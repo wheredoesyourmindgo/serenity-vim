@@ -55,7 +55,7 @@
     },
     {
       "before": ["<leader>", "f"],
-      "after": ["<leader>", "b", "<left>"]
+      "after": ["<right>", "<leader>", "b", "<left>"]
     },
     {
       "before": ["<leader>", "o"],
@@ -817,7 +817,7 @@
     },
     {
       "before": ["<leader>", "f"],
-      "after": ["<leader>", "b", "<left>"]
+      "after": ["<right>", "<leader>", "b", "<left>"]
     },
     {
       "before": ["<leader>", "o"],

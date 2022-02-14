@@ -753,23 +753,6 @@
       "before": ["?", "q"],
       "after": ["g", "~"]
     },
-    // VSCode Tricks
-    {
-      "before": ["?", "<tab>"],
-      "after": ["g", "d"]
-    },
-    {
-      "before": ["?", "<space>"],
-      "after": ["g", "h"]
-    },
-    {
-      "before": ["?", ";"],
-      "after": ["g", "q"]
-    },
-    {
-      "before": ["?", "."],
-      "after": ["g", "b"]
-    },
     {
       "before": ["<C-r>"],
       "after": [],
@@ -1734,23 +1717,6 @@
     {
       "before": ["?", "q"],
       "after": ["g", "~"]
-    },
-    // VSCode Tricks
-    {
-      "before": ["?", "<tab>"],
-      "after": ["g", "d"]
-    },
-    {
-      "before": ["?", "<space>"],
-      "after": ["g", "h"]
-    },
-    {
-      "before": ["?", ";"],
-      "after": ["g", "q"]
-    },
-    {
-      "before": ["?", "."],
-      "after": ["g", "b"]
     },
     {
       "before": ["<C-r>"],

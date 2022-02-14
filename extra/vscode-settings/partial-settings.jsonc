@@ -163,9 +163,21 @@
       "before": ["^"],
       "after": ["Q"]
     },
+    // VSCode does same thing but better
+    // {
+    //   "before": ["?"],
+    //   "after": ["%"]
+    // },
     {
       "before": ["?"],
-      "after": ["%"]
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        }
+      ],
+      "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
     },
     {
       "before": ["<"],
@@ -937,9 +949,21 @@
       "before": ["^"],
       "after": ["Q"]
     },
+    // VSCode does same thing but better
+    // {
+    //   "before": ["?"],
+    //   "after": ["%"]
+    // },
     {
       "before": ["?"],
-      "after": ["%"]
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        }
+      ],
+      "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
     },
     {
       "before": ["<"],

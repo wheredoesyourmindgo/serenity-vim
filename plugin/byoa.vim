@@ -628,7 +628,7 @@ noremap ?g gv
 noremap ?: gw
 noremap ?x gx
 noremap ?@ g@
-noremap ?q g~
+noremap ?~ g~
 noremap ?<Down> g<Down>
 noremap ?<End> g<End>
 noremap ?<Home> g<Home>

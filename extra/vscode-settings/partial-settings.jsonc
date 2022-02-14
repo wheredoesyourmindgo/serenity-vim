@@ -750,8 +750,21 @@
       "after": ["g", "@"]
     },
     {
-      "before": ["?", "q"],
+      "before": ["?", "~"],
       "after": ["g", "~"]
+    },
+    // VSCode Tricks
+    {
+      "before": ["<leader>", "x"],
+      "after": ["g", "h"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "after": ["g", "d"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["g", "q"]
     },
     {
       "before": ["<C-r>"],
@@ -1715,8 +1728,21 @@
       "after": ["g", "@"]
     },
     {
-      "before": ["?", "q"],
+      "before": ["?", "~"],
       "after": ["g", "~"]
+    },
+    // VSCode Tricks
+    {
+      "before": ["<leader>", "x"],
+      "after": ["g", "h"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "after": ["g", "d"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["g", "q"]
     },
     {
       "before": ["<C-r>"],

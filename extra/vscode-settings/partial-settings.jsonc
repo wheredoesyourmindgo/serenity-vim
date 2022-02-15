@@ -54,22 +54,6 @@
       "commands": ["workbench.action.showCommands"]
     },
     {
-      "before": ["<leader>", "f"],
-      "after": ["<right>", "<leader>", "b", "<left>"]
-    },
-    {
-      "before": ["<leader>", "o"],
-      "after": ["<leader>", "b"]
-    },
-    {
-      "before": ["<leader>", "u"],
-      "after": ["<leader>", "e"]
-    },
-    {
-      "before": ["<leader>", "-"],
-      "after": ["<leader>", "w"]
-    },
-    {
       "before": ["<leader>", "<esc>"],
       "commands": [":noh"]
     },
@@ -93,6 +77,21 @@
     //     }
     //   ]
     // },
+    // Bol. down
+    {
+      "before": ["<home>"],
+      "after": ["_"]
+    },
+    // Hard Bol. not working here, see keybindings.json
+    // {
+    //   "before": ["<S-home>"],
+    //   "after": ["0"]
+    // },
+    // Eol.
+    {
+      "before": ["<end>"],
+      "after": ["$"]
+    },
     // set mark
     {
       "before": ["`"],
@@ -149,25 +148,21 @@
       ]
     },
     // Symbol commands
-    // jump to prev sentence
     {
       "before": ["&"],
-      "after": ["("]
+      "after": ["<right>", "<leader>", "b", "<left>"]
     },
-    // jump to next sentence
-    {
-      "before": ["*"],
-      "after": [")"]
-    },
-    // jump to prev paragraph
     {
       "before": ["("],
-      "after": ["}"]
+      "after": ["<leader>", "b"]
     },
-    // jump to next paragraph
     {
       "before": [")"],
-      "after": ["{"]
+      "after": ["<leader>", "e"]
+    },
+    {
+      "before": ["*"],
+      "after": ["<leader>", "w"]
     },
     // VSCode does same thing but better
     // {
@@ -260,10 +255,6 @@
     {
       "before": ["<tab>"],
       "after": ["."]
-    },
-    {
-      "before": ["<leader>", "t"],
-      "after": ["0"]
     },
     {
       "before": ["<C-g>"],
@@ -502,7 +493,7 @@
     },
     {
       "before": ["t"],
-      "after": ["_"]
+      "after": ["("]
     },
     {
       "before": ["T"],
@@ -526,7 +517,7 @@
     },
     {
       "before": ["a"],
-      "after": ["$"]
+      "after": [")"]
     },
     {
       "before": ["A"],
@@ -550,19 +541,19 @@
     },
     {
       "before": ["'"],
-      "after": ["C-f"]
+      "after": ["}"]
     },
     {
       "before": ["\""],
-      "after": ["C-d"]
+      "after": [""]
     },
     {
       "before": [","],
-      "after": ["C-b"]
+      "after": ["{"]
     },
     {
       "before": [";"],
-      "after": ["C-u"]
+      "after": [""]
     },
     {
       "before": ["."],
@@ -850,22 +841,6 @@
       "commands": ["workbench.action.showCommands"]
     },
     {
-      "before": ["<leader>", "f"],
-      "after": ["<right>", "<leader>", "b", "<left>"]
-    },
-    {
-      "before": ["<leader>", "o"],
-      "after": ["<leader>", "b"]
-    },
-    {
-      "before": ["<leader>", "u"],
-      "after": ["<leader>", "e"]
-    },
-    {
-      "before": ["<leader>", "-"],
-      "after": ["<leader>", "w"]
-    },
-    {
       "before": ["<leader>", "<esc>"],
       "commands": [":noh"]
     },
@@ -889,6 +864,21 @@
     //     }
     //   ]
     // },
+    // Bol. down
+    {
+      "before": ["<home>"],
+      "after": ["_"]
+    },
+    // Hard Bol. not working here, see keybindings.json
+    // {
+    //   "before": ["<S-home>"],
+    //   "after": ["0"]
+    // },
+    // Eol.
+    {
+      "before": ["<end>"],
+      "after": ["$"]
+    },
     // set mark
     {
       "before": ["`"],
@@ -945,25 +935,21 @@
       ]
     },
     // Symbol commands
-    // jump to prev sentence
     {
       "before": ["&"],
-      "after": ["("]
+      "after": ["<right>", "<leader>", "b", "<left>"]
     },
-    // jump to next sentence
-    {
-      "before": ["*"],
-      "after": [")"]
-    },
-    // jump to prev paragraph
     {
       "before": ["("],
-      "after": ["}"]
+      "after": ["<leader>", "b"]
     },
-    // jump to next paragraph
     {
       "before": [")"],
-      "after": ["{"]
+      "after": ["<leader>", "e"]
+    },
+    {
+      "before": ["*"],
+      "after": ["<leader>", "w"]
     },
     // VSCode does same thing but better
     // {
@@ -1054,10 +1040,6 @@
     {
       "before": ["<tab>"],
       "after": ["."]
-    },
-    {
-      "before": ["<leader>", "t"],
-      "after": ["0"]
     },
     {
       "before": ["<C-g>"],
@@ -1518,7 +1500,7 @@
     },
     {
       "before": ["t"],
-      "after": ["_"]
+      "after": ["("]
     },
     {
       "before": ["T"],
@@ -1542,7 +1524,7 @@
     },
     {
       "before": ["a"],
-      "after": ["$"]
+      "after": [")"]
     },
     {
       "before": ["A"],
@@ -1566,19 +1548,19 @@
     },
     {
       "before": ["'"],
-      "after": ["C-f"]
+      "after": ["}"]
     },
     {
       "before": ["\""],
-      "after": ["C-d"]
+      "after": [""]
     },
     {
       "before": [","],
-      "after": ["C-b"]
+      "after": ["{"]
     },
     {
       "before": [";"],
-      "after": ["C-u"]
+      "after": [""]
     },
     {
       "before": ["."],

@@ -69,7 +69,7 @@ if s:byoa_keymap == 'serenity'
   let s:r3c7 = "p"
   let s:R3C7 = "P"
   let s:r3c8 = "'"
-  let s:R3C8 = "/""
+  let s:R3C8 = '"'
   let s:r3c9 = ","
   let s:R3C9 = ";"
   let s:r3c10 = "."
@@ -80,13 +80,13 @@ elseif s:byoa_keymap == 'qwerty'
 endif
 
 " Map leader-g to line comment toggle
-map <leader>f <plug>NERDCommenterToggle
+map <leader>y <plug>NERDCommenterToggle
 
 " bkad/CamelCaseMotion
-map <leader>- <Plug>CamelCaseMotion_w
-map <leader>o <Plug>CamelCaseMotion_b
-map <leader>u <Plug>CamelCaseMotion_e
-map <leader>f <Plug>CamelCaseMotion_ge
+map & <Plug>CamelCaseMotion_w
+map ( <Plug>CamelCaseMotion_b
+map ) <Plug>CamelCaseMotion_e
+map * <Plug>CamelCaseMotion_ge
 " emulate vscode plugin behavior. <leader> doesn't appear to work, use <space>
 omap <silent> y<space>w <Plug>CamelCaseMotion_ie
 xmap <silent> y<space>w <Plug>CamelCaseMotion_ie
@@ -400,27 +400,35 @@ noremap > gg
 " noremap <bar> z
 " Goto match
 noremap ? %
-" Jump to prev. sentence
-noremap & (
-" Jump to next sentence
-noremap * )
+noremap / <esc>
+noremap \ <esc>
+" todo - need to figure out how to 'unmap <buffer> [[' from vimrc
 " Jump to prev. paragraph
-noremap ( }
+noremap ] <esc>
 " Jump to next paragraph
-noremap ) {
+noremap [ <esc>
 " Bracket commands
 noremap { [
 noremap } ]
-" todo - need to figure out how to 'unmap <buffer> [[' from vimrc
-noremap [ <esc>
-noremap ] <esc>
-" Hard bol.
-noremap <leader>t 0
 " Help
 noremap <leader><tab> K
 " Bracket cmds
 noremap <leader>< ]
 noremap <leader>> [
+" Bol. down
+noremap <home> _
+" Hard Bol.
+noremap <S-home> 0
+" Eol.
+noremap <end> $
+" Pg up
+noremap <pageup> <C-b>
+" Half Pg up
+noremap <S-pageup> <C-u>
+" Pg down
+noremap <pagedown> <C-f>
+" Half Pg down
+noremap <S-pagedown> <C-d>
 
 " Expert mode
 noremap <leader>l Q
@@ -557,23 +565,23 @@ execute 'noremap ' . s:r2c6 . ' f'
 execute 'noremap ' . s:R2C6 . ' F'
 " noremap i -
 " noremap I <C-y>
-execute 'noremap ' . s:r2c7 . ' _'
+execute 'noremap ' . s:r2c7 . ' ('
 execute 'noremap ' . s:R2C7 . ' ,'
 execute 'noremap ' . s:r2c8 . ' +'
 execute 'noremap ' . s:R2C8 . ' <C-e>'
 execute 'noremap ' . s:r2c9 . ' -'
 execute 'noremap ' . s:R2C9 . ' <C-y>'
-execute 'noremap ' . s:r2c10 . ' $'
+execute 'noremap ' . s:r2c10 . ' )'
 execute 'noremap ' . s:R2C10 . ' ;'
 " right r3
 execute 'noremap ' . s:r3c6 . ' /'
 execute 'noremap ' . s:R3C6 . ' ?'
 execute 'noremap ' . s:r3c7 . ' #'
 execute 'noremap ' . s:R3C7 . ' N'
-execute 'noremap ' . s:r3c8 . ' <C-f>'
-execute 'noremap ' . s:R3C8 . ' <C-d>'
-execute 'noremap ' . s:r3c9 . ' <C-b>'
-execute 'noremap ' . s:R3C9 . ' <C-u>'
+execute 'noremap ' . s:r3c8 . ' }'
+execute 'noremap ' . s:R3C8 . ' <esc>'
+execute 'noremap ' . s:r3c9 . ' {'
+execute 'noremap ' . s:R3C9 . ' <esc>'
 execute 'noremap ' . s:r3c10 . ' *'
 execute 'noremap ' . s:R3C10 . ' n'
 

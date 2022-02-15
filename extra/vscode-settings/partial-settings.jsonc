@@ -1178,11 +1178,11 @@
     //   "after": ["c", "0"]
     // },
     {
-      "before": ["d", "e"],
-      "after": ["c", "_"]
+      "before": ["d", "<home>"],
+      "after": ["c", "^"]
     },
     {
-      "before": ["d", "i"],
+      "before": ["d", "<end>"],
       "after": ["c", "$"]
     },
     {
@@ -1208,6 +1208,22 @@
     {
       "before": ["d", "Q"],
       "after": ["c", "T"]
+    },
+    {
+      "before": ["d", "<leader>", "f"],
+      "after": ["c", "<right>", "<leader>", "b", "<left>"]
+    },
+    {
+      "before": ["d", "<leader>", "o"],
+      "after": ["c", "<leader>", "b"]
+    },
+    {
+      "before": ["d", "<leader>", "u"],
+      "after": ["c", "<leader>", "e"]
+    },
+    {
+      "before": ["d", "<leader>", "-"],
+      "after": ["c", "<leader>", "w"]
     },
     {
       "before": ["<leader", "d"],
@@ -1337,11 +1353,11 @@
     //   "after": ["d", "0"]
     // },
     {
-      "before": ["j", "e"],
-      "after": ["d", "_"]
+      "before": ["j", "<home>"],
+      "after": ["d", "^"]
     },
     {
-      "before": ["j", "i"],
+      "before": ["j", "<end>"],
       "after": ["d", "$"]
     },
     {
@@ -1367,6 +1383,22 @@
     {
       "before": ["j", "Q"],
       "after": ["d", "T"]
+    },
+    {
+      "before": ["j", "<leader>", "f"],
+      "after": ["d", "<right>", "<leader>", "b", "<left>"]
+    },
+    {
+      "before": ["j", "<leader>", "o"],
+      "after": ["d", "<leader>", "b"]
+    },
+    {
+      "before": ["j", "<leader>", "u"],
+      "after": ["d", "<leader>", "e"]
+    },
+    {
+      "before": ["j", "<leader>", "-"],
+      "after": ["d", "<leader>", "w"]
     },
     {
       "before": ["J"],
@@ -1421,11 +1453,11 @@
     //   "after": ["y", "0"]
     // },
     {
-      "before": ["m", "e"],
-      "after": ["y", "_"]
+      "before": ["m", "<home>"],
+      "after": ["y", "^"]
     },
     {
-      "before": ["m", "i"],
+      "before": ["m", "<end>"],
       "after": ["y", "$"]
     },
     {
@@ -1451,6 +1483,22 @@
     {
       "before": ["m", "Q"],
       "after": ["y", "T"]
+    },
+    {
+      "before": ["m", "<leader>", "f"],
+      "after": ["y", "<right>", "<leader>", "b", "<left>"]
+    },
+    {
+      "before": ["m", "<leader>", "o"],
+      "after": ["y", "<leader>", "b"]
+    },
+    {
+      "before": ["m", "<leader>", "u"],
+      "after": ["y", "<leader>", "e"]
+    },
+    {
+      "before": ["m", "<leader>", "-"],
+      "after": ["y", "<leader>", "w"]
     },
     {
       "before": ["M"],

@@ -148,6 +148,24 @@
         }
       ]
     },
+    {
+      "before": ["/"],
+      "commands": [
+        {
+          "command": "editor.action.addSelectionToPreviousFindMatch",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["\\"],
+      "commands": [
+        {
+          "command": "editor.action.addSelectionToNextFindMatch",
+          "args": []
+        }
+      ]
+    },
     // Symbol commands
     {
       "before": ["<leader>", "f"],
@@ -944,6 +962,24 @@
       "commands": [
         {
           "command": "editor.action.blockComment",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["/"],
+      "commands": [
+        {
+          "command": "editor.action.addSelectionToPreviousFindMatch",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["\\"],
+      "commands": [
+        {
+          "command": "editor.action.addSelectionToNextFindMatch",
           "args": []
         }
       ]

@@ -128,7 +128,7 @@
       "after": ["'", "'"]
     },
     {
-      "before": ["<leader>", "y"],
+      "before": ["<leader>", "s"],
       "after": [],
       "commands": [
         {
@@ -138,7 +138,7 @@
       ]
     },
     {
-      "before": ["<leader>", "Y"],
+      "before": ["<leader>", "S"],
       "after": [],
       "commands": [
         {
@@ -234,22 +234,22 @@
     },
     // <esc> seems necessary in visual mode
     {
-      "before": ["<leader>", "s"],
+      "before": ["<leader>", "t"],
       "after": ["<", "<esc>"]
     },
     {
-      "before": ["<leader>", "r"],
+      "before": ["<leader>", "e"],
       "after": [],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": ["<leader>", "h"],
+      "before": ["<leader>", "i"],
       "after": [],
       "commands": ["editor.action.moveLinesUpAction"]
     },
     // <esc> seems necessary in visual mode
     {
-      "before": ["<leader>", "n"],
+      "before": ["<leader>", "a"],
       "after": [">", "<esc>"]
     },
     {
@@ -915,7 +915,7 @@
       "after": ["'", "'"]
     },
     {
-      "before": ["<leader>", "y"],
+      "before": ["<leader>", "s"],
       "after": [],
       "commands": [
         {
@@ -925,7 +925,7 @@
       ]
     },
     {
-      "before": ["<leader>", "Y"],
+      "before": ["<leader>", "S"],
       "after": [],
       "commands": [
         {
@@ -1020,21 +1020,21 @@
       "after": [""]
     },
     {
-      "before": ["<leader>", "s"],
+      "before": ["<leader>", "t"],
       "after": ["<", "<"]
     },
     {
-      "before": ["<leader>", "r"],
+      "before": ["<leader>", "e"],
       "after": [],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": ["<leader>", "h"],
+      "before": ["<leader>", "i"],
       "after": [],
       "commands": ["editor.action.moveLinesUpAction"]
     },
     {
-      "before": ["<leader>", "n"],
+      "before": ["<leader>", "a"],
       "after": [">", ">"]
     },
     {

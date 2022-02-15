@@ -80,7 +80,7 @@ elseif s:byoa_keymap == 'qwerty'
 endif
 
 " Map leader-g to line comment toggle
-map <leader>y <plug>NERDCommenterToggle
+map <leader>s <plug>NERDCommenterToggle
 
 " bkad/CamelCaseMotion
 map & <Plug>CamelCaseMotion_w
@@ -436,14 +436,14 @@ noremap <leader>l Q
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
-nnoremap <leader>n >>
-xnoremap <leader>n ><esc>
+nnoremap <leader>a >>
+xnoremap <leader>a ><esc>
 " Un-indent
-nnoremap <leader>s <<
-xnoremap <leader>s <<esc>
+nnoremap <leader>t <<
+xnoremap <leader>t <<esc>
 " swap lines
-noremap <leader>r dd<up><up>p
-noremap <leader>h ddp
+noremap <leader>e dd<up><up>p
+noremap <leader>i ddp
 " Join lines
 noremap <leader>d J
 " Swap case

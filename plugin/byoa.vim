@@ -385,13 +385,13 @@ omap YI <Plug>(textobj-indent-same-a)
 " noremap <leader>V ZQ
 
 " jump to position
-noremap <leader>{ M
-noremap <leader>/ L
-noremap <leader>& H
+noremap <leader>7 H
+noremap <leader><left> M
+noremap <leader><home> L
 " scroll to position
-noremap <leader>} zz
-noremap <leader>* zb
-noremap <leader>\ zt
+noremap <leader>0 zb
+noremap <leader><right> zz
+noremap <leader><end> zt
 " Scroll down
 noremap < G
 " Scroll up

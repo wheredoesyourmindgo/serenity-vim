@@ -464,7 +464,7 @@ noremap <bs> X
 " Delete
 noremap <del> x
 " Command mode
-noremap <cr> :
+noremap <silent> <cr> :
 " This is used w/ help mode in order to access command mode
 noremap <leader><cr> :
 " auto format

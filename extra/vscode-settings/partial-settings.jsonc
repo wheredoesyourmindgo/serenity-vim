@@ -51,7 +51,8 @@
     },
     {
       "before": ["<cr>"],
-      "commands": ["workbench.action.showCommands"]
+      "commands": ["workbench.action.showCommands"],
+      "silent": "true"
     },
     {
       "before": ["<leader>", "<esc>"],
@@ -232,25 +233,21 @@
       "before": ["]"],
       "after": [""]
     },
-    // <esc> seems necessary in visual mode
     {
       "before": ["<leader>", "t"],
-      "after": ["<", "<esc>"]
+      "commands": ["editor.action.outdentLines"]
     },
     {
       "before": ["<leader>", "e"],
-      "after": [],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
       "before": ["<leader>", "i"],
-      "after": [],
       "commands": ["editor.action.moveLinesUpAction"]
     },
-    // <esc> seems necessary in visual mode
     {
       "before": ["<leader>", "a"],
-      "after": [">", "<esc>"]
+      "commands": ["editor.action.indentLines"]
     },
     {
       "before": ["<tab>"],
@@ -838,7 +835,8 @@
     },
     {
       "before": ["<cr>"],
-      "commands": ["workbench.action.showCommands"]
+      "commands": ["workbench.action.showCommands"],
+      "silent": "true"
     },
     {
       "before": ["<leader>", "<esc>"],
@@ -1021,21 +1019,19 @@
     },
     {
       "before": ["<leader>", "t"],
-      "after": ["<", "<"]
+      "commands": ["editor.action.outdentLines"]
     },
     {
       "before": ["<leader>", "e"],
-      "after": [],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
       "before": ["<leader>", "i"],
-      "after": [],
       "commands": ["editor.action.moveLinesUpAction"]
     },
     {
       "before": ["<leader>", "a"],
-      "after": [">", ">"]
+      "commands": ["editor.action.indentLines"]
     },
     {
       "before": ["<tab>"],

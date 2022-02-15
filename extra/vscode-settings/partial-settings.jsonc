@@ -150,20 +150,36 @@
     },
     // Symbol commands
     {
-      "before": ["&"],
+      "before": ["<leader>", "f"],
       "after": ["<right>", "<leader>", "b", "<left>"]
     },
     {
-      "before": ["("],
+      "before": ["<leader>", "o"],
       "after": ["<leader>", "b"]
     },
     {
-      "before": [")"],
+      "before": ["<leader>", "u"],
       "after": ["<leader>", "e"]
     },
     {
-      "before": ["*"],
+      "before": ["<leader>", "-"],
       "after": ["<leader>", "w"]
+    },
+    {
+      "before": ["&"],
+      "after": ["<esc>"]
+    },
+    {
+      "before": ["("],
+      "after": ["<esc>"]
+    },
+    {
+      "before": [")"],
+      "after": ["<esc>"]
+    },
+    {
+      "before": ["*"],
+      "after": ["<esc>"]
     },
     // VSCode does same thing but better
     // {
@@ -934,20 +950,36 @@
     },
     // Symbol commands
     {
-      "before": ["&"],
+      "before": ["<leader>", "f"],
       "after": ["<right>", "<leader>", "b", "<left>"]
     },
     {
-      "before": ["("],
+      "before": ["<leader>", "o"],
       "after": ["<leader>", "b"]
     },
     {
-      "before": [")"],
+      "before": ["<leader>", "u"],
       "after": ["<leader>", "e"]
     },
     {
-      "before": ["*"],
+      "before": ["<leader>", "-"],
       "after": ["<leader>", "w"]
+    },
+    {
+      "before": ["&"],
+      "after": ["<esc>"]
+    },
+    {
+      "before": ["("],
+      "after": ["<esc>"]
+    },
+    {
+      "before": [")"],
+      "after": ["<esc>"]
+    },
+    {
+      "before": ["*"],
+      "after": ["<esc>"]
     },
     // VSCode does same thing but better
     // {

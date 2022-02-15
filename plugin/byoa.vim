@@ -83,10 +83,10 @@ endif
 map <leader>s <plug>NERDCommenterToggle
 
 " bkad/CamelCaseMotion
-map & <Plug>CamelCaseMotion_w
-map ( <Plug>CamelCaseMotion_b
-map ) <Plug>CamelCaseMotion_e
-map * <Plug>CamelCaseMotion_ge
+map <leader>f <Plug>CamelCaseMotion_w
+map <leader>o <Plug>CamelCaseMotion_b
+map <leader>u <Plug>CamelCaseMotion_e
+map <leader>- <Plug>CamelCaseMotion_ge
 " emulate vscode plugin behavior. <leader> doesn't appear to work, use <space>
 omap <silent> y<space>w <Plug>CamelCaseMotion_ie
 xmap <silent> y<space>w <Plug>CamelCaseMotion_ie
@@ -403,13 +403,15 @@ noremap ? %
 noremap / <esc>
 noremap \ <esc>
 " todo - need to figure out how to 'unmap <buffer> [[' from vimrc
-" Jump to prev. paragraph
 noremap ] <esc>
-" Jump to next paragraph
 noremap [ <esc>
 " Bracket commands
 noremap { [
 noremap } ]
+noremap ( <Esc>
+noremap ) <Esc>
+noremap & <Esc>
+noremap * <Esc>
 " Help
 noremap <leader><tab> K
 " Bracket cmds

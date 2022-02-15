@@ -418,17 +418,18 @@ noremap <leader>> [
 " Bol. down
 noremap <home> _
 " Hard Bol.
-noremap <S-home> 0
+noremap <S-Home> 0
 " Eol.
-noremap <end> $
+noremap <End> $
 " Pg up
-noremap <pageup> <C-b>
+noremap <PageUp> <C-b>
 " Half Pg up
-noremap <S-pageup> <C-u>
+" todo - shifted pageup & pagedown not working in terminal vim, only gvim.
+noremap <S-PageUp> <C-u>
 " Pg down
-noremap <pagedown> <C-f>
+noremap <PageDown> <C-f>
 " Half Pg down
-noremap <S-pagedown> <C-d>
+noremap <S-PageDown> <C-d>
 
 " Expert mode
 noremap <leader>l Q

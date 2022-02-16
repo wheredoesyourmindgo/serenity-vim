@@ -216,16 +216,16 @@
       "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
     },
     {
-      "before": ["\""],
-      "after": ["G"]
+      "before": [">"],
+      "after": ["<esc>"]
     },
     {
       "before": ["{"],
       "after": ["["]
     },
     {
-      "before": [";"],
-      "after": ["g", "g"]
+      "before": ["<"],
+      "after": ["<esc>"]
     },
     {
       "before": ["}"],
@@ -576,7 +576,7 @@
     },
     {
       "before": ["\""],
-      "after": [""]
+      "after": ["G"]
     },
     {
       "before": [","],
@@ -584,7 +584,7 @@
     },
     {
       "before": [";"],
-      "after": [""]
+      "after": ["g", "g"]
     },
     {
       "before": ["."],
@@ -1034,16 +1034,16 @@
       "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
     },
     {
-      "before": ["\""],
-      "after": ["G"]
+      "before": [">"],
+      "after": ["<esc>"]
     },
     {
       "before": ["{"],
       "after": ["["]
     },
     {
-      "before": [";"],
-      "after": ["g", "g"]
+      "before": ["<"],
+      "after": ["<esc>"]
     },
     {
       "before": ["}"],
@@ -1664,7 +1664,7 @@
     },
     {
       "before": ["\""],
-      "after": [""]
+      "after": ["G"]
     },
     {
       "before": [","],
@@ -1672,7 +1672,7 @@
     },
     {
       "before": [";"],
-      "after": [""]
+      "after": ["g", "g"]
     },
     {
       "before": ["."],

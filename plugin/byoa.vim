@@ -392,10 +392,8 @@ noremap <leader><home> L
 noremap <leader>0 zb
 noremap <leader><right> zz
 noremap <leader><end> zt
-" Scroll down
-noremap < G
-" Scroll up
-noremap > gg
+noremap < <esc>
+noremap > <esc>
 " Extra commands (| pipe symbol must be escaped, or use <bar>)
 " noremap <bar> z
 " Goto match
@@ -582,9 +580,9 @@ execute 'noremap ' . s:R3C6 . ' ?'
 execute 'noremap ' . s:r3c7 . ' N'
 execute 'noremap ' . s:R3C7 . ' #'
 execute 'noremap ' . s:r3c8 . ' }'
-execute 'noremap ' . s:R3C8 . ' <esc>'
+execute 'noremap ' . s:R3C8 . ' gg'
 execute 'noremap ' . s:r3c9 . ' {'
-execute 'noremap ' . s:R3C9 . ' <esc>'
+execute 'noremap ' . s:R3C9 . ' G'
 execute 'noremap ' . s:r3c10 . ' n'
 execute 'noremap ' . s:R3C10 . ' *'
 

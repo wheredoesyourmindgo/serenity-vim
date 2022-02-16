@@ -524,11 +524,11 @@
     },
     {
       "before": ["t"],
-      "after": ["("]
+      "after": ["'"]
     },
     {
       "before": ["T"],
-      "after": [","]
+      "after": ["("]
     },
     {
       "before": ["e"],
@@ -548,11 +548,11 @@
     },
     {
       "before": ["a"],
-      "after": [")"]
+      "after": [";"]
     },
     {
       "before": ["A"],
-      "after": [";"]
+      "after": [")"]
     },
     {
       "before": ["k"],
@@ -564,11 +564,11 @@
     },
     {
       "before": ["p"],
-      "after": ["#"]
+      "after": ["N"]
     },
     {
       "before": ["P"],
-      "after": ["N"]
+      "after": ["#"]
     },
     {
       "before": ["'"],
@@ -588,11 +588,11 @@
     },
     {
       "before": ["."],
-      "after": ["*"]
+      "after": ["n"]
     },
     {
       "before": [":"],
-      "after": ["n"]
+      "after": ["*"]
     },
     // g commands
     {
@@ -1612,11 +1612,11 @@
     },
     {
       "before": ["t"],
-      "after": ["("]
+      "after": [","]
     },
     {
       "before": ["T"],
-      "after": [","]
+      "after": ["("]
     },
     {
       "before": ["e"],
@@ -1636,11 +1636,11 @@
     },
     {
       "before": ["a"],
-      "after": [")"]
+      "after": [";"]
     },
     {
       "before": ["A"],
-      "after": [";"]
+      "after": [")"]
     },
     {
       "before": ["k"],
@@ -1676,11 +1676,11 @@
     },
     {
       "before": ["."],
-      "after": ["*"]
+      "after": ["n"]
     },
     {
       "before": [":"],
-      "after": ["n"]
+      "after": ["*"]
     },
     // g commands
     {

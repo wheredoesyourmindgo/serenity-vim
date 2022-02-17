@@ -205,31 +205,48 @@
     //   "after": ["%"]
     // },
     {
-      "before": ["|"],
-      "after": [],
+      "before": ["{"],
+      "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        },
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [">"],
+      "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        },
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["}"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",
           "args": []
         }
-      ],
-      "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
-    },
-    {
-      "before": [">"],
-      "after": ["<esc>"]
-    },
-    {
-      "before": [""],
-      "after": ["["]
+      ]
     },
     {
       "before": ["<"],
-      "after": ["<esc>"]
-    },
-    {
-      "before": [""],
-      "after": ["]"]
+      "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        }
+      ]
     },
     {
       "before": ["<leader>", "<left>"],
@@ -261,11 +278,11 @@
     },
     {
       "before": ["["],
-      "after": ["]"]
+      "after": ["["]
     },
     {
       "before": ["]"],
-      "after": ["["]
+      "after": ["]"]
     },
     {
       "before": ["<leader>", "s"],
@@ -1023,31 +1040,48 @@
     //   "after": ["%"]
     // },
     {
-      "before": ["|"],
-      "after": [],
+      "before": ["{"],
+      "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        },
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": [">"],
+      "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        },
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["}"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",
           "args": []
         }
-      ],
-      "when": "inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
-    },
-    {
-      "before": [">"],
-      "after": ["<esc>"]
-    },
-    {
-      "before": ["{"],
-      "after": [""]
+      ]
     },
     {
       "before": ["<"],
-      "after": ["<esc>"]
-    },
-    {
-      "before": ["}"],
-      "after": [""]
+      "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        }
+      ]
     },
     {
       "before": ["<leader>", "<left>"],
@@ -1079,10 +1113,10 @@
     },
     {
       "before": ["["],
-      "after": ["]"]
+      "after": ["["]
     },
     {
-      "before": ["]"],
+      "before": ["["],
       "after": ["["]
     },
     {

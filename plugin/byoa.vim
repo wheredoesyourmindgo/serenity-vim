@@ -392,20 +392,19 @@ noremap <leader><home> L
 noremap <leader>0 zb
 noremap <leader><right> zz
 noremap <leader><end> zt
-noremap < <esc>
-noremap > <esc>
+noremap < %
+noremap > 2%
 noremap ? <esc>
 " Jump to bracket (| pipe symbol must be escaped, or use <bar>)
 " Goto match
-noremap <Bar> %
+" noremap <Bar> %
 noremap / <esc>
 noremap \ <esc>
-" todo - need to figure out how to 'unmap <buffer> [[' from vimrc
-noremap ] [
-noremap [ ]
 " Bracket commands
-noremap { <esc>
-noremap } <esc>
+noremap ] ]
+noremap [ [
+noremap { 2%
+noremap } %
 noremap ( <Esc>
 noremap ) <Esc>
 noremap & <Esc>

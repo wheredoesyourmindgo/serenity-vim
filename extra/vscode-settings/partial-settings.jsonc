@@ -631,7 +631,7 @@
       "before": ["l", "+"],
       "after": ["g", "`"]
     },
-    // gg mapped with ]
+    // gg mapped with I
     // {
     //   "before": ["l", "l"],
     //   "after": ["g", "g"]
@@ -839,7 +839,7 @@
       "after": ["g", "h"]
     },
     {
-      "before": ["<leader>", "b"],
+      "before": ["|"],
       "after": ["g", "d"]
     },
     {
@@ -1739,7 +1739,7 @@
       "before": ["l", "+"],
       "after": ["g", "`"]
     },
-    // gg mapped with ]
+    // gg mapped with I
     // {
     //   "before": ["l", "l"],
     //   "after": ["g", "g"]
@@ -1947,7 +1947,7 @@
       "after": ["g", "h"]
     },
     {
-      "before": ["<leader>", "b"],
+      "before": ["|"],
       "after": ["g", "d"]
     },
     {

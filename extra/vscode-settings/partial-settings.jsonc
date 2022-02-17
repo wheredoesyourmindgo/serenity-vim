@@ -829,6 +829,10 @@
       "before": ["l", "~"],
       "after": ["g", "~"]
     },
+    {
+      "before": ["l", "%"],
+      "after": ["g", "%"]
+    },
     // VSCode Tricks
     {
       "before": ["<leader>", "x"],
@@ -1932,6 +1936,10 @@
     {
       "before": ["l", "~"],
       "after": ["g", "~"]
+    },
+    {
+      "before": ["l", "%"],
+      "after": ["g", "%"]
     },
     // VSCode Tricks
     {

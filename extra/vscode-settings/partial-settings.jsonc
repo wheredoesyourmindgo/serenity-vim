@@ -835,7 +835,7 @@
     },
     // VSCode Tricks
     {
-      "before": ["<leader>", "x"],
+      "before": ["%"],
       "after": ["g", "h"]
     },
     {
@@ -1943,7 +1943,7 @@
     },
     // VSCode Tricks
     {
-      "before": ["<leader>", "x"],
+      "before": ["%"],
       "after": ["g", "h"]
     },
     {

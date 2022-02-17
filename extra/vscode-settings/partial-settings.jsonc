@@ -129,7 +129,7 @@
       "after": ["'", "'"]
     },
     {
-      "before": ["<leader>", "s"],
+      "before": ["<leader>", "y"],
       "after": [],
       "commands": [
         {
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "before": ["<leader>", "S"],
+      "before": ["<leader>", "Y"],
       "after": [],
       "commands": [
         {
@@ -268,19 +268,19 @@
       "after": [""]
     },
     {
-      "before": ["<leader>", "t"],
+      "before": ["<leader>", "s"],
       "commands": ["editor.action.outdentLines"]
     },
     {
-      "before": ["<leader>", "e"],
+      "before": ["<leader>", "r"],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": ["<leader>", "i"],
+      "before": ["<leader>", "h"],
       "commands": ["editor.action.moveLinesUpAction"]
     },
     {
-      "before": ["<leader>", "a"],
+      "before": ["<leader>", "n"],
       "commands": ["editor.action.indentLines"]
     },
     {
@@ -344,7 +344,7 @@
       "after": ["z"]
     },
     {
-      "before": ["<leader>", "l"],
+      "before": ["@"],
       "after": ["Q"]
     },
     {
@@ -352,7 +352,7 @@
       "after": ["c"]
     },
     {
-      "before": ["<leader", "d"],
+      "before": ["#"],
       "after": ["J"]
     },
     {
@@ -364,7 +364,7 @@
       "after": ["r"]
     },
     {
-      "before": ["<leader>", "w"],
+      "before": ["$"],
       "after": ["~"]
     },
     {
@@ -947,7 +947,7 @@
       "after": ["'", "'"]
     },
     {
-      "before": ["<leader>", "s"],
+      "before": ["<leader>", "y"],
       "after": [],
       "commands": [
         {
@@ -957,7 +957,7 @@
       ]
     },
     {
-      "before": ["<leader>", "S"],
+      "before": ["<leader>", "Y"],
       "after": [],
       "commands": [
         {
@@ -1086,19 +1086,19 @@
       "after": [""]
     },
     {
-      "before": ["<leader>", "t"],
+      "before": ["<leader>", "s"],
       "commands": ["editor.action.outdentLines"]
     },
     {
-      "before": ["<leader>", "e"],
+      "before": ["<leader>", "r"],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": ["<leader>", "i"],
+      "before": ["<leader>", "h"],
       "commands": ["editor.action.moveLinesUpAction"]
     },
     {
-      "before": ["<leader>", "a"],
+      "before": ["<leader>", "n"],
       "commands": ["editor.action.indentLines"]
     },
     {
@@ -1162,7 +1162,7 @@
       "after": ["z"]
     },
     {
-      "before": ["<leader>", "l"],
+      "before": ["@"],
       "after": ["Q"]
     },
     {
@@ -1262,7 +1262,7 @@
       "after": ["c", "<leader>", "w"]
     },
     {
-      "before": ["<leader", "d"],
+      "before": ["#"],
       "after": ["J"]
     },
     {
@@ -1274,7 +1274,7 @@
       "after": ["r"]
     },
     {
-      "before": ["<leader>", "w"],
+      "before": ["$"],
       "after": ["~"]
     },
     {

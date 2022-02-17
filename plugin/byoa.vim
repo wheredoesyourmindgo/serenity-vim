@@ -402,10 +402,10 @@ noremap \ <esc>
 noremap ] ]
 noremap [ [
 " matchit plugin commands
-noremap { [%
-noremap } ]%
-noremap < ]%
-noremap > [%
+map { [%
+map } ]%
+map < ]%
+map > [%
 noremap ( <Esc>
 noremap ) <Esc>
 noremap & <Esc>

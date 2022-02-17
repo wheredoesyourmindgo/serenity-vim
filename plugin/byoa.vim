@@ -393,15 +393,15 @@ noremap <leader>0 zb
 noremap <leader><right> zz
 noremap <leader><end> zt
 noremap ? <esc>
-" Jump to bracket (| pipe symbol must be escaped, or use <bar>)
-" Goto match
-" noremap <Bar> %
 noremap / <esc>
 noremap \ <esc>
 " Bracket commands
 noremap ] ]
 noremap [ [
 " matchit plugin commands
+" Jump to bracket (| pipe symbol must be escaped, or use <bar>)
+" map <Bar> %
+map ? %
 map { [%
 map } ]%
 map < ]%

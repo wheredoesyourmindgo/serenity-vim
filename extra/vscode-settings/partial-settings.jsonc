@@ -199,11 +199,10 @@
       "before": ["*"],
       "after": ["<esc>"]
     },
-    // VSCode does same thing but better
-    // {
-    //   "before": ["?"],
-    //   "after": ["%"]
-    // },
+    {
+      "before": ["?"],
+      "after": ["%"]
+    },
     {
       "before": ["{"],
       "commands": [
@@ -1034,11 +1033,10 @@
       "before": ["*"],
       "after": ["<esc>"]
     },
-    // VSCode does same thing but better
-    // {
-    //   "before": ["?"],
-    //   "after": ["%"]
-    // },
+    {
+      "before": ["?"],
+      "after": ["%"]
+    },
     {
       "before": ["{"],
       "commands": [

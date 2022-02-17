@@ -392,8 +392,6 @@ noremap <leader><home> L
 noremap <leader>0 zb
 noremap <leader><right> zz
 noremap <leader><end> zt
-noremap < %
-noremap > 2%
 noremap ? <esc>
 " Jump to bracket (| pipe symbol must be escaped, or use <bar>)
 " Goto match
@@ -403,8 +401,11 @@ noremap \ <esc>
 " Bracket commands
 noremap ] ]
 noremap [ [
-noremap { 2%
-noremap } %
+" matchit plugin commands
+noremap { [%
+noremap } ]%
+noremap < ]%
+noremap > [%
 noremap ( <Esc>
 noremap ) <Esc>
 noremap & <Esc>

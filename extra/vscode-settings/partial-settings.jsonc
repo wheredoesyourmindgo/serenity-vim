@@ -205,7 +205,7 @@
     //   "after": ["%"]
     // },
     {
-      "before": ["?"],
+      "before": ["|"],
       "after": [],
       "commands": [
         {
@@ -220,7 +220,7 @@
       "after": ["<esc>"]
     },
     {
-      "before": ["{"],
+      "before": [""],
       "after": ["["]
     },
     {
@@ -228,7 +228,7 @@
       "after": ["<esc>"]
     },
     {
-      "before": ["}"],
+      "before": [""],
       "after": ["]"]
     },
     {
@@ -261,11 +261,11 @@
     },
     {
       "before": ["["],
-      "after": [""]
+      "after": ["]"]
     },
     {
       "before": ["]"],
-      "after": [""]
+      "after": ["["]
     },
     {
       "before": ["<leader>", "s"],
@@ -1023,7 +1023,7 @@
     //   "after": ["%"]
     // },
     {
-      "before": ["?"],
+      "before": ["|"],
       "after": [],
       "commands": [
         {
@@ -1039,7 +1039,7 @@
     },
     {
       "before": ["{"],
-      "after": ["["]
+      "after": [""]
     },
     {
       "before": ["<"],
@@ -1047,7 +1047,7 @@
     },
     {
       "before": ["}"],
-      "after": ["]"]
+      "after": [""]
     },
     {
       "before": ["<leader>", "<left>"],
@@ -1079,11 +1079,11 @@
     },
     {
       "before": ["["],
-      "after": [""]
+      "after": ["]"]
     },
     {
       "before": ["]"],
-      "after": [""]
+      "after": ["["]
     },
     {
       "before": ["<leader>", "s"],

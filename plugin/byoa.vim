@@ -456,8 +456,8 @@ noremap <C-v> <nop>
 " Record macro
 noremap ! q
 " External filter
-noremap # !
-noremap ## !!
+" noremap # !
+" noremap ## !!
 " Backspace
 noremap <bs> X
 " Delete

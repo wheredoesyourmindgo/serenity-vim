@@ -588,19 +588,19 @@
     },
     {
       "before": ["'"],
-      "after": ["}"]
-    },
-    {
-      "before": ["\""],
       "after": ["2", "<C-e>"]
     },
     {
+      "before": ["\""],
+      "after": ["}"]
+    },
+    {
       "before": [","],
-      "after": ["{"]
+      "after": ["2", "<C-y>"]
     },
     {
       "before": [";"],
-      "after": ["2", "<C-y>"]
+      "after": ["{"]
     },
     {
       "before": ["."],
@@ -1696,19 +1696,19 @@
     },
     {
       "before": ["'"],
-      "after": ["}"]
-    },
-    {
-      "before": ["\""],
       "after": ["2", "<C-e>"]
     },
     {
+      "before": ["\""],
+      "after": ["}"]
+    },
+    {
       "before": [","],
-      "after": ["{"]
+      "after": ["2", "<C-y>"]
     },
     {
       "before": [";"],
-      "after": ["2", "<C-y>"]
+      "after": ["{"]
     },
     {
       "before": ["."],

@@ -447,6 +447,8 @@ noremap <leader>h ddp
 noremap # J
 " Swap case
 noremap $ ~
+" Toggle fold
+noremap <leader>z za
 
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@

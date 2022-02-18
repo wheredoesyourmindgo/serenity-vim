@@ -845,7 +845,7 @@
       "after": ["g", "h"]
     },
     {
-      "before": ["<leader>", "k"],
+      "before": ["<leader>", "q"],
       "after": ["g", "d"]
     },
     {
@@ -1958,7 +1958,7 @@
       "after": ["g", "h"]
     },
     {
-      "before": ["<leader>", "k"],
+      "before": ["<leader>", "q"],
       "after": ["g", "d"]
     },
     {

@@ -175,6 +175,7 @@
     // Symbol commands
     {
       "before": ["<leader>", "f"],
+      // "ge"-'ish
       "after": ["<right>", "<leader>", "b", "<left>"]
     },
     {
@@ -1018,6 +1019,7 @@
     // Symbol commands
     {
       "before": ["<leader>", "f"],
+      // "ge"-'ish
       "after": ["<right>", "<leader>", "b", "<left>"]
     },
     {

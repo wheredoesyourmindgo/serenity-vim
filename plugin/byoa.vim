@@ -441,8 +441,8 @@ xnoremap <leader>n ><esc>
 nnoremap <leader>s <<
 xnoremap <leader>s <<esc>
 " swap lines
-noremap <leader>r dd<up><up>p
-noremap <leader>h ddp
+noremap <leader>r ddp
+noremap <leader>h dd<up><up>p
 " Join lines
 noremap # J
 " Swap case

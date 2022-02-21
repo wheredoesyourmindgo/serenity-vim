@@ -83,10 +83,10 @@ endif
 map <leader>y <plug>NERDCommenterToggle
 
 " bkad/CamelCaseMotion
-map <leader>f <Plug>CamelCaseMotion_w
+map <leader>f <Plug>CamelCaseMotion_ge
 map <leader>o <Plug>CamelCaseMotion_b
 map <leader>u <Plug>CamelCaseMotion_e
-map <leader>- <Plug>CamelCaseMotion_ge
+map <leader>- <Plug>CamelCaseMotion_w
 " emulate vscode plugin behavior. <leader> doesn't appear to work, use <space>
 omap <silent> y<space>w <Plug>CamelCaseMotion_ie
 xmap <silent> y<space>w <Plug>CamelCaseMotion_ie

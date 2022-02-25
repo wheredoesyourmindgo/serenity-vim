@@ -18,16 +18,16 @@ if s:byoa_keymap == 'serenity'
   let s:R1C1 = "V"
   let s:r1c2 = "l"
   let s:R1C2 = "L"
-  let s:r1c3 = "d"
-  let s:R1C3 = "D"
-  let s:r1c4 = "w"
-  let s:R1C4 = "W"
+  let s:r1c3 = "m"
+  let s:R1C3 = "M"
+  let s:r1c4 = "f"
+  let s:R1C4 = "F"
   let s:r1c5 = "x"
   let s:R1C5 = "X"
-  let s:r1c6 = "q"
-  let s:R1C6 = "Q"
-  let s:r1c7 = "f"
-  let s:R1C7 = "F"
+  let s:r1c6 = "b"
+  let s:R1C6 = "B"
+  let s:r1c7 = "w"
+  let s:R1C7 = "W"
   let s:r1c8 = "o"
   let s:R1C8 = "O"
   let s:r1c9 = "u"
@@ -38,8 +38,8 @@ if s:byoa_keymap == 'serenity'
   let s:R2C1 = "S"
   let s:r2c2 = "r"
   let s:R2C2 = "R"
-  let s:r2c3 = "h"
-  let s:R2C3 = "H"
+  let s:r2c3 = "t"
+  let s:R2C3 = "T"
   let s:r2c4 = "n"
   let s:R2C4 = "N"
   let s:r2c5 = "y"
@@ -58,16 +58,16 @@ if s:byoa_keymap == 'serenity'
   let s:R3C1 = "Z"
   let s:r3c2 = "j"
   let s:R3C2 = "J"
-  let s:r3c3 = "m"
-  let s:R3C3 = "M"
-  let s:r3c4 = "c"
-  let s:R3C4 = "C"
-  let s:r3c5 = "b"
-  let s:R3C5 = "B"
-  let s:r3c6 = "k"
-  let s:R3C6 = "K"
-  let s:r3c7 = "p"
-  let s:R3C7 = "P"
+  let s:r3c3 = "k"
+  let s:R3C3 = "K"
+  let s:r3c4 = "h"
+  let s:R3C4 = "H"
+  let s:r3c5 = "q"
+  let s:R3C5 = "Q"
+  let s:r3c6 = "p"
+  let s:R3C6 = "P"
+  let s:r3c7 = "c"
+  let s:R3C7 = "C"
   let s:r3c8 = "'"
   let s:R3C8 = '"'
   let s:r3c9 = ","
@@ -83,7 +83,7 @@ endif
 map <leader>y <plug>NERDCommenterToggle
 
 " bkad/CamelCaseMotion
-map <leader>f <Plug>CamelCaseMotion_ge
+map <leader>w <Plug>CamelCaseMotion_ge
 map <leader>o <Plug>CamelCaseMotion_b
 map <leader>u <Plug>CamelCaseMotion_e
 map <leader>- <Plug>CamelCaseMotion_w
@@ -114,12 +114,12 @@ let g:surround_no_insert_mappings = 1
 " The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
 let g:sandwich_no_default_key_mappings = 1
 silent! nmap <unique><silent> js <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> ds <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> ms <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
 silent! nmap <unique><silent> jS <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> dS <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> mS <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
-silent! nmap <unique> ms <Plug>(operator-sandwich-add)
+silent! nmap <unique> ks <Plug>(operator-sandwich-add)
 silent! xmap <unique> S <Plug>(operator-sandwich-add)
 silent! omap <unique> S <Plug>(operator-sandwich-g@)
 " delete
@@ -141,16 +141,16 @@ silent! xmap <unique> Ys <Plug>(textobj-sandwich-query-a)
 "let g:operator_sandwich_no_default_key_mappings = 1
 "let g:textobj_sandwich_no_default_key_mappings = 1
 
-nmap ms <Plug>(sandwich-add)
+nmap ks <Plug>(sandwich-add)
 onoremap <SID>line :normal! ^vg_<CR>
-nmap <silent> mss <Plug>(sandwich-add)<SID>line
+nmap <silent> kss <Plug>(sandwich-add)<SID>line
 onoremap <SID>gul g_
-nmap <silent> mS <Plug>(sandwich-add)<SID>gul
+nmap <silent> kS <Plug>(sandwich-add)<SID>gul
 
 nmap js <Plug>(sandwich-delete)
 nmap jss <Plug>(sandwich-delete-auto)
-nmap ds <Plug>(sandwich-replace)
-nmap dss <Plug>(sandwich-replace-auto)
+nmap ms <Plug>(sandwich-replace)
+nmap mss <Plug>(sandwich-replace-auto)
 
 xmap S <Plug>(sandwich-add)
 
@@ -442,7 +442,7 @@ nnoremap <leader>s <<
 xnoremap <leader>s <<esc>
 " swap lines
 noremap <leader>r ddp
-noremap <leader>h dd<up><up>p
+noremap <leader>t dd<up><up>p
 " Join lines
 noremap # J
 " Swap case
@@ -453,7 +453,7 @@ noremap <leader>z za
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@
 " Visual Block Mode
-noremap <C-g> <C-v>
+noremap <C-y> <C-v>
 noremap <C-v> <nop>
 " Record macro
 noremap ! q

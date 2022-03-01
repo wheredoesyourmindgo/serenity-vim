@@ -399,13 +399,14 @@ noremap \ <esc>
 noremap ] ]
 noremap [ [
 " matchit plugin commands
-" Jump to bracket (| pipe symbol must be escaped, or use <bar>)
+" (| pipe symbol must be escaped, or use <bar>)
 " map <Bar> %
+" there is some asymetry between vim's matchit plugin and vscodes emmet command and '%' command
 map ? %
 map { [%
 map } ]%
-map < ]%
-map > [%
+map < %
+map > %
 noremap ( <Esc>
 noremap ) <Esc>
 noremap & <Esc>

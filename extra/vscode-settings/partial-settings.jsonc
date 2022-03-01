@@ -227,11 +227,7 @@
       "before": [">"],
       "commands": [
         {
-          "command": "editor.action.jumpToBracket",
-          "args": []
-        },
-        {
-          "command": "editor.action.jumpToBracket",
+          "command": "editor.emmet.action.matchTag",
           "args": []
         }
       ]
@@ -249,7 +245,8 @@
       "before": ["<"],
       "commands": [
         {
-          "command": "editor.action.jumpToBracket",
+          // "command": "editor.action.jumpToBracket",
+          "command": "editor.emmet.action.matchTag",
           "args": []
         }
       ]
@@ -1071,11 +1068,7 @@
       "before": [">"],
       "commands": [
         {
-          "command": "editor.action.jumpToBracket",
-          "args": []
-        },
-        {
-          "command": "editor.action.jumpToBracket",
+          "command": "editor.emmet.action.matchTag",
           "args": []
         }
       ]
@@ -1093,7 +1086,8 @@
       "before": ["<"],
       "commands": [
         {
-          "command": "editor.action.jumpToBracket",
+          // "command": "editor.action.jumpToBracket",
+          "command": "editor.emmet.action.matchTag",
           "args": []
         }
       ]

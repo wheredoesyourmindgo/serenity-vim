@@ -6,31 +6,31 @@
   "vim.camelCaseMotion.enable": true,
   "vim.operatorPendingModeKeyBindingsNonRecursive": [
     {
-      "before": ["y"],
+      "before": ["p"],
       "after": ["i"]
     },
     {
-      "before": ["Y"],
+      "before": ["P"],
       "after": ["a"]
     },
     // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
-      "before": ["Y", "i"],
+      "before": ["P", "i"],
       "after": ["a", "I"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": ["y"],
+      "before": ["p"],
       "after": ["i"]
     },
     {
-      "before": ["Y"],
+      "before": ["P"],
       "after": ["a"]
     },
     // Default textobj-indent behavior is counter intuitive; select the line above and below (C,Java,Javascript) with "i", and just the line above (Python) with "I". This only belongs in visualModeKeyBindingsNonRecursive & operatorPendingMode, NOT normal mode.
     {
-      "before": ["Y", "i"],
+      "before": ["P", "i"],
       "after": ["a", "I"]
     },
     // vim-surround emulation mappings (mapped below, and is default settings)
@@ -135,7 +135,7 @@
       "after": ["'", "'"]
     },
     {
-      "before": ["<leader>", "y"],
+      "before": ["<leader>", "p"],
       "after": [],
       "commands": [
         {
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "before": ["<leader>", "Y"],
+      "before": ["<leader>", "P"],
       "after": [],
       "commands": [
         {
@@ -308,7 +308,7 @@
       "after": ["."]
     },
     {
-      "before": ["<C-y>"],
+      "before": ["<C-p>"],
       "after": ["<C-v>"]
     },
     {
@@ -392,12 +392,12 @@
       "after": ["R"]
     },
     {
-      "before": ["x"],
+      "before": ["q"],
       "commands": ["editor.action.smartSelect.grow"],
       "when": "editorTextFocus"
     },
     {
-      "before": ["X"],
+      "before": ["Q"],
       "commands": ["editor.action.smartSelect.shrink"],
       "when": "editorTextFocus"
     },
@@ -481,7 +481,7 @@
       "after": ["P"]
     },
     {
-      "before": ["q"],
+      "before": ["b"],
       "after": [],
       "commands": [
         {
@@ -491,15 +491,15 @@
       ]
     },
     {
-      "before": ["Q"],
+      "before": ["B"],
       "after": ["&"]
     },
     {
-      "before": ["b"],
+      "before": ["x"],
       "after": ["t"]
     },
     {
-      "before": ["B"],
+      "before": ["X"],
       "after": ["T"]
     },
     {
@@ -535,11 +535,11 @@
       "after": ["W"]
     },
     {
-      "before": ["g"],
+      "before": ["y"],
       "after": ["f"]
     },
     {
-      "before": ["G"],
+      "before": ["Y"],
       "after": ["F"]
     },
     {
@@ -575,11 +575,11 @@
       "after": [")"]
     },
     {
-      "before": ["p"],
+      "before": ["g"],
       "after": ["/"]
     },
     {
-      "before": ["P"],
+      "before": ["G"],
       "after": ["?"]
     },
     {
@@ -976,7 +976,7 @@
       "after": ["'", "'"]
     },
     {
-      "before": ["<leader>", "y"],
+      "before": ["<leader>", "p"],
       "after": [],
       "commands": [
         {
@@ -986,7 +986,7 @@
       ]
     },
     {
-      "before": ["<leader>", "Y"],
+      "before": ["<leader>", "P"],
       "after": [],
       "commands": [
         {
@@ -1149,7 +1149,7 @@
       "after": ["."]
     },
     {
-      "before": ["<C-y>"],
+      "before": ["<C-p>"],
       "after": ["<C-v>"]
     },
     {
@@ -1325,7 +1325,7 @@
       "after": ["R"]
     },
     {
-      "before": ["x"],
+      "before": ["q"],
       "commands": ["editor.action.smartSelect.grow"],
       "when": "editorTextFocus"
     },
@@ -1362,11 +1362,11 @@
       "after": ["O"]
     },
     {
-      "before": ["y"],
+      "before": ["p"],
       "after": ["v"]
     },
     {
-      "before": ["Y"],
+      "before": ["P"],
       "after": ["V"]
     },
     {
@@ -1592,7 +1592,7 @@
       "after": ["P"]
     },
     {
-      "before": ["q"],
+      "before": ["b"],
       "after": [],
       "commands": [
         {
@@ -1602,15 +1602,15 @@
       ]
     },
     {
-      "before": ["Q"],
+      "before": ["B"],
       "after": ["&"]
     },
     {
-      "before": ["b"],
+      "before": ["x"],
       "after": ["t"]
     },
     {
-      "before": ["B"],
+      "before": ["X"],
       "after": ["T"]
     },
     {
@@ -1646,11 +1646,11 @@
       "after": ["W"]
     },
     {
-      "before": ["g"],
+      "before": ["y"],
       "after": ["f"]
     },
     {
-      "before": ["G"],
+      "before": ["Y"],
       "after": ["F"]
     },
     {
@@ -1686,11 +1686,11 @@
       "after": [")"]
     },
     {
-      "before": ["p"],
+      "before": ["g"],
       "after": ["/"]
     },
     {
-      "before": ["P"],
+      "before": ["G"],
       "after": ["?"]
     },
     {

@@ -22,10 +22,10 @@ if s:byoa_keymap == 'serenity'
   let s:R1C3 = "M"
   let s:r1c4 = "f"
   let s:R1C4 = "F"
-  let s:r1c5 = "x"
-  let s:R1C5 = "X"
-  let s:r1c6 = "b"
-  let s:R1C6 = "B"
+  let s:r1c5 = "q"
+  let s:R1C5 = "Q"
+  let s:r1c6 = "x"
+  let s:R1C6 = "X"
   let s:r1c7 = "w"
   let s:R1C7 = "W"
   let s:r1c8 = "o"
@@ -42,10 +42,10 @@ if s:byoa_keymap == 'serenity'
   let s:R2C3 = "T"
   let s:r2c4 = "n"
   let s:R2C4 = "N"
-  let s:r2c5 = "y"
-  let s:R2C5 = "Y"
-  let s:r2c6 = "g"
-  let s:R2C6 = "G"
+  let s:r2c5 = "p"
+  let s:R2C5 = "P"
+  let s:r2c6 = "y"
+  let s:R2C6 = "Y"
   let s:r2c7 = "t"
   let s:R2C7 = "T"
   let s:r2c8 = "e"
@@ -62,10 +62,10 @@ if s:byoa_keymap == 'serenity'
   let s:R3C3 = "K"
   let s:r3c4 = "h"
   let s:R3C4 = "H"
-  let s:r3c5 = "q"
-  let s:R3C5 = "Q"
-  let s:r3c6 = "p"
-  let s:R3C6 = "P"
+  let s:r3c5 = "b"
+  let s:R3C5 = "B"
+  let s:r3c6 = "g"
+  let s:R3C6 = "G"
   let s:r3c7 = "c"
   let s:R3C7 = "C"
   let s:r3c8 = "'"
@@ -80,7 +80,7 @@ elseif s:byoa_keymap == 'qwerty'
 endif
 
 " Map leader-g to line comment toggle
-map <leader>y <plug>NERDCommenterToggle
+map <leader>p <plug>NERDCommenterToggle
 
 " bkad/CamelCaseMotion
 map <leader>w <Plug>CamelCaseMotion_ge
@@ -88,8 +88,8 @@ map <leader>o <Plug>CamelCaseMotion_b
 map <leader>u <Plug>CamelCaseMotion_e
 map <leader>- <Plug>CamelCaseMotion_w
 " emulate vscode plugin behavior. <leader> doesn't appear to work, use <space>
-omap <silent> y<space>w <Plug>CamelCaseMotion_ie
-xmap <silent> y<space>w <Plug>CamelCaseMotion_ie
+omap <silent> p<space>w <Plug>CamelCaseMotion_ie
+xmap <silent> p<space>w <Plug>CamelCaseMotion_ie
 " noremap <leader>ge <Plug>CamelCaseMotion_ge
 
 " Don't use nvim-markdown default mappings
@@ -127,14 +127,14 @@ silent! omap <unique> S <Plug>(operator-sandwich-g@)
 " replace
 " silent! xmap <unique> af <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> yS <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> yS <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> YS <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> YS <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> ys <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> ys <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> Ys <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> Ys <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> pS <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> pS <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> PS <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> PS <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> ps <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> ps <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> Ps <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> Ps <Plug>(textobj-sandwich-query-a)
 " vim-surround keymap macro (https://github.com/machakann/vim-sandwich/blob/master/macros/sandwich/keymap/surround.vim)
 
 "let g:sandwich_no_default_key_mappings = 1
@@ -361,20 +361,20 @@ map <s-F10> <Plug>HiLinkTrace
 
 " vim-textobj-entire
 let g:textobj_entire_no_default_key_mappings = 1
-xmap ye <Plug>(textobj-entire-i)
-omap ye <Plug>(textobj-entire-i)
-xmap Ye <Plug>(textobj-entire-a)
-omap Ye <Plug>(textobj-entire-a)
+xmap pe <Plug>(textobj-entire-i)
+omap pe <Plug>(textobj-entire-i)
+xmap Pe <Plug>(textobj-entire-a)
+omap Pe <Plug>(textobj-entire-a)
 " vim-textobj-indent
 let g:textobj_indent_no_default_key_mappings = 1
-xmap yi <Plug>(textobj-indent-i)
-omap yi <Plug>(textobj-indent-i)
-xmap Yi <Plug>(textobj-indent-a)
-omap Yi <Plug>(textobj-indent-a)
-xmap yI <Plug>(textobj-indent-same-i))
-omap yI <Plug>(textobj-indent-same-i))
-xmap YI <Plug>(textobj-indent-same-a)
-omap YI <Plug>(textobj-indent-same-a)
+xmap pi <Plug>(textobj-indent-i)
+omap pi <Plug>(textobj-indent-i)
+xmap Pi <Plug>(textobj-indent-a)
+omap Pi <Plug>(textobj-indent-a)
+xmap pI <Plug>(textobj-indent-same-i))
+omap pI <Plug>(textobj-indent-same-i))
+xmap PI <Plug>(textobj-indent-same-a)
+omap PI <Plug>(textobj-indent-same-a)
 
 
 " Leaders --------------------------
@@ -667,10 +667,10 @@ noremap l<Up> g<Up>
 " xnoremap g a
 " onoremap t i
 " xnoremap t i
-onoremap Y a
-xnoremap Y a
-onoremap y i
-xnoremap y i
+onoremap P a
+xnoremap P a
+onoremap p i
+xnoremap p i
 " execute 'onoremap ' . s:R2C5 . ' a'
 " execute 'xnoremap ' . s:R2C5 . ' a'
 " execute 'onoremap ' . s:r2c5 . ' i'

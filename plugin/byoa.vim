@@ -32,8 +32,8 @@ if s:byoa_keymap == 'serenity'
   let s:R1C8 = "O"
   let s:r1c9 = "u"
   let s:R1C9 = "U"
-  let s:r1c10 = "-"
-  let s:R1C10 = "_"
+  let s:r1c10 = ";"
+  let s:R1C10 = ":"
   let s:r2c1 = "s"
   let s:R2C1 = "S"
   let s:r2c2 = "r"
@@ -71,9 +71,9 @@ if s:byoa_keymap == 'serenity'
   let s:r3c8 = "'"
   let s:R3C8 = '"'
   let s:r3c9 = ","
-  let s:R3C9 = ";"
+  let s:R3C9 = "<"
   let s:r3c10 = "."
-  let s:R3C10 = ":"
+  let s:R3C10 = ">"
 elseif s:byoa_keymap == 'qwerty'
   let s:r2c10 = ";"
   let s:R2C10 = ":"
@@ -402,11 +402,11 @@ noremap [ [
 " (| pipe symbol must be escaped, or use <bar>)
 " map <Bar> %
 " there is some asymetry between vim's matchit plugin and vscodes emmet command and '%' command
-map ? %
-map { [%
+map ` %
+map / [%
 map } ]%
-map < %
-map > %
+map \ %
+map { %
 noremap ( <Esc>
 noremap ) <Esc>
 noremap & <Esc>
@@ -479,15 +479,15 @@ noremap = `
 " Goto Mark bol.
 noremap + '
 " Goto Last edit (= --> . is an awkward sfb)
-noremap =` `.
+noremap =- `.
 " Goto Last edit bol. (+ --> . is an awkward sfb)
-noremap +` '.
+noremap +- '.
 " Goto prev jump
 noremap == ``
 " Goto prev jump bol.
 noremap ++ ''
 " Set mark
-noremap ` m
+noremap - m
 
 " Alpha Commands --------------------------
 

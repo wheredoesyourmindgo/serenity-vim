@@ -187,7 +187,7 @@
       "after": ["<leader>", "e"]
     },
     {
-      "before": ["<leader>", "-"],
+      "before": ["<leader>", ";"],
       "after": ["<leader>", "w"]
     },
     {
@@ -527,11 +527,11 @@
       "after": ["E"]
     },
     {
-      "before": ["-"],
+      "before": [";"],
       "after": ["w"]
     },
     {
-      "before": ["_"],
+      "before": [":"],
       "after": ["W"]
     },
     {
@@ -1028,7 +1028,7 @@
       "after": ["<leader>", "e"]
     },
     {
-      "before": ["<leader>", "-"],
+      "before": ["<leader>", ";"],
       "after": ["<leader>", "w"]
     },
     {
@@ -1217,11 +1217,11 @@
       "after": ["c", "c"]
     },
     {
-      "before": ["m", "-"],
+      "before": ["m", ";"],
       "after": ["c", "w"]
     },
     {
-      "before": ["m", "_"],
+      "before": ["m", ":"],
       "after": ["c", "W"]
     },
     {
@@ -1301,7 +1301,7 @@
       "after": ["c", "<leader>", "e"]
     },
     {
-      "before": ["m", "<leader>", "-"],
+      "before": ["m", "<leader>", ";"],
       "after": ["c", "<leader>", "w"]
     },
     {
@@ -1392,11 +1392,11 @@
       "after": ["d", "d"]
     },
     {
-      "before": ["j", "-"],
+      "before": ["j", ";"],
       "after": ["d", "w"]
     },
     {
-      "before": ["j", "_"],
+      "before": ["j", ":"],
       "after": ["d", "W"]
     },
     {
@@ -1476,7 +1476,7 @@
       "after": ["d", "<leader>", "e"]
     },
     {
-      "before": ["j", "<leader>", "-"],
+      "before": ["j", "<leader>", ";"],
       "after": ["d", "<leader>", "w"]
     },
     {
@@ -1492,11 +1492,11 @@
       "after": ["y", "y"]
     },
     {
-      "before": ["k", "-"],
+      "before": ["k", ";"],
       "after": ["y", "w"]
     },
     {
-      "before": ["k", "_"],
+      "before": ["k", ":"],
       "after": ["y", "W"]
     },
     {
@@ -1576,7 +1576,7 @@
       "after": ["y", "<leader>", "e"]
     },
     {
-      "before": ["k", "<leader>", "-"],
+      "before": ["k", "<leader>", ";"],
       "after": ["y", "<leader>", "w"]
     },
     {
@@ -1638,11 +1638,11 @@
       "after": ["E"]
     },
     {
-      "before": ["-"],
+      "before": [";"],
       "after": ["w"]
     },
     {
-      "before": ["_"],
+      "before": [":"],
       "after": ["W"]
     },
     {

@@ -155,7 +155,7 @@
       ]
     },
     {
-      "before": ["/"],
+      "before": ["?"],
       "commands": [
         {
           "command": "editor.action.addSelectionToPreviousFindMatch",
@@ -164,7 +164,7 @@
       ]
     },
     {
-      "before": ["\\"],
+      "before": ["]"],
       "commands": [
         {
           "command": "editor.action.addSelectionToNextFindMatch",
@@ -278,14 +278,6 @@
     {
       "before": ["<leader>", "0"],
       "after": ["z", "b"]
-    },
-    {
-      "before": ["["],
-      "after": ["["]
-    },
-    {
-      "before": ["]"],
-      "after": ["]"]
     },
     {
       "before": ["<leader>", "s"],
@@ -996,7 +988,7 @@
       ]
     },
     {
-      "before": ["/"],
+      "before": ["?"],
       "commands": [
         {
           "command": "editor.action.addSelectionToPreviousFindMatch",
@@ -1005,7 +997,7 @@
       ]
     },
     {
-      "before": ["\\"],
+      "before": ["]"],
       "commands": [
         {
           "command": "editor.action.addSelectionToNextFindMatch",
@@ -1119,14 +1111,6 @@
     {
       "before": ["<leader>", "0"],
       "after": ["z", "b"]
-    },
-    {
-      "before": ["["],
-      "after": ["["]
-    },
-    {
-      "before": ["["],
-      "after": ["["]
     },
     {
       "before": ["<leader>", "s"],

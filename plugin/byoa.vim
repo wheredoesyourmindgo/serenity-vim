@@ -14,60 +14,60 @@ else
 endif
 
 if s:byoa_keymap == 'serenity'
-  let s:r1c1 = "v"
-  let s:R1C1 = "V"
+  let s:r1c1 = "x"
+  let s:R1C1 = "X"
   let s:r1c2 = "l"
   let s:R1C2 = "L"
-  let s:r1c3 = "m"
-  let s:R1C3 = "M"
-  let s:r1c4 = "f"
-  let s:R1C4 = "F"
-  let s:r1c5 = "q"
-  let s:R1C5 = "Q"
-  let s:r1c6 = "x"
-  let s:R1C6 = "X"
-  let s:r1c7 = "w"
-  let s:R1C7 = "W"
+  let s:r1c3 = "d"
+  let s:R1C3 = "D"
+  let s:r1c4 = "w"
+  let s:R1C4 = "W"
+  let s:r1c5 = "z"
+  let s:R1C5 = "Z"
+  let s:r1c6 = "k"
+  let s:R1C6 = "K"
+  let s:r1c7 = "f"
+  let s:R1C7 = "F"
   let s:r1c8 = "o"
   let s:R1C8 = "O"
   let s:r1c9 = "u"
   let s:R1C9 = "U"
   let s:r1c10 = ";"
   let s:R1C10 = ":"
-  let s:r2c1 = "s"
-  let s:R2C1 = "S"
+  let s:r2c1 = "n"
+  let s:R2C1 = "N"
   let s:r2c2 = "r"
   let s:R2C2 = "R"
   let s:r2c3 = "t"
   let s:R2C3 = "T"
-  let s:r2c4 = "n"
-  let s:R2C4 = "N"
-  let s:r2c5 = "p"
-  let s:R2C5 = "P"
+  let s:r2c4 = "s"
+  let s:R2C4 = "S"
+  let s:r2c5 = "g"
+  let s:R2C5 = "G"
   let s:r2c6 = "y"
   let s:R2C6 = "Y"
-  let s:r2c7 = "t"
-  let s:R2C7 = "T"
+  let s:r2c7 = "h"
+  let s:R2C7 = "H"
   let s:r2c8 = "e"
   let s:R2C8 = "E"
   let s:r2c9 = "i"
   let s:R2C9 = "I"
   let s:r2c10 = "a"
   let s:R2C10 = "A"
-  let s:r3c1 = "z"
-  let s:R3C1 = "Z"
+  let s:r3c1 = "b"
+  let s:R3C1 = "B"
   let s:r3c2 = "j"
   let s:R3C2 = "J"
-  let s:r3c3 = "k"
-  let s:R3C3 = "K"
-  let s:r3c4 = "h"
-  let s:R3C4 = "H"
-  let s:r3c5 = "b"
-  let s:R3C5 = "B"
-  let s:r3c6 = "g"
-  let s:R3C6 = "G"
-  let s:r3c7 = "c"
-  let s:R3C7 = "C"
+  let s:r3c3 = "m"
+  let s:R3C3 = "M"
+  let s:r3c4 = "c"
+  let s:R3C4 = "C"
+  let s:r3c5 = "q"
+  let s:R3C5 = "Q"
+  let s:r3c6 = "v"
+  let s:R3C6 = "V"
+  let s:r3c7 = "p"
+  let s:R3C7 = "P"
   let s:r3c8 = "'"
   let s:R3C8 = '"'
   let s:r3c9 = ","
@@ -80,16 +80,16 @@ elseif s:byoa_keymap == 'qwerty'
 endif
 
 " Map leader-g to line comment toggle
-map <leader>p <plug>NERDCommenterToggle
+map <leader>g <plug>NERDCommenterToggle
 
 " bkad/CamelCaseMotion
-map <leader>w <Plug>CamelCaseMotion_ge
+map <leader>f <Plug>CamelCaseMotion_ge
 map <leader>o <Plug>CamelCaseMotion_b
 map <leader>u <Plug>CamelCaseMotion_e
 map <leader>; <Plug>CamelCaseMotion_w
 " emulate vscode plugin behavior. <leader> doesn't appear to work, use <space>
-omap <silent> p<space>w <Plug>CamelCaseMotion_ie
-xmap <silent> p<space>w <Plug>CamelCaseMotion_ie
+omap <silent> g<space>f <Plug>CamelCaseMotion_ie
+xmap <silent> g<space>f <Plug>CamelCaseMotion_ie
 " noremap <leader>ge <Plug>CamelCaseMotion_ge
 
 " Don't use nvim-markdown default mappings
@@ -113,46 +113,46 @@ let g:surround_no_insert_mappings = 1
 " Don't use Sandwhich default mappings
 " The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
 let g:sandwich_no_default_key_mappings = 1
-silent! nmap <unique><silent> js <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> ms <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> jS <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> mS <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> jn <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> dn <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> jN <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> dN <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
-silent! nmap <unique> ks <Plug>(operator-sandwich-add)
-silent! xmap <unique> S <Plug>(operator-sandwich-add)
-silent! omap <unique> S <Plug>(operator-sandwich-g@)
+silent! nmap <unique> mn <Plug>(operator-sandwich-add)
+silent! xmap <unique> N <Plug>(operator-sandwich-add)
+silent! omap <unique> N <Plug>(operator-sandwich-g@)
 " delete
 " silent! xmap <unique> ax <Plug>(operator-sandwich-delete)
 " replace
 " silent! xmap <unique> af <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> pS <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> pS <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> PS <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> PS <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> ps <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> ps <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> Ps <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> Ps <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> gN <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> gN <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> GN <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> GN <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> gn <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> gn <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> Gn <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> Gn <Plug>(textobj-sandwich-query-a)
 " vim-surround keymap macro (https://github.com/machakann/vim-sandwich/blob/master/macros/sandwich/keymap/surround.vim)
 
 "let g:sandwich_no_default_key_mappings = 1
 "let g:operator_sandwich_no_default_key_mappings = 1
 "let g:textobj_sandwich_no_default_key_mappings = 1
 
-nmap ks <Plug>(sandwich-add)
+nmap mn <Plug>(sandwich-add)
 onoremap <SID>line :normal! ^vg_<CR>
-nmap <silent> kss <Plug>(sandwich-add)<SID>line
+nmap <silent> mnn <Plug>(sandwich-add)<SID>line
 onoremap <SID>gul g_
-nmap <silent> kS <Plug>(sandwich-add)<SID>gul
+nmap <silent> mN <Plug>(sandwich-add)<SID>gul
 
-nmap js <Plug>(sandwich-delete)
-nmap jss <Plug>(sandwich-delete-auto)
-nmap ms <Plug>(sandwich-replace)
-nmap mss <Plug>(sandwich-replace-auto)
+nmap jn <Plug>(sandwich-delete)
+nmap jnn <Plug>(sandwich-delete-auto)
+nmap dn <Plug>(sandwich-replace)
+nmap dnn <Plug>(sandwich-replace-auto)
 
-xmap S <Plug>(sandwich-add)
+xmap N <Plug>(sandwich-add)
 
 runtime autoload/repeat.vim
 if hasmapto('<Plug>(RepeatDot)')
@@ -361,20 +361,20 @@ map <s-F10> <Plug>HiLinkTrace
 
 " vim-textobj-entire
 let g:textobj_entire_no_default_key_mappings = 1
-xmap pe <Plug>(textobj-entire-i)
-omap pe <Plug>(textobj-entire-i)
-xmap Pe <Plug>(textobj-entire-a)
-omap Pe <Plug>(textobj-entire-a)
+xmap ge <Plug>(textobj-entire-i)
+omap ge <Plug>(textobj-entire-i)
+xmap Ge <Plug>(textobj-entire-a)
+omap Ge <Plug>(textobj-entire-a)
 " vim-textobj-indent
 let g:textobj_indent_no_default_key_mappings = 1
-xmap pi <Plug>(textobj-indent-i)
-omap pi <Plug>(textobj-indent-i)
-xmap Pi <Plug>(textobj-indent-a)
-omap Pi <Plug>(textobj-indent-a)
-xmap pI <Plug>(textobj-indent-same-i))
-omap pI <Plug>(textobj-indent-same-i))
-xmap PI <Plug>(textobj-indent-same-a)
-omap PI <Plug>(textobj-indent-same-a)
+xmap gi <Plug>(textobj-indent-i)
+omap gi <Plug>(textobj-indent-i)
+xmap Gi <Plug>(textobj-indent-a)
+omap Gi <Plug>(textobj-indent-a)
+xmap gI <Plug>(textobj-indent-same-i))
+omap gI <Plug>(textobj-indent-same-i))
+xmap GI <Plug>(textobj-indent-same-a)
+omap GI <Plug>(textobj-indent-same-a)
 
 
 " Leaders --------------------------
@@ -436,11 +436,11 @@ noremap @ Q
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
-nnoremap <leader>n >>
-xnoremap <leader>n ><esc>
+nnoremap <leader>s >>
+xnoremap <leader>s ><esc>
 " Un-indent
-nnoremap <leader>s <<
-xnoremap <leader>s <<esc>
+nnoremap <leader>n <<
+xnoremap <leader>n <<esc>
 " swap lines
 noremap <leader>r ddp
 noremap <leader>t dd<up><up>p
@@ -667,10 +667,10 @@ noremap l<Up> g<Up>
 " xnoremap g a
 " onoremap t i
 " xnoremap t i
-onoremap P a
-xnoremap P a
-onoremap p i
-xnoremap p i
+onoremap G a
+xnoremap G a
+onoremap g i
+xnoremap g i
 " execute 'onoremap ' . s:R2C5 . ' a'
 " execute 'xnoremap ' . s:R2C5 . ' a'
 " execute 'onoremap ' . s:r2c5 . ' i'

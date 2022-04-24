@@ -14,8 +14,8 @@ else
 endif
 
 if s:byoa_keymap == 'serenity'
-  let s:r1c1 = "x"
-  let s:R1C1 = "X"
+  let s:r1c1 = "q"
+  let s:R1C1 = "Q"
   let s:r1c2 = "l"
   let s:R1C2 = "L"
   let s:r1c3 = "d"
@@ -62,8 +62,8 @@ if s:byoa_keymap == 'serenity'
   let s:R3C3 = "M"
   let s:r3c4 = "c"
   let s:R3C4 = "C"
-  let s:r3c5 = "q"
-  let s:R3C5 = "Q"
+  let s:r3c5 = "x"
+  let s:R3C5 = "X"
   let s:r3c6 = "v"
   let s:R3C6 = "V"
   let s:r3c7 = "p"

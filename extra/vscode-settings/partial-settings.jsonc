@@ -174,7 +174,7 @@
     },
     // Symbol commands
     {
-      "before": ["<leader>", "f"],
+      "before": ["<leader>", "v"],
       // "ge"-'ish
       "after": ["<right>", "<leader>", "b", "<left>"]
     },
@@ -466,7 +466,7 @@
     },
     {
       "before": ["c"],
-      "after": ["p", "g", "v", "y"]
+      "after": ["p"]
     },
     {
       "before": ["C"],
@@ -487,19 +487,19 @@
       "after": ["&"]
     },
     {
-      "before": ["k"],
+      "before": ["y"],
       "after": ["t"]
     },
     {
-      "before": ["K"],
+      "before": ["Y"],
       "after": ["T"]
     },
     {
-      "before": ["f"],
+      "before": ["v"],
       "after": ["g", "e"]
     },
     {
-      "before": ["F"],
+      "before": ["V"],
       "after": ["g", "E"]
     },
     {
@@ -527,11 +527,11 @@
       "after": ["W"]
     },
     {
-      "before": ["y"],
+      "before": ["p"],
       "after": ["f"]
     },
     {
-      "before": ["Y"],
+      "before": ["P"],
       "after": ["F"]
     },
     {
@@ -567,19 +567,19 @@
       "after": [")"]
     },
     {
-      "before": ["v"],
+      "before": ["k"],
       "after": ["/"]
     },
     {
-      "before": ["V"],
+      "before": ["K"],
       "after": ["?"]
     },
     {
-      "before": ["p"],
+      "before": ["f"],
       "after": ["N"]
     },
     {
-      "before": ["P"],
+      "before": ["F"],
       "after": ["#"]
     },
     {
@@ -831,15 +831,15 @@
     },
     // VSCode Tricks
     {
-      "before": ["<leader>", "k"],
+      "before": ["<leader>", "z"],
       "after": ["g", "h"]
     },
     {
-      "before": ["<leader>", "x"],
+      "before": ["<leader>", "y"],
       "after": ["g", "d"]
     },
     {
-      "before": ["<leader>", "z"],
+      "before": ["<leader>", "x"],
       "after": ["g", "q"]
     },
     {
@@ -1007,7 +1007,7 @@
     },
     // Symbol commands
     {
-      "before": ["<leader>", "f"],
+      "before": ["<leader>", "v"],
       // "ge"-'ish
       "after": ["<right>", "<leader>", "b", "<left>"]
     },
@@ -1225,11 +1225,11 @@
       "after": ["c", "B"]
     },
     {
-      "before": ["d", "f"],
+      "before": ["d", "v"],
       "after": ["c", "g", "e"]
     },
     {
-      "before": ["d", "F"],
+      "before": ["d", "V"],
       "after": ["c", "g", "E"]
     },
     // {
@@ -1257,23 +1257,23 @@
       "after": ["c", "G"]
     },
     {
-      "before": ["d", "y"],
+      "before": ["d", "p"],
       "after": ["c", "f"]
     },
     {
-      "before": ["d", "Y"],
+      "before": ["d", "P"],
       "after": ["c", "F"]
     },
     {
-      "before": ["d", "v"],
+      "before": ["d", "k"],
       "after": ["c", "t"]
     },
     {
-      "before": ["d", "V"],
+      "before": ["d", "K"],
       "after": ["c", "T"]
     },
     {
-      "before": ["d", "<leader>", "f"],
+      "before": ["d", "<leader>", "v"],
       "after": ["c", "<right>", "<leader>", "b", "<left>"]
     },
     {
@@ -1400,11 +1400,11 @@
       "after": ["d", "B"]
     },
     {
-      "before": ["j", "f"],
+      "before": ["j", "v"],
       "after": ["d", "g", "e"]
     },
     {
-      "before": ["j", "F"],
+      "before": ["j", "V"],
       "after": ["d", "g", "E"]
     },
     // {
@@ -1432,23 +1432,23 @@
       "after": ["d", "G"]
     },
     {
-      "before": ["j", "y"],
+      "before": ["j", "p"],
       "after": ["d", "f"]
     },
     {
-      "before": ["j", "Y"],
+      "before": ["j", "P"],
       "after": ["d", "F"]
     },
     {
-      "before": ["j", "v"],
+      "before": ["j", "k"],
       "after": ["d", "t"]
     },
     {
-      "before": ["j", "V"],
+      "before": ["j", "K"],
       "after": ["d", "T"]
     },
     {
-      "before": ["j", "<leader>", "f"],
+      "before": ["j", "<leader>", "v"],
       "after": ["d", "<right>", "<leader>", "b", "<left>"]
     },
     {
@@ -1500,11 +1500,11 @@
       "after": ["y", "B"]
     },
     {
-      "before": ["m", "f"],
+      "before": ["m", "v"],
       "after": ["y", "g", "e"]
     },
     {
-      "before": ["m", "F"],
+      "before": ["m", "V"],
       "after": ["y", "g", "E"]
     },
     // {
@@ -1532,23 +1532,23 @@
       "after": ["y", "G"]
     },
     {
-      "before": ["m", "g"],
+      "before": ["m", "p"],
       "after": ["y", "f"]
     },
     {
-      "before": ["m", "G"],
+      "before": ["m", "P"],
       "after": ["y", "F"]
     },
     {
-      "before": ["m", "b"],
+      "before": ["m", "k"],
       "after": ["y", "t"]
     },
     {
-      "before": ["m", "B"],
+      "before": ["m", "K"],
       "after": ["y", "T"]
     },
     {
-      "before": ["m", "<leader>", "f"],
+      "before": ["m", "<leader>", "v"],
       "after": ["y", "<right>", "<leader>", "b", "<left>"]
     },
     {
@@ -1590,19 +1590,19 @@
       "after": ["&"]
     },
     {
-      "before": ["k"],
+      "before": ["y"],
       "after": ["t"]
     },
     {
-      "before": ["K"],
+      "before": ["Y"],
       "after": ["T"]
     },
     {
-      "before": ["f"],
+      "before": ["v"],
       "after": ["g", "e"]
     },
     {
-      "before": ["F"],
+      "before": ["V"],
       "after": ["g", "E"]
     },
     {
@@ -1630,11 +1630,11 @@
       "after": ["W"]
     },
     {
-      "before": ["y"],
+      "before": ["p"],
       "after": ["f"]
     },
     {
-      "before": ["Y"],
+      "before": ["P"],
       "after": ["F"]
     },
     {
@@ -1670,19 +1670,19 @@
       "after": [")"]
     },
     {
-      "before": ["v"],
+      "before": ["k"],
       "after": ["/"]
     },
     {
-      "before": ["V"],
+      "before": ["K"],
       "after": ["?"]
     },
     {
-      "before": ["p"],
+      "before": ["f"],
       "after": ["N"]
     },
     {
-      "before": ["P"],
+      "before": ["F"],
       "after": ["#"]
     },
     {
@@ -1934,15 +1934,15 @@
     },
     // VSCode Tricks
     {
-      "before": ["<leader>", "k"],
+      "before": ["<leader>", "z"],
       "after": ["g", "h"]
     },
     {
-      "before": ["<leader>", "x"],
+      "before": ["<leader>", "y"],
       "after": ["g", "d"]
     },
     {
-      "before": ["<leader>", "z"],
+      "before": ["<leader>", "x"],
       "after": ["g", "q"]
     },
     {

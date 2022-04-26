@@ -24,10 +24,10 @@ if s:byoa_keymap == 'serenity'
   let s:R1C4 = "W"
   let s:r1c5 = "z"
   let s:R1C5 = "Z"
-  let s:r1c6 = "k"
-  let s:R1C6 = "K"
-  let s:r1c7 = "f"
-  let s:R1C7 = "F"
+  let s:r1c6 = "y"
+  let s:R1C6 = "Y"
+  let s:r1c7 = "v"
+  let s:R1C7 = "V"
   let s:r1c8 = "o"
   let s:R1C8 = "O"
   let s:r1c9 = "u"
@@ -44,8 +44,8 @@ if s:byoa_keymap == 'serenity'
   let s:R2C4 = "S"
   let s:r2c5 = "g"
   let s:R2C5 = "G"
-  let s:r2c6 = "y"
-  let s:R2C6 = "Y"
+  let s:r2c6 = "p"
+  let s:R2C6 = "P"
   let s:r2c7 = "h"
   let s:R2C7 = "H"
   let s:r2c8 = "e"
@@ -64,10 +64,10 @@ if s:byoa_keymap == 'serenity'
   let s:R3C4 = "C"
   let s:r3c5 = "x"
   let s:R3C5 = "X"
-  let s:r3c6 = "v"
-  let s:R3C6 = "V"
-  let s:r3c7 = "p"
-  let s:R3C7 = "P"
+  let s:r3c6 = "k"
+  let s:R3C6 = "K"
+  let s:r3c7 = "f"
+  let s:R3C7 = "F"
   let s:r3c8 = "'"
   let s:R3C8 = '"'
   let s:r3c9 = ","
@@ -83,13 +83,13 @@ endif
 map <leader>g <plug>NERDCommenterToggle
 
 " bkad/CamelCaseMotion
-map <leader>f <Plug>CamelCaseMotion_ge
+map <leader>v <Plug>CamelCaseMotion_ge
 map <leader>o <Plug>CamelCaseMotion_b
 map <leader>u <Plug>CamelCaseMotion_e
 map <leader>; <Plug>CamelCaseMotion_w
 " emulate vscode plugin behavior. <leader> doesn't appear to work, use <space>
-omap <silent> g<space>f <Plug>CamelCaseMotion_ie
-xmap <silent> g<space>f <Plug>CamelCaseMotion_ie
+omap <silent> g<space>v <Plug>CamelCaseMotion_ie
+xmap <silent> g<space>v <Plug>CamelCaseMotion_ie
 " noremap <leader>ge <Plug>CamelCaseMotion_ge
 
 " Don't use nvim-markdown default mappings

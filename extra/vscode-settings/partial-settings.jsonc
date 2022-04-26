@@ -1265,11 +1265,11 @@
       "after": ["c", "F"]
     },
     {
-      "before": ["d", "k"],
+      "before": ["d", "y"],
       "after": ["c", "t"]
     },
     {
-      "before": ["d", "K"],
+      "before": ["d", "Y"],
       "after": ["c", "T"]
     },
     {
@@ -1440,11 +1440,11 @@
       "after": ["d", "F"]
     },
     {
-      "before": ["j", "k"],
+      "before": ["j", "y"],
       "after": ["d", "t"]
     },
     {
-      "before": ["j", "K"],
+      "before": ["j", "Y"],
       "after": ["d", "T"]
     },
     {
@@ -1540,11 +1540,11 @@
       "after": ["y", "F"]
     },
     {
-      "before": ["m", "k"],
+      "before": ["m", "y"],
       "after": ["y", "t"]
     },
     {
-      "before": ["m", "K"],
+      "before": ["m", "Y"],
       "after": ["y", "T"]
     },
     {

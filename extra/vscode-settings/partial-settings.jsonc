@@ -466,11 +466,11 @@
     },
     {
       "before": ["c"],
-      "after": ["p"]
+      "after": ["p", "g", "v", "y"]
     },
     {
       "before": ["C"],
-      "after": ["P"]
+      "after": ["P", "g", "v", "y"]
     },
     {
       "before": ["x"],

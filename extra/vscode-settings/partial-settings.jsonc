@@ -65,7 +65,7 @@
       "when": "editorTextFocus"
     },
     // {
-    //   "before": ["<leader>", "v"],
+    //   "before": ["<leader>", "q"],
     //   "after": [],
     //   "commands": [
     //     {
@@ -75,7 +75,7 @@
     //   ]
     // },
     // {
-    //   "before": ["<leader>", "V"],
+    //   "before": ["<leader>", "Q"],
     //   "after": [],
     //   "commands": [
     //     {
@@ -340,11 +340,11 @@
       "after": ["="]
     },
     {
-      "before": ["x"],
+      "before": ["q"],
       "after": ["\""]
     },
     // {
-    //   "before": ["X"],
+    //   "before": ["Q"],
     //   "after": [""]
     // },
     {
@@ -435,7 +435,7 @@
     //   "after": ["V"]
     // },
     {
-      "before": ["q"],
+      "before": ["x"],
       "after": [],
       "commands": [
         {
@@ -445,7 +445,7 @@
       ]
     },
     {
-      "before": ["Q"],
+      "before": ["X"],
       "after": ["U"]
     },
     {
@@ -898,7 +898,7 @@
       "when": "editorTextFocus"
     },
     // {
-    //   "before": ["<leader>", "v"],
+    //   "before": ["<leader>", "q"],
     //   "after": [],
     //   "commands": [
     //     {
@@ -908,7 +908,7 @@
     //   ]
     // },
     // {
-    //   "before": ["<leader>", "V"],
+    //   "before": ["<leader>", "Q"],
     //   "after": [],
     //   "commands": [
     //     {
@@ -1173,11 +1173,11 @@
       "after": ["="]
     },
     {
-      "before": ["x"],
+      "before": ["q"],
       "after": ["\""]
     },
     // {
-    //   "before": ["X"],
+    //   "before": ["Q"],
     //   "after": [""]
     // },
     {
@@ -1354,7 +1354,7 @@
       "after": ["V"]
     },
     {
-      "before": ["q"],
+      "before": ["x"],
       "after": [],
       "commands": [
         {
@@ -1364,7 +1364,7 @@
       ]
     },
     {
-      "before": ["Q"],
+      "before": ["X"],
       "after": ["U"]
     },
     {

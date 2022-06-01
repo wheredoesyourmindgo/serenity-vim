@@ -60,7 +60,7 @@
       "commands": [":noh"]
     },
     {
-      "before": ["<leader>", "x"],
+      "before": ["<leader>", "q"],
       "commands": ["editor.toggleFold"],
       "when": "editorTextFocus"
     },
@@ -340,11 +340,11 @@
       "after": ["="]
     },
     {
-      "before": ["q"],
+      "before": ["x"],
       "after": ["\""]
     },
     // {
-    //   "before": ["Q"],
+    //   "before": ["X"],
     //   "after": [""]
     // },
     {
@@ -435,7 +435,7 @@
     //   "after": ["V"]
     // },
     {
-      "before": ["x"],
+      "before": ["q"],
       "after": [],
       "commands": [
         {
@@ -445,7 +445,7 @@
       ]
     },
     {
-      "before": ["X"],
+      "before": ["Q"],
       "after": ["U"]
     },
     {
@@ -893,7 +893,7 @@
       "commands": [":noh"]
     },
     {
-      "before": ["<leader>", "x"],
+      "before": ["<leader>", "q"],
       "commands": ["editor.toggleFold"],
       "when": "editorTextFocus"
     },
@@ -1173,11 +1173,11 @@
       "after": ["="]
     },
     {
-      "before": ["q"],
+      "before": ["x"],
       "after": ["\""]
     },
     // {
-    //   "before": ["Q"],
+    //   "before": ["X"],
     //   "after": [""]
     // },
     {
@@ -1354,7 +1354,7 @@
       "after": ["V"]
     },
     {
-      "before": ["x"],
+      "before": ["q"],
       "after": [],
       "commands": [
         {
@@ -1364,7 +1364,7 @@
       ]
     },
     {
-      "before": ["X"],
+      "before": ["Q"],
       "after": ["U"]
     },
     {

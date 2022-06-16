@@ -14,8 +14,8 @@ else
 endif
 
 if s:byoa_keymap == 'serenity'
-  let s:r1c1 = "x"
-  let s:R1C1 = "X"
+  let s:r1c1 = "q"
+  let s:R1C1 = "Q"
   let s:r1c2 = "l"
   let s:R1C2 = "L"
   let s:r1c3 = "d"
@@ -54,8 +54,8 @@ if s:byoa_keymap == 'serenity'
   let s:R2C9 = "I"
   let s:r2c10 = "a"
   let s:R2C10 = "A"
-  let s:r3c1 = "q"
-  let s:R3C1 = "Q"
+  let s:r3c1 = "x"
+  let s:R3C1 = "X"
   let s:r3c2 = "j"
   let s:R3C2 = "J"
   let s:r3c3 = "m"
@@ -435,15 +435,15 @@ noremap <S-PageDown> <C-d>
 noremap @ Q
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
+" Indent
+nnoremap <leader>s >>
+xnoremap <leader>s ><esc>
 " Un-indent
 nnoremap <leader>n <<
 xnoremap <leader>n <<esc>
 " swap lines
 noremap <leader>r ddp
 noremap <leader>t dd<up><up>p
-" Indent
-nnoremap <leader>s >>
-xnoremap <leader>s ><esc>
 " Join lines
 noremap # J
 " Swap case

@@ -392,21 +392,21 @@ noremap <leader><home> L
 noremap <leader>0 zb
 noremap <leader><right> zz
 noremap <leader><end> zt
-noremap ? <esc>
-noremap / <esc>
-noremap \ <esc>
 " Bracket commands
-noremap ] ]
-noremap [ [
 " matchit plugin commands
 " (| pipe symbol must be escaped, or use <bar>)
 " map <Bar> %
 " there is some asymetry between vim's matchit plugin and vscodes emmet command and '%' command
-map ` %
-map / [%
+map - %
+map ; [%
 map } ]%
-map \ %
+map = %
 map { %
+" unused keys
+noremap : <esc>
+noremap ] <esc>
+noremap _ <Esc>
+noremap + <Esc>
 noremap ( <Esc>
 noremap ) <Esc>
 noremap & <Esc>
@@ -478,10 +478,6 @@ noremap <tab> .
 noremap ' `
 " Goto Mark bol.
 noremap " '
-" Goto Last edit (= --> . is an awkward sfb)
-noremap '` `.
-" Goto Last edit bol. (+ --> . is an awkward sfb)
-noremap "` '.
 " Goto prev jump
 noremap '' ``
 " Goto prev jump bol.

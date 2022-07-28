@@ -114,16 +114,6 @@
       "before": ["\""],
       "after": ["'"]
     },
-    // goto Last edit (= --> . is an awkward sfb)
-    {
-      "before": ["'", "`"],
-      "after": ["`", "."]
-    },
-    // Goto Last edit bol. (+ --> . is an awkward sfb)
-    {
-      "before": ["\"", "`"],
-      "after": ["'", "."]
-    },
     // goto prev. jump
     {
       "before": ["'", "'"],
@@ -207,11 +197,11 @@
       "after": ["<esc>"]
     },
     {
-      "before": ["`"],
+      "before": ["-"],
       "after": ["%"]
     },
     {
-      "before": ["/"],
+      "before": [";"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",
@@ -242,7 +232,7 @@
       ]
     },
     {
-      "before": ["\\"],
+      "before": ["="],
       "commands": [
         {
           // "command": "editor.action.jumpToBracket",
@@ -947,16 +937,6 @@
       "before": ["\""],
       "after": ["'"]
     },
-    // goto Last edit (= --> . is an awkward sfb)
-    {
-      "before": ["'", "`"],
-      "after": ["`", "."]
-    },
-    // Goto Last edit bol. (+ --> . is an awkward sfb)
-    {
-      "before": ["\"", "`"],
-      "after": ["'", "."]
-    },
     // goto prev. jump
     {
       "before": ["'", "'"],
@@ -1040,11 +1020,11 @@
       "after": ["<esc>"]
     },
     {
-      "before": ["`"],
+      "before": ["-"],
       "after": ["%"]
     },
     {
-      "before": ["/"],
+      "before": [";"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",
@@ -1075,7 +1055,7 @@
       ]
     },
     {
-      "before": ["\\"],
+      "before": ["="],
       "commands": [
         {
           // "command": "editor.action.jumpToBracket",

@@ -101,7 +101,7 @@
     },
     // set mark
     {
-      "before": ["-"],
+      "before": ["`"],
       "after": ["m"]
     },
     // jump to mark
@@ -116,12 +116,12 @@
     },
     // goto Last edit (= --> . is an awkward sfb)
     {
-      "before": ["'", "-"],
+      "before": ["'", "`"],
       "after": ["`", "."]
     },
     // Goto Last edit bol. (+ --> . is an awkward sfb)
     {
-      "before": ["\"", "-"],
+      "before": ["\"", "`"],
       "after": ["'", "."]
     },
     // goto prev. jump
@@ -187,7 +187,7 @@
       "after": ["<leader>", "e"]
     },
     {
-      "before": ["<leader>", ";"],
+      "before": ["<leader>", "\\"],
       "after": ["<leader>", "w"]
     },
     {
@@ -519,11 +519,11 @@
       "after": ["E"]
     },
     {
-      "before": [";"],
+      "before": ["\\"],
       "after": ["w"]
     },
     {
-      "before": [":"],
+      "before": ["|"],
       "after": ["W"]
     },
     {
@@ -624,7 +624,7 @@
       "after": ["g", "'"]
     },
     {
-      "before": ["l", "+"],
+      "before": ["l", "`"],
       "after": ["g", "`"]
     },
     // gg mapped with I
@@ -934,7 +934,7 @@
     },
     // set mark
     {
-      "before": ["-"],
+      "before": ["`"],
       "after": ["m"]
     },
     // jump to mark
@@ -949,12 +949,12 @@
     },
     // goto Last edit (= --> . is an awkward sfb)
     {
-      "before": ["'", "-"],
+      "before": ["'", "`"],
       "after": ["`", "."]
     },
     // Goto Last edit bol. (+ --> . is an awkward sfb)
     {
-      "before": ["\"", "-"],
+      "before": ["\"", "`"],
       "after": ["'", "."]
     },
     // goto prev. jump
@@ -1020,7 +1020,7 @@
       "after": ["<leader>", "e"]
     },
     {
-      "before": ["<leader>", ";"],
+      "before": ["<leader>", "\\"],
       "after": ["<leader>", "w"]
     },
     {
@@ -1201,11 +1201,11 @@
       "after": ["c", "c"]
     },
     {
-      "before": ["y", ";"],
+      "before": ["y", "\\"],
       "after": ["c", "w"]
     },
     {
-      "before": ["y", ":"],
+      "before": ["y", "|"],
       "after": ["c", "W"]
     },
     {
@@ -1285,7 +1285,7 @@
       "after": ["c", "<leader>", "e"]
     },
     {
-      "before": ["y", "<leader>", ";"],
+      "before": ["y", "<leader>", "\\"],
       "after": ["c", "<leader>", "w"]
     },
     {
@@ -1376,11 +1376,11 @@
       "after": ["d", "d"]
     },
     {
-      "before": ["j", ";"],
+      "before": ["j", "\\"],
       "after": ["d", "w"]
     },
     {
-      "before": ["j", ":"],
+      "before": ["j", "|"],
       "after": ["d", "W"]
     },
     {
@@ -1460,7 +1460,7 @@
       "after": ["d", "<leader>", "e"]
     },
     {
-      "before": ["j", "<leader>", ";"],
+      "before": ["j", "<leader>", "\\"],
       "after": ["d", "<leader>", "w"]
     },
     {
@@ -1476,11 +1476,11 @@
       "after": ["y", "y"]
     },
     {
-      "before": ["v", ";"],
+      "before": ["v", "\\"],
       "after": ["y", "w"]
     },
     {
-      "before": ["v", ":"],
+      "before": ["v", "|"],
       "after": ["y", "W"]
     },
     {
@@ -1560,7 +1560,7 @@
       "after": ["y", "<leader>", "e"]
     },
     {
-      "before": ["v", "<leader>", ";"],
+      "before": ["v", "<leader>", "\\"],
       "after": ["y", "<leader>", "w"]
     },
     {
@@ -1622,11 +1622,11 @@
       "after": ["E"]
     },
     {
-      "before": [";"],
+      "before": ["\\"],
       "after": ["w"]
     },
     {
-      "before": [":"],
+      "before": ["|"],
       "after": ["W"]
     },
     {
@@ -1727,7 +1727,7 @@
       "after": ["g", "'"]
     },
     {
-      "before": ["l", "+"],
+      "before": ["l", "`"],
       "after": ["g", "`"]
     },
     // gg mapped with I

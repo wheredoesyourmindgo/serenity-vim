@@ -32,8 +32,8 @@ if s:byoa_keymap == 'serenity'
   let s:R1C8 = "O"
   let s:r1c9 = "u"
   let s:R1C9 = "U"
-  let s:r1c10 = ";"
-  let s:R1C10 = ":"
+  let s:r1c10 = "\"
+  let s:R1C10 = "|"
   let s:r2c1 = "c"
   let s:R2C1 = "C"
   let s:r2c2 = "r"
@@ -479,15 +479,15 @@ noremap ' `
 " Goto Mark bol.
 noremap " '
 " Goto Last edit (= --> . is an awkward sfb)
-noremap '- `.
+noremap '` `.
 " Goto Last edit bol. (+ --> . is an awkward sfb)
-noremap "- '.
+noremap "` '.
 " Goto prev jump
 noremap '' ``
 " Goto prev jump bol.
 noremap "" ''
 " Set mark
-noremap - m
+noremap ` m
 
 " Alpha Commands --------------------------
 

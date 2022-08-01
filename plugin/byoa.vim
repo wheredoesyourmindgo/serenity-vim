@@ -14,28 +14,28 @@ else
 endif
 
 if s:byoa_keymap == 'serenity'
-  let s:r1c1 = "w"
-  let s:R1C1 = "W"
+  let s:r1c1 = "q"
+  let s:R1C1 = "Q"
   let s:r1c2 = "l"
   let s:R1C2 = "L"
-  let s:r1c3 = "y"
-  let s:R1C3 = "Y"
+  let s:r1c3 = "c"
+  let s:R1C3 = "C"
   let s:r1c4 = "p"
   let s:R1C4 = "P"
-  let s:r1c5 = "k"
-  let s:R1C5 = "K"
-  let s:r1c6 = "x"
-  let s:R1C6 = "X"
+  let s:r1c5 = "b"
+  let s:R1C5 = "B"
+  let s:r1c6 = "j"
+  let s:R1C6 = "J"
   let s:r1c7 = "f"
   let s:R1C7 = "F"
   let s:r1c8 = "o"
   let s:R1C8 = "O"
   let s:r1c9 = "u"
   let s:R1C9 = "U"
-  let s:r1c10 = "\"
-  let s:R1C10 = "|"
-  let s:r2c1 = "c"
-  let s:R2C1 = "C"
+  let s:r1c10 = ";"
+  let s:R1C10 = ":"
+  let s:r2c1 = "y"
+  let s:R2C1 = "Y"
   let s:r2c2 = "r"
   let s:R2C2 = "R"
   let s:r2c3 = "s"
@@ -54,18 +54,18 @@ if s:byoa_keymap == 'serenity'
   let s:R2C9 = "I"
   let s:r2c10 = "a"
   let s:R2C10 = "A"
-  let s:r3c1 = "q"
-  let s:R3C1 = "Q"
-  let s:r3c2 = "j"
-  let s:R3C2 = "J"
-  let s:r3c3 = "v"
-  let s:R3C3 = "V"
+  let s:r3c1 = "v"
+  let s:R3C1 = "V"
+  let s:r3c2 = "x"
+  let s:R3C2 = "X"
+  let s:r3c3 = "w"
+  let s:R3C3 = "W"
   let s:r3c4 = "d"
   let s:R3C4 = "D"
   let s:r3c5 = "z"
   let s:R3C5 = "Z"
-  let s:r3c6 = "b"
-  let s:R3C6 = "B"
+  let s:r3c6 = "k"
+  let s:R3C6 = "K"
   let s:r3c7 = "h"
   let s:R3C7 = "H"
   let s:r3c8 = "/"
@@ -113,46 +113,46 @@ let g:surround_no_insert_mappings = 1
 " Don't use Sandwhich default mappings
 " The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
 let g:sandwich_no_default_key_mappings = 1
-silent! nmap <unique><silent> jc <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> yc <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> jC <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> yC <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> xy <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> cy <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> xY <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> cY <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
-silent! nmap <unique> vn <Plug>(operator-sandwich-add)
-silent! xmap <unique> C <Plug>(operator-sandwich-add)
-silent! omap <unique> C <Plug>(operator-sandwich-g@)
+silent! nmap <unique> wy <Plug>(operator-sandwich-add)
+silent! xmap <unique> Y <Plug>(operator-sandwich-add)
+silent! omap <unique> Y <Plug>(operator-sandwich-g@)
 " delete
 " silent! xmap <unique> ax <Plug>(operator-sandwich-delete)
 " replace
 " silent! xmap <unique> af <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> gC <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> gC <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> GC <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> GC <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> gc <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> gc <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> Gc <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> Gc <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> gY <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> gY <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> GY <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> GY <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> gy <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> gy <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> Gy <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> Gy <Plug>(textobj-sandwich-query-a)
 " vim-surround keymap macro (https://github.com/machakann/vim-sandwich/blob/master/macros/sandwich/keymap/surround.vim)
 
 "let g:sandwich_no_default_key_mappings = 1
 "let g:operator_sandwich_no_default_key_mappings = 1
 "let g:textobj_sandwich_no_default_key_mappings = 1
 
-nmap vc <Plug>(sandwich-add)
+nmap wy <Plug>(sandwich-add)
 onoremap <SID>line :normal! ^vg_<CR>
-nmap <silent> vcc <Plug>(sandwich-add)<SID>line
+nmap <silent> wyy <Plug>(sandwich-add)<SID>line
 onoremap <SID>gul g_
-nmap <silent> vC <Plug>(sandwich-add)<SID>gul
+nmap <silent> wY <Plug>(sandwich-add)<SID>gul
 
-nmap jc <Plug>(sandwich-delete)
-nmap jcc <Plug>(sandwich-delete-auto)
-nmap yc <Plug>(sandwich-replace)
-nmap ycc <Plug>(sandwich-replace-auto)
+nmap xy <Plug>(sandwich-delete)
+nmap xyy <Plug>(sandwich-delete-auto)
+nmap cy <Plug>(sandwich-replace)
+nmap cyy <Plug>(sandwich-replace-auto)
 
-xmap C <Plug>(sandwich-add)
+xmap Y <Plug>(sandwich-add)
 
 runtime autoload/repeat.vim
 if hasmapto('<Plug>(RepeatDot)')
@@ -439,8 +439,8 @@ noremap @ Q
 nnoremap <leader>t >>
 xnoremap <leader>t ><esc>
 " Un-indent
-nnoremap <leader>c <<
-xnoremap <leader>c <<esc>
+nnoremap <leader>y <<
+xnoremap <leader>y <<esc>
 " swap lines
 noremap <leader>r ddp
 noremap <leader>s dd<up><up>p
@@ -449,7 +449,7 @@ noremap # J
 " Swap case
 noremap $ ~
 " Toggle fold
-noremap <leader>q za
+noremap <leader>v za
 
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@
@@ -483,7 +483,7 @@ noremap '' ``
 " Goto prev jump bol.
 noremap "" ''
 " Set mark
-noremap ` m
+noremap - m
 
 " Alpha Commands --------------------------
 

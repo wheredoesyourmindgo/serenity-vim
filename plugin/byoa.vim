@@ -397,15 +397,15 @@ noremap <leader><end> zt
 " (| pipe symbol must be escaped, or use <bar>)
 " map <Bar> %
 " there is some asymetry between vim's matchit plugin and vscodes emmet command and '%' command
-map - %
-map ; [%
+map ` %
+map \ [%
 map } ]%
 map = %
 map { %
 " unused keys
-noremap : <esc>
+noremap | <esc>
 noremap ] <esc>
-noremap _ <Esc>
+noremap ~ <Esc>
 noremap + <Esc>
 noremap ( <Esc>
 noremap ) <Esc>

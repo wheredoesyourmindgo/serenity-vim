@@ -197,11 +197,11 @@
       "after": ["<esc>"]
     },
     {
-      "before": ["-"],
+      "before": ["`"],
       "after": ["%"]
     },
     {
-      "before": [";"],
+      "before": ["\\"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",
@@ -1020,11 +1020,11 @@
       "after": ["<esc>"]
     },
     {
-      "before": ["-"],
+      "before": ["`"],
       "after": ["%"]
     },
     {
-      "before": [";"],
+      "before": ["\\"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",

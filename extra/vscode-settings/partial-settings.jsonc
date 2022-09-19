@@ -270,7 +270,7 @@
       "after": ["z", "b"]
     },
     {
-      "before": ["<leader>", "y"],
+      "before": ["<leader>", "m"],
       "commands": ["editor.action.outdentLines"]
     },
     {
@@ -384,11 +384,11 @@
       "when": "editorTextFocus"
     },
     {
-      "before": ["y"],
+      "before": ["m"],
       "after": ["s"]
     },
     {
-      "before": ["Y"],
+      "before": ["M"],
       "after": ["S"]
     },
     {
@@ -517,11 +517,11 @@
       "after": ["W"]
     },
     {
-      "before": ["m"],
+      "before": ["y"],
       "after": ["f"]
     },
     {
-      "before": ["M"],
+      "before": ["Y"],
       "after": ["F"]
     },
     {
@@ -846,19 +846,19 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     // vim-surround mappings
     {
-      "before": ["w", "y"],
+      "before": ["w", "m"],
       "after": ["<plugys>"]
     },
     {
-      "before": ["w", "y", "y"],
+      "before": ["w", "m", "m"],
       "after": ["<plugys>", "<plugys>"]
     },
     {
-      "before": ["x", "y"],
+      "before": ["x", "m"],
       "after": ["<plugds>"]
     },
     {
-      "before": ["c", "y"],
+      "before": ["c", "m"],
       "after": ["<plugcs>"]
     },
     {
@@ -1093,7 +1093,7 @@
       "after": ["z", "b"]
     },
     {
-      "before": ["<leader>", "y"],
+      "before": ["<leader>", "m"],
       "commands": ["editor.action.outdentLines"]
     },
     {
@@ -1237,11 +1237,11 @@
       "after": ["c", "G"]
     },
     {
-      "before": ["c", "m"],
+      "before": ["c", "y"],
       "after": ["c", "f"]
     },
     {
-      "before": ["c", "M"],
+      "before": ["c", "Y"],
       "after": ["c", "F"]
     },
     {
@@ -1294,11 +1294,11 @@
       "when": "editorTextFocus"
     },
     {
-      "before": ["y"],
+      "before": ["m"],
       "after": ["s"]
     },
     {
-      "before": ["Y"],
+      "before": ["M"],
       "after": ["S"]
     },
     {
@@ -1412,11 +1412,11 @@
       "after": ["d", "G"]
     },
     {
-      "before": ["x", "m"],
+      "before": ["x", "y"],
       "after": ["d", "f"]
     },
     {
-      "before": ["x", "M"],
+      "before": ["x", "Y"],
       "after": ["d", "F"]
     },
     {
@@ -1512,11 +1512,11 @@
       "after": ["y", "G"]
     },
     {
-      "before": ["w", "m"],
+      "before": ["w", "y"],
       "after": ["y", "f"]
     },
     {
-      "before": ["w", "M"],
+      "before": ["w", "Y"],
       "after": ["y", "F"]
     },
     {
@@ -1610,11 +1610,11 @@
       "after": ["W"]
     },
     {
-      "before": ["m"],
+      "before": ["y"],
       "after": ["f"]
     },
     {
-      "before": ["M"],
+      "before": ["Y"],
       "after": ["F"]
     },
     {

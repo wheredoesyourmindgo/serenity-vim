@@ -34,8 +34,8 @@ if s:byoa_keymap == 'serenity'
   let s:R1C9 = "U"
   let s:r1c10 = ";"
   let s:R1C10 = ":"
-  let s:r2c1 = "y"
-  let s:R2C1 = "Y"
+  let s:r2c1 = "m"
+  let s:R2C1 = "M"
   let s:r2c2 = "r"
   let s:R2C2 = "R"
   let s:r2c3 = "s"
@@ -44,8 +44,8 @@ if s:byoa_keymap == 'serenity'
   let s:R2C4 = "T"
   let s:r2c5 = "g"
   let s:R2C5 = "G"
-  let s:r2c6 = "m"
-  let s:R2C6 = "M"
+  let s:r2c6 = "y"
+  let s:R2C6 = "Y"
   let s:r2c7 = "n"
   let s:R2C7 = "N"
   let s:r2c8 = "e"
@@ -113,46 +113,46 @@ let g:surround_no_insert_mappings = 1
 " Don't use Sandwhich default mappings
 " The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
 let g:sandwich_no_default_key_mappings = 1
-silent! nmap <unique><silent> xy <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> cy <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> xY <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> cY <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> xm <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> cm <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> xM <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> cM <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
-silent! nmap <unique> wy <Plug>(operator-sandwich-add)
-silent! xmap <unique> Y <Plug>(operator-sandwich-add)
-silent! omap <unique> Y <Plug>(operator-sandwich-g@)
+silent! nmap <unique> wm <Plug>(operator-sandwich-add)
+silent! xmap <unique> M <Plug>(operator-sandwich-add)
+silent! omap <unique> M <Plug>(operator-sandwich-g@)
 " delete
 " silent! xmap <unique> ax <Plug>(operator-sandwich-delete)
 " replace
 " silent! xmap <unique> af <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> gY <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> gY <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> GY <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> GY <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> gy <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> gy <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> Gy <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> Gy <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> gM <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> gM <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> GM <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> GM <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> gm <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> gm <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> Gm <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> Gm <Plug>(textobj-sandwich-query-a)
 " vim-surround keymap macro (https://github.com/machakann/vim-sandwich/blob/master/macros/sandwich/keymap/surround.vim)
 
 "let g:sandwich_no_default_key_mappings = 1
 "let g:operator_sandwich_no_default_key_mappings = 1
 "let g:textobj_sandwich_no_default_key_mappings = 1
 
-nmap wy <Plug>(sandwich-add)
+nmap wm <Plug>(sandwich-add)
 onoremap <SID>line :normal! ^vg_<CR>
-nmap <silent> wyy <Plug>(sandwich-add)<SID>line
+nmap <silent> wmm <Plug>(sandwich-add)<SID>line
 onoremap <SID>gul g_
-nmap <silent> wY <Plug>(sandwich-add)<SID>gul
+nmap <silent> wM <Plug>(sandwich-add)<SID>gul
 
-nmap xy <Plug>(sandwich-delete)
-nmap xyy <Plug>(sandwich-delete-auto)
-nmap cy <Plug>(sandwich-replace)
-nmap cyy <Plug>(sandwich-replace-auto)
+nmap xm <Plug>(sandwich-delete)
+nmap xmm <Plug>(sandwich-delete-auto)
+nmap cm <Plug>(sandwich-replace)
+nmap cmm <Plug>(sandwich-replace-auto)
 
-xmap Y <Plug>(sandwich-add)
+xmap M <Plug>(sandwich-add)
 
 runtime autoload/repeat.vim
 if hasmapto('<Plug>(RepeatDot)')
@@ -439,8 +439,8 @@ noremap @ Q
 nnoremap <leader>t >>
 xnoremap <leader>t ><esc>
 " Un-indent
-nnoremap <leader>y <<
-xnoremap <leader>y <<esc>
+nnoremap <leader>m <<
+xnoremap <leader>m <<esc>
 " swap lines
 noremap <leader>r ddp
 noremap <leader>s dd<up><up>p
@@ -454,8 +454,8 @@ noremap <leader>v za
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@
 " Visual Block Mode
-noremap <C-y> <C-v>
-noremap <C-v> <nop>
+" noremap <C-y> <C-v>
+" noremap <C-v> <nop>
 " Record macro
 noremap ! q
 " External filter

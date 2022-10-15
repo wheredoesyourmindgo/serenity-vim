@@ -385,13 +385,13 @@ omap GI <Plug>(textobj-indent-same-a)
 " noremap <leader>V ZQ
 
 " jump to position
-noremap <leader>7 H
-noremap <leader><left> M
-noremap <leader><home> L
+noremap <leader>i H
+noremap <leader>y M
+noremap <leader>e L
 " scroll to position
-noremap <leader>0 zb
-noremap <leader><right> zz
-noremap <leader><end> zt
+noremap <leader>/ zb
+noremap <leader>k zz
+noremap <leader>, zt
 " Bracket commands
 " matchit plugin commands
 " (| pipe symbol must be escaped, or use <bar>)

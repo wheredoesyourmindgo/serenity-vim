@@ -242,15 +242,15 @@
       ]
     },
     {
-      "before": ["<leader>", "<left>"],
+      "before": ["<leader>", "y"],
       "after": ["M"]
     },
     {
-      "before": ["<leader>", "7"],
+      "before": ["<leader>", "i"],
       "after": ["H"]
     },
     {
-      "before": ["<leader>", "<home>"],
+      "before": ["<leader>", "e"],
       "after": ["L"]
     },
     // {
@@ -258,15 +258,15 @@
     //   "after": ["z"]
     // },
     {
-      "before": ["<leader>", "<right>"],
+      "before": ["<leader>", "k"],
       "after": ["z", "z"]
     },
     {
-      "before": ["<leader>", "<end>"],
+      "before": ["<leader>", ","],
       "after": ["z", "t"]
     },
     {
-      "before": ["<leader>", "0"],
+      "before": ["<leader>", "/"],
       "after": ["z", "b"]
     },
     {
@@ -829,7 +829,7 @@
       "after": ["g", "d"]
     },
     {
-      "before": ["<leader>", "k"],
+      "before": ["<leader>", "z"],
       "after": ["g", "q"]
     },
     {
@@ -1065,15 +1065,15 @@
       ]
     },
     {
-      "before": ["<leader>", "<left>"],
+      "before": ["<leader>", "y"],
       "after": ["M"]
     },
     {
-      "before": ["<leader>", "7"],
+      "before": ["<leader>", "i"],
       "after": ["H"]
     },
     {
-      "before": ["<leader>", "<home>"],
+      "before": ["<leader>", "e"],
       "after": ["L"]
     },
     // {
@@ -1081,15 +1081,15 @@
     //   "after": ["z"]
     // },
     {
-      "before": ["<leader>", "<right>"],
+      "before": ["<leader>", "k"],
       "after": ["z", "z"]
     },
     {
-      "before": ["<leader>", "<end>"],
+      "before": ["<leader>", ","],
       "after": ["z", "t"]
     },
     {
-      "before": ["<leader>", "0"],
+      "before": ["<leader>", "/"],
       "after": ["z", "b"]
     },
     {
@@ -1922,7 +1922,7 @@
       "after": ["g", "d"]
     },
     {
-      "before": ["<leader>", "k"],
+      "before": ["<leader>", "z"],
       "after": ["g", "q"]
     },
     {

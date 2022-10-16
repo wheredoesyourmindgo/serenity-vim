@@ -436,14 +436,14 @@ noremap @ Q
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
-nnoremap <leader>t >>
-xnoremap <leader>t ><esc>
+nnoremap <leader><right> >>
+xnoremap <leader><right> ><esc>
 " Un-indent
-nnoremap <leader>m <<
-xnoremap <leader>m <<esc>
+nnoremap <leader><left> <<
+xnoremap <leader><left> <<esc>
 " swap lines
-noremap <leader>r ddp
-noremap <leader>s dd<up><up>p
+noremap <leader><down> ddp
+noremap <leader><up> dd<up><up>p
 " Join lines
 noremap # J
 " Swap case

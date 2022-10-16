@@ -270,19 +270,19 @@
       "after": ["z", "b"]
     },
     {
-      "before": ["<leader>", "m"],
+      "before": ["<leader>", "<left>"],
       "commands": ["editor.action.outdentLines"]
     },
     {
-      "before": ["<leader>", "r"],
+      "before": ["<leader>", "<down>"],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": ["<leader>", "s"],
+      "before": ["<leader>", "<up>"],
       "commands": ["editor.action.moveLinesUpAction"]
     },
     {
-      "before": ["<leader>", "t"],
+      "before": ["<leader>", "<right>"],
       "commands": ["editor.action.indentLines"]
     },
     {
@@ -1093,19 +1093,19 @@
       "after": ["z", "b"]
     },
     {
-      "before": ["<leader>", "m"],
+      "before": ["<leader>", "<left>"],
       "commands": ["editor.action.outdentLines"]
     },
     {
-      "before": ["<leader>", "r"],
+      "before": ["<leader>", "<down>"],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": ["<leader>", "s"],
+      "before": ["<leader>", "<up>"],
       "commands": ["editor.action.moveLinesUpAction"]
     },
     {
-      "before": ["<leader>", "t"],
+      "before": ["<leader>", "<right>"],
       "commands": ["editor.action.indentLines"]
     },
     {

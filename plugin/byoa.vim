@@ -403,7 +403,8 @@ map } ]%
 map = %
 map { %
 " unused keys
-noremap | <esc>
+" (| pipe symbol must be escaped, or use <bar>)
+noremap <bar> <esc>
 noremap ] <esc>
 noremap ~ <Esc>
 noremap + <Esc>

@@ -124,6 +124,16 @@
       "before": ["\"", "\""],
       "after": ["'", "'"]
     },
+    // goto prev. edit
+    {
+      "before": ["'", "-"],
+      "after": ["`", "."]
+    },
+    // goto prev. edit bol.
+    {
+      "before": ["\"", "-"],
+      "after": ["'", "."]
+    },
     {
       "before": ["<leader>", "g"],
       "after": [],
@@ -946,6 +956,16 @@
     {
       "before": ["\"", "\""],
       "after": ["'", "'"]
+    },
+    // goto prev. edit
+    {
+      "before": ["'", "-"],
+      "after": ["`", "."]
+    },
+    // goto prev. edit bol.
+    {
+      "before": ["\"", "-"],
+      "after": ["'", "."]
     },
     {
       "before": ["<leader>", "g"],

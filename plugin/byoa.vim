@@ -483,6 +483,10 @@ noremap " '
 noremap '' ``
 " Goto prev jump bol.
 noremap "" ''
+" Goto prev edit
+noremap '- `.
+" Goto prev edit bol.
+noremap "- '.
 " Set mark
 noremap - m
 

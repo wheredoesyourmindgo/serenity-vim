@@ -273,11 +273,11 @@
     },
     {
       "before": ["<leader>", ","],
-      "after": ["z", "t"]
+      "after": ["z", "b"]
     },
     {
       "before": ["<leader>", "/"],
-      "after": ["z", "b"]
+      "after": ["z", "t"]
     },
     {
       "before": ["<leader>", "<left>"],
@@ -1106,11 +1106,11 @@
     },
     {
       "before": ["<leader>", ","],
-      "after": ["z", "t"]
+      "after": ["z", "b"]
     },
     {
       "before": ["<leader>", "/"],
-      "after": ["z", "b"]
+      "after": ["z", "t"]
     },
     {
       "before": ["<leader>", "<left>"],

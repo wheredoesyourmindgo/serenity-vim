@@ -389,9 +389,9 @@ noremap <leader>i H
 noremap <leader>y M
 noremap <leader>e L
 " scroll to position
-noremap <leader>/ zb
+noremap <leader>/ zt
 noremap <leader>k zz
-noremap <leader>, zt
+noremap <leader>, zb
 " Bracket commands
 " matchit plugin commands
 " (| pipe symbol must be escaped, or use <bar>)

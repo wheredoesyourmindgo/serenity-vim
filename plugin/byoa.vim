@@ -398,7 +398,7 @@ noremap <leader>, zb
 " map <Bar> %
 " there is some asymetry between vim's matchit plugin and vscodes emmet command and '%' command
 map ` %
-map \ [%
+map + [%
 map } ]%
 map = %
 map { %
@@ -407,7 +407,7 @@ map { %
 noremap <bar> <esc>
 noremap ] <esc>
 noremap ~ <Esc>
-noremap + <Esc>
+noremap \ <Esc>
 noremap ( <Esc>
 noremap ) <Esc>
 noremap & <Esc>

@@ -211,7 +211,7 @@
       "after": ["%"]
     },
     {
-      "before": ["\\"],
+      "before": ["+"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",
@@ -1044,7 +1044,7 @@
       "after": ["%"]
     },
     {
-      "before": ["\\"],
+      "before": ["+"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",

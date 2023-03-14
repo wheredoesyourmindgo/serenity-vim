@@ -570,24 +570,24 @@ execute 'noremap ' . s:R2C6 . ' F'
 " noremap i -
 " noremap I <C-y>
 execute 'noremap ' . s:r2c7 . ' ,'
-execute 'noremap ' . s:R2C7 . ' ('
+execute 'noremap ' . s:R2C7 . ' #'
 execute 'noremap ' . s:r2c8 . ' +'
 execute 'noremap ' . s:R2C8 . ' G'
 execute 'noremap ' . s:r2c9 . ' -'
 execute 'noremap ' . s:R2C9 . ' gg'
 execute 'noremap ' . s:r2c10 . ' ;'
-execute 'noremap ' . s:R2C10 . ' )'
+execute 'noremap ' . s:R2C10 . ' *'
 " right r3
 execute 'noremap ' . s:r3c6 . ' /'
 execute 'noremap ' . s:R3C6 . ' ?'
 execute 'noremap ' . s:r3c7 . ' N'
-execute 'noremap ' . s:R3C7 . ' #'
+execute 'noremap ' . s:R3C7 . ' ('
 execute 'noremap ' . s:r3c8 . ' 2<C-e>'
 execute 'noremap ' . s:R3C8 . ' }'
 execute 'noremap ' . s:r3c9 . ' 2<C-y>'
 execute 'noremap ' . s:R3C9 . ' {'
 execute 'noremap ' . s:r3c10 . ' n'
-execute 'noremap ' . s:R3C10 . ' *'
+execute 'noremap ' . s:R3C10 . ' )'
 
 " g mappings
 noremap l# g#

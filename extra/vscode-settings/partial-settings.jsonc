@@ -91,7 +91,7 @@
     },
     // Bol. down
     {
-      "before": ["~"],
+      "before": ["<leader>", "H"],
       "after": ["_"]
     },
     // Hard Bol.
@@ -884,7 +884,7 @@
     },
     // Bol. down
     {
-      "before": ["~"],
+      "before": ["<leader>", "H"],
       "after": ["_"]
     },
     // Hard Bol.

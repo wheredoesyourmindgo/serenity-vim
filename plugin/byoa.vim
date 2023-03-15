@@ -414,7 +414,7 @@ noremap <leader><tab> K
 noremap <leader>< ]
 noremap <leader>> [
 " Bol. down
-map ~ _
+map <leader>H _
 " Bol.
 noremap <home> ^
 " Hard Bol.

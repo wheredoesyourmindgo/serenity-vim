@@ -86,12 +86,12 @@
     // },
     // Bol.
     {
-      "before": ["~"],
+      "before": ["<home>"],
       "after": ["^"]
     },
     // Bol. down
     {
-      "before": ["<home>"],
+      "before": ["~"],
       "after": ["_"]
     },
     // Hard Bol.
@@ -99,11 +99,6 @@
       "before": ["<leader>", "h"],
       "after": ["0"]
     },
-    // Hard Bol. not working here, see keybindings.json
-    // {
-    //   "before": ["<S-home>"],
-    //   "after": ["0"]
-    // },
     // Eol.
     {
       "before": ["<end>"],
@@ -884,12 +879,12 @@
     // },
     // Bol.
     {
-      "before": ["~"],
+      "before": ["<home>"],
       "after": ["^"]
     },
     // Bol. down
     {
-      "before": ["<home>"],
+      "before": ["~"],
       "after": ["_"]
     },
     // Hard Bol.
@@ -897,11 +892,6 @@
       "before": ["<leader>", "h"],
       "after": ["0"]
     },
-    // Hard Bol. not working here, see keybindings.json
-    // {
-    //   "before": ["<S-home>"],
-    //   "after": ["0"]
-    // },
     // Eol.
     {
       "before": ["<end>"],
@@ -1164,7 +1154,7 @@
     },
     // {
     //   "before": ["d", "n"],
-    //   "after": ["c", "^"]
+    //   "after": ["c", "_"]
     // },
     // {
     //   "before": ["d", "n"],
@@ -1172,7 +1162,7 @@
     // },
     {
       "before": ["c", "<home>"],
-      "after": ["c", "_"]
+      "after": ["c", "^"]
     },
     {
       "before": ["c", "<end>"],
@@ -1339,7 +1329,7 @@
     },
     // {
     //   "before": ["x", "n"],
-    //   "after": ["d", "^"]
+    //   "after": ["d", "_"]
     // },
     // {
     //   "before": ["x", "n"],
@@ -1347,7 +1337,7 @@
     // },
     {
       "before": ["x", "<home>"],
-      "after": ["d", "_"]
+      "after": ["d", "^"]
     },
     {
       "before": ["x", "<end>"],
@@ -1439,7 +1429,7 @@
     },
     // {
     //   "before": ["w", "n"],
-    //   "after": ["y", "^"]
+    //   "after": ["y", "_"]
     // },
     // {
     //   "before": ["w", "n"],
@@ -1447,7 +1437,7 @@
     // },
     {
       "before": ["w", "<home>"],
-      "after": ["y", "_"]
+      "after": ["y", "^"]
     },
     {
       "before": ["w", "<end>"],

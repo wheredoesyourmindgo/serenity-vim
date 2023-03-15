@@ -401,7 +401,6 @@ noremap <leader>' %
 " unused keys
 map ` <esc>
 map ^ <esc>
-map ~ ^
 " sentences
 " (| pipe symbol must be escaped, or use <bar>)
 noremap <bar> (
@@ -415,7 +414,9 @@ noremap <leader><tab> K
 noremap <leader>< ]
 noremap <leader>> [
 " Bol. down
-noremap <home> _
+map ~ _
+" Bol.
+noremap <home> ^
 " Hard Bol.
 "noremap <S-Home> 0
 noremap <leader>h 0

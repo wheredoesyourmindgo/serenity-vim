@@ -83,10 +83,10 @@ endif
 map <leader>g <plug>NERDCommenterToggle
 
 " bkad/CamelCaseMotion
-map <leader>f <Plug>CamelCaseMotion_ge
-map <leader>o <Plug>CamelCaseMotion_b
-map <leader>u <Plug>CamelCaseMotion_e
-map <leader>; <Plug>CamelCaseMotion_w
+map & <Plug>CamelCaseMotion_ge
+map * <Plug>CamelCaseMotion_b
+map ( <Plug>CamelCaseMotion_e
+map ) <Plug>CamelCaseMotion_w
 " emulate vscode plugin behavior. <leader> doesn't appear to work, use <space>
 omap <silent> g<space>f <Plug>CamelCaseMotion_ie
 xmap <silent> g<space>f <Plug>CamelCaseMotion_ie
@@ -396,22 +396,19 @@ noremap <leader>, zb
 " matchit plugin commands
 " (| pipe symbol must be escaped, or use <bar>)
 " map <Bar> %
-" there is some asymetry between vim's matchit plugin and vscodes emmet command and '%' command
-map ` %
-map + [%
-map } ]%
-map = %
-map { %
+" there is some asymetry between vim's matchit plugin and vscodes emmet command, '%' command, and next bracket command
+noremap <leader>' %
 " unused keys
+map ` <esc>
+map ^ <esc>
+map ~ ^
+" sentences
 " (| pipe symbol must be escaped, or use <bar>)
-noremap <bar> <esc>
-noremap ] <esc>
-noremap ~ <Esc>
-noremap \ <Esc>
-noremap ( <Esc>
-noremap ) <Esc>
-noremap & <Esc>
-noremap * <Esc>
+noremap <bar> (
+noremap ] )
+" paragraphs
+noremap \ }
+noremap [ {
 " Help
 noremap <leader><tab> K
 " Bracket cmds
@@ -420,31 +417,32 @@ noremap <leader>> [
 " Bol. down
 noremap <home> _
 " Hard Bol.
-noremap <S-Home> 0
+"noremap <S-Home> 0
+noremap <leader>h 0
 " Eol.
 noremap <End> $
 " Pg up
 noremap <PageUp> <C-b>
 " Half Pg up
-" todo - shifted pageup & pagedown not working in terminal vim, only gvim.
-noremap <S-PageUp> <C-u>
+" todo - shifted pageup & pagedown not working in terminal vim, only gvim and neovim.
+" noremap <S-PageUp> <C-u>
 " Pg down
 noremap <PageDown> <C-f>
 " Half Pg down
-noremap <S-PageDown> <C-d>
+" noremap <S-PageDown> <C-d>
 " Expert mode
 noremap @ Q
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
-nnoremap <leader><right> >>
-xnoremap <leader><right> ><esc>
+nnoremap + >>
+xnoremap } ><esc>
 " Un-indent
 nnoremap <leader><left> <<
 xnoremap <leader><left> <<esc>
 " swap lines
-noremap <leader><down> ddp
-noremap <leader><up> dd<up><up>p
+noremap = ddp
+noremap { dd<up><up>p
 " Join lines
 noremap # J
 " Swap case
@@ -570,22 +568,22 @@ execute 'noremap ' . s:R2C6 . ' F'
 " noremap i -
 " noremap I <C-y>
 execute 'noremap ' . s:r2c7 . ' ,'
-execute 'noremap ' . s:R2C7 . ' ('
+"execute 'noremap ' . s:R2C7 . ' ('
 execute 'noremap ' . s:r2c8 . ' +'
 execute 'noremap ' . s:R2C8 . ' G'
 execute 'noremap ' . s:r2c9 . ' -'
 execute 'noremap ' . s:R2C9 . ' gg'
 execute 'noremap ' . s:r2c10 . ' ;'
-execute 'noremap ' . s:R2C10 . ' )'
+"execute 'noremap ' . s:R2C10 . ' )'
 " right r3
 execute 'noremap ' . s:r3c6 . ' /'
 execute 'noremap ' . s:R3C6 . ' ?'
 execute 'noremap ' . s:r3c7 . ' N'
 execute 'noremap ' . s:R3C7 . ' #'
-execute 'noremap ' . s:r3c8 . ' 2<C-e>'
-execute 'noremap ' . s:R3C8 . ' }'
-execute 'noremap ' . s:r3c9 . ' 2<C-y>'
-execute 'noremap ' . s:R3C9 . ' {'
+execute 'noremap ' . s:r3c8 . ' <C-e>'
+execute 'noremap ' . s:R3C8 . ' <C-d>'
+execute 'noremap ' . s:r3c9 . ' <C-y>'
+execute 'noremap ' . s:R3C9 . ' <C-u>'
 execute 'noremap ' . s:r3c10 . ' n'
 execute 'noremap ' . s:R3C10 . ' *'
 

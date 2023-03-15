@@ -84,10 +84,20 @@
     //     }
     //   ]
     // },
+    // Bol.
+    {
+      "before": ["~"],
+      "after": ["^"]
+    },
     // Bol. down
     {
       "before": ["<home>"],
       "after": ["_"]
+    },
+    // Hard Bol.
+    {
+      "before": ["<leader>", "h"],
+      "after": ["0"]
     },
     // Hard Bol. not working here, see keybindings.json
     // {
@@ -156,66 +166,44 @@
     },
     // Symbol commands
     {
-      "before": ["<leader>", "f"],
+      "before": ["&"],
       // "ge"-'ish
       "after": ["<right>", "<leader>", "b", "<left>"]
     },
     {
-      "before": ["<leader>", "o"],
+      "before": ["*"],
       "after": ["<leader>", "b"]
     },
     {
-      "before": ["<leader>", "u"],
+      "before": ["("],
       "after": ["<leader>", "e"]
     },
     {
-      "before": ["<leader>", ";"],
+      "before": [")"],
       "after": ["<leader>", "w"]
     },
+    // {
+    //   "before": ["<leader>", "'"],
+    //   "after": ["%"]
+    // },
     {
-      "before": ["&"],
-      "after": ["<esc>"]
+      "before": ["|"],
+      "after": ["("]
     },
     {
-      "before": ["("],
-      "after": ["<esc>"]
+      "before": ["\\"],
+      "after": ["}"]
     },
     {
-      "before": [")"],
-      "after": ["<esc>"]
+      "before": ["["],
+      "after": ["{"]
     },
     {
-      "before": ["*"],
-      "after": ["<esc>"]
+      "before": ["]"],
+      "after": [")"]
     },
     {
-      "before": ["`"],
-      "after": ["%"]
-    },
-    {
-      "before": ["+"],
-      "commands": [
-        {
-          "command": "editor.action.jumpToBracket",
-          "args": []
-        },
-        {
-          "command": "editor.action.jumpToBracket",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["{"],
-      "commands": [
-        {
-          "command": "editor.emmet.action.matchTag",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["}"],
+      "before": ["<leader>", "'"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",
@@ -224,10 +212,9 @@
       ]
     },
     {
-      "before": ["="],
+      "before": ["<leader>", "\""],
       "commands": [
         {
-          // "command": "editor.action.jumpToBracket",
           "command": "editor.emmet.action.matchTag",
           "args": []
         }
@@ -245,10 +232,6 @@
       "before": ["<leader>", "e"],
       "after": ["L"]
     },
-    // {
-    //   "before": ["|"],
-    //   "after": ["z"]
-    // },
     {
       "before": ["<leader>", "k"],
       "after": ["z", "z"]
@@ -262,19 +245,19 @@
       "after": ["z", "t"]
     },
     {
-      "before": ["<leader>", "<left>"],
+      "before": ["+"],
       "commands": ["editor.action.outdentLines"]
     },
     {
-      "before": ["<leader>", "<down>"],
+      "before": ["="],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": ["<leader>", "<up>"],
+      "before": ["{"],
       "commands": ["editor.action.moveLinesUpAction"]
     },
     {
-      "before": ["<leader>", "<right>"],
+      "before": ["}"],
       "commands": ["editor.action.indentLines"]
     },
     {
@@ -520,10 +503,10 @@
       "before": ["n"],
       "after": ["'"]
     },
-    {
-      "before": ["N"],
-      "after": ["("]
-    },
+    // {
+    //   "before": ["N"],
+    //   "after": ["("]
+    // },
     {
       "before": ["e"],
       "after": ["+"]
@@ -544,10 +527,10 @@
       "before": ["a"],
       "after": [";"]
     },
-    {
-      "before": ["A"],
-      "after": [")"]
-    },
+    // {
+    //   "before": ["A"],
+    //   "after": [")"]
+    // },
     {
       "before": ["k"],
       "after": ["/"]
@@ -566,19 +549,19 @@
     },
     {
       "before": ["/"],
-      "after": ["2", "<C-e>"]
+      "after": ["<C-e>"]
     },
     {
       "before": ["?"],
-      "after": ["}"]
+      "after": ["<C-d>"]
     },
     {
       "before": [","],
-      "after": ["2", "<C-y>"]
+      "after": ["<C-y>"]
     },
     {
       "before": ["<"],
-      "after": ["{"]
+      "after": ["<C-u>"]
     },
     {
       "before": ["."],
@@ -899,10 +882,20 @@
     //     }
     //   ]
     // },
+    // Bol.
+    {
+      "before": ["~"],
+      "after": ["^"]
+    },
     // Bol. down
     {
       "before": ["<home>"],
       "after": ["_"]
+    },
+    // Hard Bol.
+    {
+      "before": ["<leader>", "h"],
+      "after": ["0"]
     },
     // Hard Bol. not working here, see keybindings.json
     // {
@@ -971,66 +964,44 @@
     },
     // Symbol commands
     {
-      "before": ["<leader>", "f"],
+      "before": ["&"],
       // "ge"-'ish
       "after": ["<right>", "<leader>", "b", "<left>"]
     },
     {
-      "before": ["<leader>", "o"],
+      "before": ["*"],
       "after": ["<leader>", "b"]
     },
     {
-      "before": ["<leader>", "u"],
+      "before": ["("],
       "after": ["<leader>", "e"]
     },
     {
-      "before": ["<leader>", ";"],
+      "before": [")"],
       "after": ["<leader>", "w"]
     },
+    // {
+    //   "before": ["<leader>", "'"],
+    //   "after": ["%"]
+    // },
     {
-      "before": ["&"],
-      "after": ["<esc>"]
+      "before": ["|"],
+      "after": ["("]
     },
     {
-      "before": ["("],
-      "after": ["<esc>"]
+      "before": ["\\"],
+      "after": ["}"]
     },
     {
-      "before": [")"],
-      "after": ["<esc>"]
+      "before": ["["],
+      "after": ["{"]
     },
     {
-      "before": ["*"],
-      "after": ["<esc>"]
+      "before": ["]"],
+      "after": [")"]
     },
     {
-      "before": ["`"],
-      "after": ["%"]
-    },
-    {
-      "before": ["+"],
-      "commands": [
-        {
-          "command": "editor.action.jumpToBracket",
-          "args": []
-        },
-        {
-          "command": "editor.action.jumpToBracket",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["{"],
-      "commands": [
-        {
-          "command": "editor.emmet.action.matchTag",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["}"],
+      "before": ["<leader>", "'"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",
@@ -1039,10 +1010,9 @@
       ]
     },
     {
-      "before": ["="],
+      "before": ["<leader>", "\""],
       "commands": [
         {
-          // "command": "editor.action.jumpToBracket",
           "command": "editor.emmet.action.matchTag",
           "args": []
         }
@@ -1060,10 +1030,6 @@
       "before": ["<leader>", "e"],
       "after": ["L"]
     },
-    // {
-    //   "before": ["|"],
-    //   "after": ["z"]
-    // },
     {
       "before": ["<leader>", "k"],
       "after": ["z", "z"]
@@ -1077,19 +1043,19 @@
       "after": ["z", "t"]
     },
     {
-      "before": ["<leader>", "<left>"],
+      "before": ["+"],
       "commands": ["editor.action.outdentLines"]
     },
     {
-      "before": ["<leader>", "<down>"],
+      "before": ["="],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": ["<leader>", "<up>"],
+      "before": ["{"],
       "commands": ["editor.action.moveLinesUpAction"]
     },
     {
-      "before": ["<leader>", "<right>"],
+      "before": ["}"],
       "commands": ["editor.action.indentLines"]
     },
     {
@@ -1605,10 +1571,10 @@
       "before": ["n"],
       "after": [","]
     },
-    {
-      "before": ["N"],
-      "after": ["("]
-    },
+    // {
+    //   "before": ["N"],
+    //   "after": ["("]
+    // },
     {
       "before": ["e"],
       "after": ["+"]
@@ -1629,10 +1595,10 @@
       "before": ["a"],
       "after": [";"]
     },
-    {
-      "before": ["A"],
-      "after": [")"]
-    },
+    // {
+    //   "before": ["A"],
+    //   "after": [")"]
+    // },
     {
       "before": ["k"],
       "after": ["/"]
@@ -1651,19 +1617,19 @@
     },
     {
       "before": ["/"],
-      "after": ["2", "<C-e>"]
+      "after": ["<C-e>"]
     },
     {
       "before": ["?"],
-      "after": ["}"]
+      "after": ["<C-d>"]
     },
     {
       "before": [","],
-      "after": ["2", "<C-y>"]
+      "after": ["<C-y>"]
     },
     {
       "before": ["<"],
-      "after": ["{"]
+      "after": ["<C-u>"]
     },
     {
       "before": ["."],

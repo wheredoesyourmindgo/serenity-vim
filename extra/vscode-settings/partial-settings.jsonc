@@ -96,7 +96,7 @@
     },
     // Hard Bol.
     {
-      "before": ["<leader>", "h"],
+      "before": ["N"],
       "after": ["0"]
     },
     // Eol.
@@ -198,7 +198,7 @@
       "after": [")"]
     },
     {
-      "before": ["<leader>", "'"],
+      "before": ["A"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",
@@ -207,7 +207,7 @@
       ]
     },
     {
-      "before": ["<leader>", "\""],
+      "before": ["<leader>", "a"],
       "commands": [
         {
           "command": "editor.emmet.action.matchTag",
@@ -889,7 +889,7 @@
     },
     // Hard Bol.
     {
-      "before": ["<leader>", "h"],
+      "before": ["N"],
       "after": ["0"]
     },
     // Eol.
@@ -991,7 +991,7 @@
       "after": [")"]
     },
     {
-      "before": ["<leader>", "'"],
+      "before": ["A"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",
@@ -1000,7 +1000,7 @@
       ]
     },
     {
-      "before": ["<leader>", "\""],
+      "before": ["<leader>", "a"],
       "commands": [
         {
           "command": "editor.emmet.action.matchTag",
@@ -1163,6 +1163,10 @@
     {
       "before": ["c", "<home>"],
       "after": ["c", "^"]
+    },
+    {
+      "before": ["c", "N"],
+      "after": ["c", "0"]
     },
     {
       "before": ["c", "<end>"],
@@ -1340,6 +1344,10 @@
       "after": ["d", "^"]
     },
     {
+      "before": ["x", "N"],
+      "after": ["d", "0"]
+    },
+    {
       "before": ["x", "<end>"],
       "after": ["d", "$"]
     },
@@ -1438,6 +1446,10 @@
     {
       "before": ["w", "<home>"],
       "after": ["y", "^"]
+    },
+    {
+      "before": ["w", "N"],
+      "after": ["y", "0"]
     },
     {
       "before": ["w", "<end>"],

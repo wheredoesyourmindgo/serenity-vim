@@ -197,15 +197,24 @@
       "before": ["]"],
       "after": [")"]
     },
-    // {
-    //   "before": ["<leader>", "E"],
-    //   "commands": [
-    //     {
-    //       "command": "editor.action.selectToBracket",
-    //       "args": []
-    //     }
-    //   ]
-    // },
+    {
+      "before": ["alt-e"],
+      "commands": [
+        {
+          "command": "editor.action.selectToBracket",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["alt-i"],
+      "commands": [
+        {
+          "command": "editor.action.selectToBracket",
+          "args": []
+        }
+      ]
+    },
     {
       "before": ["<leader>", "<leader>"],
       "commands": [
@@ -1003,15 +1012,24 @@
       "before": ["]"],
       "after": [")"]
     },
-    // {
-    //   "before": ["<leader>", "E"],
-    //   "commands": [
-    //     {
-    //       "command": "editor.action.selectToBracket",
-    //       "args": []
-    //     }
-    //   ]
-    // },
+    {
+      "before": ["alt-e"],
+      "commands": [
+        {
+          "command": "editor.action.selectToBracket",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["alt-i"],
+      "commands": [
+        {
+          "command": "editor.action.selectToBracket",
+          "args": []
+        }
+      ]
+    },
     {
       "before": ["<leader>", "<leader>"],
       "commands": [

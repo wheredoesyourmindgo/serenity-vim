@@ -197,35 +197,17 @@
       "before": ["]"],
       "after": [")"]
     },
+    // {
+    //   "before": ["<leader>", "E"],
+    //   "commands": [
+    //     {
+    //       "command": "editor.action.selectToBracket",
+    //       "args": []
+    //     }
+    //   ]
+    // },
     {
-      "before": ["<leader>", "E"],
-      "commands": [
-        {
-          "command": "editor.action.selectToBracket",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "I"],
-      "commands": [
-        {
-          "command": "editor.action.selectToBracket",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "<"],
-      "commands": [
-        {
-          "command": "editor.emmet.action.matchTag",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", ">"],
+      "before": ["<leader>", "<leader>"],
       "commands": [
         {
           "command": "editor.emmet.action.matchTag",
@@ -1021,35 +1003,17 @@
       "before": ["]"],
       "after": [")"]
     },
+    // {
+    //   "before": ["<leader>", "E"],
+    //   "commands": [
+    //     {
+    //       "command": "editor.action.selectToBracket",
+    //       "args": []
+    //     }
+    //   ]
+    // },
     {
-      "before": ["<leader>", "E"],
-      "commands": [
-        {
-          "command": "editor.action.selectToBracket",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "I"],
-      "commands": [
-        {
-          "command": "editor.action.selectToBracket",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", "<"],
-      "commands": [
-        {
-          "command": "editor.emmet.action.matchTag",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["<leader>", ">"],
+      "before": ["<leader>", "<leader>"],
       "commands": [
         {
           "command": "editor.emmet.action.matchTag",

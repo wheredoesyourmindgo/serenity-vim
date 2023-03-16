@@ -207,6 +207,24 @@
       ]
     },
     {
+      "before": ["<leader>", "I"],
+      "commands": [
+        {
+          "command": "editor.action.selectToBracket",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "<"],
+      "commands": [
+        {
+          "command": "editor.emmet.action.matchTag",
+          "args": []
+        }
+      ]
+    },
+    {
       "before": ["<leader>", ">"],
       "commands": [
         {

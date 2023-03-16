@@ -478,9 +478,9 @@ noremap <tab> .
 " Set mark
 noremap - m
 " Goto mark
-map ' `
+noremap ' `
 " Goto mark bol
-map " '
+noremap " '
 
 " Alpha Commands --------------------------
 

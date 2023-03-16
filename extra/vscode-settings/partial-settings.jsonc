@@ -84,24 +84,34 @@
     //     }
     //   ]
     // },
-    // Bol.
+    // Home
     {
       "before": ["<home>"],
+      "after": ["g", "g"]
+    },
+    // End
+    {
+      "before": ["<end>"],
+      "after": ["G"]
+    },
+    // Bol.
+    {
+      "before": ["n"],
       "after": ["^"]
     },
     // Bol. down
     {
-      "before": ["<leader>", "H"],
+      "before": ["~"],
       "after": ["_"]
     },
     // Hard Bol.
     {
-      "before": ["N"],
+      "before": ["`"],
       "after": ["0"]
     },
     // Eol.
     {
-      "before": ["<end>"],
+      "before": ["a"],
       "after": ["$"]
     },
     // set mark
@@ -111,34 +121,34 @@
     },
     // jump to mark
     {
-      "before": ["'"],
+      "before": ["E"],
       "after": ["`"]
     },
     // jump to mark bol.
     {
-      "before": ["\""],
+      "before": ["I"],
       "after": ["'"]
     },
-    // goto prev. jump
-    {
-      "before": ["'", "'"],
-      "after": ["`", "`"]
-    },
-    // goto prev. jump bol.
-    {
-      "before": ["\"", "\""],
-      "after": ["'", "'"]
-    },
-    // goto prev. edit
-    {
-      "before": ["'", "-"],
-      "after": ["`", "."]
-    },
-    // goto prev. edit bol.
-    {
-      "before": ["\"", "-"],
-      "after": ["'", "."]
-    },
+    // // goto prev. jump
+    // {
+    //   "before": ["'", "'"],
+    //   "after": ["`", "`"]
+    // },
+    // // goto prev. jump bol.
+    // {
+    //   "before": ["\"", "\""],
+    //   "after": ["'", "'"]
+    // },
+    // // goto prev. edit
+    // {
+    //   "before": ["'", "-"],
+    //   "after": ["`", "."]
+    // },
+    // // goto prev. edit bol.
+    // {
+    //   "before": ["\"", "-"],
+    //   "after": ["'", "."]
+    // },
     {
       "before": ["<leader>", "g"],
       "after": [],
@@ -198,7 +208,7 @@
       "after": [")"]
     },
     {
-      "before": ["A"],
+      "before": ["'"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",
@@ -207,7 +217,16 @@
       ]
     },
     {
-      "before": ["<leader>", "a"],
+      "before": ["\""],
+      "commands": [
+        {
+          "command": "editor.action.selectToBracket",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "'"],
       "commands": [
         {
           "command": "editor.emmet.action.matchTag",
@@ -255,8 +274,9 @@
       "before": ["}"],
       "commands": ["editor.action.indentLines"]
     },
+    // repeat
     {
-      "before": ["<tab>"],
+      "before": ["<Tab>"],
       "after": ["."]
     },
     // {
@@ -448,11 +468,11 @@
     },
     {
       "before": ["j"],
-      "after": ["t"]
+      "after": ["f"]
     },
     {
       "before": ["J"],
-      "after": ["T"]
+      "after": ["F"]
     },
     {
       "before": ["f"],
@@ -488,44 +508,46 @@
     },
     {
       "before": ["y"],
-      "after": ["f"]
+      "after": ["t"]
     },
     {
       "before": ["Y"],
-      "after": ["F"]
+      "after": ["T"]
     },
     {
       "before": ["n"],
-      "after": ["'"]
+      "after": ["^"]
     },
-    // {
-    //   "before": ["N"],
-    //   "after": ["("]
-    // },
+    {
+      "before": ["N"],
+      "after": [","]
+    },
     {
       "before": ["e"],
       "after": ["+"]
     },
+    // jump to mark
     {
       "before": ["E"],
-      "after": ["G"]
+      "after": ["`"]
     },
     {
       "before": ["i"],
       "after": ["-"]
     },
+    // jump to mark bol.
     {
       "before": ["I"],
-      "after": ["g", "g"]
+      "after": ["'"]
     },
     {
       "before": ["a"],
+      "after": ["$"]
+    },
+    {
+      "before": ["A"],
       "after": [";"]
     },
-    // {
-    //   "before": ["A"],
-    //   "after": [")"]
-    // },
     {
       "before": ["k"],
       "after": ["/"]
@@ -536,11 +558,11 @@
     },
     {
       "before": ["h"],
-      "after": ["N"]
+      "after": ["#"]
     },
     {
       "before": ["H"],
-      "after": ["#"]
+      "after": ["N"]
     },
     {
       "before": ["/"],
@@ -560,11 +582,11 @@
     },
     {
       "before": ["."],
-      "after": ["n"]
+      "after": ["*"]
     },
     {
       "before": [">"],
-      "after": ["*"]
+      "after": ["n"]
     },
     // g commands
     {
@@ -587,7 +609,7 @@
       "before": ["l", "`"],
       "after": ["g", "`"]
     },
-    // gg mapped with I
+    // gg mapped with home
     // {
     //   "before": ["l", "l"],
     //   "after": ["g", "g"]
@@ -877,61 +899,51 @@
     //     }
     //   ]
     // },
-    // Bol.
+    // Home
     {
       "before": ["<home>"],
-      "after": ["^"]
+      "after": ["g", "g"]
+    },
+    // End
+    {
+      "before": ["<end>"],
+      "after": ["G"]
     },
     // Bol. down
     {
-      "before": ["<leader>", "H"],
+      "before": ["~"],
       "after": ["_"]
     },
     // Hard Bol.
     {
-      "before": ["N"],
+      "before": ["`"],
       "after": ["0"]
-    },
-    // Eol.
-    {
-      "before": ["<end>"],
-      "after": ["$"]
     },
     // set mark
     {
       "before": ["-"],
       "after": ["m"]
     },
-    // jump to mark
-    {
-      "before": ["'"],
-      "after": ["`"]
-    },
-    // jump to mark bol.
-    {
-      "before": ["\""],
-      "after": ["'"]
-    },
-    // goto prev. jump
-    {
-      "before": ["'", "'"],
-      "after": ["`", "`"]
-    },
-    // goto prev. jump bol.
-    {
-      "before": ["\"", "\""],
-      "after": ["'", "'"]
-    },
-    // goto prev. edit
-    {
-      "before": ["'", "-"],
-      "after": ["`", "."]
-    },
-    // goto prev. edit bol.
-    {
-      "before": ["\"", "-"],
-      "after": ["'", "."]
-    },
+    // // goto prev. jump
+    // {
+    //   "before": ["'", "'"],
+    //   "after": ["`", "`"]
+    // },
+    // // goto prev. jump bol.
+    // {
+    //   "before": ["\"", "\""],
+    //   "after": ["'", "'"]
+    // },
+    // // goto prev. edit
+    // {
+    //   "before": ["'", "-"],
+    //   "after": ["`", "."]
+    // },
+    // // goto prev. edit bol.
+    // {
+    //   "before": ["\"", "-"],
+    //   "after": ["'", "."]
+    // },
     {
       "before": ["<leader>", "g"],
       "after": [],
@@ -991,7 +1003,7 @@
       "after": [")"]
     },
     {
-      "before": ["A"],
+      "before": ["'"],
       "commands": [
         {
           "command": "editor.action.jumpToBracket",
@@ -1000,7 +1012,16 @@
       ]
     },
     {
-      "before": ["<leader>", "a"],
+      "before": ["\""],
+      "commands": [
+        {
+          "command": "editor.action.selectToBracket",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "'"],
       "commands": [
         {
           "command": "editor.emmet.action.matchTag",
@@ -1048,8 +1069,9 @@
       "before": ["}"],
       "commands": ["editor.action.indentLines"]
     },
+    // repeat
     {
-      "before": ["<tab>"],
+      "before": ["<Tab>"],
       "after": ["."]
     },
     {
@@ -1152,49 +1174,45 @@
       "before": ["c", "F"],
       "after": ["c", "g", "E"]
     },
-    // {
-    //   "before": ["d", "n"],
-    //   "after": ["c", "_"]
-    // },
-    // {
-    //   "before": ["d", "n"],
-    //   "after": ["c", "0"]
-    // },
     {
-      "before": ["c", "<home>"],
+      "before": ["c", "~"],
+      "after": ["c", "_"]
+    },
+    {
+      "before": ["c", "n"],
       "after": ["c", "^"]
     },
     {
-      "before": ["c", "N"],
+      "before": ["c", "`"],
       "after": ["c", "0"]
     },
     {
-      "before": ["c", "<end>"],
+      "before": ["c", "a"],
       "after": ["c", "$"]
     },
     {
-      "before": ["c", "I"],
+      "before": ["c", "<home>"],
       "after": ["c", "g", "g"]
     },
     {
-      "before": ["c", "E"],
+      "before": ["c", "<end>"],
       "after": ["c", "G"]
     },
     {
       "before": ["c", "y"],
-      "after": ["c", "f"]
-    },
-    {
-      "before": ["c", "Y"],
-      "after": ["c", "F"]
-    },
-    {
-      "before": ["c", "j"],
       "after": ["c", "t"]
     },
     {
-      "before": ["c", "J"],
+      "before": ["c", "Y"],
       "after": ["c", "T"]
+    },
+    {
+      "before": ["c", "j"],
+      "after": ["c", "f"]
+    },
+    {
+      "before": ["c", "J"],
+      "after": ["c", "F"]
     },
     {
       "before": ["c", "<leader>", "f"],
@@ -1331,49 +1349,45 @@
       "before": ["x", "F"],
       "after": ["d", "g", "E"]
     },
-    // {
-    //   "before": ["x", "n"],
-    //   "after": ["d", "_"]
-    // },
-    // {
-    //   "before": ["x", "n"],
-    //   "after": ["d", "0"]
-    // },
     {
-      "before": ["x", "<home>"],
+      "before": ["x", "~"],
+      "after": ["d", "_"]
+    },
+    {
+      "before": ["x", "n"],
       "after": ["d", "^"]
     },
     {
-      "before": ["x", "N"],
+      "before": ["x", "`"],
       "after": ["d", "0"]
     },
     {
-      "before": ["x", "<end>"],
+      "before": ["x", "a"],
       "after": ["d", "$"]
     },
     {
-      "before": ["x", "I"],
+      "before": ["x", "<home>"],
       "after": ["d", "g", "g"]
     },
     {
-      "before": ["x", "E"],
+      "before": ["x", "<end>"],
       "after": ["d", "G"]
     },
     {
       "before": ["x", "y"],
-      "after": ["d", "f"]
-    },
-    {
-      "before": ["x", "Y"],
-      "after": ["d", "F"]
-    },
-    {
-      "before": ["x", "j"],
       "after": ["d", "t"]
     },
     {
-      "before": ["x", "J"],
+      "before": ["x", "Y"],
       "after": ["d", "T"]
+    },
+    {
+      "before": ["x", "j"],
+      "after": ["d", "f"]
+    },
+    {
+      "before": ["x", "J"],
+      "after": ["d", "F"]
     },
     {
       "before": ["x", "<leader>", "f"],
@@ -1435,49 +1449,45 @@
       "before": ["w", "F"],
       "after": ["y", "g", "E"]
     },
-    // {
-    //   "before": ["w", "n"],
-    //   "after": ["y", "_"]
-    // },
-    // {
-    //   "before": ["w", "n"],
-    //   "after": ["y", "0"]
-    // },
     {
-      "before": ["w", "<home>"],
+      "before": ["w", "~"],
+      "after": ["y", "_"]
+    },
+    {
+      "before": ["w", "n"],
       "after": ["y", "^"]
     },
     {
-      "before": ["w", "N"],
+      "before": ["w", "`"],
       "after": ["y", "0"]
     },
     {
-      "before": ["w", "<end>"],
+      "before": ["w", "a"],
       "after": ["y", "$"]
     },
     {
-      "before": ["w", "I"],
+      "before": ["w", "<home>"],
       "after": ["y", "g", "g"]
     },
     {
-      "before": ["w", "E"],
+      "before": ["w", "<end>"],
       "after": ["y", "G"]
     },
     {
       "before": ["w", "y"],
-      "after": ["y", "f"]
-    },
-    {
-      "before": ["w", "Y"],
-      "after": ["y", "F"]
-    },
-    {
-      "before": ["w", "j"],
       "after": ["y", "t"]
     },
     {
-      "before": ["w", "J"],
+      "before": ["w", "Y"],
       "after": ["y", "T"]
+    },
+    {
+      "before": ["w", "j"],
+      "after": ["y", "f"]
+    },
+    {
+      "before": ["w", "J"],
+      "after": ["y", "F"]
     },
     {
       "before": ["w", "<leader>", "f"],
@@ -1523,11 +1533,11 @@
     },
     {
       "before": ["j"],
-      "after": ["t"]
+      "after": ["f"]
     },
     {
       "before": ["J"],
-      "after": ["T"]
+      "after": ["F"]
     },
     {
       "before": ["f"],
@@ -1563,44 +1573,46 @@
     },
     {
       "before": ["y"],
-      "after": ["f"]
+      "after": ["t"]
     },
     {
       "before": ["Y"],
-      "after": ["F"]
+      "after": ["T"]
     },
     {
       "before": ["n"],
+      "after": ["^"]
+    },
+    {
+      "before": ["N"],
       "after": [","]
     },
-    // {
-    //   "before": ["N"],
-    //   "after": ["("]
-    // },
     {
       "before": ["e"],
       "after": ["+"]
     },
+    // jump to mark
     {
       "before": ["E"],
-      "after": ["G"]
+      "after": ["`"]
     },
     {
       "before": ["i"],
       "after": ["-"]
     },
+    // jump to mark bol.
     {
       "before": ["I"],
-      "after": ["g", "g"]
+      "after": ["'"]
     },
     {
       "before": ["a"],
+      "after": ["$"]
+    },
+    {
+      "before": ["A"],
       "after": [";"]
     },
-    // {
-    //   "before": ["A"],
-    //   "after": [")"]
-    // },
     {
       "before": ["k"],
       "after": ["/"]
@@ -1611,11 +1623,11 @@
     },
     {
       "before": ["h"],
-      "after": ["N"]
+      "after": ["#"]
     },
     {
       "before": ["H"],
-      "after": ["#"]
+      "after": ["N"]
     },
     {
       "before": ["/"],
@@ -1635,11 +1647,11 @@
     },
     {
       "before": ["."],
-      "after": ["n"]
+      "after": ["*"]
     },
     {
       "before": [">"],
-      "after": ["*"]
+      "after": ["n"]
     },
     // g commands
     {
@@ -1662,7 +1674,7 @@
       "before": ["l", "`"],
       "after": ["g", "`"]
     },
-    // gg mapped with I
+    // gg mapped with home
     // {
     //   "before": ["l", "l"],
     //   "after": ["g", "g"]

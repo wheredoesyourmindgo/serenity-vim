@@ -414,14 +414,13 @@ noremap <leader><tab> K
 noremap <leader>< ]
 noremap <leader>> [
 " Bol. down
-map <leader>H _
-" Bol.
-noremap <home> ^
+map ~ _
 " Hard Bol.
-"noremap <S-Home> 0
-noremap <leader>h 0
-" Eol.
-noremap <End> $
+noremap ` 0
+" Home
+noremap <home> gg
+" End
+noremap <End> G
 " Pg up
 noremap <PageUp> <C-b>
 " Half Pg up
@@ -474,20 +473,14 @@ noremap $ =
 " repeat command
 noremap <tab> .
 
-" Goto Mark
-noremap ' `
-" Goto Mark bol.
-noremap " '
-" Goto prev jump
-noremap '' ``
-" Goto prev jump bol.
-noremap "" ''
-" Goto prev edit
-noremap '- `.
-" Goto prev edit bol.
-noremap "- '.
+" Match
+noremap ' %
 " Set mark
 noremap - m
+" Goto mark
+map ' `
+" Goto mark bol
+map " '
 
 " Alpha Commands --------------------------
 
@@ -539,8 +532,8 @@ execute 'noremap ' . s:R3C5 . ' &'
 " right r1
 " noremap j H
 " noremap J zb
-execute 'noremap ' . s:r1c6 . ' t'
-execute 'noremap ' . s:R1C6 . ' T'
+execute 'noremap ' . s:r1c6 . ' f'
+execute 'noremap ' . s:R1C6 . ' F'
 " nmap j <Plug>(clever-f-f)
 " xmap j <Plug>(clever-f-f)
 " omap j <Plug>(clever-f-f)
@@ -564,29 +557,29 @@ execute 'noremap ' . s:R1C9 . ' E'
 execute 'noremap ' . s:r1c10 . ' w'
 execute 'noremap ' . s:R1C10 . ' W'
 " right r2
-execute 'noremap ' . s:r2c6 . ' f'
-execute 'noremap ' . s:R2C6 . ' F'
+execute 'noremap ' . s:r2c6 . ' t'
+execute 'noremap ' . s:R2C6 . ' T'
 " noremap i -
 " noremap I <C-y>
-execute 'noremap ' . s:r2c7 . ' ,'
-"execute 'noremap ' . s:R2C7 . ' ('
+execute 'noremap ' . s:r2c7 . ' ^'
+execute 'noremap ' . s:R2C7 . ' ,'
 execute 'noremap ' . s:r2c8 . ' +'
-execute 'noremap ' . s:R2C8 . ' G'
+execute 'noremap ' . s:R2C8 . ' %]'
 execute 'noremap ' . s:r2c9 . ' -'
-execute 'noremap ' . s:R2C9 . ' gg'
-execute 'noremap ' . s:r2c10 . ' ;'
-"execute 'noremap ' . s:R2C10 . ' )'
+execute 'noremap ' . s:R2C9 . ' %['
+execute 'noremap ' . s:r2c10 . ' $'
+execute 'noremap ' . s:R2C10 . ' ;'
 " right r3
 execute 'noremap ' . s:r3c6 . ' /'
 execute 'noremap ' . s:R3C6 . ' ?'
-execute 'noremap ' . s:r3c7 . ' N'
-execute 'noremap ' . s:R3C7 . ' #'
+execute 'noremap ' . s:r3c7 . ' #'
+execute 'noremap ' . s:R3C7 . ' N'
 execute 'noremap ' . s:r3c8 . ' <C-e>'
 execute 'noremap ' . s:R3C8 . ' <C-d>'
 execute 'noremap ' . s:r3c9 . ' <C-y>'
 execute 'noremap ' . s:R3C9 . ' <C-u>'
-execute 'noremap ' . s:r3c10 . ' n'
-execute 'noremap ' . s:R3C10 . ' *'
+execute 'noremap ' . s:r3c10 . ' *'
+execute 'noremap ' . s:R3C10 . ' n'
 
 " g mappings
 noremap l# g#

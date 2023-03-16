@@ -474,7 +474,7 @@ noremap $ =
 noremap <tab> .
 
 " Match
-noremap ' %
+"noremap ' %
 " Set mark
 noremap - m
 " Goto mark

@@ -537,6 +537,10 @@
         {
           "command": "editor.action.jumpToBracket",
           "args": []
+        },
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
         }
       ]
     },
@@ -1619,6 +1623,10 @@
       "before": ["I"],
       "after": [],
       "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        },
         {
           "command": "editor.action.jumpToBracket",
           "args": []

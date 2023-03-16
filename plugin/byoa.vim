@@ -392,12 +392,8 @@ noremap <leader>e L
 noremap <leader>/ zt
 noremap <leader>k zz
 noremap <leader>, zb
-" Bracket commands
-" matchit plugin commands
 " (| pipe symbol must be escaped, or use <bar>)
 " map <Bar> %
-" there is some asymetry between vim's matchit plugin and vscodes emmet command, '%' command, and next bracket command
-noremap <leader>' %
 " unused keys
 map ` <esc>
 map ^ <esc>
@@ -564,9 +560,9 @@ execute 'noremap ' . s:R2C6 . ' T'
 execute 'noremap ' . s:r2c7 . ' ^'
 execute 'noremap ' . s:R2C7 . ' ,'
 execute 'noremap ' . s:r2c8 . ' +'
-execute 'noremap ' . s:R2C8 . ' %]'
+execute 'noremap ' . s:R2C8 . ' ]%'
 execute 'noremap ' . s:r2c9 . ' -'
-execute 'noremap ' . s:R2C9 . ' %['
+execute 'noremap ' . s:R2C9 . ' [%'
 execute 'noremap ' . s:r2c10 . ' $'
 execute 'noremap ' . s:R2C10 . ' ;'
 " right r3

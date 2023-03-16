@@ -94,11 +94,6 @@
       "before": ["<end>"],
       "after": ["G"]
     },
-    // Bol.
-    {
-      "before": ["n"],
-      "after": ["^"]
-    },
     // Bol. down
     {
       "before": ["~"],
@@ -109,11 +104,6 @@
       "before": ["`"],
       "after": ["0"]
     },
-    // Eol.
-    {
-      "before": ["a"],
-      "after": ["$"]
-    },
     // set mark
     {
       "before": ["-"],
@@ -121,12 +111,12 @@
     },
     // jump to mark
     {
-      "before": ["E"],
+      "before": ["'"],
       "after": ["`"]
     },
     // jump to mark bol.
     {
-      "before": ["I"],
+      "before": ["\""],
       "after": ["'"]
     },
     // // goto prev. jump
@@ -208,16 +198,7 @@
       "after": [")"]
     },
     {
-      "before": ["'"],
-      "commands": [
-        {
-          "command": "editor.action.jumpToBracket",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["\""],
+      "before": ["<leader>", "E"],
       "commands": [
         {
           "command": "editor.action.selectToBracket",
@@ -226,7 +207,7 @@
       ]
     },
     {
-      "before": ["<leader>", "'"],
+      "before": ["<leader>", ">"],
       "commands": [
         {
           "command": "editor.emmet.action.matchTag",
@@ -526,19 +507,29 @@
       "before": ["e"],
       "after": ["+"]
     },
-    // jump to mark
     {
       "before": ["E"],
-      "after": ["`"]
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        }
+      ]
     },
     {
       "before": ["i"],
       "after": ["-"]
     },
-    // jump to mark bol.
     {
       "before": ["I"],
-      "after": ["'"]
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        }
+      ]
     },
     {
       "before": ["a"],
@@ -924,6 +915,16 @@
       "before": ["-"],
       "after": ["m"]
     },
+    // jump to mark
+    {
+      "before": ["'"],
+      "after": ["`"]
+    },
+    // jump to mark bol.
+    {
+      "before": ["\""],
+      "after": ["'"]
+    },
     // // goto prev. jump
     // {
     //   "before": ["'", "'"],
@@ -1003,16 +1004,7 @@
       "after": [")"]
     },
     {
-      "before": ["'"],
-      "commands": [
-        {
-          "command": "editor.action.jumpToBracket",
-          "args": []
-        }
-      ]
-    },
-    {
-      "before": ["\""],
+      "before": ["<leader>", "E"],
       "commands": [
         {
           "command": "editor.action.selectToBracket",
@@ -1021,7 +1013,25 @@
       ]
     },
     {
-      "before": ["<leader>", "'"],
+      "before": ["<leader>", "I"],
+      "commands": [
+        {
+          "command": "editor.action.selectToBracket",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "<"],
+      "commands": [
+        {
+          "command": "editor.emmet.action.matchTag",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", ">"],
       "commands": [
         {
           "command": "editor.emmet.action.matchTag",
@@ -1591,19 +1601,29 @@
       "before": ["e"],
       "after": ["+"]
     },
-    // jump to mark
     {
       "before": ["E"],
-      "after": ["`"]
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        }
+      ]
     },
     {
       "before": ["i"],
       "after": ["-"]
     },
-    // jump to mark bol.
     {
       "before": ["I"],
-      "after": ["'"]
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.jumpToBracket",
+          "args": []
+        }
+      ]
     },
     {
       "before": ["a"],

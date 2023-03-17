@@ -376,6 +376,26 @@ omap gI <Plug>(textobj-indent-same-i))
 xmap GI <Plug>(textobj-indent-same-a)
 omap GI <Plug>(textobj-indent-same-a)
 
+" matchit
+let g:no_plugin_maps = 1
+nmap <silent> %  <Plug>(MatchitNormalForward)
+nmap <silent> l% <Plug>(MatchitNormalBackward)
+xmap <silent> %  <Plug>(MatchitVisualForward)
+xmap <silent> l% <Plug>(MatchitVisualBackward)
+omap <silent> %  <Plug>(MatchitOperationForward)
+omap <silent> l% <Plug>(MatchitOperationBackward)
+
+" Analogues of [{ and ]} using matching patterns:
+nmap <silent> I <Plug>(MatchitNormalMultiBackward)
+nmap <silent> E <Plug>(MatchitNormalMultiForward)
+xmap <silent> I <Plug>(MatchitVisualMultiBackward)
+xmap <silent> E <Plug>(MatchitVisualMultiForward)
+omap <silent> I <Plug>(MatchitOperationMultiBackward)
+omap <silent> E <Plug>(MatchitOperationMultiForward)
+
+" Text object
+xmap g% <Plug>(MatchitVisualTextObject)
+
 
 " Leaders --------------------------
 
@@ -557,9 +577,9 @@ execute 'noremap ' . s:R2C6 . ' T'
 execute 'noremap ' . s:r2c7 . ' ^'
 execute 'noremap ' . s:R2C7 . ' ,'
 execute 'noremap ' . s:r2c8 . ' +'
-execute 'noremap ' . s:R2C8 . ' ]%'
+"execute 'noremap ' . s:R2C8 . ' %'
 execute 'noremap ' . s:r2c9 . ' -'
-execute 'noremap ' . s:R2C9 . ' [%'
+"execute 'noremap ' . s:R2C9 . ' %'
 execute 'noremap ' . s:r2c10 . ' $'
 execute 'noremap ' . s:R2C10 . ' ;'
 " right r3

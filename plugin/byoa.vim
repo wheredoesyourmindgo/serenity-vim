@@ -384,7 +384,6 @@ xmap <silent> %  <Plug>(MatchitVisualForward)
 xmap <silent> l% <Plug>(MatchitVisualBackward)
 omap <silent> %  <Plug>(MatchitOperationForward)
 omap <silent> l% <Plug>(MatchitOperationBackward)
-
 " Analogues of [{ and ]} using matching patterns:
 nmap <silent> I <Plug>(MatchitNormalMultiBackward)
 nmap <silent> E <Plug>(MatchitNormalMultiForward)
@@ -392,7 +391,6 @@ xmap <silent> I <Plug>(MatchitVisualMultiBackward)
 xmap <silent> E <Plug>(MatchitVisualMultiForward)
 omap <silent> I <Plug>(MatchitOperationMultiBackward)
 omap <silent> E <Plug>(MatchitOperationMultiForward)
-
 " Text object
 xmap g% <Plug>(MatchitVisualTextObject)
 

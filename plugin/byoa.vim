@@ -385,12 +385,12 @@ xmap <silent> l% <Plug>(MatchitVisualBackward)
 omap <silent> %  <Plug>(MatchitOperationForward)
 omap <silent> l% <Plug>(MatchitOperationBackward)
 " Analogues of [{ and ]} using matching patterns:
-nmap <silent> I <Plug>(MatchitNormalMultiBackward)
-nmap <silent> E <Plug>(MatchitNormalMultiForward)
-xmap <silent> I <Plug>(MatchitVisualMultiBackward)
-xmap <silent> E <Plug>(MatchitVisualMultiForward)
-omap <silent> I <Plug>(MatchitOperationMultiBackward)
-omap <silent> E <Plug>(MatchitOperationMultiForward)
+nmap <silent> < <Plug>(MatchitNormalMultiBackward)
+nmap <silent> ? <Plug>(MatchitNormalMultiForward)
+xmap <silent> < <Plug>(MatchitVisualMultiBackward)
+xmap <silent> ? <Plug>(MatchitVisualMultiForward)
+omap <silent> < <Plug>(MatchitOperationMultiBackward)
+omap <silent> ? <Plug>(MatchitOperationMultiForward)
 " Text object
 xmap g% <Plug>(MatchitVisualTextObject)
 
@@ -403,13 +403,13 @@ xmap g% <Plug>(MatchitVisualTextObject)
 " noremap <leader>V ZQ
 
 " jump to position
-noremap <leader>i H
-noremap <leader>y M
-noremap <leader>e L
+noremap <leader>o H
+noremap <leader>e M
+noremap <leader>/ L
 " scroll to position
-noremap <leader>/ zt
-noremap <leader>k zz
-noremap <leader>, zb
+noremap <leader>, zt
+noremap <leader>i zz
+noremap <leader>u zb
 " (| pipe symbol must be escaped, or use <bar>)
 " map <Bar> %
 " unused keys
@@ -575,9 +575,9 @@ execute 'noremap ' . s:R2C6 . ' T'
 execute 'noremap ' . s:r2c7 . ' ^'
 execute 'noremap ' . s:R2C7 . ' ,'
 execute 'noremap ' . s:r2c8 . ' +'
-"execute 'noremap ' . s:R2C8 . ' %'
+execute 'noremap ' . s:R2C8 . ' <C-e>'
 execute 'noremap ' . s:r2c9 . ' -'
-"execute 'noremap ' . s:R2C9 . ' %'
+execute 'noremap ' . s:R2C9 . ' <C-y>'
 execute 'noremap ' . s:r2c10 . ' $'
 execute 'noremap ' . s:R2C10 . ' ;'
 " right r3
@@ -585,10 +585,10 @@ execute 'noremap ' . s:r3c6 . ' /'
 execute 'noremap ' . s:R3C6 . ' ?'
 execute 'noremap ' . s:r3c7 . ' #'
 execute 'noremap ' . s:R3C7 . ' N'
-execute 'noremap ' . s:r3c8 . ' <C-e>'
-execute 'noremap ' . s:R3C8 . ' <C-d>'
-execute 'noremap ' . s:r3c9 . ' <C-y>'
-execute 'noremap ' . s:R3C9 . ' <C-u>'
+"execute 'noremap ' . s:R3C8 . ' '
+execute 'noremap ' . s:r3c8 . ' <C-d>'
+"execute 'noremap ' . s:R3C9 . ' '
+execute 'noremap ' . s:r3c9 . ' <C-u>'
 execute 'noremap ' . s:r3c10 . ' *'
 execute 'noremap ' . s:R3C10 . ' n'
 

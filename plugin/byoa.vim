@@ -406,6 +406,10 @@ xmap g% <Plug>(MatchitVisualTextObject)
 " Quit w/o save
 " noremap <leader>V ZQ
 
+" Hard Bol.
+noremap <leader>n 0
+" Bol. down
+noremap <leader>N _
 " jump to position
 noremap <leader>o H
 noremap <leader>e M
@@ -426,10 +430,6 @@ noremap <leader><tab> K
 " Bracket cmds
 noremap <leader>< ]
 noremap <leader>> [
-" Bol. down
-map ~ _
-" Hard Bol.
-noremap ` 0
 " Home
 noremap <home> gg
 " End
@@ -457,9 +457,7 @@ xnoremap <leader><left> <<esc>
 noremap = ddp
 noremap { dd<up><up>p
 " Join lines
-noremap # J
-" Swap case
-noremap % ~
+noremap ` J
 " unused
 map $ <esc>
 " Match
@@ -489,8 +487,10 @@ noremap <leader><cr> :
 noremap $ =
 " repeat command
 noremap <tab> .
+" register spc.
+noremap - "
 " Set mark
-noremap - m
+noremap _ m
 " Goto mark
 noremap ' `
 " Goto mark bol
@@ -499,20 +499,12 @@ noremap " '
 " Alpha Commands --------------------------
 
 " left r1
-" noremap q "
-" noremap Q m
-execute 'noremap ' . s:r1c1 . ' "'
-" execute 'noremap ' . s:R1C1 . ' `'
-" noremap w ~
-" noremap W J
-execute 'noremap ' . s:r1c2 . ' g'
-execute 'noremap ' . s:R1C2 . ' z'
-" noremap f c
-" noremap F C
+execute 'noremap ' . s:r1c1 . ' g'
+execute 'noremap ' . s:R1C1 . ' z'
+execute 'noremap ' . s:r1c2 . ' ~'
+"execute 'noremap ' . s:R1C2 . ' z'
 execute 'noremap ' . s:r1c3 . ' c'
 execute 'noremap ' . s:R1C3 . ' C'
-" noremap p r
-" noremap P R
 execute 'noremap ' . s:r1c4 . ' r'
 execute 'noremap ' . s:R1C4 . ' R'
 " map b <Plug>(wildfire-fuel)
@@ -544,8 +536,6 @@ execute 'noremap ' . s:R3C4 . ' P'
 execute 'noremap ' . s:r3c5 . ' <C-r>'
 execute 'noremap ' . s:R3C5 . ' &'
 " right r1
-" noremap j H
-" noremap J zb
 execute 'noremap ' . s:r1c6 . ' f'
 execute 'noremap ' . s:R1C6 . ' F'
 " nmap j <Plug>(clever-f-f)
@@ -560,8 +550,6 @@ execute 'noremap ' . s:R1C6 . ' F'
 " nmap M <Plug>(clever-f-T)
 " xmap M <Plug>(clever-f-T)
 " omap M <Plug>(clever-f-T)
-" noremap l ge
-" noremap L gE
 execute 'noremap ' . s:r1c7 . ' ge'
 execute 'noremap ' . s:R1C7 . ' gE'
 execute 'noremap ' . s:r1c8 . ' b'
@@ -573,8 +561,6 @@ execute 'noremap ' . s:R1C10 . ' W'
 " right r2
 execute 'noremap ' . s:r2c6 . ' t'
 execute 'noremap ' . s:R2C6 . ' T'
-" noremap i -
-" noremap I <C-y>
 execute 'noremap ' . s:r2c7 . ' ^'
 execute 'noremap ' . s:R2C7 . ' ,'
 execute 'noremap ' . s:r2c8 . ' +'
@@ -588,86 +574,86 @@ execute 'noremap ' . s:r3c6 . ' /'
 execute 'noremap ' . s:R3C6 . ' ?'
 execute 'noremap ' . s:r3c7 . ' #'
 execute 'noremap ' . s:R3C7 . ' N'
-"execute 'noremap ' . s:R3C8 . ' '
+"execute 'noremap ' . s:R3C8 . ' ' // see matchit
 execute 'noremap ' . s:r3c8 . ' <C-d>'
-"execute 'noremap ' . s:R3C9 . ' '
+"execute 'noremap ' . s:R3C9 . ' ' // see matchit
 execute 'noremap ' . s:r3c9 . ' <C-u>'
 execute 'noremap ' . s:r3c10 . ' *'
 execute 'noremap ' . s:R3C10 . ' n'
 
 " g mappings
-noremap l# g#
+noremap q# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
 " noremap -o g$
-noremap lo g_
-noremap ln g^
-noremap l& g&
-noremap l~ g'
-noremap l\" g`
-noremap l* g*
-noremap l+ g+
-noremap l, g,
-noremap l- g-
-noremap ly g-
-noremap l0 g0
-noremap l8 g8
-noremap l< g<
-noremap l? g?
-noremap l?? g??
-noremap l?g? g?g?
-noremap lQ gQ
-noremap le ge
-noremap lE gE
-noremap lV gH
+noremap qo g_
+noremap qn g^
+noremap q& g&
+noremap q~ g'
+noremap q\" g`
+noremap q* g*
+noremap q+ g+
+noremap q, g,
+noremap q- g-
+noremap qy g-
+noremap q0 g0
+noremap q8 g8
+noremap q< g<
+noremap q? g?
+noremap q?? g??
+noremap q?g? g?g?
+noremap qQ gQ
+noremap qe ge
+noremap qE gE
+noremap qV gH
 " gI - insert
-noremap lS gI
-noremap l<S-tab> gD
-noremap lD gP
+noremap qS gI
+noremap q<S-tab> gD
+noremap qD gP
 " gR - replace
-noremap lP gR
-noremap lT gT
-noremap lU gU
+noremap qP gR
+noremap qT gT
+noremap qU gU
 " gV - visual
-noremap lG gV
-noremap l] g]
-noremap la ga
-noremap lf gf
-noremap lF gF
+noremap qG gV
+noremap q] g]
+noremap qa ga
+noremap qf gf
+noremap qF gF
 " gg mapped >
-" noremap ll gg
-noremap lv gh
+" noremap ql gg
+noremap qv gh
 " gi - insert
-noremap ls gi
-noremap l<tab> gd
-noremap lk gk
-noremap l. gn
-noremap lh gN
-noremap lW gJ
-noremap lm gm
-noremap lM gM
-noremap lO go
-noremap ld gp
-" noremap l; g; what does this one do? there was a conflict below
-noremap l; gq
+noremap qs gi
+noremap q<tab> gd
+noremap qk gk
+noremap q. gn
+noremap qh gN
+noremap qW gJ
+noremap qm gm
+noremap qM gM
+noremap qO go
+noremap qd gp
+" noremap q; g; what does this one do? there was a conflict below
+noremap q; gq
 " gr - replace
-noremap lp gr
-noremap ls gs
-noremap lt gt
-noremap lu gu
+noremap qp gr
+noremap qs gs
+noremap qt gt
+noremap qu gu
 " gv - visual
-noremap lg gv
-noremap l: gw
-noremap lx gx
-noremap l@ g@
-noremap l~ g~
-noremap l<Down> g<Down>
-noremap l<End> g<End>
-noremap l<Home> g<Home>
-noremap l<LeftMouse> g<LeftMouse>
-noremap l<MiddleMouse> g<MiddleMouse>
-noremap l<RightMouse> g<RightMouse>
-noremap l<Tab> g<Tab>
-noremap l<Up> g<Up>
+noremap qg gv
+noremap q: gw
+noremap qx gx
+noremap q@ g@
+noremap q~ g~
+noremap q<Down> g<Down>
+noremap q<End> g<End>
+noremap q<Home> g<Home>
+noremap q<LeftMouse> g<LeftMouse>
+noremap q<MiddleMouse> g<MiddleMouse>
+noremap q<RightMouse> g<RightMouse>
+noremap q<Tab> g<Tab>
+noremap q<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a

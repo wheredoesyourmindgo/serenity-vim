@@ -406,8 +406,6 @@ xmap g% <Plug>(MatchitVisualTextObject)
 " Quit w/o save
 " noremap <leader>V ZQ
 
-" unused keys
-map # <esc>
 " jump to position
 noremap <leader>o H
 noremap <leader>e M
@@ -459,9 +457,13 @@ xnoremap <leader><left> <<esc>
 noremap = ddp
 noremap { dd<up><up>p
 " Join lines
-noremap $ J
+noremap # J
 " Swap case
 noremap % ~
+" unused
+map $ <esc>
+" Match
+" noremap ^ % See matchit plugin
 " Toggle fold
 noremap <leader>v za
 

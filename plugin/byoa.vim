@@ -392,9 +392,9 @@ xmap <silent> ? <Plug>(MatchitVisualMultiForward)
 omap <silent> < <Plug>(MatchitOperationMultiBackward)
 omap <silent> ? <Plug>(MatchitOperationMultiForward)
 " use plugin with % too
-nmap <silent> % <Plug>(MatchitNormalForward)
-xmap <silent> % <Plug>(MatchitVisualForward)
-omap <silent> % <Plug>(MatchitOperationForward)
+nmap <silent> ^ <Plug>(MatchitNormalForward)
+xmap <silent> ^ <Plug>(MatchitVisualForward)
+omap <silent> ^ <Plug>(MatchitOperationForward)
 " Text object
 xmap g% <Plug>(MatchitVisualTextObject)
 
@@ -406,6 +406,8 @@ xmap g% <Plug>(MatchitVisualTextObject)
 " Quit w/o save
 " noremap <leader>V ZQ
 
+" unused keys
+map % <esc>
 " jump to position
 noremap <leader>o H
 noremap <leader>e M
@@ -414,11 +416,6 @@ noremap <leader>/ L
 noremap <leader>u zb
 noremap <leader>i zz
 noremap <leader>, zt
-" (| pipe symbol must be escaped, or use <bar>)
-" map <Bar> %
-" unused keys
-map ` <esc>
-map ^ <esc>
 " sentences
 " (| pipe symbol must be escaped, or use <bar>)
 noremap <bar> (

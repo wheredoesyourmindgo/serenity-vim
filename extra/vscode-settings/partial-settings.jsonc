@@ -177,6 +177,14 @@
       "before": [")"],
       "after": ["<leader>", "w"]
     },
+    {
+      "before": ["^"],
+      "after": ["%"]
+    },
+    {
+      "before": ["%"],
+      "after": ["<nop>"]
+    },
     // {
     //   "before": ["<leader>", "'"],
     //   "after": ["%"]
@@ -995,6 +1003,14 @@
     {
       "before": [")"],
       "after": ["<leader>", "w"]
+    },
+    {
+      "before": ["^"],
+      "after": ["%"]
+    },
+    {
+      "before": ["%"],
+      "after": ["<nop>"]
     },
     // {
     //   "before": ["<leader>", "'"],

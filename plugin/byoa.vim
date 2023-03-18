@@ -391,6 +391,10 @@ xmap <silent> < <Plug>(MatchitVisualMultiBackward)
 xmap <silent> ? <Plug>(MatchitVisualMultiForward)
 omap <silent> < <Plug>(MatchitOperationMultiBackward)
 omap <silent> ? <Plug>(MatchitOperationMultiForward)
+" use % functionality with leader
+nmap <silent> <leader><leader> <Plug>(MatchitNormalForward)
+xmap <silent> <leader><leader> <Plug>(MatchitVisualForward)
+omap <silent> <leader><leader> <Plug>(MatchitOperationForward)
 " Text object
 xmap g% <Plug>(MatchitVisualTextObject)
 

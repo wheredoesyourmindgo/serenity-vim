@@ -379,11 +379,11 @@ omap GI <Plug>(textobj-indent-same-a)
 " matchit
 let g:no_plugin_maps = 1
 nmap <silent> %  <Plug>(MatchitNormalForward)
-nmap <silent> l% <Plug>(MatchitNormalBackward)
+nmap <silent> q% <Plug>(MatchitNormalBackward)
 xmap <silent> %  <Plug>(MatchitVisualForward)
-xmap <silent> l% <Plug>(MatchitVisualBackward)
+xmap <silent> q% <Plug>(MatchitVisualBackward)
 omap <silent> %  <Plug>(MatchitOperationForward)
-omap <silent> l% <Plug>(MatchitOperationBackward)
+omap <silent> q% <Plug>(MatchitOperationBackward)
 " Analogues of [{ and ]} using matching patterns:
 nmap <silent> < <Plug>(MatchitNormalMultiBackward)
 nmap <silent> ? <Plug>(MatchitNormalMultiForward)

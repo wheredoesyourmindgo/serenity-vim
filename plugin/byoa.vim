@@ -407,9 +407,9 @@ noremap <leader>o H
 noremap <leader>e M
 noremap <leader>/ L
 " scroll to position
-noremap <leader>, zt
-noremap <leader>i zz
 noremap <leader>u zb
+noremap <leader>i zz
+noremap <leader>, zt
 " (| pipe symbol must be escaped, or use <bar>)
 " map <Bar> %
 " unused keys

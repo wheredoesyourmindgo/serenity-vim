@@ -443,8 +443,6 @@ noremap <PageUp> <C-b>
 noremap <PageDown> <C-f>
 " Half Pg down
 " noremap <S-PageDown> <C-d>
-" Expert mode
-noremap @ Q
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " Indent
@@ -470,8 +468,10 @@ noremap <leader>v za
 " Visual Block Mode
 " noremap <C-y> <C-v>
 " noremap <C-v> <nop>
+" Expert mode
+noremap ! Q
 " Record macro
-noremap ! q
+noremap @ q
 " External filter
 " noremap # !
 " noremap ## !!

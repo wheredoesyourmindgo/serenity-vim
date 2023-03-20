@@ -406,6 +406,8 @@ xmap g% <Plug>(MatchitVisualTextObject)
 " Quit w/o save
 " noremap <leader>V ZQ
 
+" Goto Definition
+noremap <leader>j gD
 " Hard Bol.
 noremap <leader>n 0
 " Bol. down

@@ -237,7 +237,7 @@
       ]
     },
     {
-      "before": ["<leader>", "<leader>"],
+      "before": ["<leader>", "t"],
       "commands": [
         {
           "command": "editor.emmet.action.matchTag",
@@ -834,7 +834,7 @@
       "after": ["g", "h"]
     },
     {
-      "before": ["<leader>", "j"],
+      "before": ["<leader>", "d"],
       "after": ["g", "d"]
     },
     {
@@ -1069,7 +1069,7 @@
       ]
     },
     {
-      "before": ["<leader>", "<leader>"],
+      "before": ["<leader>", "t"],
       "commands": [
         {
           "command": "editor.emmet.action.matchTag",
@@ -1936,7 +1936,7 @@
       "after": ["g", "h"]
     },
     {
-      "before": ["<leader>", "j"],
+      "before": ["<leader>", "d"],
       "after": ["g", "d"]
     },
     {

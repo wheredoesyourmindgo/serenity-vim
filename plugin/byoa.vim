@@ -391,10 +391,13 @@ xmap <silent> < <Plug>(MatchitVisualMultiBackward)
 xmap <silent> ? <Plug>(MatchitVisualMultiForward)
 omap <silent> < <Plug>(MatchitOperationMultiBackward)
 omap <silent> ? <Plug>(MatchitOperationMultiForward)
-" use plugin with % too
+" use plugin with %(^) and match tag leader
 nmap <silent> ^ <Plug>(MatchitNormalForward)
 xmap <silent> ^ <Plug>(MatchitVisualForward)
 omap <silent> ^ <Plug>(MatchitOperationForward)
+nmap <silent> <leader>t <Plug>(MatchitNormalForward)
+xmap <silent> <leader>t <Plug>(MatchitVisualForward)
+omap <silent> <leader>t <Plug>(MatchitOperationForward)
 " Text object
 xmap g% <Plug>(MatchitVisualTextObject)
 
@@ -407,7 +410,7 @@ xmap g% <Plug>(MatchitVisualTextObject)
 " noremap <leader>V ZQ
 
 " Goto Definition
-noremap <leader>j gD
+noremap <leader>d gD
 " Hard Bol.
 noremap <leader>n 0
 " Bol. down

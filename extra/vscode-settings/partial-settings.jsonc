@@ -60,7 +60,7 @@
       "commands": [":noh"]
     },
     {
-      "before": ["<leader>", "v"],
+      "before": ["<leader>", "f"],
       "commands": ["editor.toggleFold"],
       "when": "editorTextFocus"
     },
@@ -892,7 +892,7 @@
       "commands": [":noh"]
     },
     {
-      "before": ["<leader>", "v"],
+      "before": ["<leader>", "f"],
       "commands": ["editor.toggleFold"],
       "when": "editorTextFocus"
     },

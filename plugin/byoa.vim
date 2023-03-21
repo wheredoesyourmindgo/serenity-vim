@@ -466,7 +466,7 @@ map $ <esc>
 " Match
 " noremap ^ % See matchit plugin
 " Toggle fold
-noremap <leader>v za
+noremap <leader>f za
 
 " re-mapping shift-backspace seems impossible
 " noremap <S-bs> !#@

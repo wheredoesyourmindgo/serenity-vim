@@ -80,7 +80,7 @@ elseif s:byoa_keymap == 'qwerty'
 endif
 
 " Map leader-g to line comment toggle
-map <leader>g <plug>NERDCommenterToggle
+map <leader>c <plug>NERDCommenterToggle
 
 " bkad/CamelCaseMotion
 map & <Plug>CamelCaseMotion_ge

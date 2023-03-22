@@ -79,6 +79,8 @@ elseif s:byoa_keymap == 'qwerty'
   let s:R2C10 = ":"
 endif
 
+" Opt out of default mappings
+let g:NERDCreateDefaultMappings = 0
 " Map leader-g to line comment toggle
 map <leader>c <plug>NERDCommenterToggle
 

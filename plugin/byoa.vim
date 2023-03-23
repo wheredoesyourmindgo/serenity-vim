@@ -486,8 +486,6 @@ noremap @ q
 noremap <bs> X
 " Delete
 noremap <del> x
-" Command mode
-noremap <cr> :
 " This is used w/ help mode in order to access command mode
 noremap <leader><cr> :
 " auto format
@@ -681,3 +679,10 @@ xnoremap g i
 " execute 'onoremap ' . s:r2c5 . ' i'
 " execute 'xnoremap ' . s:r2c5 . ' i'
 
+if exists('g:vscode')
+  " VSCode extension
+else
+  " ordinary Neovim
+  " Command mode
+  noremap <cr> :
+endif

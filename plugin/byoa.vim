@@ -414,9 +414,9 @@ xmap g% <Plug>(MatchitVisualTextObject)
 " Goto Definition
 noremap <leader>d gD
 " Hard Bol.
-noremap <leader>n 0
+"noremap <leader>n 0
 " Bol. down
-noremap <leader>N _
+noremap <leader>n _
 " jump to position
 noremap <leader>o H
 noremap <leader>e M
@@ -486,8 +486,6 @@ noremap @ q
 noremap <bs> X
 " Delete
 noremap <del> x
-" Command mode
-noremap <cr> :
 " This is used w/ help mode in order to access command mode
 noremap <leader><cr> :
 " auto format
@@ -502,6 +500,11 @@ noremap _ m
 noremap ' `
 " Goto mark bol
 noremap " '
+
+" Two in one bol.
+nnoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : '^'
+xnoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : '^'
+onoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : '^'
 
 " Alpha Commands --------------------------
 
@@ -568,7 +571,7 @@ execute 'noremap ' . s:R1C10 . ' W'
 " right r2
 execute 'noremap ' . s:r2c6 . ' t'
 execute 'noremap ' . s:R2C6 . ' T'
-execute 'noremap ' . s:r2c7 . ' ^'
+"execute 'noremap ' . s:r2c7 . ' ^' // see above
 execute 'noremap ' . s:R2C7 . ' ,'
 execute 'noremap ' . s:r2c8 . ' +'
 execute 'noremap ' . s:R2C8 . ' <C-e>'
@@ -676,3 +679,10 @@ xnoremap g i
 " execute 'onoremap ' . s:r2c5 . ' i'
 " execute 'xnoremap ' . s:r2c5 . ' i'
 
+if exists('g:vscode')
+  " VSCode extension
+else
+  " ordinary Neovim
+  " Command mode
+  noremap <cr> :
+endif

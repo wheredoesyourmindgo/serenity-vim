@@ -94,6 +94,14 @@
       "before": ["<end>"],
       "after": ["G"]
     },
+    {
+      "before": ["<pageup>"],
+      "after": ["<C-b>"]
+    },
+    {
+      "before": ["<pagedown>"],
+      "after": ["<C-f>"]
+    },
     // Bol. down
     {
       "before": ["<leader>", "N"],
@@ -925,6 +933,14 @@
     {
       "before": ["<end>"],
       "after": ["G"]
+    },
+    {
+      "before": ["<pageup>"],
+      "after": ["<C-b>"]
+    },
+    {
+      "before": ["<pagedown>"],
+      "after": ["<C-f>"]
     },
     // Bol. down
     {

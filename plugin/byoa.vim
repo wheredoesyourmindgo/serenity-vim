@@ -555,7 +555,8 @@ execute 'nnoremap ' . s:r2c5 . ' v'
 execute 'nnoremap ' . s:R2C5 . ' V'
 " left r3
 if exists('g:vscode')
-  noremap v <Cmd>call VSCodeNotify('undo')<CR>
+  " Keep undo list in sync with VSCode
+  nmap <silent> v <Cmd>call VSCodeNotify('undo')<CR>
 else
   execute 'noremap ' . s:r3c1 . ' u'
 endif
@@ -567,7 +568,8 @@ execute 'noremap ' . s:R3C3 . ' Y'
 execute 'noremap ' . s:r3c4 . ' p'
 execute 'noremap ' . s:R3C4 . ' P'
 if exists('g:vscode')
-  noremap z <Cmd>call VSCodeNotify('redo')<CR>
+  " Keep redo list in sync with VSCode
+  nmap <silent> z <Cmd>call VSCodeNotify('redo')<CR>
 else
   execute 'noremap ' . s:r3c5 . ' <C-r>'
 endif

@@ -554,7 +554,12 @@ execute 'noremap ' . s:R2C4 . ' O'
 execute 'nnoremap ' . s:r2c5 . ' v'
 execute 'nnoremap ' . s:R2C5 . ' V'
 " left r3
-execute 'noremap ' . s:r3c1 . ' u'
+if exists('g:vscode')
+  nnoremap v <Cmd>call VSCodeNotify('undo')<CR>
+  vnoremap v <Cmd>call VSCodeNotifyVisual('undo', 1)<CR>
+else
+  execute 'noremap ' . s:r3c1 . ' u'
+endif
 execute 'noremap ' . s:R3C1 . ' U'
 execute 'noremap ' . s:r3c2 . ' d'
 execute 'noremap ' . s:R3C2 . ' D'
@@ -562,7 +567,12 @@ execute 'noremap ' . s:r3c3 . ' y'
 execute 'noremap ' . s:R3C3 . ' Y'
 execute 'noremap ' . s:r3c4 . ' p'
 execute 'noremap ' . s:R3C4 . ' P'
-execute 'noremap ' . s:r3c5 . ' <C-r>'
+if exists('g:vscode')
+  nnoremap z <Cmd>call VSCodeNotify('redo')<CR>
+  vnoremap z <Cmd>call VSCodeNotifyVisual('redo', 1)<CR>
+else
+  execute 'noremap ' . s:r3c5 . ' <C-r>'
+endif
 execute 'noremap ' . s:R3C5 . ' &'
 " right r1
 execute 'noremap ' . s:r1c6 . ' f'

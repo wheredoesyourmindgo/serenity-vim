@@ -318,9 +318,9 @@ execute 'nnoremap ' . s:R2C5 . ' V'
 if exists('g:vscode')
   " Keep undo list in sync with VSCode
   "nmap <silent> v <Cmd>call VSCodeNotify('undo')<CR>
-  execute 'nmap ' . s:r3c1 . ' u'
+  execute 'noremap ' . s:r3c1 . ' u'
 else
-  execute 'nmap ' . s:r3c1 . ' u'
+  execute 'noremap ' . s:r3c1 . ' u'
 endif
 execute 'noremap ' . s:R3C1 . ' U'
 execute 'noremap ' . s:r3c2 . ' d'
@@ -332,9 +332,9 @@ execute 'noremap ' . s:R3C4 . ' P'
 if exists('g:vscode')
   " Keep redo list in sync with VSCode
   "nmap <silent> z <Cmd>call VSCodeNotify('redo')<CR>
-  execute 'nmap ' . s:r3c5 . ' <C-r>'
+  execute 'noremap ' . s:r3c5 . ' <C-r>'
 else
-  execute 'nmap ' . s:r3c5 . ' <C-r>'
+  execute 'noremap ' . s:r3c5 . ' <C-r>'
 endif
 execute 'noremap ' . s:R3C5 . ' &'
 " right r1

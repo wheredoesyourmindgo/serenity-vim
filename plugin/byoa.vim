@@ -121,53 +121,48 @@ let g:surround_no_insert_mappings = 1
 " Don't use Sandwhich default mappings
 " The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
 let g:sandwich_no_default_key_mappings = 1
-silent! nmap <unique><silent> xm <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> cm <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> xM <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> cM <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> xz <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> cz <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
+silent! nmap <unique><silent> xZ  <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
+silent! nmap <unique><silent> cZ <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
 let g:operator_sandwich_no_default_key_mappings = 1
 " add
-silent! nmap <unique> wm <Plug>(operator-sandwich-add)
-silent! xmap <unique> M <Plug>(operator-sandwich-add)
-silent! omap <unique> M <Plug>(operator-sandwich-g@)
+silent! nmap <unique> wz <Plug>(operator-sandwich-add)
+silent! xmap <unique> Z <Plug>(operator-sandwich-add)
+silent! omap <unique> Z <Plug>(operator-sandwich-g@)
 " delete
 " silent! xmap <unique> ax <Plug>(operator-sandwich-delete)
 " replace
 " silent! xmap <unique> af <Plug>(operator-sandwich-replace)
 let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> gM <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> gM <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> GM <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> GM <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> gm <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> gm <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> Gm <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> Gm <Plug>(textobj-sandwich-query-a)
+silent! omap <unique> gZ <Plug>(textobj-sandwich-auto-i)
+silent! xmap <unique> gZ <Plug>(textobj-sandwich-auto-i)
+silent! omap <unique> GZ <Plug>(textobj-sandwich-auto-a)
+silent! xmap <unique> GZ <Plug>(textobj-sandwich-auto-a)
+silent! omap <unique> gz <Plug>(textobj-sandwich-query-i)
+silent! xmap <unique> gz <Plug>(textobj-sandwich-query-i)
+silent! omap <unique> Gz <Plug>(textobj-sandwich-query-a)
+silent! xmap <unique> Gz <Plug>(textobj-sandwich-query-a)
 " vim-surround keymap macro (https://github.com/machakann/vim-sandwich/blob/master/macros/sandwich/keymap/surround.vim)
+nmap wz <Plug>(sandwich-add)
+"onoremap <SID>line :normal! ^vg_<CR>
+nmap <silent> wzz <Plug>(sandwich-add)<SID>line
+"onoremap <SID>gul g_
+nmap <silent> wZ <Plug>(sandwich-add)<SID>gul
 
-"let g:sandwich_no_default_key_mappings = 1
-"let g:operator_sandwich_no_default_key_mappings = 1
-"let g:textobj_sandwich_no_default_key_mappings = 1
+nmap xz <Plug>(sandwich-delete)
+nmap xzz <Plug>(sandwich-delete-auto)
+nmap cz <Plug>(sandwich-replace)
+nmap czz <Plug>(sandwich-replace-auto)
 
-nmap wm <Plug>(sandwich-add)
-onoremap <SID>line :normal! ^vg_<CR>
-nmap <silent> wmm <Plug>(sandwich-add)<SID>line
-onoremap <SID>gul g_
-nmap <silent> wM <Plug>(sandwich-add)<SID>gul
+xmap Z <Plug>(sandwich-add)
 
-nmap xm <Plug>(sandwich-delete)
-nmap xmm <Plug>(sandwich-delete-auto)
-nmap cm <Plug>(sandwich-replace)
-nmap cmm <Plug>(sandwich-replace-auto)
-
-xmap M <Plug>(sandwich-add)
-
-runtime autoload/repeat.vim
-if hasmapto('<Plug>(RepeatDot)')
-  nmap . <Plug>(operator-sandwich-predot)<Plug>(RepeatDot)
-else
-  nmap . <Plug>(operator-sandwich-dot)
-endif
+"runtime autoload/repeat.vim
+"if hasmapto('<Plug>(RepeatDot)')
+"  nmap . <Plug>(operator-sandwich-predot)<Plug>(RepeatDot)
+"else
+"  nmap . <Plug>(operator-sandwich-dot)
+"endif
 
 " Default recipes
 let g:sandwich#recipes = [

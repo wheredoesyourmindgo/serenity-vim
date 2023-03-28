@@ -79,10 +79,16 @@ elseif s:byoa_keymap == 'qwerty'
   let s:R2C10 = ":"
 endif
 
-" Opt out of default mappings
-let g:NERDCreateDefaultMappings = 0
-" Map leader-g to line comment toggle
-map <leader>c <plug>NERDCommenterToggle
+" Comment line toggle
+if exists('g:vscode')
+  nnoremap <leader>c <Cmd>call VSCodeNotify('editor.action.commentLine')<CR>
+  vnoremap <leader>c <Cmd>call VSCodeNotifyVisual('editor.action.commentLine', 1)<CR>
+else
+  " Opt out of default mappings
+  let g:NERDCreateDefaultMappings = 0
+  " Map leader-g to line comment toggle
+  map <leader>c <plug>NERDCommenterToggle
+endif
 
 " bkad/CamelCaseMotion
 map & <Plug>CamelCaseMotion_ge
@@ -486,8 +492,15 @@ noremap @ q
 noremap <bs> X
 " Delete
 noremap <del> x
-" This is used w/ help mode in order to access command mode
-noremap <leader><cr> :
+" Command Mode
+if exists('g:vscode')
+  " see VSCode keybindings
+else
+  noremap <cr> :
+  " This is used w/ help mode in order to access command mode
+  noremap <leader><cr> :
+endif
+
 " auto format
 noremap $ =
 " repeat command
@@ -517,6 +530,12 @@ execute 'noremap ' . s:r1c3 . ' c'
 execute 'noremap ' . s:R1C3 . ' C'
 execute 'noremap ' . s:r1c4 . ' r'
 execute 'noremap ' . s:R1C4 . ' R'
+if exists('g:vscode')
+  " TODO
+else
+  execute 'map ' . s:r1c5 . ' <Plug>(wildfire-fuel)'
+  execute 'vmap ' . s:R1C5 . ' <Plug>(wildfire-water)'
+endif
 " map b <Plug>(wildfire-fuel)
 " vmap B <Plug>(wildfire-water)
 "execute 'map ' . s:r1c5 . ' <Plug>(wildfire-fuel)'
@@ -678,14 +697,3 @@ xnoremap g i
 " execute 'xnoremap ' . s:R2C5 . ' a'
 " execute 'onoremap ' . s:r2c5 . ' i'
 " execute 'xnoremap ' . s:r2c5 . ' i'
-
-if exists('g:vscode')
-  " VSCode extension
-else
-  " ordinary Neovim
-  " Command mode
-  noremap <cr> :
-  " b (serenity)
-  execute 'map ' . s:r1c5 . ' <Plug>(wildfire-fuel)'
-  execute 'vmap ' . s:R1C5 . ' <Plug>(wildfire-water)'
-endif

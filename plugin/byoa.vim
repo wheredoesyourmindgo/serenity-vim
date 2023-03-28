@@ -106,252 +106,18 @@ let g:vim_markdown_no_default_key_mappings = 1
 " Plugin order in .vimrc matters
 " Don't use Surround default mappings
 let g:surround_no_mappings = 1
+" TODO - Setup custom Insert mappings
 let g:surround_no_insert_mappings = 1
-" nmap xa  <Plug>Dsurround
-" nmap fa  <Plug>Csurround
-" nmap fA  <Plug>CSurround
-" nmap ca  <Plug>Ysurround
-" nmap cA  <Plug>YSurround
-" nmap caa <Plug>Yssurround
-" nmap cAa <Plug>YSsurround
-" nmap cAA <Plug>YSsurround
-" xmap A   <Plug>VSurround
-" xmap gA  <Plug>VgSurround
-
-" Don't use Sandwhich default mappings
-" The target/goal of the re-mappings was to find something similar to Surround that worked in VSCode as well. The drawback of using Vim Surround is that the Vim Repeat plugin breaks the "." remapping.
-let g:sandwich_no_default_key_mappings = 1
-silent! nmap <unique><silent> xz <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> cz <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-query-a)
-silent! nmap <unique><silent> xZ  <Plug>(operator-sandwich-delete)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-silent! nmap <unique><silent> cZ <Plug>(operator-sandwich-replace)<Plug>(operator-sandwich-release-count)<Plug>(textobj-sandwich-auto-a)
-let g:operator_sandwich_no_default_key_mappings = 1
-" add
-silent! nmap <unique> wz <Plug>(operator-sandwich-add)
-silent! xmap <unique> Z <Plug>(operator-sandwich-add)
-silent! omap <unique> Z <Plug>(operator-sandwich-g@)
-" delete
-" silent! xmap <unique> ax <Plug>(operator-sandwich-delete)
-" replace
-" silent! xmap <unique> af <Plug>(operator-sandwich-replace)
-let g:textobj_sandwich_no_default_key_mappings = 1
-silent! omap <unique> gZ <Plug>(textobj-sandwich-auto-i)
-silent! xmap <unique> gZ <Plug>(textobj-sandwich-auto-i)
-silent! omap <unique> GZ <Plug>(textobj-sandwich-auto-a)
-silent! xmap <unique> GZ <Plug>(textobj-sandwich-auto-a)
-silent! omap <unique> gz <Plug>(textobj-sandwich-query-i)
-silent! xmap <unique> gz <Plug>(textobj-sandwich-query-i)
-silent! omap <unique> Gz <Plug>(textobj-sandwich-query-a)
-silent! xmap <unique> Gz <Plug>(textobj-sandwich-query-a)
-" vim-surround keymap macro (https://github.com/machakann/vim-sandwich/blob/master/macros/sandwich/keymap/surround.vim)
-nmap wz <Plug>(sandwich-add)
-"onoremap <SID>line :normal! ^vg_<CR>
-nmap <silent> wzz <Plug>(sandwich-add)<SID>line
-"onoremap <SID>gul g_
-nmap <silent> wZ <Plug>(sandwich-add)<SID>gul
-
-nmap xz <Plug>(sandwich-delete)
-nmap xzz <Plug>(sandwich-delete-auto)
-nmap cz <Plug>(sandwich-replace)
-nmap czz <Plug>(sandwich-replace-auto)
-
-xmap Z <Plug>(sandwich-add)
-
-"runtime autoload/repeat.vim
-"if hasmapto('<Plug>(RepeatDot)')
-"  nmap . <Plug>(operator-sandwich-predot)<Plug>(RepeatDot)
-"else
-"  nmap . <Plug>(operator-sandwich-dot)
-"endif
-
-" Default recipes
-let g:sandwich#recipes = [
-      \   {
-      \     'buns': ['\s\+', '\s\+'],
-      \     'regex': 1,
-      \     'kind': ['delete', 'replace', 'query'],
-      \     'input': [' ']
-      \   },
-      \
-      \   {
-      \     'buns':         ['', ''],
-      \     'action':       ['add'],
-      \     'motionwise':   ['line'],
-      \     'linewise':     1,
-      \     'input':        ["\<CR>"]
-      \   },
-      \
-      \   {
-      \     'buns':         ['^$', '^$'],
-      \     'regex':        1,
-      \     'linewise':     1,
-      \     'input':        ["\<CR>"]
-      \   },
-      \
-      \   {
-      \     'buns':         ['<', '>'],
-      \     'expand_range': 0,
-      \     'input':        ['>', 'a'],
-      \   },
-      \
-      \   {
-      \     'buns':         ['`', '`'],
-      \     'quoteescape':  1,
-      \     'expand_range': 0,
-      \     'nesting':      0,
-      \     'linewise':     0,
-      \   },
-      \
-      \   {
-      \     'buns':         ['"', '"'],
-      \     'quoteescape':  1,
-      \     'expand_range': 0,
-      \     'nesting':      0,
-      \     'linewise':     0,
-      \   },
-      \
-      \   {
-      \     'buns':         ["'", "'"],
-      \     'quoteescape':  1,
-      \     'expand_range': 0,
-      \     'nesting':      0,
-      \     'linewise':     0,
-      \   },
-      \
-      \   {
-      \     'buns':         ['{', '}'],
-      \     'nesting':      1,
-      \     'skip_break':   1,
-      \     'input':        ['{', '}', 'B'],
-      \   },
-      \
-      \   {
-      \     'buns':         ['[', ']'],
-      \     'nesting':      1,
-      \     'input':        ['[', ']', 'r'],
-      \   },
-      \
-      \   {
-      \     'buns':         ['(', ')'],
-      \     'nesting':      1,
-      \     'input':        ['(', ')', 'b'],
-      \   },
-      \
-      \   {
-      \     'buns': 'sandwich#magicchar#t#tag()',
-      \     'listexpr': 1,
-      \     'kind': ['add'],
-      \     'action': ['add'],
-      \     'input': ['t', 'T'],
-      \   },
-      \
-      \   {
-      \     'buns': 'sandwich#magicchar#t#tag()',
-      \     'listexpr': 1,
-      \     'kind': ['replace'],
-      \     'action': ['add'],
-      \     'input': ['T', '<'],
-      \   },
-      \
-      \   {
-      \     'buns': 'sandwich#magicchar#t#tagname()',
-      \     'listexpr': 1,
-      \     'kind': ['replace'],
-      \     'action': ['add'],
-      \     'input': ['t'],
-      \   },
-      \
-      \   {
-      \     'external': ["\<Plug>(textobj-sandwich-tag-i)", "\<Plug>(textobj-sandwich-tag-a)"],
-      \     'noremap': 0,
-      \     'kind': ['delete', 'textobj'],
-      \     'expr_filter': ['operator#sandwich#kind() !=# "replace"'],
-      \     'linewise': 1,
-      \     'input': ['t', 'T', '<'],
-      \   },
-      \
-      \   {
-      \     'external': ["\<Plug>(textobj-sandwich-tag-i)", "\<Plug>(textobj-sandwich-tag-a)"],
-      \     'noremap': 0,
-      \     'kind': ['replace', 'query'],
-      \     'expr_filter': ['operator#sandwich#kind() ==# "replace"'],
-      \     'input': ['T', '<'],
-      \   },
-      \
-      \   {
-      \     'external': ["\<Plug>(textobj-sandwich-tagname-i)", "\<Plug>(textobj-sandwich-tagname-a)"],
-      \     'noremap': 0,
-      \     'kind': ['replace', 'textobj'],
-      \     'expr_filter': ['operator#sandwich#kind() ==# "replace"'],
-      \     'input': ['t'],
-      \   },
-      \
-      \   {
-      \     'buns': ['sandwich#magicchar#f#fname()', '")"'],
-      \     'kind': ['add', 'replace'],
-      \     'action': ['add'],
-      \     'expr': 1,
-      \     'input': ['f']
-      \   },
-      \
-      \   {
-      \     'external': ["\<Plug>(textobj-sandwich-function-ip)", "\<Plug>(textobj-sandwich-function-i)"],
-      \     'noremap': 0,
-      \     'kind': ['delete', 'replace', 'query'],
-      \     'input': ['f']
-      \   },
-      \
-      \   {
-      \     'external': ["\<Plug>(textobj-sandwich-function-ap)", "\<Plug>(textobj-sandwich-function-a)"],
-      \     'noremap': 0,
-      \     'kind': ['delete', 'replace', 'query'],
-      \     'input': ['F']
-      \   },
-      \
-      \   {
-      \     'buns': 'sandwich#magicchar#i#input("operator")',
-      \     'kind': ['add', 'replace'],
-      \     'action': ['add'],
-      \     'listexpr': 1,
-      \     'input': ['i'],
-      \   },
-      \
-      \   {
-      \     'buns': 'sandwich#magicchar#i#input("textobj", 1)',
-      \     'kind': ['delete', 'replace', 'query'],
-      \     'listexpr': 1,
-      \     'regex': 1,
-      \     'input': ['i'],
-      \   },
-      \
-      \   {
-      \     'buns': 'sandwich#magicchar#i#lastinput("operator", 1)',
-      \     'kind': ['add', 'replace'],
-      \     'action': ['add'],
-      \     'listexpr': 1,
-      \     'input': ['I'],
-      \   },
-      \
-      \   {
-      \     'buns': 'sandwich#magicchar#i#lastinput("textobj")',
-      \     'kind': ['delete', 'replace', 'query'],
-      \     'listexpr': 1,
-      \     'regex': 1,
-      \     'input': ['I'],
-      \   },
-      \ ]
-
-
-" Whitespace padded variants
-" https://github.com/machakann/vim-sandwich/issues/44#issuecomment-321522474
-let g:sandwich#recipes += [
-  \   {'buns': ['{ ', ' }'], 'nesting': 1, 'match_syntax': 1, 'kind': ['add', 'replace'], 'action': ['add'], 'input': ['{']},
-  \   {'buns': ['[ ', ' ]'], 'nesting': 1, 'match_syntax': 1, 'kind': ['add', 'replace'], 'action': ['add'], 'input': ['[']},
-  \   {'buns': ['( ', ' )'], 'nesting': 1, 'match_syntax': 1, 'kind': ['add', 'replace'], 'action': ['add'], 'input': ['(']},
-  \   {'buns': ['{\s*', '\s*}'],   'nesting': 1, 'regex': 1, 'match_syntax': 1, 'kind': ['delete', 'replace', 'textobj'], 'action': ['delete'], 'input': ['{']},
-  \   {'buns': ['\[\s*', '\s*\]'], 'nesting': 1, 'regex': 1, 'match_syntax': 1, 'kind': ['delete', 'replace', 'textobj'], 'action': ['delete'], 'input': ['[']},
-  \   {'buns': ['(\s*', '\s*)'],   'nesting': 1, 'regex': 1, 'match_syntax': 1, 'kind': ['delete', 'replace', 'textobj'], 'action': ['delete'], 'input': ['(']},
-  \ ]
+nmap xm  <Plug>Dsurround
+nmap cm  <Plug>Csurround
+nmap cM  <Plug>CSurround
+nmap wm  <Plug>Ysurround
+nmap wM  <Plug>YSurround
+nmap wmm <Plug>Yssurround
+nmap wMm <Plug>YSsurround
+nmap wMM <Plug>YSsurround
+xmap M   <Plug>VSurround
+xmap gM  <Plug>VgSurround
 
 
 " Don't use Fugitive mappings
@@ -551,9 +317,10 @@ execute 'nnoremap ' . s:R2C5 . ' V'
 " left r3
 if exists('g:vscode')
   " Keep undo list in sync with VSCode
-  nmap <silent> v <Cmd>call VSCodeNotify('undo')<CR>
+  "nmap <silent> v <Cmd>call VSCodeNotify('undo')<CR>
+  execute 'nmap ' . s:r3c1 . ' u'
 else
-  execute 'nnoremap ' . s:r3c1 . ' u'
+  execute 'nmap ' . s:r3c1 . ' u'
 endif
 execute 'noremap ' . s:R3C1 . ' U'
 execute 'noremap ' . s:r3c2 . ' d'
@@ -564,9 +331,10 @@ execute 'noremap ' . s:r3c4 . ' p'
 execute 'noremap ' . s:R3C4 . ' P'
 if exists('g:vscode')
   " Keep redo list in sync with VSCode
-  nmap <silent> z <Cmd>call VSCodeNotify('redo')<CR>
+  "nmap <silent> z <Cmd>call VSCodeNotify('redo')<CR>
+  execute 'nmap ' . s:r3c5 . ' <C-r>'
 else
-  execute 'nnoremap ' . s:r3c5 . ' <C-r>'
+  execute 'nmap ' . s:r3c5 . ' <C-r>'
 endif
 execute 'noremap ' . s:R3C5 . ' &'
 " right r1

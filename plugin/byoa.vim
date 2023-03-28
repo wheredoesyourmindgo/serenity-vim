@@ -519,8 +519,8 @@ execute 'noremap ' . s:r1c4 . ' r'
 execute 'noremap ' . s:R1C4 . ' R'
 " map b <Plug>(wildfire-fuel)
 " vmap B <Plug>(wildfire-water)
-execute 'map ' . s:r1c5 . ' <Plug>(wildfire-fuel)'
-execute 'vmap ' . s:R1C5 . ' <Plug>(wildfire-water)'
+"execute 'map ' . s:r1c5 . ' <Plug>(wildfire-fuel)'
+"execute 'vmap ' . s:R1C5 . ' <Plug>(wildfire-water)'
 " left r2
 execute 'noremap ' . s:r2c1 . ' s'
 " Using A in visual mode w/ vim-sandwhich
@@ -685,4 +685,7 @@ else
   " ordinary Neovim
   " Command mode
   noremap <cr> :
+  " b (serenity)
+  execute 'map ' . s:r1c5 . ' <Plug>(wildfire-fuel)'
+  execute 'vmap ' . s:R1C5 . ' <Plug>(wildfire-water)'
 endif

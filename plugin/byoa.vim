@@ -303,8 +303,8 @@ endif
 "execute 'vmap ' . s:R1C5 . ' <Plug>(wildfire-water)'
 " left r2
 execute 'noremap ' . s:r2c1 . ' s'
-" Using A in visual mode w/ vim-sandwhich
-execute 'noremap ' . s:R2C1 . ' S'
+" Using M in visual mode w/ vim-surround
+execute 'nnoremap ' . s:R2C1 . ' S'
 execute 'noremap ' . s:r2c2 . ' i'
 execute 'noremap ' . s:R2C2 . ' I'
 execute 'noremap ' . s:r2c3 . ' a'

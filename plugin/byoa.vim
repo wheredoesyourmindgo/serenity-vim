@@ -313,6 +313,7 @@ if exists('g:vscode')
   nnoremap Nn g;
   nnoremap Aa g,
 else
+" TODO - jumplist remaps are not working in normal neovim
   nnoremap NN <C-o>
   nnoremap AA <C-i>
   nnoremap Nn g;
@@ -450,6 +451,9 @@ omap y <Plug>(clever-f-t)
 nmap Y <Plug>(clever-f-T)
 xmap Y <Plug>(clever-f-T)
 omap Y <Plug>(clever-f-T)
+nmap <esc> <esc> | <Plug>(clever-f-reset)
+xmap <esc> <esc> | <Plug>(clever-f-reset)
+omap <esc> <esc> | <Plug>(clever-f-reset)
 
 execute 'noremap ' . s:r1c7 . ' ge'
 execute 'noremap ' . s:R1C7 . ' gE'

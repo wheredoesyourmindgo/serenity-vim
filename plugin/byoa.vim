@@ -308,11 +308,15 @@ endif
 
 " Jumplist
 if exists('g:vscode')
-  nnoremap N <Cmd>call VSCodeNotify("workbench.action.navigateBack")<CR>
-  nnoremap A <Cmd>call VSCodeNotify("workbench.action.navigateForward")<CR>
+  nnoremap NN <Cmd>call VSCodeNotify("workbench.action.navigateBack")<CR>
+  nnoremap AA <Cmd>call VSCodeNotify("workbench.action.navigateForward")<CR>
+  nnoremap Nn g;
+  nnoremap Aa g,
 else
-  nnoremap N<C-o>
-  nnoremap A<C-i>
+  nnoremap NN <C-o>
+  nnoremap AA <C-i>
+  nnoremap Nn g;
+  nnoremap Aa g,
 endif
 
 " Join lines
@@ -530,8 +534,8 @@ noremap qm gm
 noremap qM gM
 noremap qO go
 noremap qd gp
-" noremap q; g; what does this one do? there was a conflict below
-noremap q; gq
+noremap q; g;
+noremap qq gq
 " gr - replace
 noremap qp gr
 noremap qs gs

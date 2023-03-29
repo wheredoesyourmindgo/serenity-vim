@@ -238,12 +238,9 @@ noremap <PageDown> <C-f>
 " noremap <S-PageDown> <C-d>
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
-" Indent
-nnoremap + >>
-xnoremap } ><esc>
-" Un-indent
-nnoremap <leader><left> <<
-xnoremap <leader><left> <<esc>
+" (un)indent
+nnoremap + <
+xnoremap } >
 " swap lines
 noremap = ddp
 noremap { dd<up><up>p

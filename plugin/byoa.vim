@@ -399,7 +399,9 @@ execute 'noremap ' . s:R3C4 . ' P'
 if exists('g:vscode')
   " Keep redo list in sync with VSCode
   "nmap <silent> z <Cmd>call VSCodeNotify('redo')<CR>
-  execute 'noremap ' . s:r3c5 . ' <C-r>'
+  "vmap <silent> z <Cmd>call VSCodeNotify('redo')<CR>
+  execute 'nmap ' . s:r3c5 . ' <C-r>'
+  execute 'vmap ' . s:r3c5 . ' <C-r>'
 else
   execute 'noremap ' . s:r3c5 . ' <C-r>'
 endif

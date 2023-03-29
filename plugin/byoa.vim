@@ -208,7 +208,7 @@ noremap <leader>n _
 if exists('g:vscode')
   function s:moveCursor(to)
     " Native VSCode commands don't register jumplist. Fix by registering jumplist in Vim e.g. for subsequent use of <C-o>
-    normal! m'
+    normal! _'
     call VSCodeExtensionNotify('move-cursor', a:to)
   endfunction
 

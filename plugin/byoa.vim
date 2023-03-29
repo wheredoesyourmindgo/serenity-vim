@@ -226,7 +226,10 @@ endif
 
 " scroll to position
 if exists('g:vscode')
-  function s:reveal(direction, resetCursor)
+  function s:reveal(direction, resetCursor, restoreVisual)
+    if a:restoreVisual
+      normal! qg
+    endif
     call VSCodeExtensionNotify('reveal', a:direction, a:resetCursor)
   endfunction
 

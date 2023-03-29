@@ -203,18 +203,33 @@ noremap <leader>d gD
 "noremap <leader>n 0
 " Bol. down
 noremap <leader>n _
+
 " jump to position
-noremap <leader>o H
-noremap <leader>e M
-noremap <leader>/ L
+if exists('g:vscode')
+  function s:moveCursor(to)
+    " Native VSCode commands don't register jumplist. Fix by registering jumplist in Vim e.g. for subsequent use of <C-o>
+    normal! m'
+    call VSCodeExtensionNotify('move-cursor', a:to)
+  endfunction
+
+  nnoremap <leader>o <Cmd>call <SID>moveCursor('top')<CR>
+  xnoremap <leader>o <Cmd>call <SID>moveCursor('top')<CR>
+  nnoremap <leader>e <Cmd>call <SID>moveCursor('middle')<CR>
+  xnoremap <leader>e <Cmd>call <SID>moveCursor('middle')<CR>
+  nnoremap <leader>/ <Cmd>call <SID>moveCursor('bottom')<CR>
+  xnoremap <leader>/ <Cmd>call <SID>moveCursor('bottom')<CR>
+else
+  noremap <leader>/ L
+  noremap <leader>o H
+  noremap <leader>e M
+endif
+
 " scroll to position
 if exists('g:vscode')
-  function s:reveal(direction, resetCursor, restoreVisual)
-    if a:restoreVisual
-      normal! gv
-    endif
+  function s:reveal(direction, resetCursor)
     call VSCodeExtensionNotify('reveal', a:direction, a:resetCursor)
   endfunction
+
   nnoremap <silent> <leader>U :<C-u>call <SID>reveal('top', 1, 0)<CR>
   xnoremap <silent> <leader>U :<C-u>call <SID>reveal('top', 1, 1)<CR>
   nnoremap <silent> <leader>u :<C-u>call <SID>reveal('top', 0, 0)<CR>
@@ -258,7 +273,6 @@ noremap <PageDown> <C-f>
 " Half Pg down
 " noremap <S-PageDown> <C-d>
 
-" <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " (un)indent
 if exists('g:vscode')
   nnoremap + <Cmd>call VSCodeNotify('editor.action.outdentLines')<CR>
@@ -269,6 +283,7 @@ else
   noremap + <<
   noremap } >>
 endif
+
 " swap lines
 if exists('g:vscode')
   nnoremap = <Cmd>call VSCodeNotify('editor.action.moveLinesDownAction')<CR>
@@ -279,6 +294,7 @@ else
   noremap = ddp
   noremap { dd<up><up>p
 endif
+
 " Join lines
 noremap ` J
 " unused

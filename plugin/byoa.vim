@@ -157,6 +157,12 @@ xmap gI <Plug>(textobj-indent-same-i))
 omap gI <Plug>(textobj-indent-same-i))
 xmap GI <Plug>(textobj-indent-same-a)
 omap GI <Plug>(textobj-indent-same-a)
+" vim-textobj-line
+let g:textobj_entire_no_default_key_mappings = 1
+xmap gl <Plug>(textobj-line-i)
+omap gl <Plug>(textobj-line-i)
+xmap Gl <Plug>(textobj-line-a)
+omap Gl <Plug>(textobj-line-a)
 
 " matchit
 let g:no_plugin_maps = 1

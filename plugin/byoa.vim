@@ -226,25 +226,22 @@ endif
 
 " scroll to position
 if exists('g:vscode')
-  function s:reveal(direction, resetCursor, restoreVisual)
-    if a:restoreVisual
-      normal! qg
-    endif
+  function s:reveal(direction, resetCursor)
     call VSCodeExtensionNotify('reveal', a:direction, a:resetCursor)
   endfunction
 
-  nnoremap <silent> <leader>U :<C-u>call <SID>reveal('top', 1, 0)<CR>
-  xnoremap <silent> <leader>U :<C-u>call <SID>reveal('top', 1, 1)<CR>
-  nnoremap <silent> <leader>u :<C-u>call <SID>reveal('top', 0, 0)<CR>
-  xnoremap <silent> <leader>u :<C-u>call <SID>reveal('top', 0, 1)<CR>
-  nnoremap <silent> <leader>I :<C-u>call <SID>reveal('center', 1, 0)<CR>
-  xnoremap <silent> <leader>I :<C-u>call <SID>reveal('center', 1, 1)<CR>
-  nnoremap <silent> <leader>i :<C-u>call <SID>reveal('center', 0, 0)<CR>
-  xnoremap <silent> <leader>i :<C-u>call <SID>reveal('center', 0, 1)<CR>
-  nnoremap <silent> <leader>< :<C-u>call <SID>reveal('bottom', 1, 0)<CR>
-  xnoremap <silent> <leader>< :<C-u>call <SID>reveal('bottom', 1, 1)<CR>
-  nnoremap <silent> <leader>, :<C-u>call <SID>reveal('bottom', 0, 0)<CR>
-  xnoremap <silent> <leader>, :<C-u>call <SID>reveal('bottom', 0, 1)<CR>
+  nnoremap <silent> <leader>U :<C-u>call <SID>reveal('top', 1)<CR>
+  xnoremap <silent> <leader>U :<C-u>call <SID>reveal('top', 1)<CR>
+  nnoremap <silent> <leader>u :<C-u>call <SID>reveal('top', 0)<CR>
+  xnoremap <silent> <leader>u :<C-u>call <SID>reveal('top', 0)<CR>
+  nnoremap <silent> <leader>I :<C-u>call <SID>reveal('center', 1)<CR>
+  xnoremap <silent> <leader>I :<C-u>call <SID>reveal('center', 1)<CR>
+  nnoremap <silent> <leader>i :<C-u>call <SID>reveal('center', 0)<CR>
+  xnoremap <silent> <leader>i :<C-u>call <SID>reveal('center', 0)<CR>
+  nnoremap <silent> <leader>< :<C-u>call <SID>reveal('bottom', 1)<CR>
+  xnoremap <silent> <leader>< :<C-u>call <SID>reveal('bottom', 1)<CR>
+  nnoremap <silent> <leader>, :<C-u>call <SID>reveal('bottom', 0)<CR>
+  xnoremap <silent> <leader>, :<C-u>call <SID>reveal('bottom', 0)<CR>
 else
   noremap <leader>u zb
   noremap <leader>i zz

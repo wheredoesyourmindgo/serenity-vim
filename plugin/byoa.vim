@@ -265,7 +265,7 @@ noremap [ {
 " Help
 if exists('g:vscode')
 else
-  noremap <leader>k K
+  noremap <leader>h K
 endif
 " Bracket cmds (TODO)
 "noremap <leader>< ]

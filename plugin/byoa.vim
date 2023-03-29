@@ -313,10 +313,9 @@ if exists('g:vscode')
   nnoremap Nn g;
   nnoremap Aa g,
 else
-  "noremap NN <C-o>
-  "noremap AA <C-i>
-  execute "normal " . NN . "\<c-o>"
-  execute "normal " . AA . "\<c-i>"
+  " TODO - Jumplist ain't working in neovim
+  noremap NN <C-o>
+  noremap AA <C-i>
   noremap Nn g;
   noremap Aa g,
 endif

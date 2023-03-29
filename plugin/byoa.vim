@@ -197,8 +197,16 @@ xmap g% <Plug>(MatchitVisualTextObject)
 " Quit w/o save
 " noremap <leader>V ZQ
 
+" Show Hover
+if exists('g:vscode')
+  nnoremap <leader>p <Cmd>call VSCodeNotify('editor.action.showHover')<CR>
+endif
 " Goto Definition
-noremap <leader>d gD
+if exists('g:vscode')
+  nnoremap <leader>d <Cmd>call VSCodeNotify('editor.action.revealDefinition')<CR>
+else
+  noremap <leader>d gD
+endif
 " Hard Bol.
 "noremap <leader>n 0
 " Bol. down
@@ -501,7 +509,7 @@ noremap qs gi
 noremap q<tab> gd
 noremap qk gk
 noremap q. gn
-noremap qh gN
+noremap qh gh
 noremap qW gJ
 noremap qm gm
 noremap qM gM

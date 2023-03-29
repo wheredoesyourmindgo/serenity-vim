@@ -239,11 +239,25 @@ noremap <PageDown> <C-f>
 
 " <esc> fixes an issue where indent occurs again after (un)indenting and moving away from a visual selection
 " (un)indent
-noremap + <<
-noremap } >>
+if exists('g:vscode')
+  nnoremap + <Cmd>call VSCodeNotify('editor.action.outdentLines')<CR>
+  vnoremap + <Cmd>call VSCodeNotifyVisual('editor.action.outdentLines', 1)<CR>
+  nnoremap } <Cmd>call VSCodeNotify('editor.action.indentLines')<CR>
+  vnoremap } <Cmd>call VSCodeNotifyVisual('editor.action.indentLines', 1)<CR>
+else
+  noremap + <<
+  noremap } >>
+endif
 " swap lines
-noremap = ddp
-noremap { dd<up><up>p
+if exists('g:vscode')
+  nnoremap = <Cmd>call VSCodeNotify('editor.action.moveLinesDownAction')<CR>
+  vnoremap = <Cmd>call VSCodeNotifyVisual('editor.action.moveLinesDownAction', 1)<CR>
+  nnoremap { <Cmd>call VSCodeNotify('editor.action.moveLinesUpAction')<CR>
+  vnoremap { <Cmd>call VSCodeNotifyVisual('editor.action.moveLinesUpAction', 1)<CR>
+else
+  noremap = ddp
+  noremap { dd<up><up>p
+endif
 " Join lines
 noremap ` J
 " unused

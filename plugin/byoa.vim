@@ -306,6 +306,15 @@ else
   noremap { dd<up><up>p
 endif
 
+" Jumplist
+if exists('g:vscode')
+  nnoremap N <Cmd>call VSCodeNotify("workbench.action.navigateBack")<CR>
+  nnoremap A <Cmd>call VSCodeNotify("workbench.action.navigateForward")<CR>
+else
+  nnoremap N<C-o>
+  nnoremap A<C-i>
+endif
+
 " Join lines
 noremap ` J
 " unused
@@ -421,20 +430,23 @@ else
 endif
 execute 'noremap ' . s:R3C5 . ' &'
 " right r1
-execute 'noremap ' . s:r1c6 . ' f'
-execute 'noremap ' . s:R1C6 . ' F'
-" nmap j <Plug>(clever-f-f)
-" xmap j <Plug>(clever-f-f)
-" omap j <Plug>(clever-f-f)
-" nmap J <Plug>(clever-f-F)
-" xmap J <Plug>(clever-f-F)
-" omap J <Plug>(clever-f-F)
-" nmap m <Plug>(clever-f-t)
-" xmap m <Plug>(clever-f-t)
-" omap m <Plug>(clever-f-t)
-" nmap M <Plug>(clever-f-T)
-" xmap M <Plug>(clever-f-T)
-" omap M <Plug>(clever-f-T)
+"execute 'noremap ' . s:r1c6 . ' f'
+"execute 'noremap ' . s:R1C6 . ' F'
+
+" Clever Find
+nmap j <Plug>(clever-f-f)
+xmap j <Plug>(clever-f-f)
+omap j <Plug>(clever-f-f)
+nmap J <Plug>(clever-f-F)
+xmap J <Plug>(clever-f-F)
+omap J <Plug>(clever-f-F)
+nmap y <Plug>(clever-f-t)
+xmap y <Plug>(clever-f-t)
+omap y <Plug>(clever-f-t)
+nmap Y <Plug>(clever-f-T)
+xmap Y <Plug>(clever-f-T)
+omap Y <Plug>(clever-f-T)
+
 execute 'noremap ' . s:r1c7 . ' ge'
 execute 'noremap ' . s:R1C7 . ' gE'
 execute 'noremap ' . s:r1c8 . ' b'
@@ -444,16 +456,16 @@ execute 'noremap ' . s:R1C9 . ' E'
 execute 'noremap ' . s:r1c10 . ' w'
 execute 'noremap ' . s:R1C10 . ' W'
 " right r2
-execute 'noremap ' . s:r2c6 . ' t'
-execute 'noremap ' . s:R2C6 . ' T'
+"execute 'noremap ' . s:r2c6 . ' t'
+"execute 'noremap ' . s:R2C6 . ' T'
 "execute 'noremap ' . s:r2c7 . ' ^' // see above
-execute 'noremap ' . s:R2C7 . ' ,'
+"execute 'noremap ' . s:R2C7 . ' ,' // see clever find
 execute 'noremap ' . s:r2c8 . ' +'
 execute 'noremap ' . s:R2C8 . ' <C-e>'
 execute 'noremap ' . s:r2c9 . ' -'
 execute 'noremap ' . s:R2C9 . ' <C-y>'
 execute 'noremap ' . s:r2c10 . ' $'
-execute 'noremap ' . s:R2C10 . ' ;'
+"execute 'noremap ' . s:R2C10 . ' ;' // see clever find
 " right r3
 execute 'noremap ' . s:r3c6 . ' /'
 execute 'noremap ' . s:R3C6 . ' ?'

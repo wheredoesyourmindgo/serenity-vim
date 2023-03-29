@@ -328,27 +328,27 @@ execute 'noremap ' . s:R2C4 . ' O'
 execute 'nnoremap ' . s:r2c5 . ' v'
 execute 'nnoremap ' . s:R2C5 . ' V'
 " left r3
-"if exists('g:vscode')
-  "" Keep undo list in sync with VSCode
-  ""nmap <silent> v <Cmd>call VSCodeNotify('undo')<CR>
-  "execute 'noremap ' . s:r3c1 . ' u'
-"else
-  "execute 'noremap ' . s:r3c1 . ' u'
-"endif
-"execute 'noremap ' . s:R3C1 . ' U'
+if exists('g:vscode')
+  " Keep undo list in sync with VSCode
+  "nmap <silent> v <Cmd>call VSCodeNotify('undo')<CR>
+  execute 'noremap ' . s:r3c1 . ' u'
+else
+  execute 'noremap ' . s:r3c1 . ' u'
+endif
+execute 'noremap ' . s:R3C1 . ' U'
 execute 'noremap ' . s:r3c2 . ' d'
 execute 'noremap ' . s:R3C2 . ' D'
 execute 'noremap ' . s:r3c3 . ' y'
 execute 'noremap ' . s:R3C3 . ' Y'
 execute 'noremap ' . s:r3c4 . ' p'
 execute 'noremap ' . s:R3C4 . ' P'
-"if exists('g:vscode')
-  "" Keep redo list in sync with VSCode
-  ""nmap <silent> z <Cmd>call VSCodeNotify('redo')<CR>
-  "execute 'noremap ' . s:r3c5 . ' <C-r>'
-"else
-  "execute 'noremap ' . s:r3c5 . ' <C-r>'
-"endif
+if exists('g:vscode')
+  " Keep redo list in sync with VSCode
+  "nmap <silent> z <Cmd>call VSCodeNotify('redo')<CR>
+  execute 'noremap ' . s:r3c5 . ' <C-r>'
+else
+  execute 'noremap ' . s:r3c5 . ' <C-r>'
+endif
 execute 'noremap ' . s:R3C5 . ' &'
 " right r1
 execute 'noremap ' . s:r1c6 . ' f'

@@ -341,6 +341,8 @@ noremap _ m
 noremap ' `
 " Goto mark bol
 noremap " '
+" Goto last in jumplist
+noremap <leader>l <C-o>
 
 " Two in one bol.
 nnoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : '^'

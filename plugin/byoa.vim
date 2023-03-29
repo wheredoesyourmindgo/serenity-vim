@@ -284,7 +284,7 @@ endif
 " auto format
 noremap $ =
 " repeat command
-"noremap <tab> .
+noremap <tab> .
 " register spc.
 noremap - "
 " Set mark

@@ -451,9 +451,9 @@ omap y <Plug>(clever-f-t)
 nmap Y <Plug>(clever-f-T)
 xmap Y <Plug>(clever-f-T)
 omap Y <Plug>(clever-f-T)
-nmap <esc> <esc> | <Plug>(clever-f-reset)
-xmap <esc> <esc> | <Plug>(clever-f-reset)
-omap <esc> <esc> | <Plug>(clever-f-reset)
+nmap <esc> <esc> <bar> <Plug>(clever-f-reset)
+xmap <esc> <esc> <bar> <Plug>(clever-f-reset)
+omap <esc> <esc> <bar> <Plug>(clever-f-reset)
 
 execute 'noremap ' . s:r1c7 . ' ge'
 execute 'noremap ' . s:R1C7 . ' gE'

@@ -313,11 +313,12 @@ if exists('g:vscode')
   nnoremap Nn g;
   nnoremap Aa g,
 else
-" TODO - jumplist remaps are not working in normal neovim
-  nnoremap NN <C-o>
-  nnoremap AA <C-i>
-  nnoremap Nn g;
-  nnoremap Aa g,
+  "noremap NN <C-o>
+  "noremap AA <C-i>
+  execute "normal " . NN . "\<c-o>"
+  execute "normal " . AA . "\<c-i>"
+  noremap Nn g;
+  noremap Aa g,
 endif
 
 " Join lines
@@ -366,8 +367,6 @@ noremap _ m
 noremap ' `
 " Goto mark bol
 noremap " '
-" Goto last in jumplist
-noremap <leader>l <C-o>
 
 " Two in one bol.
 nnoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : '^'

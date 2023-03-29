@@ -256,9 +256,9 @@ noremap \ }
 noremap [ {
 " Help
 noremap <leader><tab> K
-" Bracket cmds
-noremap <leader>< ]
-noremap <leader>> [
+" Bracket cmds (TODO)
+"noremap <leader>< ]
+"noremap <leader>> [
 " Home
 noremap <home> gg
 " End

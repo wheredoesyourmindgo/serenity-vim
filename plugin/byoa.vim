@@ -208,9 +208,30 @@ noremap <leader>o H
 noremap <leader>e M
 noremap <leader>/ L
 " scroll to position
-noremap <leader>u zb
-noremap <leader>i zz
-noremap <leader>, zt
+if exists('g:vscode')
+  function s:reveal(direction, resetCursor, restoreVisual)
+    if a:restoreVisual
+      normal! gv
+    endif
+    call VSCodeExtensionNotify('reveal', a:direction, a:resetCursor)
+  endfunction
+  "nnoremap <silent> <leader>u :<C-u>call <SID>reveal('top', 1, 0)<CR>
+  "xnoremap <silent> <leader>u :<C-u>call <SID>reveal('top', 1, 1)<CR>
+  nnoremap <silent> <leader>u :<C-u>call <SID>reveal('top', 0, 0)<CR>
+  xnoremap <silent> <leader>u :<C-u>call <SID>reveal('top', 0, 1)<CR>
+  "nnoremap <silent> j. :<C-u>call <SID>reveal('center', 1, 0)<CR>
+  "xnoremap <silent> j. :<C-u>call <SID>reveal('center', 1, 1)<CR>
+  nnoremap <silent> <leader>i :<C-u>call <SID>reveal('center', 0, 0)<CR>
+  xnoremap <silent> <leader>i :<C-u>call <SID>reveal('center', 0, 1)<CR>
+  "nnoremap <silent> j- :<C-u>call <SID>reveal('bottom', 1, 0)<CR>
+  "xnoremap <silent> j- :<C-u>call <SID>reveal('bottom', 1, 1)<CR>
+  nnoremap <silent> <leader>, :<C-u>call <SID>reveal('bottom', 0, 0)<CR>
+  xnoremap <silent> <leader>, :<C-u>call <SID>reveal('bottom', 0, 1)<CR>
+else
+  noremap <leader>u zb
+  noremap <leader>i zz
+  noremap <leader>, zt
+endif
 " sentences
 " (| pipe symbol must be escaped, or use <bar>)
 noremap <bar> (

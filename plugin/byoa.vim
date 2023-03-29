@@ -210,7 +210,7 @@ endif
 " Hard Bol.
 "noremap <leader>n 0
 " Bol. down
-noremap <leader>n _
+"noremap <leader>n _
 
 " jump to position
 if exists('g:vscode')
@@ -263,7 +263,10 @@ noremap ] )
 noremap \ }
 noremap [ {
 " Help
-noremap <leader><tab> K
+if exists('g:vscode')
+else
+  noremap <leader>k K
+endif
 " Bracket cmds (TODO)
 "noremap <leader>< ]
 "noremap <leader>> [

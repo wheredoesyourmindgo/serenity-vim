@@ -363,9 +363,7 @@ noremap ' `
 noremap " '
 
 " Three in one bol.
-nnoremap <expr> n v:count > 1 ? '_' : virtcol('.') == indent('.')+1 ? '0' : '^'
-xnoremap <expr> n v:count > 1 ? '_' : virtcol('.') == indent('.')+1 ? '0' : '^'
-onoremap <expr> n v:count > 1 ? '_' : virtcol('.') == indent('.')+1 ? '0' : '^'
+noremap <expr> n v:count > 1 ? '_' : virtcol('.') == indent('.')+1 ? '0' : '^'
 
 " Up and down arrow, register with jumplist (2 or more lines)
 noremap <expr> <down> (v:count > 1 ? "m'" . v:count : '') . '<down>'

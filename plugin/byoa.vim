@@ -362,6 +362,7 @@ noremap ' `
 noremap " '
 
 " Three in one bol.
+" note - parenthesis with multiple ternary expression seems necessary
 noremap <expr> n v:count > 1 ? '_' : (virtcol('.') == indent('.')+1 ? '0' : '^')
 
 " Up and down arrow, register with jumplist (2 or more lines)

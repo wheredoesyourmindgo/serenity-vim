@@ -314,8 +314,10 @@ if exists('g:vscode')
   nnoremap Aa g,
 else
   " TODO - Jumplist ain't working in neovim
-  noremap NN <C-o>
-  noremap AA <C-i>
+  "noremap NN <C-o>
+  "noremap AA <C-i>
+  noremap NN <Plug>EnhancedJumpsOlder
+  noremap AA <Plug>EnhancedJumpsNewer
   noremap Nn g;
   noremap Aa g,
 endif

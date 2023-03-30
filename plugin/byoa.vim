@@ -466,9 +466,11 @@ execute 'noremap ' . s:R1C10 . ' W'
 "execute 'noremap ' . s:R2C6 . ' T'
 "execute 'noremap ' . s:r2c7 . ' ^' // see above
 "execute 'noremap ' . s:R2C7 . ' ,' // see clever find
-execute 'noremap ' . s:r2c8 . ' +'
+"execute 'noremap ' . s:r2c8 . ' +'
+noremap <expr> e (v:count > 1 ? "m'" . v:count : '') . '+'
 execute 'noremap ' . s:R2C8 . ' <C-e>'
-execute 'noremap ' . s:r2c9 . ' -'
+"execute 'noremap ' . s:r2c9 . ' -'
+noremap <expr> i (v:count > 1 ? "m'" . v:count : '') . '-'
 execute 'noremap ' . s:R2C9 . ' <C-y>'
 execute 'noremap ' . s:r2c10 . ' $'
 "execute 'noremap ' . s:R2C10 . ' ;' // see clever find

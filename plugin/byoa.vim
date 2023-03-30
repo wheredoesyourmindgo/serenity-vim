@@ -276,10 +276,10 @@ noremap <home> gg
 noremap <End> G
 " Pg up
 "noremap <PageUp> <C-b>
-noremap <expr> <PageUp> (1 == 1 ? "m'" : '') . '<C-b>'
+noremap <PageUp> m' <bar> <C-b>
 " Pg down
 "noremap <PageDown> <C-f>
-noremap <expr> <PageDown> (1 == 1 ? "m'" : '') . '<C-f>'
+noremap <PageDown> m' <bar> <C-f>
 
 " (un)indent
 if exists('g:vscode')
@@ -453,7 +453,6 @@ nmap Y <Plug>(clever-f-T)
 xmap Y <Plug>(clever-f-T)
 omap Y <Plug>(clever-f-T)
 "noremap <esc> <Plug>(clever-f-reset)
-"noremap <expr> <esc> (1 == 1 ? '<esc>' : '') . '<Plug>(clever-f-reset)'
 
 execute 'noremap ' . s:r1c7 . ' ge'
 execute 'noremap ' . s:R1C7 . ' gE'
@@ -484,10 +483,10 @@ execute 'noremap ' . s:r3c7 . ' #'
 execute 'noremap ' . s:R3C7 . ' N'
 "execute 'noremap ' . s:R3C8 . ' ' // see matchit
 "execute 'noremap ' . s:r3c8 . ' <C-d>'
-noremap <expr> / (1 == 1 ? "m'" : '') . '<C-d>'
+noremap / m' <bar> <C-d>
 "execute 'noremap ' . s:R3C9 . ' ' // see matchit
 "execute 'noremap ' . s:r3c9 . ' <C-u>'
-noremap <expr> , (1 == 1 ? "m'" : '') . '<C-u>'
+noremap , m' <bar> <C-u>
 execute 'noremap ' . s:r3c10 . ' *'
 execute 'noremap ' . s:R3C10 . ' n'
 

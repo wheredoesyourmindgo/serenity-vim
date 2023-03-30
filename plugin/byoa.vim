@@ -374,6 +374,10 @@ nnoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : '^'
 xnoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : '^'
 onoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : '^'
 
+" Up and down arrow, register with jumplist (2 or more lines)
+noremap <expr> <down> (v:count > 1 ? "m'" . v:count : '') . '<down>'
+noremap <expr> <up> (v:count > 1 ? "m'" . v:count : '') . '<up>'
+
 " Alpha Commands --------------------------
 
 " left r1
@@ -467,6 +471,7 @@ execute 'noremap ' . s:R1C10 . ' W'
 "execute 'noremap ' . s:r2c7 . ' ^' // see above
 "execute 'noremap ' . s:R2C7 . ' ,' // see clever find
 "execute 'noremap ' . s:r2c8 . ' +'
+" Up and down line, register with jumplist (2 or more lines)
 noremap <expr> e (v:count > 1 ? "m'" . v:count : '') . '+'
 execute 'noremap ' . s:R2C8 . ' <C-e>'
 "execute 'noremap ' . s:r2c9 . ' -'

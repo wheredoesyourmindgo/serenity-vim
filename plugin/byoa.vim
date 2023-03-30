@@ -299,14 +299,13 @@ else
   noremap { dd<up><up>p
 endif
 
-" Jumplist
+" back & forward Jumplist/Changelist
 if exists('g:vscode')
   nnoremap NN <Cmd>call VSCodeNotify("workbench.action.navigateBack")<CR>
   nnoremap AA <Cmd>call VSCodeNotify("workbench.action.navigateForward")<CR>
   nnoremap Nn g;
   nnoremap Aa g,
 else
-  " TODO - Jumplist ain't working in neovim
   "noremap NN <C-o>
   "noremap AA <C-i>
   noremap NN <Plug>EnhancedJumpsOlder
@@ -363,7 +362,7 @@ noremap ' `
 noremap " '
 
 " Three in one bol.
-noremap <expr> n v:count > 1 ? '_' : virtcol('.') == indent('.')+1 ? '0' : '^'
+noremap <expr> n v:count > 1 ? '_' : (virtcol('.') == indent('.')+1 ? '0' : '^')
 
 " Up and down arrow, register with jumplist (2 or more lines)
 noremap <expr> <down> (v:count > 1 ? "m'" . v:count : '') . '<down>'
@@ -459,8 +458,8 @@ execute 'noremap ' . s:R1C10 . ' W'
 " right r2
 "execute 'noremap ' . s:r2c6 . ' t'
 "execute 'noremap ' . s:R2C6 . ' T'
-"execute 'noremap ' . s:r2c7 . ' ^' // see above
-"execute 'noremap ' . s:R2C7 . ' ,' // see clever find
+"execute 'noremap ' . s:r2c7 . ' ^' // see three in one bol. above
+"execute 'noremap ' . s:R2C7 . ' ,' // see back & forward jumplist/changelist
 "execute 'noremap ' . s:r2c8 . ' +'
 " Up and down line, register with jumplist (2 or more lines)
 noremap <expr> e (v:count > 1 ? "m'" . v:count : '') . '+'

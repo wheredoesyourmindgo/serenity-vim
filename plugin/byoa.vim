@@ -207,10 +207,6 @@ if exists('g:vscode')
 else
   noremap <leader>d gD
 endif
-" Hard Bol.
-"noremap <leader>n 0
-" Bol. down
-"noremap <leader>n _
 
 " jump to position
 if exists('g:vscode')
@@ -366,10 +362,10 @@ noremap ' `
 " Goto mark bol
 noremap " '
 
-" Two in one bol.
-nnoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : '^'
-xnoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : '^'
-onoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : '^'
+" Three in one bol.
+nnoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : v:count > 1 ? _ : '^'
+xnoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : v:count > 1 ? _ : '^'
+onoremap <expr> n virtcol('.') == indent('.')+1 ? '0' : v:count > 1 ? _ : '^'
 
 " Up and down arrow, register with jumplist (2 or more lines)
 noremap <expr> <down> (v:count > 1 ? "m'" . v:count : '') . '<down>'

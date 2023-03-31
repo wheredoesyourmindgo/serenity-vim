@@ -366,8 +366,8 @@ noremap " '
 noremap <expr> n v:count > 1 ? '_' : (virtcol('.') == indent('.')+1 ? '0' : '^')
 
 " Up and down arrow, register with jumplist (2 or more lines)
-noremap <expr> <down> (v:count > 1 ? "m`" . v:count : '') . '<down>'
-noremap <expr> <up> (v:count > 1 ? "m`" . v:count : '') . '<up>'
+noremap <expr> <down> (v:count > 1 ? "m'" . v:count : '') . '<down>'
+noremap <expr> <up> (v:count > 1 ? "m'" . v:count : '') . '<up>'
 
 " Alpha Commands --------------------------
 

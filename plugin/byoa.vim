@@ -480,7 +480,7 @@ execute 'noremap ' . s:R3C7 . ' N'
 noremap / m` <bar> <C-d>
 "execute 'noremap ' . s:R3C9 . ' ' // see matchit
 "execute 'noremap ' . s:r3c9 . ' <C-u>'
-noremap , <up> <bar> m` <bar> <C-u>
+noremap , m`<esc> <bar> <C-u>
 execute 'noremap ' . s:r3c10 . ' *'
 execute 'noremap ' . s:R3C10 . ' n'
 

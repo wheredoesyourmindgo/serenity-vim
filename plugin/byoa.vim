@@ -272,10 +272,10 @@ noremap <home> gg
 noremap <End> G
 " Pg up
 "noremap <PageUp> <C-b>
-noremap <PageUp> m' <bar> <C-b>
+noremap <PageUp> m` <bar> <C-b>
 " Pg down
 "noremap <PageDown> <C-f>
-noremap <PageDown> m' <bar> <C-f>
+noremap <PageDown> m` <bar> <C-f>
 
 " (un)indent
 if exists('g:vscode')
@@ -366,8 +366,8 @@ noremap " '
 noremap <expr> n v:count > 1 ? '_' : (virtcol('.') == indent('.')+1 ? '0' : '^')
 
 " Up and down arrow, register with jumplist (2 or more lines)
-noremap <expr> <down> (v:count > 1 ? "m'" . v:count : '') . '<down>'
-noremap <expr> <up> (v:count > 1 ? "m'" . v:count : '') . '<up>'
+noremap <expr> <down> (v:count > 1 ? "m`" . v:count : '') . '<down>'
+noremap <expr> <up> (v:count > 1 ? "m`" . v:count : '') . '<up>'
 
 " Alpha Commands --------------------------
 
@@ -463,10 +463,10 @@ execute 'noremap ' . s:R1C10 . ' W'
 "execute 'noremap ' . s:R2C7 . ' ,' // see back & forward jumplist/changelist
 "execute 'noremap ' . s:r2c8 . ' +'
 " Up and down line, register with jumplist (2 or more lines)
-noremap <expr> e (v:count > 1 ? "m'" . v:count : '') . '+'
+noremap <expr> e (v:count > 1 ? "m`" . v:count : '') . '+'
 execute 'noremap ' . s:R2C8 . ' <C-e>'
 "execute 'noremap ' . s:r2c9 . ' -'
-noremap <expr> i (v:count > 1 ? "m'" . v:count : '') . '-'
+noremap <expr> i (v:count > 1 ? "m`" . v:count : '') . '-'
 execute 'noremap ' . s:R2C9 . ' <C-y>'
 execute 'noremap ' . s:r2c10 . ' $'
 "execute 'noremap ' . s:R2C10 . ' ;' // see clever find
@@ -477,10 +477,10 @@ execute 'noremap ' . s:r3c7 . ' #'
 execute 'noremap ' . s:R3C7 . ' N'
 "execute 'noremap ' . s:R3C8 . ' ' // see matchit
 "execute 'noremap ' . s:r3c8 . ' <C-d>'
-noremap / m' <bar> <C-d>
+noremap / m` <bar> <C-d>
 "execute 'noremap ' . s:R3C9 . ' ' // see matchit
 "execute 'noremap ' . s:r3c9 . ' <C-u>'
-noremap , m' <bar> <C-u>
+noremap , m` <bar> <C-u>
 execute 'noremap ' . s:r3c10 . ' *'
 execute 'noremap ' . s:R3C10 . ' n'
 

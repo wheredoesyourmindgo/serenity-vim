@@ -481,8 +481,7 @@ noremap / m' <bar> <C-d>
 "execute 'noremap ' . s:R3C9 . ' ' // see matchit
 "execute 'noremap ' . s:r3c9 . ' <C-u>'
 " TODO - for some reason setting mark prior to half page up breaks page up in both neovim and vscode-neovim. workaround is to not set mark if on last line.
-"noremap <expr> , line('.') == line('$') ? '<C-u>' : "m'" . '<C-u>'
-noremap ,  m' <bar> <up> <bar> <down> <bar> <C-u>
+noremap <expr> , line('.') == line('$') ? '<C-u>' : "m'" . '<C-u>'
 execute 'noremap ' . s:r3c10 . ' *'
 execute 'noremap ' . s:R3C10 . ' n'
 

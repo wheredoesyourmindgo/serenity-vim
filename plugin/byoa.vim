@@ -197,6 +197,10 @@ xmap g% <Plug>(MatchitVisualTextObject)
 " Quit w/o save
 " noremap <leader>V ZQ
 
+
+" (| note, pipe symbol must be escaped, or use <bar>)
+" noremap <bar> **
+
 " Show Hover
 if exists('g:vscode')
   nnoremap <leader>p <Cmd>call VSCodeNotify('editor.action.showHover')<CR>
@@ -252,11 +256,10 @@ else
   noremap <leader>, zt
 endif
 " sentences
-" (| pipe symbol must be escaped, or use <bar>)
-noremap <bar> (
+noremap _ (
 noremap ] )
 " paragraphs
-noremap \ }
+noremap + }
 noremap [ {
 " Help
 if exists('g:vscode')
@@ -279,12 +282,12 @@ noremap <PageDown> m' <bar> <C-f>
 
 " (un)indent
 if exists('g:vscode')
-  nnoremap + <Cmd>call VSCodeNotify('editor.action.outdentLines')<CR>
-  vnoremap + <Cmd>call VSCodeNotifyVisual('editor.action.outdentLines', 1)<CR>
+  nnoremap - <Cmd>call VSCodeNotify('editor.action.outdentLines')<CR>
+  vnoremap - <Cmd>call VSCodeNotifyVisual('editor.action.outdentLines', 1)<CR>
   nnoremap } <Cmd>call VSCodeNotify('editor.action.indentLines')<CR>
   vnoremap } <Cmd>call VSCodeNotifyVisual('editor.action.indentLines', 1)<CR>
 else
-  noremap + <<
+  noremap - <<
   noremap } >>
 endif
 
@@ -315,7 +318,7 @@ else
 endif
 
 " Join lines
-noremap ` J
+noremap \ J
 " unused
 map $ <nop>
 " Match
@@ -353,13 +356,15 @@ noremap $ =
 " repeat command
 noremap <tab> .
 " register spc.
-noremap - "
+noremap q "
 " Set mark
-noremap _ m
+noremap Q m
 " Goto mark
-noremap ' `
+noremap j `
 " Goto mark bol
-noremap " '
+noremap J '
+" Z commands
+noremap <leader>z z
 
 " Three in one bol.
 " note - parenthesis with multiple ternary expression seems necessary
@@ -372,10 +377,9 @@ noremap <expr> <up> (v:count > 1 ? "m'" . v:count : '') . '<up>'
 " Alpha Commands --------------------------
 
 " left r1
-execute 'noremap ' . s:r1c1 . ' g'
-execute 'noremap ' . s:R1C1 . ' z'
+" execute 'noremap ' . s:r1c1 . ' g'
+" execute 'noremap ' . s:R1C1 . ' z'
 execute 'noremap ' . s:r1c2 . ' ~'
-"execute 'noremap ' . s:R1C2 . ' z'
 execute 'noremap ' . s:r1c3 . ' c'
 execute 'noremap ' . s:R1C3 . ' C'
 execute 'noremap ' . s:r1c4 . ' r'
@@ -434,12 +438,12 @@ execute 'noremap ' . s:R3C5 . ' &'
 "execute 'noremap ' . s:R1C6 . ' F'
 
 " Clever Find
-nmap j <Plug>(clever-f-f)
-xmap j <Plug>(clever-f-f)
-omap j <Plug>(clever-f-f)
-nmap J <Plug>(clever-f-F)
-xmap J <Plug>(clever-f-F)
-omap J <Plug>(clever-f-F)
+nmap ' <Plug>(clever-f-f)
+xmap ' <Plug>(clever-f-f)
+omap ' <Plug>(clever-f-f)
+nmap " <Plug>(clever-f-F)
+xmap " <Plug>(clever-f-F)
+omap " <Plug>(clever-f-F)
 nmap y <Plug>(clever-f-t)
 xmap y <Plug>(clever-f-t)
 omap y <Plug>(clever-f-t)
@@ -486,82 +490,82 @@ execute 'noremap ' . s:r3c10 . ' *'
 execute 'noremap ' . s:R3C10 . ' n'
 
 " Quit commands
-noremap QQ ZQ
-noremap QZ ZZ
+noremap <leader>gQ ZQ
+noremap <leader>gZ ZZ
 
 " g mappings
-noremap q# g#
+noremap <leader>g# g#
 " A bit counter-intuitive, but there is no soft bol. down for "g" using "_", but instead there is opposite, soft eol. down
 " noremap -o g$
-noremap qo g_
-noremap qn g^
-noremap q& g&
-noremap q~ g'
-noremap q\" g`
-noremap q* g*
-noremap q+ g+
-noremap q, g,
-noremap q- g-
-noremap qy g-
-noremap q0 g0
-noremap q8 g8
-noremap q< g<
-noremap q? g?
-noremap q?? g??
-noremap q?g? g?g?
-noremap qQ gQ
-noremap qe ge
-noremap qE gE
-noremap qV gH
+noremap <leader>go g_
+noremap <leader>gn g^
+noremap <leader>g& g&
+noremap <leader>g~ g'
+noremap <leader>g\" g`
+noremap <leader>g* g*
+noremap <leader>g+ g+
+noremap <leader>g, g,
+noremap <leader>g- g-
+noremap <leader>gy g-
+noremap <leader>g0 g0
+noremap <leader>g8 g8
+noremap <leader>g< g<
+noremap <leader>g? g?
+noremap <leader>g?? g??
+noremap <leader>g?g? g?g?
+noremap <leader>gQ gQ
+noremap <leader>ge ge
+noremap <leader>gE gE
+noremap <leader>gV gH
 " gI - insert
-noremap qS gI
-noremap q<S-tab> gD
-noremap qD gP
+noremap <leader>gS gI
+noremap <leader>g<S-tab> gD
+noremap <leader>gD gP
 " gR - replace
-noremap qP gR
-noremap qT gT
-noremap qU gU
+noremap <leader>gP gR
+noremap <leader>gT gT
+noremap <leader>gU gU
 " gV - visual
-noremap qG gV
-noremap q] g]
-noremap qa ga
-noremap qf gf
-noremap qF gF
+noremap <leader>gG gV
+noremap <leader>g] g]
+noremap <leader>ga ga
+noremap <leader>gf gf
+noremap <leader>gF gF
 " gg mapped >
-" noremap ql gg
-noremap qv gh
+" noremap <leader>gl gg
+noremap <leader>gv gh
 " gi - insert
-noremap qs gi
-noremap q<tab> gd
-noremap qk gk
-noremap q. gn
-noremap qh gh
-noremap qW gJ
-noremap qm gm
-noremap qM gM
-noremap qO go
-noremap qd gp
-noremap q; g;
-noremap qq gq
+noremap <leader>gs gi
+noremap <leader>g<tab> gd
+noremap <leader>gk gk
+noremap <leader>g. gn
+noremap <leader>gh gh
+noremap <leader>gW gJ
+noremap <leader>gm gm
+noremap <leader>gM gM
+noremap <leader>gO go
+noremap <leader>gd gp
+noremap <leader>g; g;
+noremap <leader>gq gq
 " gr - replace
-noremap qp gr
-noremap qs gs
-noremap qt gt
-noremap qu gu
+noremap <leader>gp gr
+noremap <leader>gs gs
+noremap <leader>gt gt
+noremap <leader>gu gu
 " gv - visual
-noremap qg gv
-noremap q: gw
-noremap qx gx
-noremap q@ g@
-noremap q~ g~
-noremap q<Down> g<Down>
-noremap q<End> g<End>
-noremap q<Home> g<Home>
-noremap q<LeftMouse> g<LeftMouse>
-noremap q<MiddleMouse> g<MiddleMouse>
-noremap q<RightMouse> g<RightMouse>
-noremap q<Tab> g<Tab>
-noremap q<Up> g<Up>
+noremap <leader>gg gv
+noremap <leader>g: gw
+noremap <leader>gx gx
+noremap <leader>g@ g@
+noremap <leader>g~ g~
+noremap <leader>g<Down> g<Down>
+noremap <leader>g<End> g<End>
+noremap <leader>g<Home> g<Home>
+noremap <leader>g<LeftMouse> g<LeftMouse>
+noremap <leader>g<MiddleMouse> g<MiddleMouse>
+noremap <leader>g<RightMouse> g<RightMouse>
+noremap <leader>g<Tab> g<Tab>
+noremap <leader>g<Up> g<Up>
 
 " Text Object Selection
 " onoremap g a
